@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
 
 const birds = [
   {
@@ -276,17 +276,45 @@ const birds = [
   },
 ];
 
-const statusColors: Record<string, string> = {
-  "Resident": "bg-green-100 text-green-800",
-  "Winter visitor": "bg-blue-100 text-blue-800",
-  "Winter visitor / migrant": "bg-blue-100 text-blue-800",
-  "Uncommon resident": "bg-yellow-100 text-yellow-800",
-  "Rare resident": "bg-orange-100 text-orange-800",
-  "Resident (reintroduced)": "bg-teal-100 text-teal-800",
-  "Summer resident": "bg-amber-100 text-amber-800",
-  "Migrant": "bg-purple-100 text-purple-800",
-  "Resident / winter visitor": "bg-green-100 text-green-800",
-};
+// Status badge inline styles — no Tailwind color utilities
+function statusBadgeStyle(status: string): CSSProperties {
+  if (status.includes("Rare"))
+    return {
+      background: "rgba(194,96,61,0.1)",
+      color: "#C2603D",
+      border: "1px solid rgba(194,96,61,0.25)",
+    };
+  if (status.includes("Winter"))
+    return {
+      background: "rgba(40,80,130,0.08)",
+      color: "#2B507A",
+      border: "1px solid rgba(40,80,130,0.2)",
+    };
+  if (status.includes("Summer"))
+    return {
+      background: "rgba(212,162,76,0.12)",
+      color: "#7A5C10",
+      border: "1px solid rgba(212,162,76,0.3)",
+    };
+  if (status === "Migrant")
+    return {
+      background: "rgba(90,55,130,0.08)",
+      color: "#5A3782",
+      border: "1px solid rgba(90,55,130,0.2)",
+    };
+  if (status === "Uncommon resident")
+    return {
+      background: "rgba(212,162,76,0.1)",
+      color: "#8A6518",
+      border: "1px solid rgba(212,162,76,0.25)",
+    };
+  // Resident (all remaining variants)
+  return {
+    background: "rgba(31,61,43,0.08)",
+    color: "#1F3D2B",
+    border: "1px solid rgba(31,61,43,0.2)",
+  };
+}
 
 const statusGroups: Record<string, string[]> = {
   Resident: ["Resident", "Uncommon resident", "Resident (reintroduced)", "Resident / winter visitor"],
@@ -297,7 +325,7 @@ const statusGroups: Record<string, string[]> = {
 };
 
 const filterLabels = ["All", "Resident", "Rare", "Winter", "Summer", "Migrant"] as const;
-type Filter = typeof filterLabels[number];
+type Filter = (typeof filterLabels)[number];
 
 export default function BirdsPage() {
   const [query, setQuery] = useState("");
@@ -322,88 +350,159 @@ export default function BirdsPage() {
   });
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-green-900 mb-2">South Texas Bird Species</h1>
-      <p className="text-gray-500 mb-6 text-sm">
-        30 specialty and notable species of the Rio Grande Valley and South Texas coast. Photos via Wikimedia Commons (CC licensed).
-      </p>
+    <div style={{ background: "#F6F1E7" }}>
 
-      {/* Search + filter bar */}
-      <div className="mb-8 space-y-3">
-        <input
-          type="search"
-          placeholder="Search by name, family, habitat…"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="w-full max-w-md rounded-lg border border-green-200 bg-white px-4 py-2 text-sm text-gray-800 placeholder-gray-400 shadow-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500"
-        />
-        <div className="flex flex-wrap gap-2">
-          {filterLabels.map((label) => (
-            <button
-              key={label}
-              onClick={() => setActiveFilter(label)}
-              className={`rounded-full px-4 py-1.5 text-xs font-medium transition-colors ${
-                activeFilter === label
-                  ? "bg-green-800 text-white"
-                  : "bg-white border border-green-200 text-green-800 hover:bg-green-50"
-              }`}
-            >
-              {label}
-              {label === "All"
-                ? ` (${birds.length})`
-                : ` (${birds.filter((b) => statusGroups[label]?.includes(b.status)).length})`}
-            </button>
-          ))}
+      {/* ── Page header ─────────────────────────────────────────────────── */}
+      <div className="max-w-5xl mx-auto px-6 pt-14 pb-10">
+        <p
+          className="text-xs font-semibold tracking-widest uppercase mb-3"
+          style={{ color: "#C2603D" }}
+        >
+          Rio Grande Valley
+        </p>
+        <h1
+          className="font-serif text-4xl md:text-5xl font-bold mb-3"
+          style={{ color: "#1F3D2B" }}
+        >
+          South Texas Bird Species
+        </h1>
+        <p className="text-sm mb-10" style={{ color: "#5C5954" }}>
+          {birds.length} specialty and notable species of the Rio Grande Valley and South Texas
+          coast. Photos via Wikimedia Commons (CC licensed).
+        </p>
+
+        {/* ── Search + filters ──────────────────────────────────────────── */}
+        <div className="space-y-3">
+          <input
+            type="search"
+            placeholder="Search by name, family, habitat…"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            className="w-full max-w-md rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1F3D2B]/40"
+            style={{
+              background: "#fff",
+              border: "1px solid rgba(31,61,43,0.22)",
+              color: "#2B2B26",
+              boxShadow: "0 1px 3px rgba(31,61,43,0.06)",
+            }}
+          />
+          <div className="flex flex-wrap gap-2">
+            {filterLabels.map((label) => (
+              <button
+                key={label}
+                onClick={() => setActiveFilter(label)}
+                className="rounded-full px-4 py-1.5 text-xs font-medium transition-opacity hover:opacity-80"
+                style={
+                  activeFilter === label
+                    ? { backgroundColor: "#1F3D2B", color: "#fff" }
+                    : {
+                        background: "#fff",
+                        border: "1px solid rgba(31,61,43,0.2)",
+                        color: "#1F3D2B",
+                      }
+                }
+              >
+                {label}
+                {label === "All"
+                  ? ` (${birds.length})`
+                  : ` (${birds.filter((b) => statusGroups[label]?.includes(b.status)).length})`}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
-      {filtered.length === 0 ? (
-        <div className="py-20 text-center text-gray-400 text-sm">
-          No birds match &ldquo;{query}&rdquo;
-          {activeFilter !== "All" && <> in the <strong>{activeFilter}</strong> filter</>}.
-        </div>
-      ) : (
-        <>
-          {(query || activeFilter !== "All") && (
-            <p className="text-xs text-gray-400 mb-4">
-              {filtered.length} of {birds.length} species
-            </p>
-          )}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((bird) => (
-              <div
-                key={bird.name}
-                className="bg-white rounded-xl border border-green-100 shadow-sm overflow-hidden flex flex-col"
-              >
-                <div className="relative h-48 bg-stone-900">
-                  <Image
-                    src={bird.photo}
-                    alt={bird.name}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="p-4 flex flex-col flex-1">
-                  <div className="flex flex-wrap items-center gap-2 mb-1">
-                    <h2 className="text-base font-bold text-green-900">{bird.name}</h2>
+      {/* ── Grid ────────────────────────────────────────────────────────── */}
+      <div className="max-w-5xl mx-auto px-6 pb-20">
+        {filtered.length === 0 ? (
+          <div className="py-24 text-center text-sm" style={{ color: "#6E6B66" }}>
+            No birds match &ldquo;{query}&rdquo;
+            {activeFilter !== "All" && (
+              <>
+                {" "}in the{" "}
+                <span style={{ color: "#1F3D2B", fontWeight: 600 }}>{activeFilter}</span> filter
+              </>
+            )}.
+          </div>
+        ) : (
+          <>
+            {(query || activeFilter !== "All") && (
+              <p className="text-xs mb-5" style={{ color: "#6E6B66" }}>
+                {filtered.length} of {birds.length} species
+              </p>
+            )}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {filtered.map((bird) => (
+                <div
+                  key={bird.name}
+                  className="rounded-xl overflow-hidden flex flex-col"
+                  style={{
+                    background: "#fff",
+                    borderTop: "3px solid #D4A24C",
+                    boxShadow: "0 1px 8px rgba(31,61,43,0.08)",
+                  }}
+                >
+                  {/* Photo */}
+                  <div
+                    className="relative h-48 shrink-0"
+                    style={{ background: "#1F3D2B" }}
+                  >
+                    <Image
+                      src={bird.photo}
+                      alt={bird.name}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+
+                  {/* Info */}
+                  <div className="p-4 flex flex-col flex-1">
+                    <h2
+                      className="font-serif text-base font-bold leading-snug mb-0.5"
+                      style={{ color: "#1F3D2B" }}
+                    >
+                      {bird.name}
+                    </h2>
+                    <p
+                      className="text-xs italic mb-2.5"
+                      style={{ color: "#6E6B66" }}
+                    >
+                      {bird.scientific}
+                    </p>
+
                     <span
-                      className={`text-xs font-medium px-2 py-0.5 rounded-full ${statusColors[bird.status] ?? "bg-gray-100 text-gray-700"}`}
+                      className="self-start text-xs font-medium px-2.5 py-0.5 rounded-full mb-3"
+                      style={statusBadgeStyle(bird.status)}
                     >
                       {bird.status}
                     </span>
+
+                    <p className="text-xs mb-3" style={{ color: "#4E4B46" }}>
+                      <span
+                        className="font-semibold tracking-widest uppercase"
+                        style={{ fontSize: "0.6rem", color: "#C2603D" }}
+                      >
+                        Habitat
+                      </span>
+                      {"  "}
+                      {bird.habitat}
+                    </p>
+
+                    <p
+                      className="text-sm leading-relaxed mt-auto"
+                      style={{ color: "#4E4B46" }}
+                    >
+                      {bird.notes}
+                    </p>
                   </div>
-                  <p className="text-xs italic text-gray-400 mb-2">{bird.scientific}</p>
-                  <p className="text-xs text-gray-500 mb-1">
-                    <span className="font-medium">Habitat:</span> {bird.habitat}
-                  </p>
-                  <p className="text-sm text-gray-600 leading-relaxed mt-auto pt-2">{bird.notes}</p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </>
-      )}
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+
     </div>
   );
 }
