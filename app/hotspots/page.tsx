@@ -136,8 +136,8 @@ const hotspots = [
 // Badge style for each hotspot type — shown on the dark palm-green header
 const typeBadgeStyle = {
   background: "rgba(255,255,255,0.15)",
-  color: "rgba(255,255,255,0.92)",
-  border: "1px solid rgba(255,255,255,0.22)",
+  color: "#ffffff",
+  border: "1px solid rgba(255,255,255,0.3)",
 };
 
 export default function HotspotsPage() {
@@ -209,7 +209,8 @@ export default function HotspotsPage() {
                         {spot.type}
                       </span>
                       <h2
-                        className="font-serif text-lg font-bold text-white leading-snug"
+                        className="font-serif text-lg font-bold leading-snug"
+                        style={{ color: "#ffffff" }}
                       >
                         {spot.name}
                       </h2>
@@ -221,12 +222,15 @@ export default function HotspotsPage() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                   </div>
-                  <p
-                    className="text-xs mt-1 truncate"
-                    style={{ color: "rgba(212,162,76,0.85)" }}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.address)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs mt-1 truncate block hover:underline"
+                    style={{ color: "#D4A24C" }}
                   >
                     {spot.address}
-                  </p>
+                  </a>
                 </div>
               </div>
 
