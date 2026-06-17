@@ -375,12 +375,12 @@ export default function BirdsPage() {
                 key={bird.name}
                 className="bg-white rounded-xl border border-green-100 shadow-sm overflow-hidden flex flex-col"
               >
-                <div className="relative h-48 bg-green-50">
+                <div className="relative h-48 bg-stone-900">
                   <Image
                     src={bird.photo}
                     alt={bird.name}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
