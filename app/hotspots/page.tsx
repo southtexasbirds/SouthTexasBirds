@@ -1,5 +1,4 @@
 import Image from "next/image";
-import AnimateIn from "../components/AnimateIn";
 
 const hotspots = [
   {
@@ -166,14 +165,14 @@ export default function HotspotsPage() {
       {/* ── Hotspot cards ─────────────────────────────────────────────────── */}
       <div className="max-w-4xl mx-auto px-6 pb-16 flex flex-col gap-8">
         {hotspots.map((spot, i) => (
-          <AnimateIn key={spot.name} delay={i * 60}>
-            <article
-              className="rounded-2xl overflow-hidden"
-              style={{
-                background: "#fff",
-                boxShadow: "0 2px 12px rgba(31,61,43,0.09)",
-                border: "1px solid rgba(31,61,43,0.07)",
-              }}
+          <article
+            key={spot.name}
+            className="rounded-2xl overflow-hidden"
+            style={{
+              background: "#fff",
+              boxShadow: "0 2px 12px rgba(31,61,43,0.09)",
+              border: "1px solid rgba(31,61,43,0.07)",
+            }}
             >
               {/* Card header */}
               <div
@@ -283,8 +282,7 @@ export default function HotspotsPage() {
                   </div>
                 </div>
               </div>
-            </article>
-          </AnimateIn>
+          </article>
         ))}
       </div>
     </div>
