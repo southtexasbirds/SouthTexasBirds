@@ -12,7 +12,7 @@ const playfair = Playfair_Display({
   weight: ["400", "500", "600", "700"],
 });
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://southtexasbirds.vercel.app";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://southtexasbirds.org";
 const OG_IMAGE =
   "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
 
