@@ -1,3 +1,6 @@
+import Image from "next/image";
+import AnimateIn from "../components/AnimateIn";
+
 const hotspots = [
   {
     name: "Estero Llano Grande State Park",
@@ -21,7 +24,9 @@ const hotspots = [
       "Groove-billed Ani",
     ],
     bestSeason: "Year-round",
-    emoji: "💧",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Northern_Jacana_Costa_Rica.jpg/330px-Northern_Jacana_Costa_Rica.jpg",
+    photoAlt: "Northern Jacana",
   },
   {
     name: "Santa Ana National Wildlife Refuge",
@@ -45,7 +50,9 @@ const hotspots = [
       "White-tipped Dove",
     ],
     bestSeason: "Year-round; best Oct–Apr",
-    emoji: "🌿",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png/330px-Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png",
+    photoAlt: "Green Jay",
   },
   {
     name: "Bentsen-Rio Grande Valley State Park",
@@ -69,7 +76,9 @@ const hotspots = [
       "Broad-winged Hawk",
     ],
     bestSeason: "Year-round; hawk migration Mar–May & Sep–Oct",
-    emoji: "🌳",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Plain_Chachalaca_Roadside.png/330px-Plain_Chachalaca_Roadside.png",
+    photoAlt: "Plain Chachalaca",
   },
   {
     name: "National Butterfly Center",
@@ -93,7 +102,9 @@ const hotspots = [
       "Groove-billed Ani",
     ],
     bestSeason: "Year-round; fall migration Aug–Oct",
-    emoji: "🦋",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg/330px-Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg",
+    photoAlt: "Buff-bellied Hummingbird",
   },
   {
     name: "Laguna Atascosa National Wildlife Refuge",
@@ -117,76 +128,163 @@ const hotspots = [
       "White-tailed Kite",
     ],
     bestSeason: "Year-round; shorebirds Aug–Oct, waterfowl Nov–Mar",
-    emoji: "🦅",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg/330px-Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg",
+    photoAlt: "Aplomado Falcon",
   },
 ];
 
-const typeColors: Record<string, string> = {
-  "State Park": "bg-green-100 text-green-800",
-  "National Wildlife Refuge": "bg-blue-100 text-blue-800",
-  "State Park / World Birding Center": "bg-emerald-100 text-emerald-800",
-  "Nature Center": "bg-yellow-100 text-yellow-800",
+// Badge style for each hotspot type — shown on the dark palm-green header
+const typeBadgeStyle = {
+  background: "rgba(255,255,255,0.15)",
+  color: "rgba(255,255,255,0.92)",
+  border: "1px solid rgba(255,255,255,0.22)",
 };
 
 export default function HotspotsPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-green-900 mb-2">Rio Grande Valley Birding Hotspots</h1>
-      <p className="text-gray-500 mb-10 text-sm">
-        The five essential stops for any birding trip to the Lower Rio Grande Valley.
-      </p>
+    <div style={{ background: "#F6F1E7" }}>
+      {/* ── Page header ──────────────────────────────────────────────────── */}
+      <div className="max-w-4xl mx-auto px-6 pt-14 pb-10">
+        <p
+          className="text-xs font-semibold tracking-widest uppercase mb-2"
+          style={{ color: "#C2603D" }}
+        >
+          Rio Grande Valley
+        </p>
+        <h1
+          className="font-serif text-3xl md:text-4xl font-bold mb-3"
+          style={{ color: "#1F3D2B" }}
+        >
+          Birding Hotspots
+        </h1>
+        <p className="text-sm max-w-xl" style={{ color: "#5C5954" }}>
+          Five essential stops for any birding trip to the Lower Rio Grande Valley.
+        </p>
+      </div>
 
-      <div className="flex flex-col gap-8">
+      {/* ── Hotspot cards ─────────────────────────────────────────────────── */}
+      <div className="max-w-4xl mx-auto px-6 pb-16 flex flex-col gap-8">
         {hotspots.map((spot, i) => (
-          <div key={spot.name} className="bg-white rounded-xl border border-green-100 shadow-sm overflow-hidden">
-            {/* Header bar */}
-            <div className="bg-green-900 text-white px-6 py-4 flex items-center gap-3">
-              <span className="text-3xl">{spot.emoji}</span>
-              <div>
-                <div className="flex flex-wrap items-center gap-2">
-                  <h2 className="text-lg font-bold leading-tight">{spot.name}</h2>
-                  <span
-                    className={`text-xs font-medium px-2 py-0.5 rounded-full ${typeColors[spot.type] ?? "bg-gray-100 text-gray-700"}`}
-                  >
-                    {spot.type}
-                  </span>
+          <AnimateIn key={spot.name} delay={i * 60}>
+            <article
+              className="rounded-2xl overflow-hidden"
+              style={{
+                background: "#fff",
+                boxShadow: "0 2px 12px rgba(31,61,43,0.09)",
+                border: "1px solid rgba(31,61,43,0.07)",
+              }}
+            >
+              {/* Card header */}
+              <div
+                className="px-6 py-5 flex items-start gap-4"
+                style={{ backgroundColor: "#1F3D2B" }}
+              >
+                {/* Bird photo thumbnail */}
+                <div
+                  className="relative shrink-0 rounded-full overflow-hidden"
+                  style={{
+                    width: 56,
+                    height: 56,
+                    boxShadow: "0 0 0 2px rgba(255,255,255,0.2)",
+                  }}
+                >
+                  <Image
+                    src={spot.photo}
+                    alt={spot.photoAlt}
+                    fill
+                    unoptimized
+                    className="object-cover"
+                    sizes="56px"
+                  />
                 </div>
-                <p className="text-green-300 text-xs mt-0.5">{spot.address}</p>
-              </div>
-              <span className="ml-auto text-4xl font-black text-green-700 select-none leading-none">
-                {i + 1}
-              </span>
-            </div>
 
-            <div className="px-6 py-5">
-              <p className="text-sm text-gray-700 leading-relaxed mb-5">{spot.description}</p>
-
-              <div className="flex flex-wrap gap-x-8 gap-y-4">
-                <div className="flex-1 min-w-[200px]">
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
-                    Commonly Seen Birds
-                  </p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {spot.birds.map((bird) => (
+                {/* Name, type badge, address */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
                       <span
-                        key={bird}
-                        className="text-xs bg-green-50 border border-green-200 text-green-800 px-2 py-0.5 rounded-full"
+                        className="inline-block text-xs font-medium px-2.5 py-0.5 rounded-full mb-1.5"
+                        style={typeBadgeStyle}
                       >
-                        {bird}
+                        {spot.type}
                       </span>
-                    ))}
+                      <h2
+                        className="font-serif text-lg font-bold text-white leading-snug"
+                      >
+                        {spot.name}
+                      </h2>
+                    </div>
+                    <span
+                      className="text-3xl font-black shrink-0 leading-none select-none tabular-nums"
+                      style={{ color: "rgba(255,255,255,0.18)", fontFamily: "var(--font-playfair, serif)" }}
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </div>
+                  <p
+                    className="text-xs mt-1 truncate"
+                    style={{ color: "rgba(212,162,76,0.85)" }}
+                  >
+                    {spot.address}
+                  </p>
+                </div>
+              </div>
+
+              {/* Card body */}
+              <div className="px-6 py-5">
+                <p
+                  className="text-sm leading-relaxed mb-5"
+                  style={{ color: "#4E4B46" }}
+                >
+                  {spot.description}
+                </p>
+
+                <div className="flex flex-wrap gap-x-8 gap-y-4">
+                  {/* Birds */}
+                  <div className="flex-1 min-w-[200px]">
+                    <p
+                      className="text-xs font-semibold tracking-widest uppercase mb-2"
+                      style={{ color: "#C2603D" }}
+                    >
+                      Commonly Seen Birds
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {spot.birds.map((bird) => (
+                        <span
+                          key={bird}
+                          className="text-xs font-medium px-2.5 py-0.5 rounded-full"
+                          style={{
+                            background: "rgba(212,162,76,0.11)",
+                            color: "#7A5C10",
+                            border: "1px solid rgba(212,162,76,0.28)",
+                          }}
+                        >
+                          {bird}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Best season */}
+                  <div className="shrink-0">
+                    <p
+                      className="text-xs font-semibold tracking-widest uppercase mb-2"
+                      style={{ color: "#C2603D" }}
+                    >
+                      Best Season
+                    </p>
+                    <p
+                      className="text-sm font-medium"
+                      style={{ color: "#1F3D2B" }}
+                    >
+                      {spot.bestSeason}
+                    </p>
                   </div>
                 </div>
-
-                <div className="shrink-0">
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
-                    Best Season
-                  </p>
-                  <p className="text-sm text-green-700 font-medium">{spot.bestSeason}</p>
-                </div>
               </div>
-            </div>
-          </div>
+            </article>
+          </AnimateIn>
         ))}
       </div>
     </div>
