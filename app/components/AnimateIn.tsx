@@ -23,31 +23,35 @@ export default function AnimateIn({
     const el = ref.current;
     if (!el) return;
 
-    // Don't add motion classes when the user has requested reduced motion
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    el.classList.add(direction === "left" ? "anim-left" : "anim-up");
+    // Set the initial hidden state via inline styles so it takes effect
+    // regardless of CSS class loading order or specificity.
+    el.style.opacity = "0";
+    el.style.transform =
+      direction === "left" ? "translateX(-1.75rem)" : "translateY(1.5rem)";
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add("in-view");
-          observer.disconnect();
-        }
+        if (!entry.isIntersecting) return;
+        // Apply the transition and animate to visible
+        el.style.transition = `opacity 0.65s ease-out, transform 0.65s ease-out`;
+        if (delay) el.style.transitionDelay = `${delay}ms`;
+        el.style.opacity = "1";
+        el.style.transform = "none";
+        observer.disconnect();
       },
-      { threshold: 0.12 }
+      // threshold:0 fires as soon as any pixel enters the viewport;
+      // the negative bottom margin avoids triggering at the very edge.
+      { threshold: 0, rootMargin: "0px 0px -30px 0px" }
     );
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [direction]);
+  }, [direction, delay]);
 
   return (
-    <div
-      ref={ref}
-      className={className}
-      style={delay ? { transitionDelay: `${delay}ms`, ...style } : style}
-    >
+    <div ref={ref} className={className} style={style}>
       {children}
     </div>
   );

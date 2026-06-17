@@ -110,7 +110,7 @@ export default function HomePage() {
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#1F3D2B" }}>
             A World Apart
           </h2>
-          <p className="text-sm max-w-xl mb-10" style={{ color: "#2B2B26", opacity: 0.65 }}>
+          <p className="text-sm max-w-xl mb-10" style={{ color: "#5C5954" }}>
             Nowhere else in the United States do tropical and temperate bird families meet so dramatically.
           </p>
         </AnimateIn>
@@ -158,7 +158,7 @@ export default function HomePage() {
                 >
                   {h.title}
                 </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#2B2B26", opacity: 0.7 }}>
+                <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
                   {h.body}
                 </p>
               </div>
@@ -180,7 +180,7 @@ export default function HomePage() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#1F3D2B" }}>
               South Texas Specialties
             </h2>
-            <p className="text-sm mb-10" style={{ color: "#2B2B26", opacity: 0.6 }}>
+            <p className="text-sm mb-10" style={{ color: "#5C5954" }}>
               Birds that draw visitors from across the world
             </p>
           </AnimateIn>
@@ -199,7 +199,7 @@ export default function HomePage() {
                     <p className="font-semibold text-sm" style={{ color: "#1F3D2B" }}>
                       {bird.name}
                     </p>
-                    <p className="text-xs" style={{ color: "#2B2B26", opacity: 0.55 }}>
+                    <p className="text-xs" style={{ color: "#6E6B66" }}>
                       {bird.location}
                     </p>
                   </div>
@@ -238,7 +238,7 @@ export default function HomePage() {
             >
               Ready to Find Your Lifer?
             </h2>
-            <p className="text-sm leading-relaxed mb-8" style={{ color: "#2B2B26", opacity: 0.65 }}>
+            <p className="text-sm leading-relaxed mb-8" style={{ color: "#5C5954" }}>
               Whether you&apos;re chasing a life bird or simply walking through resaca habitat at dawn, South Texas always delivers. Our hotspot guide covers the five essential stops in the Rio Grande Valley.
             </p>
             <Link
