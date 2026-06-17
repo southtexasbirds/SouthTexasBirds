@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 
 const hotspots = [
@@ -138,6 +139,68 @@ const typeBadgeStyle = {
   background: "rgba(255,255,255,0.15)",
   color: "#ffffff",
   border: "1px solid rgba(255,255,255,0.3)",
+};
+
+// Approximate geo coordinates for each hotspot (same order as the array above)
+const geoCoords = [
+  { lat: 26.1619, lng: -97.9977 }, // Estero Llano Grande
+  { lat: 26.0713, lng: -98.1444 }, // Santa Ana NWR
+  { lat: 26.1805, lng: -98.3747 }, // Bentsen-RGVSP
+  { lat: 26.1783, lng: -98.3769 }, // National Butterfly Center
+  { lat: 26.2777, lng: -97.3637 }, // Laguna Atascosa NWR
+];
+
+const hotspotSchema = {
+  "@context": "https://schema.org",
+  "@graph": hotspots.map((spot, i) => {
+    const [street, city] = spot.address.split(",");
+    return {
+      "@type": "TouristAttraction",
+      name: spot.name,
+      description: spot.description,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: street?.trim(),
+        addressLocality: city?.trim(),
+        addressRegion: "TX",
+        addressCountry: "US",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: geoCoords[i].lat,
+        longitude: geoCoords[i].lng,
+      },
+      amenityFeature: spot.birds.slice(0, 6).map((b) => ({
+        "@type": "LocationFeatureSpecification",
+        name: b,
+        value: true,
+      })),
+    };
+  }),
+};
+
+export const metadata: Metadata = {
+  title: { absolute: "Best Birding Hotspots in the Rio Grande Valley | South Texas Birds" },
+  description:
+    "The five best RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, National Butterfly Center, and Laguna Atascosa. Maps and bird lists.",
+  openGraph: {
+    title: "Best Birding Hotspots in the Rio Grande Valley | South Texas Birds",
+    description:
+      "The five best RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, National Butterfly Center, and Laguna Atascosa.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
+        width: 2585,
+        height: 1723,
+        alt: "Altamira Oriole in South Texas",
+      },
+    ],
+  },
+  twitter: {
+    title: "Best Birding Hotspots in the Rio Grande Valley | South Texas Birds",
+    description:
+      "The five best RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, National Butterfly Center, and Laguna Atascosa.",
+  },
 };
 
 export default function HotspotsPage() {
@@ -289,6 +352,11 @@ export default function HotspotsPage() {
           </article>
         ))}
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hotspotSchema) }}
+      />
     </div>
   );
 }

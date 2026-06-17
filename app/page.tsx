@@ -1,6 +1,31 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "./components/AnimateIn";
+
+export const metadata: Metadata = {
+  title: { absolute: "South Texas Birds | Rio Grande Valley Birding Guide & Hotspots" },
+  description:
+    "Plan your Rio Grande Valley birding trip. Explore 500+ species, top RGV hotspots, and South Texas specialties like Green Jay, Altamira Oriole, and Whooping Crane.",
+  openGraph: {
+    title: "South Texas Birds | Rio Grande Valley Birding Guide & Hotspots",
+    description:
+      "Plan your Rio Grande Valley birding trip. Explore 500+ species, top RGV hotspots, and South Texas specialties like Green Jay, Altamira Oriole, and Whooping Crane.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
+        width: 2585,
+        height: 1723,
+        alt: "Altamira Oriole perched in South Texas",
+      },
+    ],
+  },
+  twitter: {
+    title: "South Texas Birds | Rio Grande Valley Birding Guide & Hotspots",
+    description:
+      "Plan your Rio Grande Valley birding trip. Explore 500+ species, top RGV hotspots, and South Texas specialties.",
+  },
+};
 
 // Full-resolution original JPEG (2585×1723) — optimized by Next.js on first request
 const HERO_PHOTO =

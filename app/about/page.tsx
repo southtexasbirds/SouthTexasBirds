@@ -1,4 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+const OG_IMAGE =
+  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "About South Texas Birding | Rio Grande Valley & Coastal Bend Guide",
+  },
+  description:
+    "Learn about South Texas birding: the Rio Grande Valley, Coastal Bend, and when to visit for migrants, Whooping Cranes, hawks, and winter waterfowl.",
+  openGraph: {
+    title: "About South Texas Birding | Rio Grande Valley & Coastal Bend Guide",
+    description:
+      "Learn about South Texas birding: the Rio Grande Valley, Coastal Bend, and when to visit for migrants, Whooping Cranes, hawks, and winter waterfowl.",
+    images: [
+      { url: OG_IMAGE, width: 2585, height: 1723, alt: "Altamira Oriole in South Texas" },
+    ],
+  },
+  twitter: {
+    title: "About South Texas Birding | Rio Grande Valley & Coastal Bend Guide",
+    description:
+      "Learn about South Texas birding: the Rio Grande Valley, Coastal Bend, and when to visit for migrants, Whooping Cranes, hawks, and winter waterfowl.",
+  },
+};
 
 const seasons = [
   {
