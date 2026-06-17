@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 const birds = [
   {
@@ -285,47 +288,122 @@ const statusColors: Record<string, string> = {
   "Resident / winter visitor": "bg-green-100 text-green-800",
 };
 
+const statusGroups: Record<string, string[]> = {
+  Resident: ["Resident", "Uncommon resident", "Resident (reintroduced)", "Resident / winter visitor"],
+  Rare: ["Rare resident"],
+  Winter: ["Winter visitor", "Winter visitor / migrant"],
+  Summer: ["Summer resident"],
+  Migrant: ["Migrant"],
+};
+
+const filterLabels = ["All", "Resident", "Rare", "Winter", "Summer", "Migrant"] as const;
+type Filter = typeof filterLabels[number];
+
 export default function BirdsPage() {
+  const [query, setQuery] = useState("");
+  const [activeFilter, setActiveFilter] = useState<Filter>("All");
+
+  const q = query.toLowerCase();
+
+  const filtered = birds.filter((bird) => {
+    const matchesSearch =
+      q === "" ||
+      bird.name.toLowerCase().includes(q) ||
+      bird.scientific.toLowerCase().includes(q) ||
+      bird.family.toLowerCase().includes(q) ||
+      bird.habitat.toLowerCase().includes(q) ||
+      bird.notes.toLowerCase().includes(q);
+
+    const matchesFilter =
+      activeFilter === "All" ||
+      (statusGroups[activeFilter]?.includes(bird.status) ?? false);
+
+    return matchesSearch && matchesFilter;
+  });
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold text-green-900 mb-2">South Texas Bird Species</h1>
-      <p className="text-gray-500 mb-8 text-sm">
+      <p className="text-gray-500 mb-6 text-sm">
         30 specialty and notable species of the Rio Grande Valley and South Texas coast. Photos via Wikimedia Commons (CC licensed).
       </p>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {birds.map((bird) => (
-          <div
-            key={bird.name}
-            className="bg-white rounded-xl border border-green-100 shadow-sm overflow-hidden flex flex-col"
-          >
-            <div className="relative h-48 bg-green-50">
-              <Image
-                src={bird.photo}
-                alt={bird.name}
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-            </div>
-            <div className="p-4 flex flex-col flex-1">
-              <div className="flex flex-wrap items-center gap-2 mb-1">
-                <h2 className="text-base font-bold text-green-900">{bird.name}</h2>
-                <span
-                  className={`text-xs font-medium px-2 py-0.5 rounded-full ${statusColors[bird.status] ?? "bg-gray-100 text-gray-700"}`}
-                >
-                  {bird.status}
-                </span>
-              </div>
-              <p className="text-xs italic text-gray-400 mb-2">{bird.scientific}</p>
-              <p className="text-xs text-gray-500 mb-1">
-                <span className="font-medium">Habitat:</span> {bird.habitat}
-              </p>
-              <p className="text-sm text-gray-600 leading-relaxed mt-auto pt-2">{bird.notes}</p>
-            </div>
-          </div>
-        ))}
+      {/* Search + filter bar */}
+      <div className="mb-8 space-y-3">
+        <input
+          type="search"
+          placeholder="Search by name, family, habitat…"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          className="w-full max-w-md rounded-lg border border-green-200 bg-white px-4 py-2 text-sm text-gray-800 placeholder-gray-400 shadow-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500"
+        />
+        <div className="flex flex-wrap gap-2">
+          {filterLabels.map((label) => (
+            <button
+              key={label}
+              onClick={() => setActiveFilter(label)}
+              className={`rounded-full px-4 py-1.5 text-xs font-medium transition-colors ${
+                activeFilter === label
+                  ? "bg-green-800 text-white"
+                  : "bg-white border border-green-200 text-green-800 hover:bg-green-50"
+              }`}
+            >
+              {label}
+              {label === "All"
+                ? ` (${birds.length})`
+                : ` (${birds.filter((b) => statusGroups[label]?.includes(b.status)).length})`}
+            </button>
+          ))}
+        </div>
       </div>
+
+      {filtered.length === 0 ? (
+        <div className="py-20 text-center text-gray-400 text-sm">
+          No birds match &ldquo;{query}&rdquo;
+          {activeFilter !== "All" && <> in the <strong>{activeFilter}</strong> filter</>}.
+        </div>
+      ) : (
+        <>
+          {(query || activeFilter !== "All") && (
+            <p className="text-xs text-gray-400 mb-4">
+              {filtered.length} of {birds.length} species
+            </p>
+          )}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filtered.map((bird) => (
+              <div
+                key={bird.name}
+                className="bg-white rounded-xl border border-green-100 shadow-sm overflow-hidden flex flex-col"
+              >
+                <div className="relative h-48 bg-green-50">
+                  <Image
+                    src={bird.photo}
+                    alt={bird.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-4 flex flex-col flex-1">
+                  <div className="flex flex-wrap items-center gap-2 mb-1">
+                    <h2 className="text-base font-bold text-green-900">{bird.name}</h2>
+                    <span
+                      className={`text-xs font-medium px-2 py-0.5 rounded-full ${statusColors[bird.status] ?? "bg-gray-100 text-gray-700"}`}
+                    >
+                      {bird.status}
+                    </span>
+                  </div>
+                  <p className="text-xs italic text-gray-400 mb-2">{bird.scientific}</p>
+                  <p className="text-xs text-gray-500 mb-1">
+                    <span className="font-medium">Habitat:</span> {bird.habitat}
+                  </p>
+                  <p className="text-sm text-gray-600 leading-relaxed mt-auto pt-2">{bird.notes}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
