@@ -1,56 +1,183 @@
 import Link from "next/link";
 
+const seasons = [
+  {
+    name: "Spring",
+    dates: "Apr – May",
+    body: "Trans-Gulf migrants arrive at South Padre Island. Neotropical species return to the Valley.",
+    accent: "#C2603D",
+  },
+  {
+    name: "Summer",
+    dates: "Jun – Aug",
+    body: "Resident species are nesting. Fewer migrants but great for family and behavior watching.",
+    accent: "#D4A24C",
+  },
+  {
+    name: "Fall",
+    dates: "Sep – Oct",
+    body: "Peak hawk migration at Hazel Bazemore. Shorebirds and waterfowl begin to arrive.",
+    accent: "#C2603D",
+  },
+  {
+    name: "Winter",
+    dates: "Nov – Mar",
+    body: "Whooping Cranes at Aransas. Ducks, geese, and sandhill cranes throughout. Resident specialties reliably present.",
+    accent: "#1F3D2B",
+  },
+];
+
+const sectionRule = (
+  <div
+    aria-hidden="true"
+    style={{ width: "2.5rem", height: 2, background: "#C2603D", marginBottom: "0.75rem" }}
+  />
+);
+
 export default function AboutPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-green-900 mb-6">About South Texas Birds</h1>
+    <div style={{ background: "#F6F1E7" }}>
+      <div className="max-w-3xl mx-auto px-6 pt-14 pb-20">
 
-      <div className="prose prose-green max-w-none text-gray-700 text-sm leading-relaxed space-y-5">
-        <p>
-          South Texas is widely regarded as one of the greatest birding regions in North America. The area sits at the convergence of several major ecological zones: the subtropical Rio Grande Valley, the semi-arid Tamaulipan thornscrub, the Gulf Coast barrier islands, and the sweeping coastal prairies of the Coastal Bend.
-        </p>
-        <p>
-          This convergence creates a mosaic of habitats that supports an extraordinary diversity of bird life — over 500 species have been recorded in the region. For visiting birders, this means a single trip can yield resident Mexican specialties, Gulf Coast waterbirds, wintering raptors, and Neotropical migrants all in the same day.
-        </p>
-
-        <h2 className="text-xl font-bold text-green-900 mt-8 mb-2">The Rio Grande Valley</h2>
-        <p>
-          The lower Rio Grande Valley (RGV) hugs the Texas-Mexico border from Laredo to the Gulf. The resacas (oxbow lakes), riparian corridors, and remaining stands of native brush provide irreplaceable habitat for species that occur nowhere else in the U.S., including Green Jay, Altamira Oriole, Plain Chachalaca, Buff-bellied Hummingbird, and Ferruginous Pygmy-Owl.
-        </p>
-        <p>
-          The World Birding Center comprises nine sites across the Valley — from Roma Bluffs in the west to South Padre Island on the coast — making it easy to explore a range of habitats on a single trip.
-        </p>
-
-        <h2 className="text-xl font-bold text-green-900 mt-8 mb-2">The Coastal Bend</h2>
-        <p>
-          North of the RGV, the Coastal Bend stretches from Corpus Christi to Rockport and beyond. Aransas National Wildlife Refuge is the winter home of the last natural wild flock of Whooping Cranes — one of conservation&apos;s greatest success stories. The bays, salt marshes, and coastal prairies support remarkable concentrations of waterbirds, shorebirds, and raptors.
-        </p>
-        <p>
-          Hazel Bazemore County Park near Corpus Christi is perhaps the most impressive hawk watch in North America — in peak September days, hundreds of thousands of Broad-winged Hawks can be seen streaming overhead.
-        </p>
-
-        <h2 className="text-xl font-bold text-green-900 mt-8 mb-2">When to Visit</h2>
-        <ul className="list-disc list-inside space-y-1">
-          <li><span className="font-semibold">Spring (Apr–May):</span> Trans-Gulf migrants arrive at South Padre Island. Neotropical species return to the Valley.</li>
-          <li><span className="font-semibold">Summer (Jun–Aug):</span> Resident species are nesting. Fewer migrants but great for family and behavior watching.</li>
-          <li><span className="font-semibold">Fall (Sep–Oct):</span> Peak hawk migration at Hazel Bazemore. Shorebirds and waterfowl begin to arrive.</li>
-          <li><span className="font-semibold">Winter (Nov–Mar):</span> Whooping Cranes at Aransas. Ducks, geese, and sandhill cranes throughout. Resident specialties reliably present.</li>
-        </ul>
-      </div>
-
-      <div className="mt-10 flex gap-4">
-        <Link
-          href="/birds"
-          className="bg-green-800 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-green-700 transition-colors text-sm"
+        {/* ── Page header ─────────────────────────────────────────────── */}
+        <p
+          className="text-xs font-semibold tracking-widest uppercase mb-3"
+          style={{ color: "#C2603D" }}
         >
-          Browse Species
-        </Link>
-        <Link
-          href="/hotspots"
-          className="border border-green-800 text-green-800 font-semibold px-5 py-2.5 rounded-lg hover:bg-green-50 transition-colors text-sm"
+          The Guide
+        </p>
+        <h1
+          className="font-serif text-4xl md:text-5xl font-bold mb-8"
+          style={{ color: "#1F3D2B" }}
         >
-          View Hotspots
-        </Link>
+          About South Texas Birds
+        </h1>
+
+        {/* ── Lead paragraphs ─────────────────────────────────────────── */}
+        <p className="text-lg leading-relaxed mb-5" style={{ color: "#2B2B26" }}>
+          South Texas is widely regarded as one of the greatest birding regions in North
+          America. The area sits at the convergence of several major ecological zones: the
+          subtropical Rio Grande Valley, the semi-arid Tamaulipan thornscrub, the Gulf
+          Coast barrier islands, and the sweeping coastal prairies of the Coastal Bend.
+        </p>
+        <p className="text-base leading-relaxed mb-14" style={{ color: "#4E4B46" }}>
+          This convergence creates a mosaic of habitats that supports an extraordinary
+          diversity of bird life — over 500 species have been recorded in the region. For
+          visiting birders, this means a single trip can yield resident Mexican
+          specialties, Gulf Coast waterbirds, wintering raptors, and Neotropical migrants
+          all in the same day.
+        </p>
+
+        {/* ── The Rio Grande Valley ───────────────────────────────────── */}
+        <section className="mb-12">
+          {sectionRule}
+          <h2
+            className="font-serif text-2xl md:text-3xl font-bold mb-4"
+            style={{ color: "#1F3D2B" }}
+          >
+            The Rio Grande Valley
+          </h2>
+          <p className="text-base leading-relaxed mb-4" style={{ color: "#4E4B46" }}>
+            The lower Rio Grande Valley (RGV) hugs the Texas-Mexico border from Laredo to
+            the Gulf. The resacas (oxbow lakes), riparian corridors, and remaining stands
+            of native brush provide irreplaceable habitat for species that occur nowhere
+            else in the U.S., including Green Jay, Altamira Oriole, Plain Chachalaca,
+            Buff-bellied Hummingbird, and Ferruginous Pygmy-Owl.
+          </p>
+          <p className="text-base leading-relaxed" style={{ color: "#4E4B46" }}>
+            The World Birding Center comprises nine sites across the Valley — from Roma
+            Bluffs in the west to South Padre Island on the coast — making it easy to
+            explore a range of habitats on a single trip.
+          </p>
+        </section>
+
+        {/* ── The Coastal Bend ────────────────────────────────────────── */}
+        <section className="mb-12">
+          {sectionRule}
+          <h2
+            className="font-serif text-2xl md:text-3xl font-bold mb-4"
+            style={{ color: "#1F3D2B" }}
+          >
+            The Coastal Bend
+          </h2>
+          <p className="text-base leading-relaxed mb-4" style={{ color: "#4E4B46" }}>
+            North of the RGV, the Coastal Bend stretches from Corpus Christi to Rockport
+            and beyond. Aransas National Wildlife Refuge is the winter home of the last
+            natural wild flock of Whooping Cranes — one of conservation&apos;s greatest
+            success stories. The bays, salt marshes, and coastal prairies support
+            remarkable concentrations of waterbirds, shorebirds, and raptors.
+          </p>
+          <p className="text-base leading-relaxed" style={{ color: "#4E4B46" }}>
+            Hazel Bazemore County Park near Corpus Christi is perhaps the most impressive
+            hawk watch in North America — in peak September days, hundreds of thousands of
+            Broad-winged Hawks can be seen streaming overhead.
+          </p>
+        </section>
+
+        {/* ── When to Visit ───────────────────────────────────────────── */}
+        <section className="mb-14">
+          {sectionRule}
+          <h2
+            className="font-serif text-2xl md:text-3xl font-bold mb-6"
+            style={{ color: "#1F3D2B" }}
+          >
+            When to Visit
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {seasons.map((s) => (
+              <div
+                key={s.name}
+                className="rounded-xl p-5"
+                style={{
+                  background: "#fff",
+                  borderTop: `3px solid ${s.accent}`,
+                  boxShadow: "0 1px 6px rgba(31,61,43,0.06)",
+                }}
+              >
+                <div className="flex items-baseline justify-between mb-2">
+                  <h3
+                    className="font-serif text-lg font-bold"
+                    style={{ color: "#1F3D2B" }}
+                  >
+                    {s.name}
+                  </h3>
+                  <span
+                    className="text-xs font-semibold tabular-nums"
+                    style={{ color: s.accent }}
+                  >
+                    {s.dates}
+                  </span>
+                </div>
+                <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+                  {s.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── CTAs ────────────────────────────────────────────────────── */}
+        <div
+          style={{ height: 1, background: "rgba(31,61,43,0.1)" }}
+          className="mb-8"
+        />
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href="/birds"
+            className="font-semibold px-6 py-3 rounded-lg text-sm transition-opacity hover:opacity-85"
+            style={{ backgroundColor: "#C2603D", color: "#fff" }}
+          >
+            Browse Species
+          </Link>
+          <Link
+            href="/hotspots"
+            className="font-semibold px-6 py-3 rounded-lg text-sm border transition-opacity hover:opacity-75"
+            style={{ borderColor: "#1F3D2B", color: "#1F3D2B" }}
+          >
+            View Hotspots
+          </Link>
+        </div>
+
       </div>
     </div>
   );
