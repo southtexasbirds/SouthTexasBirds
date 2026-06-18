@@ -69,6 +69,38 @@ const optics = [
   },
 ];
 
+const fieldGuides = [
+  {
+    name: "Birds of Texas Field Guide",
+    author: "Stan Tekiela",
+    badge: "Essential Field Guide",
+    price: "$13.30",
+    description:
+      "Texas's best-selling bird guide. 176 species organized by color for fast identification, with range maps and comparison features for similar-looking birds.",
+    link: "https://amzn.to/4ePJq2s",
+    borderColor: "#C2603D",
+    badgeStyle: {
+      background: "rgba(194,96,61,0.1)",
+      color: "#C2603D",
+      border: "1px solid rgba(194,96,61,0.25)",
+    },
+  },
+  {
+    name: "Vortex Diamondback HD Spotting Scope",
+    badge: "For Serious Birders",
+    price: "From $599",
+    description:
+      "A serious upgrade for hawk watches and shorebird flats. HD glass delivers sharp detail at long range — ideal for Bentsen's hawk tower or Laguna Atascosa's open coastline.",
+    link: "https://amzn.to/4eyTH1O",
+    borderColor: "#D4A24C",
+    badgeStyle: {
+      background: "rgba(212,162,76,0.12)",
+      color: "#7A5C10",
+      border: "1px solid rgba(212,162,76,0.3)",
+    },
+  },
+];
+
 export default function GearPage() {
   return (
     <div style={{ background: "#F6F1E7" }}>
@@ -131,6 +163,84 @@ export default function GearPage() {
           {/* Product cards */}
           <div className="grid md:grid-cols-3 gap-5">
             {optics.map((item) => (
+              <div
+                key={item.name}
+                className="rounded-xl flex flex-col"
+                style={{
+                  background: "#fff",
+                  borderTop: `3px solid ${item.borderColor}`,
+                  boxShadow: "0 1px 8px rgba(31,61,43,0.08)",
+                }}
+              >
+                <div className="p-5 flex flex-col flex-1">
+                  {/* Badge */}
+                  <span
+                    className="self-start text-xs font-semibold px-2.5 py-0.5 rounded-full mb-3"
+                    style={item.badgeStyle}
+                  >
+                    {item.badge}
+                  </span>
+
+                  {/* Name */}
+                  <h3
+                    className="font-serif text-lg font-bold leading-snug mb-1"
+                    style={{ color: "#1F3D2B" }}
+                  >
+                    {item.name}
+                  </h3>
+
+                  {/* Price */}
+                  <p
+                    className="text-2xl font-bold tabular-nums mb-3"
+                    style={{ color: "#D4A24C" }}
+                  >
+                    {item.price}
+                  </p>
+
+                  {/* Description */}
+                  <p
+                    className="text-sm leading-relaxed mb-5 flex-1"
+                    style={{ color: "#4E4B46" }}
+                  >
+                    {item.description}
+                  </p>
+
+                  {/* CTA */}
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="block text-center text-sm font-semibold rounded-lg px-4 py-2.5 transition-opacity hover:opacity-85"
+                    style={{ backgroundColor: "#C2603D", color: "#fff" }}
+                  >
+                    View on Amazon →
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── Field Guides & Scopes ────────────────────────────────────── */}
+        <section className="mt-16">
+          <div
+            aria-hidden="true"
+            style={{ width: "2.5rem", height: 2, background: "#C2603D", marginBottom: "0.75rem" }}
+          />
+          <h2
+            className="font-serif text-2xl md:text-3xl font-bold mb-2"
+            style={{ color: "#1F3D2B" }}
+          >
+            Field Guides &amp; Scopes
+          </h2>
+          <p className="text-sm mb-8" style={{ color: "#5C5954" }}>
+            A good field guide and a spotting scope open up two different dimensions of
+            South Texas birding — fast ID in the brush and long-range views at hawk watches
+            and coastal flats.
+          </p>
+
+          <div className="grid sm:grid-cols-2 gap-5 max-w-2xl">
+            {fieldGuides.map((item) => (
               <div
                 key={item.name}
                 className="rounded-xl flex flex-col"
