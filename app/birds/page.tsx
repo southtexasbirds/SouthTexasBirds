@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { useState, type CSSProperties } from "react";
+import AudioPlayer from "../components/AudioPlayer";
+import { birdAudio } from "./audioData";
 
 const birds = [
   {
@@ -548,7 +550,17 @@ export default function BirdsPage() {
         </h1>
         <p className="text-sm mb-10" style={{ color: "#5C5954" }}>
           {birds.length} specialty and notable species of the Rio Grande Valley and South Texas
-          coast. Photos via Wikimedia Commons (CC licensed).
+          coast. Photos via Wikimedia Commons (CC licensed). Bird call recordings via{" "}
+          <a
+            href="https://www.xeno-canto.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:opacity-75 transition-opacity"
+            style={{ color: "#5C5954" }}
+          >
+            Xeno-canto
+          </a>{" "}
+          (CC licensed).
         </p>
 
         {/* ── Search + filters ──────────────────────────────────────────── */}
@@ -675,6 +687,10 @@ export default function BirdsPage() {
                     >
                       {bird.notes}
                     </p>
+
+                    {birdAudio[bird.scientific] && (
+                      <AudioPlayer {...birdAudio[bird.scientific]} />
+                    )}
                   </div>
                 </div>
               ))}
