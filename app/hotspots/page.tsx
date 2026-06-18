@@ -107,6 +107,84 @@ const hotspots = [
     photoAlt: "Buff-bellied Hummingbird",
   },
   {
+    name: "Quinta Mazatlan",
+    address: "600 Sunset Dr, McAllen, TX 78503",
+    region: "McAllen",
+    type: "World Birding Center",
+    description:
+      "A beautifully restored 1909 Spanish Revival mansion set within 20 acres of native plantings in the heart of McAllen — one of nine World Birding Center sites. The grounds are designed to attract resident Valley wildlife, and feeding stations draw Green Jays, Altamira Orioles, and Plain Chachalacas within arm's reach. Flowering native plants keep Buff-bellied Hummingbirds active year-round. An ideal urban birding stop and first destination for visiting birders.",
+    birds: [
+      "Buff-bellied Hummingbird",
+      "Altamira Oriole",
+      "Green Jay",
+      "Plain Chachalaca",
+      "Great Kiskadee",
+      "Vermilion Flycatcher",
+      "Couch's Kingbird",
+      "Long-billed Thrasher",
+      "Olive Sparrow",
+      "White-tipped Dove",
+      "Inca Dove",
+      "Groove-billed Ani",
+    ],
+    bestSeason: "Year-round",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Karmintyrann_%28Pyrocephalus_obscurus%29%2C_M%C3%A4nnchen_1.jpg/330px-Karmintyrann_%28Pyrocephalus_obscurus%29%2C_M%C3%A4nnchen_1.jpg",
+    photoAlt: "Vermilion Flycatcher",
+  },
+  {
+    name: "Resaca de la Palma State Park",
+    address: "1000 New Carmen Rd, Brownsville, TX 78520",
+    region: "Brownsville",
+    type: "State Park / World Birding Center",
+    description:
+      "The largest remaining tract of native Tamaulipan thornscrub in the United States — 1,200 acres of subtropical brush managed as one of nine World Birding Center sites. Electric tram tours carry visitors deep into habitat largely inaccessible on foot, dramatically improving chances for owls, wrens, and thornscrub songbirds. The park's network of resacas also supports waterbirds, and virtually every RGV specialty can be found here on a good morning.",
+    birds: [
+      "Ferruginous Pygmy-Owl",
+      "Plain Chachalaca",
+      "Green Jay",
+      "Altamira Oriole",
+      "Buff-bellied Hummingbird",
+      "Clay-colored Thrush",
+      "Hook-billed Kite",
+      "Long-billed Thrasher",
+      "Olive Sparrow",
+      "Tropical Parula",
+      "Groove-billed Ani",
+      "White-tipped Dove",
+    ],
+    bestSeason: "Year-round; best Nov–Apr",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg/330px-Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg",
+    photoAlt: "Ferruginous Pygmy-Owl",
+  },
+  {
+    name: "South Padre Island Birding & Nature Center",
+    address: "6801 Padre Blvd, South Padre Island, TX 78597",
+    region: "South Padre Island",
+    type: "World Birding Center",
+    description:
+      "Positioned at the southern tip of Padre Island at one of the most dramatic landfall points on the Trans-Gulf migration route. When northwest winds follow a cold front in late April and early May, exhausted neotropical migrants arrive in staggering numbers — warblers, buntings, tanagers, and orioles crowd every shrub and boardwalk in what birders call a 'fallout.' The elevated hawk tower commands panoramic coastal views, and the adjacent wetlands host shorebirds, egrets, and the resident Reddish Egret year-round.",
+    birds: [
+      "Reddish Egret",
+      "Peregrine Falcon",
+      "American Avocet",
+      "Wilson's Phalarope",
+      "Magnificent Frigatebird",
+      "Painted Bunting",
+      "Indigo Bunting",
+      "Baltimore Oriole",
+      "Yellow Warbler",
+      "Magnolia Warbler",
+      "Scissor-tailed Flycatcher",
+      "Brown Pelican",
+    ],
+    bestSeason: "Spring migration late Apr–mid May; fall Sep–Oct",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/ReddishEgret_Gam.jpg/330px-ReddishEgret_Gam.jpg",
+    photoAlt: "Reddish Egret",
+  },
+  {
     name: "Laguna Atascosa National Wildlife Refuge",
     address: "22817 Ocelot Rd, Rio Hondo, TX 78583",
     region: "Rio Hondo",
@@ -132,6 +210,32 @@ const hotspots = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg/330px-Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg",
     photoAlt: "Aplomado Falcon",
   },
+  {
+    name: "Salineño Wildlife Preserve",
+    address: "River Rd, Salineno, TX 78585",
+    region: "Salineño",
+    type: "Wildlife Preserve",
+    description:
+      "A small but extraordinary preserve on the banks of the Rio Grande, west of Falcon Lake near the town of Salineño. Feeders at the river's edge draw Audubon's Orioles, Olive Sparrows, and White-tipped Doves, while the river itself hosts Ringed and Green Kingfishers and is the most reliable site in the U.S. for wild Muscovy Duck — often visible from the bank at dawn. Brown Jay, now rarely seen in Texas, was historically reliable here and remains a hoped-for prize for visiting birders.",
+    birds: [
+      "Muscovy Duck",
+      "Ringed Kingfisher",
+      "Green Kingfisher",
+      "Audubon's Oriole",
+      "Red-billed Pigeon",
+      "Hook-billed Kite",
+      "Long-billed Thrasher",
+      "Olive Sparrow",
+      "White-tipped Dove",
+      "Altamira Oriole",
+      "Tropical Kingbird",
+      "Brown Jay",
+    ],
+    bestSeason: "Year-round; best Nov–Mar",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Muscovy_Duck_%28Cairina_moschata%29_male_%2829039391935%29.jpg/330px-Muscovy_Duck_%28Cairina_moschata%29_male_%2829039391935%29.jpg",
+    photoAlt: "Muscovy Duck",
+  },
 ];
 
 // Badge style for each hotspot type — shown on the dark palm-green header
@@ -147,7 +251,11 @@ const geoCoords = [
   { lat: 26.0713, lng: -98.1444 }, // Santa Ana NWR
   { lat: 26.1805, lng: -98.3747 }, // Bentsen-RGVSP
   { lat: 26.1783, lng: -98.3769 }, // National Butterfly Center
+  { lat: 26.2083, lng: -98.2396 }, // Quinta Mazatlan
+  { lat: 25.9764, lng: -97.5206 }, // Resaca de la Palma SP
+  { lat: 26.0868, lng: -97.1659 }, // South Padre Island BC
   { lat: 26.2777, lng: -97.3637 }, // Laguna Atascosa NWR
+  { lat: 26.5155, lng: -99.1071 }, // Salineno Wildlife Preserve
 ];
 
 const hotspotSchema = {
@@ -182,11 +290,11 @@ const hotspotSchema = {
 export const metadata: Metadata = {
   title: { absolute: "Best Birding Hotspots in the Rio Grande Valley | South Texas Birds" },
   description:
-    "The five best RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, National Butterfly Center, and Laguna Atascosa. Maps and bird lists.",
+    "Nine essential RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, Quinta Mazatlan, Resaca de la Palma, South Padre Island, Salineño, and more. Maps and bird lists.",
   openGraph: {
     title: "Best Birding Hotspots in the Rio Grande Valley | South Texas Birds",
     description:
-      "The five best RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, National Butterfly Center, and Laguna Atascosa.",
+      "Nine essential RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, Quinta Mazatlan, Resaca de la Palma, South Padre Island, and Salineño Wildlife Preserve.",
     images: [
       {
         url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
@@ -199,7 +307,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Best Birding Hotspots in the Rio Grande Valley | South Texas Birds",
     description:
-      "The five best RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, National Butterfly Center, and Laguna Atascosa.",
+      "Nine essential RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, Quinta Mazatlan, Resaca de la Palma, South Padre Island, and Salineño Wildlife Preserve.",
   },
 };
 
@@ -221,7 +329,7 @@ export default function HotspotsPage() {
           Birding Hotspots
         </h1>
         <p className="text-sm max-w-xl" style={{ color: "#5C5954" }}>
-          Five essential stops for any birding trip to the Lower Rio Grande Valley.
+          Nine essential stops for any birding trip to the Lower Rio Grande Valley and South Texas coast.
         </p>
       </div>
 
