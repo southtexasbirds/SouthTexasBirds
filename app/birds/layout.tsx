@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "30+ South Texas Bird Species | Rio Grande Valley Birding Guide" },
+  title: { absolute: "50+ South Texas Bird Species | Rio Grande Valley Birding Guide" },
   description:
-    "Explore 30+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more. Filter by residency status, season, and habitat.",
+    "Explore 50+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more. Filter by residency status, season, and habitat.",
   openGraph: {
-    title: "30+ South Texas Bird Species | Rio Grande Valley Birding Guide",
+    title: "50+ South Texas Bird Species | Rio Grande Valley Birding Guide",
     description:
-      "Explore 30+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more.",
+      "Explore 50+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more.",
     type: "website",
     images: [
       {
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "30+ South Texas Bird Species | Rio Grande Valley Birding Guide",
+    title: "50+ South Texas Bird Species | Rio Grande Valley Birding Guide",
     description:
-      "Explore 30+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more.",
+      "Explore 50+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more.",
     images: [
       "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
     ],

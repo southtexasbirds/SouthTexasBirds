@@ -240,7 +240,7 @@ export default function HomePage() {
                 className="text-sm font-medium transition-opacity hover:opacity-70"
                 style={{ color: "#C2603D" }}
               >
-                View all 30 species →
+                View all 50 species →
               </Link>
             </div>
           </AnimateIn>
