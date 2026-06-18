@@ -26,21 +26,23 @@ export default function AnimateIn({
 
     const rect = el.getBoundingClientRect();
 
-    // If the element is already in the viewport when this runs, never set
-    // opacity:0 — the content is already readable and must stay that way.
-    // Animation is skipped for on-screen elements; it's a scroll enhancement
-    // only, not a visibility mechanism.
+    // Already in the viewport on mount — skip animation so visible content
+    // never gets a layout-shifting transform applied to it.
     if (rect.top < window.innerHeight && rect.bottom > 0) return;
 
-    // Element is below the fold — safe to hide and reveal on scroll.
-    el.style.opacity = "0";
-    el.style.transform =
+    // Opacity is intentionally never changed. Content is always fully readable.
+    // Only transform is used so that a stuck or missed animation leaves text
+    // visible rather than invisible.
+    const fromTransform =
       direction === "left" ? "translateX(-1.75rem)" : "translateY(1.5rem)";
+    el.style.transform = fromTransform;
 
+    let revealed = false;
     const reveal = () => {
-      el.style.transition = `opacity 0.65s ease-out, transform 0.65s ease-out`;
+      if (revealed) return;
+      revealed = true;
+      el.style.transition = `transform 0.65s ease-out`;
       if (delay) el.style.transitionDelay = `${delay}ms`;
-      el.style.opacity = "1";
       el.style.transform = "none";
     };
 
@@ -51,19 +53,20 @@ export default function AnimateIn({
         observer.disconnect();
         clearTimeout(fallbackId);
       },
-      { threshold: 0, rootMargin: "0px 0px -30px 0px" }
+      // No negative rootMargin: elements at the bottom of the page must still
+      // trigger even when they can't scroll past the viewport's lower edge.
+      { threshold: 0, rootMargin: "0px" }
     );
 
-    // Hard failsafe: if the IO never fires (e.g. the element is never scrolled
-    // past, or IO is suppressed by a browser extension or reduced-motion
-    // override that only partially applies), reveal after 2.5s so content is
-    // never permanently hidden.
+    // Failsafe: clear the transform within 800 ms even if IO never fires.
+    // A briefly-offset element is a minor visual glitch; invisible text is not.
     const fallbackId = window.setTimeout(() => {
       reveal();
       observer.disconnect();
-    }, 2500);
+    }, 800);
 
     observer.observe(el);
+
     return () => {
       observer.disconnect();
       clearTimeout(fallbackId);
