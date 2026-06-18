@@ -181,6 +181,23 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* ── About the Creator ───────────────────────────────────────── */}
+        <section className="mb-14">
+          {sectionRule}
+          <h2
+            className="font-serif text-2xl md:text-3xl font-bold mb-4"
+            style={{ color: "#1F3D2B" }}
+          >
+            About the Creator
+          </h2>
+          <p className="text-base leading-relaxed" style={{ color: "#4E4B46" }}>
+            South Texas Birds is built and maintained by a Rio Grande Valley local with a
+            passion for the region&apos;s incredible birdlife. This site exists to help
+            visiting and local birders alike make the most of one of North America&apos;s
+            richest birding destinations.
+          </p>
+        </section>
+
         {/* ── CTAs ────────────────────────────────────────────────────── */}
         <div
           style={{ height: 1, background: "rgba(31,61,43,0.1)" }}
