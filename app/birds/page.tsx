@@ -1,7 +1,8 @@
 ﻿"use client";
 
 import Image from "next/image";
-import { useState, type CSSProperties } from "react";
+import Link from "next/link";
+import { useState, useEffect, type CSSProperties } from "react";
 import AudioPlayer from "../components/AudioPlayer";
 import { birdAudio } from "./audioData";
 
@@ -458,6 +459,117 @@ const birds = [
   },
 ];
 
+const toBirdId = (name: string) =>
+  name.toLowerCase().replace(/[''']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+const birdHotspotMap: Record<string, { label: string; anchor: string }[]> = {
+  "Green Jay": [
+    { label: "Bentsen SP", anchor: "bentsen" },
+    { label: "Santa Ana NWR", anchor: "santa-ana" },
+  ],
+  "Altamira Oriole": [
+    { label: "Bentsen SP", anchor: "bentsen" },
+    { label: "Santa Ana NWR", anchor: "santa-ana" },
+  ],
+  "Plain Chachalaca": [
+    { label: "Bentsen SP", anchor: "bentsen" },
+    { label: "Resaca de la Palma", anchor: "resaca-de-la-palma" },
+  ],
+  "Buff-bellied Hummingbird": [
+    { label: "Quinta Mazatlan", anchor: "quinta-mazatlan" },
+    { label: "Nat'l Butterfly Ctr", anchor: "national-butterfly-center" },
+  ],
+  "Painted Bunting": [{ label: "South Padre Island", anchor: "south-padre-island" }],
+  "Roseate Spoonbill": [
+    { label: "Estero Llano Grande", anchor: "estero-llano-grande" },
+    { label: "Laguna Atascosa", anchor: "laguna-atascosa" },
+  ],
+  "Crested Caracara": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
+  "Harris's Hawk": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
+  "Aplomado Falcon": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
+  "Broad-winged Hawk": [{ label: "Bentsen SP", anchor: "bentsen" }],
+  "Gray Hawk": [{ label: "Bentsen SP", anchor: "bentsen" }],
+  "Hook-billed Kite": [
+    { label: "Bentsen SP", anchor: "bentsen" },
+    { label: "Santa Ana NWR", anchor: "santa-ana" },
+  ],
+  "Ringed Kingfisher": [
+    { label: "Salineño", anchor: "salineno" },
+    { label: "Estero Llano Grande", anchor: "estero-llano-grande" },
+  ],
+  "Green Kingfisher": [
+    { label: "Salineño", anchor: "salineno" },
+    { label: "Estero Llano Grande", anchor: "estero-llano-grande" },
+  ],
+  "Vermilion Flycatcher": [{ label: "Quinta Mazatlan", anchor: "quinta-mazatlan" }],
+  "Great Kiskadee": [
+    { label: "Bentsen SP", anchor: "bentsen" },
+    { label: "Santa Ana NWR", anchor: "santa-ana" },
+  ],
+  "Tropical Kingbird": [
+    { label: "Salineño", anchor: "salineno" },
+    { label: "Santa Ana NWR", anchor: "santa-ana" },
+  ],
+  "Ferruginous Pygmy-Owl": [
+    { label: "Resaca de la Palma", anchor: "resaca-de-la-palma" },
+    { label: "Bentsen SP", anchor: "bentsen" },
+  ],
+  "Elf Owl": [{ label: "Bentsen SP", anchor: "bentsen" }],
+  "Least Grebe": [{ label: "Estero Llano Grande", anchor: "estero-llano-grande" }],
+  "Black-bellied Whistling-Duck": [{ label: "Estero Llano Grande", anchor: "estero-llano-grande" }],
+  "Masked Duck": [{ label: "Estero Llano Grande", anchor: "estero-llano-grande" }],
+  "Northern Jacana": [{ label: "Estero Llano Grande", anchor: "estero-llano-grande" }],
+  "Groove-billed Ani": [
+    { label: "Estero Llano Grande", anchor: "estero-llano-grande" },
+    { label: "Quinta Mazatlan", anchor: "quinta-mazatlan" },
+  ],
+  "Clay-colored Thrush": [
+    { label: "Santa Ana NWR", anchor: "santa-ana" },
+    { label: "Resaca de la Palma", anchor: "resaca-de-la-palma" },
+  ],
+  "Long-billed Thrasher": [
+    { label: "Santa Ana NWR", anchor: "santa-ana" },
+    { label: "Salineño", anchor: "salineno" },
+  ],
+  "Audubon's Oriole": [
+    { label: "Salineño", anchor: "salineno" },
+    { label: "Bentsen SP", anchor: "bentsen" },
+  ],
+  "Olive Sparrow": [
+    { label: "Santa Ana NWR", anchor: "santa-ana" },
+    { label: "Salineño", anchor: "salineno" },
+  ],
+  "White-tipped Dove": [
+    { label: "Santa Ana NWR", anchor: "santa-ana" },
+    { label: "Salineño", anchor: "salineno" },
+  ],
+  "Reddish Egret": [
+    { label: "South Padre Island", anchor: "south-padre-island" },
+    { label: "Laguna Atascosa", anchor: "laguna-atascosa" },
+  ],
+  "Neotropic Cormorant": [{ label: "Estero Llano Grande", anchor: "estero-llano-grande" }],
+  "White-tailed Hawk": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
+  "White-tailed Kite": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
+  "Couch's Kingbird": [
+    { label: "Quinta Mazatlan", anchor: "quinta-mazatlan" },
+    { label: "Nat'l Butterfly Ctr", anchor: "national-butterfly-center" },
+  ],
+  "Scissor-tailed Flycatcher": [{ label: "South Padre Island", anchor: "south-padre-island" }],
+  "Rose-throated Becard": [{ label: "Santa Ana NWR", anchor: "santa-ana" }],
+  "Red-billed Pigeon": [
+    { label: "Bentsen SP", anchor: "bentsen" },
+    { label: "Salineño", anchor: "salineno" },
+  ],
+  "Inca Dove": [
+    { label: "Quinta Mazatlan", anchor: "quinta-mazatlan" },
+    { label: "Nat'l Butterfly Ctr", anchor: "national-butterfly-center" },
+  ],
+  "American Oystercatcher": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
+  "Tropical Parula": [{ label: "Resaca de la Palma", anchor: "resaca-de-la-palma" }],
+  "Mottled Duck": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
+  "Piping Plover": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
+};
+
 // Status badge inline styles — no Tailwind color utilities
 function statusBadgeStyle(status: string): CSSProperties {
   if (status.includes("Rare"))
@@ -512,6 +624,13 @@ type Filter = (typeof filterLabels)[number];
 export default function BirdsPage() {
   const [query, setQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState<Filter>("All");
+
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    const el = document.getElementById(hash);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
 
   const q = query.toLowerCase();
 
@@ -627,6 +746,7 @@ export default function BirdsPage() {
               {filtered.map((bird) => (
                 <div
                   key={bird.name}
+                  id={toBirdId(bird.name)}
                   className="rounded-xl overflow-hidden flex flex-col"
                   style={{
                     background: "#fff",
@@ -690,6 +810,33 @@ export default function BirdsPage() {
 
                     {birdAudio[bird.scientific] && (
                       <AudioPlayer {...birdAudio[bird.scientific]} />
+                    )}
+
+                    {birdHotspotMap[bird.name] && (
+                      <div className="mt-3 pt-3" style={{ borderTop: "1px solid rgba(14,107,107,0.1)" }}>
+                        <p
+                          className="font-semibold tracking-widest uppercase mb-1.5"
+                          style={{ fontSize: "0.6rem", color: "#C77F4A" }}
+                        >
+                          Found at
+                        </p>
+                        <div className="flex flex-wrap gap-1.5">
+                          {birdHotspotMap[bird.name].map((hs) => (
+                            <Link
+                              key={hs.anchor}
+                              href={`/hotspots#${hs.anchor}`}
+                              className="text-xs font-medium px-2 py-0.5 rounded-full hover:opacity-75 transition-opacity"
+                              style={{
+                                background: "rgba(14,107,107,0.08)",
+                                color: "#0E6B6B",
+                                border: "1px solid rgba(14,107,107,0.18)",
+                              }}
+                            >
+                              {hs.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
                     )}
                   </div>
                 </div>

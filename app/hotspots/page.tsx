@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 const hotspots = [
   {
@@ -238,6 +239,21 @@ const hotspots = [
   },
 ];
 
+const hotspotIds = [
+  "estero-llano-grande",
+  "santa-ana",
+  "bentsen",
+  "national-butterfly-center",
+  "quinta-mazatlan",
+  "resaca-de-la-palma",
+  "south-padre-island",
+  "laguna-atascosa",
+  "salineno",
+];
+
+const toBirdId = (name: string) =>
+  name.toLowerCase().replace(/[''']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 // Badge style for each hotspot type — shown on the dark palm-green header
 const typeBadgeStyle = {
   background: "rgba(255,255,255,0.15)",
@@ -338,6 +354,7 @@ export default function HotspotsPage() {
         {hotspots.map((spot, i) => (
           <article
             key={spot.name}
+            id={hotspotIds[i]}
             className="rounded-2xl overflow-hidden"
             style={{
               background: "#fff",
@@ -425,9 +442,10 @@ export default function HotspotsPage() {
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       {spot.birds.map((bird) => (
-                        <span
+                        <Link
                           key={bird}
-                          className="text-xs font-medium px-2.5 py-0.5 rounded-full"
+                          href={`/birds#${toBirdId(bird)}`}
+                          className="text-xs font-medium px-2.5 py-0.5 rounded-full hover:opacity-75 transition-opacity"
                           style={{
                             background: "rgba(212,162,76,0.11)",
                             color: "#7A5C10",
@@ -435,7 +453,7 @@ export default function HotspotsPage() {
                           }}
                         >
                           {bird}
-                        </span>
+                        </Link>
                       ))}
                     </div>
                   </div>
