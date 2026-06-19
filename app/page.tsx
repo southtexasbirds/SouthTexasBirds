@@ -63,15 +63,22 @@ export default function HomePage() {
     <div style={{ background: "#EFE3CE" }}>
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="relative flex items-end" style={{ minHeight: "85vh" }}>
-        {/* Background photo */}
+      <section className="relative flex items-end min-h-[60vh] sm:min-h-[75vh] md:min-h-[85vh]">
+        {/* Background photo.
+            On mobile portrait the image (2585×1723 landscape) is scaled by height
+            to cover the tall-narrow container, so the visible band is only ~36 % of
+            the image width. object-[62%_30%] shifts the crop rightward to keep the
+            bird subject (perched left-center in the frame) in view, and anchors
+            the vertical focal point at 30 % so desktop crops stay in the upper
+            half of the image rather than cutting into the branch. */}
         <Image
           src={HERO_PHOTO}
-          alt="Altamira Oriole"
+          alt="Altamira Oriole perched in tropical foliage, South Texas"
           fill
           priority
           unoptimized
-          className="object-cover object-center"
+          className="object-cover"
+          style={{ objectPosition: "62% 30%" }}
           sizes="100vw"
         />
 
