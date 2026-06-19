@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: { absolute: "Birding Gear & Optics | Rio Grande Valley Birding Guide | South Texas Birds" },
@@ -32,11 +32,11 @@ const optics = [
     description:
       "The most versatile birding binocular, balancing comfort, performance, and price with no meaningful quality sacrifices.",
     link: "https://amzn.to/4v28Z5v",
-    borderColor: "#C2603D",
+    borderColor: "#C77F4A",
     badgeStyle: {
-      background: "rgba(194,96,61,0.1)",
-      color: "#C2603D",
-      border: "1px solid rgba(194,96,61,0.25)",
+      background: "rgba(199,127,74,0.1)",
+      color: "#C77F4A",
+      border: "1px solid rgba(199,127,74,0.25)",
     },
   },
   {
@@ -60,11 +60,11 @@ const optics = [
     description:
       "A lightweight, compact option that outperforms its size class. Bundle includes case, lens pen, and cleaning cloth.",
     link: "https://amzn.to/4vT8ueB",
-    borderColor: "#1F3D2B",
+    borderColor: "#0E6B6B",
     badgeStyle: {
-      background: "rgba(31,61,43,0.08)",
-      color: "#1F3D2B",
-      border: "1px solid rgba(31,61,43,0.2)",
+      background: "rgba(14,107,107,0.08)",
+      color: "#0E6B6B",
+      border: "1px solid rgba(14,107,107,0.2)",
     },
   },
 ];
@@ -78,11 +78,11 @@ const fieldGuides = [
     description:
       "Texas's best-selling bird guide. 176 species organized by color for fast identification, with range maps and comparison features for similar-looking birds.",
     link: "https://amzn.to/4ePJq2s",
-    borderColor: "#C2603D",
+    borderColor: "#C77F4A",
     badgeStyle: {
-      background: "rgba(194,96,61,0.1)",
-      color: "#C2603D",
-      border: "1px solid rgba(194,96,61,0.25)",
+      background: "rgba(199,127,74,0.1)",
+      color: "#C77F4A",
+      border: "1px solid rgba(199,127,74,0.25)",
     },
   },
   {
@@ -103,19 +103,19 @@ const fieldGuides = [
 
 export default function GearPage() {
   return (
-    <div style={{ background: "#F6F1E7" }}>
+    <div style={{ background: "#EFE3CE" }}>
       <div className="max-w-4xl mx-auto px-6 pt-14 pb-20">
 
         {/* ── Page header ─────────────────────────────────────────────── */}
         <p
           className="text-xs font-semibold tracking-widest uppercase mb-3"
-          style={{ color: "#C2603D" }}
+          style={{ color: "#C77F4A" }}
         >
           The Field Kit
         </p>
         <h1
           className="font-serif text-4xl md:text-5xl font-bold mb-4"
-          style={{ color: "#1F3D2B" }}
+          style={{ color: "#0E6B6B" }}
         >
           Gear &amp; Optics
         </h1>
@@ -130,11 +130,11 @@ export default function GearPage() {
         <section>
           <div
             aria-hidden="true"
-            style={{ width: "2.5rem", height: 2, background: "#C2603D", marginBottom: "0.75rem" }}
+            style={{ width: "2.5rem", height: 2, background: "#C77F4A", marginBottom: "0.75rem" }}
           />
           <h2
             className="font-serif text-2xl md:text-3xl font-bold mb-2"
-            style={{ color: "#1F3D2B" }}
+            style={{ color: "#0E6B6B" }}
           >
             Recommended Optics
           </h2>
@@ -147,8 +147,8 @@ export default function GearPage() {
           <div
             className="flex items-start gap-2.5 rounded-lg px-4 py-3 mb-8 text-xs leading-relaxed"
             style={{
-              background: "rgba(31,61,43,0.05)",
-              border: "1px solid rgba(31,61,43,0.1)",
+              background: "rgba(14,107,107,0.05)",
+              border: "1px solid rgba(14,107,107,0.1)",
               color: "#5C5954",
             }}
           >
@@ -169,7 +169,7 @@ export default function GearPage() {
                 style={{
                   background: "#fff",
                   borderTop: `3px solid ${item.borderColor}`,
-                  boxShadow: "0 1px 8px rgba(31,61,43,0.08)",
+                  boxShadow: "0 1px 8px rgba(14,107,107,0.08)",
                 }}
               >
                 <div className="p-5 flex flex-col flex-1">
@@ -184,7 +184,7 @@ export default function GearPage() {
                   {/* Name */}
                   <h3
                     className="font-serif text-lg font-bold leading-snug mb-1"
-                    style={{ color: "#1F3D2B" }}
+                    style={{ color: "#0E6B6B" }}
                   >
                     {item.name}
                   </h3>
@@ -211,7 +211,7 @@ export default function GearPage() {
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className="block text-center text-sm font-semibold rounded-lg px-4 py-2.5 transition-opacity hover:opacity-85"
-                    style={{ backgroundColor: "#C2603D", color: "#fff" }}
+                    style={{ backgroundColor: "#C77F4A", color: "#fff" }}
                   >
                     View on Amazon →
                   </a>
@@ -225,11 +225,11 @@ export default function GearPage() {
         <section className="mt-16">
           <div
             aria-hidden="true"
-            style={{ width: "2.5rem", height: 2, background: "#C2603D", marginBottom: "0.75rem" }}
+            style={{ width: "2.5rem", height: 2, background: "#C77F4A", marginBottom: "0.75rem" }}
           />
           <h2
             className="font-serif text-2xl md:text-3xl font-bold mb-2"
-            style={{ color: "#1F3D2B" }}
+            style={{ color: "#0E6B6B" }}
           >
             Field Guides &amp; Scopes
           </h2>
@@ -247,7 +247,7 @@ export default function GearPage() {
                 style={{
                   background: "#fff",
                   borderTop: `3px solid ${item.borderColor}`,
-                  boxShadow: "0 1px 8px rgba(31,61,43,0.08)",
+                  boxShadow: "0 1px 8px rgba(14,107,107,0.08)",
                 }}
               >
                 <div className="p-5 flex flex-col flex-1">
@@ -262,7 +262,7 @@ export default function GearPage() {
                   {/* Name */}
                   <h3
                     className="font-serif text-lg font-bold leading-snug mb-1"
-                    style={{ color: "#1F3D2B" }}
+                    style={{ color: "#0E6B6B" }}
                   >
                     {item.name}
                   </h3>
@@ -289,7 +289,7 @@ export default function GearPage() {
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className="block text-center text-sm font-semibold rounded-lg px-4 py-2.5 transition-opacity hover:opacity-85"
-                    style={{ backgroundColor: "#C2603D", color: "#fff" }}
+                    style={{ backgroundColor: "#C77F4A", color: "#fff" }}
                   >
                     View on Amazon →
                   </a>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "./components/AnimateIn";
@@ -60,7 +60,7 @@ const featuredBirds = [
 
 export default function HomePage() {
   return (
-    <div style={{ background: "#F6F1E7" }}>
+    <div style={{ background: "#EFE3CE" }}>
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative flex items-end" style={{ minHeight: "85vh" }}>
@@ -80,7 +80,7 @@ export default function HomePage() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to top, #1F3D2B 0%, rgba(31,61,43,0.65) 45%, rgba(31,61,43,0.08) 100%)",
+              "linear-gradient(to top, #0E6B6B 0%, rgba(14,107,107,0.65) 45%, rgba(14,107,107,0.08) 100%)",
           }}
         />
 
@@ -89,7 +89,7 @@ export default function HomePage() {
           <AnimateIn direction="up">
             <p
               className="text-xs font-semibold tracking-widest uppercase mb-4"
-              style={{ color: "#C2603D" }}
+              style={{ color: "#C77F4A" }}
             >
               Rio Grande Valley &amp; Coastal Bend
             </p>
@@ -106,7 +106,7 @@ export default function HomePage() {
               <Link
                 href="/birds"
                 className="font-semibold px-6 py-3 rounded-lg transition-opacity hover:opacity-85 text-sm"
-                style={{ backgroundColor: "#C2603D", color: "#fff" }}
+                style={{ backgroundColor: "#C77F4A", color: "#fff" }}
               >
                 Browse Species
               </Link>
@@ -128,11 +128,11 @@ export default function HomePage() {
         <AnimateIn>
           <p
             className="text-xs font-semibold tracking-widest uppercase mb-2"
-            style={{ color: "#C2603D" }}
+            style={{ color: "#C77F4A" }}
           >
             Why South Texas
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#1F3D2B" }}>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#0E6B6B" }}>
             A World Apart
           </h2>
           <p className="text-sm max-w-xl mb-10" style={{ color: "#5C5954" }}>
@@ -143,19 +143,19 @@ export default function HomePage() {
         {/* Flight-path arc — connects the three card positions */}
         <div className="hidden md:block mb-2" aria-hidden="true">
           <svg viewBox="0 0 1000 44" className="w-full overflow-visible">
-            <circle cx="100" cy="36" r="3.5" fill="#C2603D" opacity="0.5" />
-            <circle cx="500" cy="8" r="3.5" fill="#C2603D" opacity="0.5" />
-            <circle cx="900" cy="36" r="3.5" fill="#C2603D" opacity="0.5" />
+            <circle cx="100" cy="36" r="3.5" fill="#C77F4A" opacity="0.5" />
+            <circle cx="500" cy="8" r="3.5" fill="#C77F4A" opacity="0.5" />
+            <circle cx="900" cy="36" r="3.5" fill="#C77F4A" opacity="0.5" />
             <path
               d="M 100,36 Q 500,-8 900,36"
-              stroke="#C2603D"
+              stroke="#C77F4A"
               strokeWidth="1.5"
               fill="none"
               strokeDasharray="7 5"
               opacity="0.38"
             />
             {/* Arrow tip at end */}
-            <polygon points="908,32 900,36 908,40" fill="#C2603D" opacity="0.45" />
+            <polygon points="908,32 900,36 908,40" fill="#C77F4A" opacity="0.45" />
           </svg>
         </div>
 
@@ -168,7 +168,7 @@ export default function HomePage() {
                 style={{
                   background: "#fff",
                   borderTop: "3px solid #D4A24C",
-                  boxShadow: "0 1px 6px rgba(31,61,43,0.07)",
+                  boxShadow: "0 1px 6px rgba(14,107,107,0.07)",
                 }}
               >
                 <span
@@ -179,7 +179,7 @@ export default function HomePage() {
                 </span>
                 <h3
                   className="font-serif text-xl font-bold mt-2 mb-2"
-                  style={{ color: "#1F3D2B" }}
+                  style={{ color: "#0E6B6B" }}
                 >
                   {h.title}
                 </h3>
@@ -193,16 +193,16 @@ export default function HomePage() {
       </section>
 
       {/* ── South Texas Specialties ──────────────────────────────────────── */}
-      <section className="py-20 px-6" style={{ background: "#fff", borderTop: "1px solid rgba(31,61,43,0.08)" }}>
+      <section className="py-20 px-6" style={{ background: "#fff", borderTop: "1px solid rgba(14,107,107,0.08)" }}>
         <div className="max-w-5xl mx-auto">
           <AnimateIn>
             <p
               className="text-xs font-semibold tracking-widest uppercase mb-2"
-              style={{ color: "#C2603D" }}
+              style={{ color: "#C77F4A" }}
             >
               Target Species
             </p>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#1F3D2B" }}>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#0E6B6B" }}>
               South Texas Specialties
             </h2>
             <p className="text-sm mb-10" style={{ color: "#5C5954" }}>
@@ -216,12 +216,12 @@ export default function HomePage() {
                 <div
                   className="flex items-center gap-3 rounded-lg px-4 py-3"
                   style={{
-                    background: "#F6F1E7",
-                    borderLeft: "3px solid #C2603D",
+                    background: "#EFE3CE",
+                    borderLeft: "3px solid #C77F4A",
                   }}
                 >
                   <div>
-                    <p className="font-semibold text-sm" style={{ color: "#1F3D2B" }}>
+                    <p className="font-semibold text-sm" style={{ color: "#0E6B6B" }}>
                       {bird.name}
                     </p>
                     <p className="text-xs" style={{ color: "#6E6B66" }}>
@@ -238,7 +238,7 @@ export default function HomePage() {
               <Link
                 href="/birds"
                 className="text-sm font-medium transition-opacity hover:opacity-70"
-                style={{ color: "#C2603D" }}
+                style={{ color: "#C77F4A" }}
               >
                 View all 50 species →
               </Link>
@@ -253,13 +253,13 @@ export default function HomePage() {
           <AnimateIn>
             <p
               className="text-xs font-semibold tracking-widest uppercase mb-3"
-              style={{ color: "#C2603D" }}
+              style={{ color: "#C77F4A" }}
             >
               Plan Your Visit
             </p>
             <h2
               className="font-serif text-3xl md:text-4xl font-bold mb-4"
-              style={{ color: "#1F3D2B" }}
+              style={{ color: "#0E6B6B" }}
             >
               Ready to Find Your Lifer?
             </h2>
@@ -269,7 +269,7 @@ export default function HomePage() {
             <Link
               href="/hotspots"
               className="inline-block font-semibold px-8 py-3 rounded-lg transition-opacity hover:opacity-85 text-sm"
-              style={{ backgroundColor: "#1F3D2B", color: "#F6F1E7" }}
+              style={{ backgroundColor: "#0E6B6B", color: "#EFE3CE" }}
             >
               Explore Hotspots
             </Link>

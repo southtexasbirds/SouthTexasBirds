@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { useState, type CSSProperties } from "react";
@@ -462,9 +462,9 @@ const birds = [
 function statusBadgeStyle(status: string): CSSProperties {
   if (status.includes("Rare"))
     return {
-      background: "rgba(194,96,61,0.1)",
-      color: "#C2603D",
-      border: "1px solid rgba(194,96,61,0.25)",
+      background: "rgba(199,127,74,0.1)",
+      color: "#C77F4A",
+      border: "1px solid rgba(199,127,74,0.25)",
     };
   if (status.includes("Winter"))
     return {
@@ -492,9 +492,9 @@ function statusBadgeStyle(status: string): CSSProperties {
     };
   // Resident (all remaining variants)
   return {
-    background: "rgba(31,61,43,0.08)",
-    color: "#1F3D2B",
-    border: "1px solid rgba(31,61,43,0.2)",
+    background: "rgba(14,107,107,0.08)",
+    color: "#0E6B6B",
+    border: "1px solid rgba(14,107,107,0.2)",
   };
 }
 
@@ -532,19 +532,19 @@ export default function BirdsPage() {
   });
 
   return (
-    <div style={{ background: "#F6F1E7" }}>
+    <div style={{ background: "#EFE3CE" }}>
 
       {/* ── Page header ─────────────────────────────────────────────────── */}
       <div className="max-w-5xl mx-auto px-6 pt-14 pb-10">
         <p
           className="text-xs font-semibold tracking-widest uppercase mb-3"
-          style={{ color: "#C2603D" }}
+          style={{ color: "#C77F4A" }}
         >
           Rio Grande Valley
         </p>
         <h1
           className="font-serif text-4xl md:text-5xl font-bold mb-3"
-          style={{ color: "#1F3D2B" }}
+          style={{ color: "#0E6B6B" }}
         >
           South Texas Bird Species
         </h1>
@@ -570,12 +570,12 @@ export default function BirdsPage() {
             placeholder="Search by name, family, habitat…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full max-w-md rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1F3D2B]/40"
+            className="w-full max-w-md rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#0E6B6B]/40"
             style={{
               background: "#fff",
-              border: "1px solid rgba(31,61,43,0.22)",
+              border: "1px solid rgba(14,107,107,0.22)",
               color: "#2B2B26",
-              boxShadow: "0 1px 3px rgba(31,61,43,0.06)",
+              boxShadow: "0 1px 3px rgba(14,107,107,0.06)",
             }}
           />
           <div className="flex flex-wrap gap-2">
@@ -586,11 +586,11 @@ export default function BirdsPage() {
                 className="rounded-full px-4 py-1.5 text-xs font-medium transition-opacity hover:opacity-80"
                 style={
                   activeFilter === label
-                    ? { backgroundColor: "#1F3D2B", color: "#fff" }
+                    ? { backgroundColor: "#0E6B6B", color: "#fff" }
                     : {
                         background: "#fff",
-                        border: "1px solid rgba(31,61,43,0.2)",
-                        color: "#1F3D2B",
+                        border: "1px solid rgba(14,107,107,0.2)",
+                        color: "#0E6B6B",
                       }
                 }
               >
@@ -612,7 +612,7 @@ export default function BirdsPage() {
             {activeFilter !== "All" && (
               <>
                 {" "}in the{" "}
-                <span style={{ color: "#1F3D2B", fontWeight: 600 }}>{activeFilter}</span> filter
+                <span style={{ color: "#0E6B6B", fontWeight: 600 }}>{activeFilter}</span> filter
               </>
             )}.
           </div>
@@ -631,13 +631,13 @@ export default function BirdsPage() {
                   style={{
                     background: "#fff",
                     borderTop: "3px solid #D4A24C",
-                    boxShadow: "0 1px 8px rgba(31,61,43,0.08)",
+                    boxShadow: "0 1px 8px rgba(14,107,107,0.08)",
                   }}
                 >
                   {/* Photo */}
                   <div
                     className="relative h-48 shrink-0"
-                    style={{ background: "#1F3D2B" }}
+                    style={{ background: "#0E6B6B" }}
                   >
                     <Image
                       src={bird.photo}
@@ -652,7 +652,7 @@ export default function BirdsPage() {
                   <div className="p-4 flex flex-col flex-1">
                     <h2
                       className="font-serif text-base font-bold leading-snug mb-0.5"
-                      style={{ color: "#1F3D2B" }}
+                      style={{ color: "#0E6B6B" }}
                     >
                       {bird.name}
                     </h2>
@@ -673,7 +673,7 @@ export default function BirdsPage() {
                     <p className="text-xs mb-3" style={{ color: "#4E4B46" }}>
                       <span
                         className="font-semibold tracking-widest uppercase"
-                        style={{ fontSize: "0.6rem", color: "#C2603D" }}
+                        style={{ fontSize: "0.6rem", color: "#C77F4A" }}
                       >
                         Habitat
                       </span>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef, useState } from "react";
 import type { BirdAudio } from "../birds/audioData";
@@ -25,7 +25,7 @@ export default function AudioPlayer({ file, recordist, license, xcUrl }: BirdAud
   return (
     <div
       style={{
-        borderTop: "1px solid rgba(31,61,43,0.1)",
+        borderTop: "1px solid rgba(14,107,107,0.1)",
         paddingTop: "0.75rem",
         marginTop: "0.875rem",
       }}
@@ -48,11 +48,11 @@ export default function AudioPlayer({ file, recordist, license, xcUrl }: BirdAud
         className="rounded-full text-xs font-medium px-3 py-1 transition-colors"
         style={
           playing
-            ? { background: "#1F3D2B", color: "#F6F1E7", border: "1px solid #1F3D2B" }
+            ? { background: "#0E6B6B", color: "#EFE3CE", border: "1px solid #0E6B6B" }
             : {
                 background: "transparent",
-                color: "#1F3D2B",
-                border: "1px solid rgba(31,61,43,0.35)",
+                color: "#0E6B6B",
+                border: "1px solid rgba(14,107,107,0.35)",
               }
         }
       >

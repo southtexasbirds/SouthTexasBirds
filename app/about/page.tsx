@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 const OG_IMAGE =
@@ -30,7 +30,7 @@ const seasons = [
     name: "Spring",
     dates: "Apr – May",
     body: "Trans-Gulf migrants arrive at South Padre Island. Neotropical species return to the Valley.",
-    accent: "#C2603D",
+    accent: "#C77F4A",
   },
   {
     name: "Summer",
@@ -42,38 +42,38 @@ const seasons = [
     name: "Fall",
     dates: "Sep – Oct",
     body: "Peak hawk migration at Hazel Bazemore. Shorebirds and waterfowl begin to arrive.",
-    accent: "#C2603D",
+    accent: "#C77F4A",
   },
   {
     name: "Winter",
     dates: "Nov – Mar",
     body: "Whooping Cranes at Aransas. Ducks, geese, and sandhill cranes throughout. Resident specialties reliably present.",
-    accent: "#1F3D2B",
+    accent: "#0E6B6B",
   },
 ];
 
 const sectionRule = (
   <div
     aria-hidden="true"
-    style={{ width: "2.5rem", height: 2, background: "#C2603D", marginBottom: "0.75rem" }}
+    style={{ width: "2.5rem", height: 2, background: "#C77F4A", marginBottom: "0.75rem" }}
   />
 );
 
 export default function AboutPage() {
   return (
-    <div style={{ background: "#F6F1E7" }}>
+    <div style={{ background: "#EFE3CE" }}>
       <div className="max-w-3xl mx-auto px-6 pt-14 pb-20">
 
         {/* ── Page header ─────────────────────────────────────────────── */}
         <p
           className="text-xs font-semibold tracking-widest uppercase mb-3"
-          style={{ color: "#C2603D" }}
+          style={{ color: "#C77F4A" }}
         >
           The Guide
         </p>
         <h1
           className="font-serif text-4xl md:text-5xl font-bold mb-8"
-          style={{ color: "#1F3D2B" }}
+          style={{ color: "#0E6B6B" }}
         >
           About South Texas Birds
         </h1>
@@ -98,7 +98,7 @@ export default function AboutPage() {
           {sectionRule}
           <h2
             className="font-serif text-2xl md:text-3xl font-bold mb-4"
-            style={{ color: "#1F3D2B" }}
+            style={{ color: "#0E6B6B" }}
           >
             The Rio Grande Valley
           </h2>
@@ -121,7 +121,7 @@ export default function AboutPage() {
           {sectionRule}
           <h2
             className="font-serif text-2xl md:text-3xl font-bold mb-4"
-            style={{ color: "#1F3D2B" }}
+            style={{ color: "#0E6B6B" }}
           >
             The Coastal Bend
           </h2>
@@ -144,7 +144,7 @@ export default function AboutPage() {
           {sectionRule}
           <h2
             className="font-serif text-2xl md:text-3xl font-bold mb-6"
-            style={{ color: "#1F3D2B" }}
+            style={{ color: "#0E6B6B" }}
           >
             When to Visit
           </h2>
@@ -156,13 +156,13 @@ export default function AboutPage() {
                 style={{
                   background: "#fff",
                   borderTop: `3px solid ${s.accent}`,
-                  boxShadow: "0 1px 6px rgba(31,61,43,0.06)",
+                  boxShadow: "0 1px 6px rgba(14,107,107,0.06)",
                 }}
               >
                 <div className="flex items-baseline justify-between mb-2">
                   <h3
                     className="font-serif text-lg font-bold"
-                    style={{ color: "#1F3D2B" }}
+                    style={{ color: "#0E6B6B" }}
                   >
                     {s.name}
                   </h3>
@@ -186,7 +186,7 @@ export default function AboutPage() {
           {sectionRule}
           <h2
             className="font-serif text-2xl md:text-3xl font-bold mb-4"
-            style={{ color: "#1F3D2B" }}
+            style={{ color: "#0E6B6B" }}
           >
             About the Creator
           </h2>
@@ -200,21 +200,21 @@ export default function AboutPage() {
 
         {/* ── CTAs ────────────────────────────────────────────────────── */}
         <div
-          style={{ height: 1, background: "rgba(31,61,43,0.1)" }}
+          style={{ height: 1, background: "rgba(14,107,107,0.1)" }}
           className="mb-8"
         />
         <div className="flex flex-wrap gap-3">
           <Link
             href="/birds"
             className="font-semibold px-6 py-3 rounded-lg text-sm transition-opacity hover:opacity-85"
-            style={{ backgroundColor: "#C2603D", color: "#fff" }}
+            style={{ backgroundColor: "#C77F4A", color: "#fff" }}
           >
             Browse Species
           </Link>
           <Link
             href="/hotspots"
             className="font-semibold px-6 py-3 rounded-lg text-sm border transition-opacity hover:opacity-75"
-            style={{ borderColor: "#1F3D2B", color: "#1F3D2B" }}
+            style={{ borderColor: "#0E6B6B", color: "#0E6B6B" }}
           >
             View Hotspots
           </Link>

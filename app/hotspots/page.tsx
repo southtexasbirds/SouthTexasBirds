@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 
 const hotspots = [
@@ -313,18 +313,18 @@ export const metadata: Metadata = {
 
 export default function HotspotsPage() {
   return (
-    <div style={{ background: "#F6F1E7" }}>
+    <div style={{ background: "#EFE3CE" }}>
       {/* ── Page header ──────────────────────────────────────────────────── */}
       <div className="max-w-4xl mx-auto px-6 pt-14 pb-10">
         <p
           className="text-xs font-semibold tracking-widest uppercase mb-2"
-          style={{ color: "#C2603D" }}
+          style={{ color: "#C77F4A" }}
         >
           Rio Grande Valley
         </p>
         <h1
           className="font-serif text-3xl md:text-4xl font-bold mb-3"
-          style={{ color: "#1F3D2B" }}
+          style={{ color: "#0E6B6B" }}
         >
           Birding Hotspots
         </h1>
@@ -341,14 +341,14 @@ export default function HotspotsPage() {
             className="rounded-2xl overflow-hidden"
             style={{
               background: "#fff",
-              boxShadow: "0 2px 12px rgba(31,61,43,0.09)",
-              border: "1px solid rgba(31,61,43,0.07)",
+              boxShadow: "0 2px 12px rgba(14,107,107,0.09)",
+              border: "1px solid rgba(14,107,107,0.07)",
             }}
             >
               {/* Card header */}
               <div
                 className="px-6 py-5 flex items-start gap-4"
-                style={{ backgroundColor: "#1F3D2B" }}
+                style={{ backgroundColor: "#0E6B6B" }}
               >
                 {/* Bird photo thumbnail */}
                 <div
@@ -419,7 +419,7 @@ export default function HotspotsPage() {
                   <div className="flex-1 min-w-[200px]">
                     <p
                       className="text-xs font-semibold tracking-widest uppercase mb-2"
-                      style={{ color: "#C2603D" }}
+                      style={{ color: "#C77F4A" }}
                     >
                       Commonly Seen Birds
                     </p>
@@ -444,13 +444,13 @@ export default function HotspotsPage() {
                   <div className="shrink-0">
                     <p
                       className="text-xs font-semibold tracking-widest uppercase mb-2"
-                      style={{ color: "#C2603D" }}
+                      style={{ color: "#C77F4A" }}
                     >
                       Best Season
                     </p>
                     <p
                       className="text-sm font-medium"
-                      style={{ color: "#1F3D2B" }}
+                      style={{ color: "#0E6B6B" }}
                     >
                       {spot.bestSeason}
                     </p>
