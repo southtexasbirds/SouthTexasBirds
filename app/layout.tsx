@@ -2,6 +2,7 @@
 import { Geist } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import Script from "next/script";
+import Link from "next/link";
 import Header from "./components/Header";
 import "./globals.css";
 
@@ -67,10 +68,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
 
         <footer
-          className="text-sm text-center py-4 mt-12"
+          className="text-sm text-center py-5 mt-12"
           style={{ backgroundColor: "#0E6B6B", color: "rgba(239,227,206,0.75)" }}
         >
-          <p>South Texas Birds &mdash; Rio Grande Valley &amp; Coastal Bend</p>
+          <p className="mb-2">South Texas Birds &mdash; Rio Grande Valley &amp; Coastal Bend</p>
+          <p>
+            <Link
+              href="/credits"
+              className="hover:opacity-80 transition-opacity underline underline-offset-2"
+              style={{ color: "rgba(239,227,206,0.55)", fontSize: "0.75rem" }}
+            >
+              Photo Credits
+            </Link>
+          </p>
         </footer>
 
         <script

@@ -346,6 +346,25 @@ export default function HotspotsPage() {
         </h1>
         <p className="text-sm max-w-xl" style={{ color: "#5C5954" }}>
           Nine essential stops for any birding trip to the Lower Rio Grande Valley and South Texas coast.
+          {" "}Photos via{" "}
+          <a
+            href="https://commons.wikimedia.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:opacity-75 transition-opacity"
+            style={{ color: "#5C5954" }}
+          >
+            Wikimedia Commons
+          </a>
+          {" "}&mdash;{" "}
+          <Link
+            href="/credits"
+            className="underline underline-offset-2 hover:opacity-75 transition-opacity"
+            style={{ color: "#5C5954" }}
+          >
+            photo credits
+          </Link>
+          .
         </p>
       </div>
 
