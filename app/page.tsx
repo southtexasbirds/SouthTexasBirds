@@ -60,7 +60,7 @@ const featuredBirds = [
 
 export default function HomePage() {
   return (
-    <div style={{ background: "#EFE3CE" }}>
+    <div>
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative flex items-end min-h-[60vh] sm:min-h-[75vh] md:min-h-[85vh]">
@@ -173,7 +173,7 @@ export default function HomePage() {
               <div
                 className="rounded-xl p-6 h-full"
                 style={{
-                  background: "#fff",
+                  background: "#F7F0E4",
                   borderTop: "3px solid #D4A24C",
                   boxShadow: "0 1px 6px rgba(14,107,107,0.07)",
                 }}
@@ -200,7 +200,7 @@ export default function HomePage() {
       </section>
 
       {/* ── South Texas Specialties ──────────────────────────────────────── */}
-      <section className="py-20 px-6" style={{ background: "#fff", borderTop: "1px solid rgba(14,107,107,0.08)" }}>
+      <section className="py-20 px-6" style={{ background: "#F7F0E4", borderTop: "1px solid rgba(14,107,107,0.08)" }}>
         <div className="max-w-5xl mx-auto">
           <AnimateIn>
             <p
