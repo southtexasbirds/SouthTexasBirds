@@ -9,9 +9,23 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #F5EFE0;
     color: #333;
     padding: 20px;
+}
+
+/* Heading color — teal for all headings site-wide */
+h1, h2, h3 {
+    color: #2A7D6F;
+}
+
+/* Link styling */
+a {
+    color: #2A7D6F;
+}
+
+a:hover {
+    color: #1B5E54;
 }
 
 /* Container styling */
@@ -23,7 +37,7 @@ body {
 
 /* Header styling */
 header {
-    background: #333;
+    background: #1B5E54;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -32,6 +46,7 @@ header {
 
 header h1 {
     margin-bottom: 0.5em;
+    color: #fff;
 }
 
 /* Navigation styling */
@@ -54,14 +69,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #155048;
 }
 
 /* Main content styling */
 main {
-    background-color: #fff;
+    background-color: #FDFAF4;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #D8CFBA;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -69,7 +84,7 @@ main {
 
 main h2 {
     margin-bottom: 1em;
-    color: #333;
+    color: #2A7D6F;
 }
 
 main p {
@@ -86,12 +101,12 @@ main img {
 
 /* Footer styling */
 footer {
-    background: #333;
+    background: #1B5E54;
     color: #fff;
     text-align: center;
     padding: 1em 0;
     margin-top: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #D8CFBA;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -99,7 +114,7 @@ footer {
 
 /* Button styling */
 button {
-    background-color: #333;
+    background-color: #2A7D6F;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -109,7 +124,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #1B5E54;
 }
 
 /* Form styling */
@@ -128,7 +143,7 @@ form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #D8CFBA;
     border-radius: 5px;
 }
 
