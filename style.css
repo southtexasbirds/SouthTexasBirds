@@ -155,3 +155,92 @@ form textarea {
 .margin-bottom {
     margin-bottom: 20px;
 }
+
+/* Species page */
+.back-link {
+    margin-bottom: 1.5em;
+}
+
+.species-header {
+    margin-bottom: 1.5em;
+}
+
+.species-eyebrow {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #8B5E3C;
+    margin-bottom: 0.25em;
+}
+
+.species-meta {
+    color: #555;
+    margin-bottom: 0.5em;
+}
+
+.status-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 12px;
+    background-color: #2A7D6F;
+    color: #fff;
+}
+
+.species-photo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 0.4em;
+}
+
+.photo-credit {
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 1.5em;
+}
+
+.info-section {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #D8CFBA;
+}
+
+.info-section:last-of-type {
+    border-bottom: none;
+}
+
+.info-section h3 {
+    margin-bottom: 0.6em;
+}
+
+.hotspot-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hotspot-list li {
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-left: 3px solid #8B5E3C;
+    background-color: #F5EFE0;
+    color: #555;
+}
+
+.fun-fact {
+    background-color: #1B5E54;
+    color: #F5EFE0;
+    padding: 1em 1.2em;
+    border-radius: 5px;
+    border-bottom: none;
+}
+
+.fun-fact h3,
+.fun-fact p {
+    color: #F5EFE0;
+}
