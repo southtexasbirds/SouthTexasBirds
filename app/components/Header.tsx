@@ -43,6 +43,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/birds", label: "Birds" },
   { href: "/hotspots", label: "Hotspots" },
+  { href: "/news", label: "News" },
   { href: "/gear", label: "Gear" },
   { href: "/about", label: "About" },
 ];
