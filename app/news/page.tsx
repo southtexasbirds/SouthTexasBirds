@@ -9,6 +9,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "rgvbf-festival-2026",
+    date: "June 2026",
+    title: "Save the Date: Rio Grande Valley Birding Festival Returns This November",
+    excerpt:
+      "The RGVBF returns to Harlingen this November — one of the largest birding festivals in the country, with over 100 field trips, expert guides, and the full lineup of RGV specialties on the table.",
+    tags: ["Festival", "Events", "RGV"],
+  },
+  {
     slug: "spacex-refuge-land-exchange",
     date: "June 2026",
     title: "SpaceX Land Exchange Threatens Heart of Rio Grande Wildlife Corridor",
