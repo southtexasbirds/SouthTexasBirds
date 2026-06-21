@@ -462,6 +462,15 @@ const birds = [
 const toBirdId = (name: string) =>
   name.toLowerCase().replace(/[''']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
+const detailPages: Record<string, string> = {
+  "Green Jay": "/birds/green-jay",
+  "Altamira Oriole": "/birds/altamira-oriole",
+  "Plain Chachalaca": "/birds/plain-chachalaca",
+  "Buff-bellied Hummingbird": "/birds/buff-bellied-hummingbird",
+  "Whooping Crane": "/birds/whooping-crane",
+  "Aplomado Falcon": "/birds/aplomado-falcon",
+};
+
 const birdHotspotMap: Record<string, { label: string; anchor: string }[]> = {
   "Green Jay": [
     { label: "Bentsen SP", anchor: "bentsen" },
@@ -773,18 +782,36 @@ export default function BirdsPage() {
                   }}
                 >
                   {/* Photo */}
-                  <div
-                    className="relative h-48 shrink-0"
-                    style={{ background: "#0E6B6B" }}
-                  >
-                    <Image
-                      src={bird.photo}
-                      alt={bird.name}
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
+                  {detailPages[bird.name] ? (
+                    <Link
+                      href={detailPages[bird.name]}
+                      className="relative h-48 shrink-0 block"
+                      style={{ background: "#0E6B6B" }}
+                      tabIndex={-1}
+                      aria-hidden
+                    >
+                      <Image
+                        src={bird.photo}
+                        alt={bird.name}
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                    </Link>
+                  ) : (
+                    <div
+                      className="relative h-48 shrink-0"
+                      style={{ background: "#0E6B6B" }}
+                    >
+                      <Image
+                        src={bird.photo}
+                        alt={bird.name}
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                    </div>
+                  )}
 
                   {/* Info */}
                   <div className="p-4 flex flex-col flex-1">
@@ -792,7 +819,16 @@ export default function BirdsPage() {
                       className="font-serif text-base font-bold leading-snug mb-0.5"
                       style={{ color: "#0E6B6B" }}
                     >
-                      {bird.name}
+                      {detailPages[bird.name] ? (
+                        <Link
+                          href={detailPages[bird.name]}
+                          className="hover:underline underline-offset-2"
+                        >
+                          {bird.name}
+                        </Link>
+                      ) : (
+                        bird.name
+                      )}
                     </h2>
                     <p
                       className="text-xs italic mb-2.5"
