@@ -497,6 +497,22 @@ const detailPages: Record<string, string> = {
   "Broad-winged Hawk": "/birds/broad-winged-hawk",
   "Gray Hawk": "/birds/gray-hawk",
   "Harris's Hawk": "/birds/harriss-hawk",
+  "Hook-billed Kite": "/birds/hook-billed-kite",
+  "Ringed Kingfisher": "/birds/ringed-kingfisher",
+  "Green Kingfisher": "/birds/green-kingfisher",
+  "Vermilion Flycatcher": "/birds/vermilion-flycatcher",
+  "Great Kiskadee": "/birds/great-kiskadee",
+  "Tropical Kingbird": "/birds/tropical-kingbird",
+  "Ferruginous Pygmy-Owl": "/birds/ferruginous-pygmy-owl",
+  "Elf Owl": "/birds/elf-owl",
+  "Least Grebe": "/birds/least-grebe",
+  "Black-bellied Whistling-Duck": "/birds/black-bellied-whistling-duck",
+  "Masked Duck": "/birds/masked-duck",
+  "Northern Jacana": "/birds/northern-jacana",
+  "Groove-billed Ani": "/birds/groove-billed-ani",
+  "Clay-colored Thrush": "/birds/clay-colored-thrush",
+  "Long-billed Thrasher": "/birds/long-billed-thrasher",
+  "Audubon's Oriole": "/birds/audubons-oriole",
 };
 
 const birdHotspotMap: Record<string, { label: string; anchor: string }[]> = {
