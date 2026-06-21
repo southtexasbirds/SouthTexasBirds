@@ -9,6 +9,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "whooping-crane-record-count",
+    date: "June 2026",
+    title: "Record Number of Whooping Cranes Wintering in Texas This Year",
+    excerpt:
+      "The most recent USFWS survey recorded 557 whooping cranes wintering along the Texas coast — a record high for the species' only self-sustaining wild population, and a testament to decades of conservation work.",
+    tags: ["Conservation", "Wildlife Recovery"],
+  },
+  {
     slug: "spacex-refuge-land-exchange",
     date: "June 2026",
     title: "SpaceX Land Exchange Threatens Heart of Rio Grande Wildlife Corridor",
