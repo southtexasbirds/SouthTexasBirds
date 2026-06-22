@@ -4,6 +4,7 @@ import { Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import Link from "next/link";
 import Header from "./components/Header";
+import FilmGrain from "./components/FilmGrain";
 import "./globals.css";
 
 const GA_ID = "G-310H4EYKJM";
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${geist.variable} ${playfair.variable} h-full`}>
       <body className="min-h-full flex flex-col">
+        <FilmGrain />
         <Header />
 
         <main className="flex-1">{children}</main>

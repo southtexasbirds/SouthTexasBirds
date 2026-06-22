@@ -91,6 +91,17 @@ export default function HomePage() {
           }}
         />
 
+        {/* Vignette — darkens edges for a cinematic frame */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse at 50% 40%, transparent 38%, rgba(0,0,0,0.45) 100%)",
+            zIndex: 1,
+          }}
+          aria-hidden
+        />
+
         {/* Hero text */}
         <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pb-16 md:pb-20">
           <AnimateIn direction="up">

@@ -41,7 +41,7 @@ export default function AnimateIn({
     const reveal = () => {
       if (revealed) return;
       revealed = true;
-      el.style.transition = `transform 0.65s ease-out`;
+      el.style.transition = `transform 0.75s cubic-bezier(0.16, 1, 0.3, 1)`;
       if (delay) el.style.transitionDelay = `${delay}ms`;
       el.style.transform = "none";
     };
