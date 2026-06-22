@@ -1,7 +1,10 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import fs from "fs";
+import path from "path";
 import AnimateIn from "./components/AnimateIn";
+import FadeUp from "./components/FadeUp";
 
 export const metadata: Metadata = {
   title: { absolute: "South Texas Birds | Rio Grande Valley Birding Guide & Hotspots" },
@@ -27,9 +30,10 @@ export const metadata: Metadata = {
   },
 };
 
-// Full-resolution original JPEG (2585×1723) — optimized by Next.js on first request
 const HERO_PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+
+const hasVideo = fs.existsSync(path.join(process.cwd(), "public", "hero-video.mp4"));
 
 const highlights = [
   {
@@ -64,23 +68,35 @@ export default function HomePage() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative flex items-end min-h-[60vh] sm:min-h-[75vh] md:min-h-[85vh]">
-        {/* Background photo.
-            On mobile portrait the image (2585×1723 landscape) is scaled by height
-            to cover the tall-narrow container, so the visible band is only ~36 % of
-            the image width. object-[62%_30%] shifts the crop rightward to keep the
-            bird subject (perched left-center in the frame) in view, and anchors
-            the vertical focal point at 30 % so desktop crops stay in the upper
-            half of the image rather than cutting into the branch. */}
-        <Image
-          src={HERO_PHOTO}
-          alt="Altamira Oriole perched in tropical foliage, South Texas"
-          fill
-          priority
-          unoptimized
-          className="object-cover"
-          style={{ objectPosition: "62% 30%" }}
-          sizes="100vw"
-        />
+
+        {/* Background — video when available, static image fallback */}
+        {hasVideo ? (
+          <video
+            src="/hero-video.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={HERO_PHOTO}
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ objectPosition: "62% 30%" }}
+          />
+        ) : (
+          /*  On mobile portrait the image (2585×1723 landscape) is scaled by
+              height to cover the tall-narrow container, so the visible band is
+              only ~36 % of the image width. object-[62%_30%] shifts the crop
+              rightward to keep the bird subject in view. */
+          <Image
+            src={HERO_PHOTO}
+            alt="Altamira Oriole perched in tropical foliage, South Texas"
+            fill
+            priority
+            unoptimized
+            className="object-cover"
+            style={{ objectPosition: "62% 30%" }}
+            sizes="100vw"
+          />
+        )}
 
         {/* Gradient overlay — deep palm green rises from bottom */}
         <div
@@ -102,7 +118,7 @@ export default function HomePage() {
           aria-hidden
         />
 
-        {/* Hero text */}
+        {/* Hero text — AnimateIn (not FadeUp) so above-fold content is never invisible */}
         <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pb-16 md:pb-20">
           <AnimateIn direction="up">
             <p
@@ -143,7 +159,7 @@ export default function HomePage() {
       {/* ── Why South Texas ──────────────────────────────────────────────── */}
       <section className="max-w-5xl mx-auto px-6 py-20">
 
-        <AnimateIn>
+        <FadeUp>
           <p
             className="text-xs font-semibold tracking-widest uppercase mb-2"
             style={{ color: "#C77F4A" }}
@@ -156,7 +172,7 @@ export default function HomePage() {
           <p className="text-sm max-w-xl mb-10" style={{ color: "#5C5954" }}>
             Nowhere else in the United States do tropical and temperate bird families meet so dramatically.
           </p>
-        </AnimateIn>
+        </FadeUp>
 
         {/* Flight-path arc — connects the three card positions */}
         <div className="hidden md:block mb-2" aria-hidden="true">
@@ -172,7 +188,6 @@ export default function HomePage() {
               strokeDasharray="7 5"
               opacity="0.38"
             />
-            {/* Arrow tip at end */}
             <polygon points="908,32 900,36 908,40" fill="#C77F4A" opacity="0.45" />
           </svg>
         </div>
@@ -180,7 +195,7 @@ export default function HomePage() {
         {/* Three highlight cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {highlights.map((h, i) => (
-            <AnimateIn key={h.title} delay={i * 130}>
+            <FadeUp key={h.title} delay={i * 130}>
               <div
                 className="rounded-xl p-6 h-full"
                 style={{
@@ -205,7 +220,7 @@ export default function HomePage() {
                   {h.body}
                 </p>
               </div>
-            </AnimateIn>
+            </FadeUp>
           ))}
         </div>
       </section>
@@ -213,7 +228,7 @@ export default function HomePage() {
       {/* ── South Texas Specialties ──────────────────────────────────────── */}
       <section className="py-20 px-6" style={{ background: "#F7F0E4", borderTop: "1px solid rgba(14,107,107,0.08)" }}>
         <div className="max-w-5xl mx-auto">
-          <AnimateIn>
+          <FadeUp>
             <p
               className="text-xs font-semibold tracking-widest uppercase mb-2"
               style={{ color: "#C77F4A" }}
@@ -226,11 +241,11 @@ export default function HomePage() {
             <p className="text-sm mb-10" style={{ color: "#5C5954" }}>
               Birds that draw visitors from across the world
             </p>
-          </AnimateIn>
+          </FadeUp>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {featuredBirds.map((bird, i) => (
-              <AnimateIn key={bird.name} delay={i * 80}>
+              <FadeUp key={bird.name} delay={i * 80}>
                 <div
                   className="flex items-center gap-3 rounded-lg px-4 py-3"
                   style={{
@@ -247,11 +262,11 @@ export default function HomePage() {
                     </p>
                   </div>
                 </div>
-              </AnimateIn>
+              </FadeUp>
             ))}
           </div>
 
-          <AnimateIn>
+          <FadeUp>
             <div className="mt-8 text-center">
               <Link
                 href="/birds"
@@ -261,14 +276,14 @@ export default function HomePage() {
                 View all 50 species →
               </Link>
             </div>
-          </AnimateIn>
+          </FadeUp>
         </div>
       </section>
 
       {/* ── Plan Your Trip CTA ───────────────────────────────────────────── */}
       <section className="py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto">
-          <AnimateIn>
+          <FadeUp>
             <p
               className="text-xs font-semibold tracking-widest uppercase mb-3"
               style={{ color: "#C77F4A" }}
@@ -291,7 +306,7 @@ export default function HomePage() {
             >
               Explore Hotspots
             </Link>
-          </AnimateIn>
+          </FadeUp>
         </div>
       </section>
 
