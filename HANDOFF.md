@@ -1,8 +1,31 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-06-20
-- **Agent:** Desktop (merging laptop-work into main)
+- **Date:** 2026-06-21
+- **Agent:** Laptop
+
+---
+
+## Laptop Agent — 2026-06-21
+
+### What was done this session
+- Added cinematic visual effects (committed to `main`):
+  - `FilmGrain` component: fixed SVG feTurbulence overlay, opacity 0.04, added to root layout
+  - `HeroFrame` component: composable server component adding vignette/tint overlays above hero images
+  - Homepage hero: inline vignette radial-gradient overlay added
+  - Green Jay species page: hero image wrapped with `HeroFrame vignette`
+  - `AnimateIn`: easing upgraded to `cubic-bezier(0.16, 1, 0.3, 1)` at 0.75s (expo-out feel)
+  - `globals.css`: `.film-grain` and `.card-glass` utility classes added
+- Visually verified homepage and green-jay page with Edge headless screenshots — both render correctly
+
+### What's next
+- Apply `HeroFrame vignette` to remaining 30+ species pages (currently only green-jay has it)
+- Consider `HeroFrame tint="teal"` on species pages where the photo colors clash with the palette
+- `card-glass` utility is ready to use anywhere cards sit over a photo/colored background
+
+### Notes
+- `node_modules` was absent on this machine — ran `npm install` (not committed, in .gitignore)
+- Desktop agent added a whooping-crane news article to main; pulled in cleanly before this commit
 
 ---
 
