@@ -1,7 +1,9 @@
 ﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { toBirdId } from "../birds/birdsOrder";
+import { toBirdId, BIRDS_ORDER } from "../birds/birdsOrder";
+
+const birdSlugs = new Set(BIRDS_ORDER.map((b) => b.slug));
 
 const hotspots = [
   {
@@ -460,20 +462,24 @@ export default function HotspotsPage() {
                       Commonly Seen Birds
                     </p>
                     <div className="flex flex-wrap gap-1.5">
-                      {spot.birds.map((bird) => (
-                        <Link
-                          key={bird}
-                          href={`/birds#${toBirdId(bird)}`}
-                          className="text-xs font-medium px-2.5 py-0.5 rounded-full hover:opacity-75 transition-opacity"
-                          style={{
-                            background: "rgba(212,162,76,0.11)",
-                            color: "#7A5C10",
-                            border: "1px solid rgba(212,162,76,0.28)",
-                          }}
-                        >
-                          {bird}
-                        </Link>
-                      ))}
+                      {spot.birds.map((bird) => {
+                        const slug = toBirdId(bird);
+                        const href = birdSlugs.has(slug) ? `/birds/${slug}` : `/birds#${slug}`;
+                        return (
+                          <Link
+                            key={bird}
+                            href={href}
+                            className="text-xs font-medium px-2.5 py-0.5 rounded-full hover:opacity-75 transition-opacity"
+                            style={{
+                              background: "rgba(212,162,76,0.11)",
+                              color: "#7A5C10",
+                              border: "1px solid rgba(212,162,76,0.28)",
+                            }}
+                          >
+                            {bird}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
 
