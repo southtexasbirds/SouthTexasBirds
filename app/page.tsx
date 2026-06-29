@@ -281,6 +281,105 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Latest News ─────────────────────────────────────────────────── */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <AnimateIn>
+            <p
+              className="text-xs font-semibold tracking-widest uppercase mb-2"
+              style={{ color: "#C77F4A" }}
+            >
+              Conservation &amp; News
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#0E6B6B" }}>
+              Latest from South Texas
+            </h2>
+            <p className="text-sm mb-10" style={{ color: "#5C5954" }}>
+              Habitat, conservation, and events shaping the region
+            </p>
+          </AnimateIn>
+
+          <div className="grid md:grid-cols-3 gap-5">
+            {[
+              {
+                href: "/news/whooping-crane-record-count",
+                date: "June 2026",
+                isoDate: "2026-06-01",
+                title: "Record Whooping Crane Count",
+                excerpt: "557 birds wintering along the Texas coast — the highest total ever recorded for the species' only self-sustaining wild population.",
+              },
+              {
+                href: "/news/rgvbf-festival-2026",
+                date: "June 2026",
+                isoDate: "2026-06-15",
+                title: "RGVBF Returns This November",
+                excerpt: "The Rio Grande Valley Birding Festival comes back to Harlingen — over 100 field trips, expert guides, and the full RGV lineup.",
+              },
+              {
+                href: "/news/spacex-refuge-land-exchange",
+                date: "June 2026",
+                isoDate: "2026-06-20",
+                title: "SpaceX Land Exchange Threatens Wildlife Corridor",
+                excerpt: "A federal land swap could fragment key Aplomado Falcon and ocelot habitat along the Rio Grande.",
+              },
+            ].map((article, i) => (
+              <AnimateIn key={article.href} delay={i * 100}>
+                <Link
+                  href={article.href}
+                  className="block rounded-xl h-full transition-opacity hover:opacity-90"
+                  style={{
+                    background: "#F7F0E4",
+                    borderTop: "3px solid #D4A24C",
+                    boxShadow: "0 1px 6px rgba(14,107,107,0.07)",
+                  }}
+                >
+                  <div className="p-5 flex flex-col h-full">
+                    <time
+                      dateTime={article.isoDate}
+                      className="text-xs font-medium px-2 py-0.5 rounded-full self-start mb-3"
+                      style={{
+                        background: "rgba(14,107,107,0.08)",
+                        color: "#0E6B6B",
+                        border: "1px solid rgba(14,107,107,0.18)",
+                      }}
+                    >
+                      {article.date}
+                    </time>
+                    <h3
+                      className="font-serif text-base font-bold leading-snug mb-2 flex-1"
+                      style={{ color: "#0E6B6B" }}
+                    >
+                      {article.title}
+                    </h3>
+                    <p className="text-xs leading-relaxed mb-3" style={{ color: "#5C5954" }}>
+                      {article.excerpt}
+                    </p>
+                    <span
+                      className="text-xs font-semibold tracking-widest uppercase"
+                      style={{ color: "#C77F4A" }}
+                    >
+                      Read more →
+                    </span>
+                  </div>
+                </Link>
+              </AnimateIn>
+            ))}
+          </div>
+
+          <AnimateIn>
+            <div className="mt-8 text-center">
+              <Link
+                href="/news"
+                className="text-sm font-medium transition-opacity hover:opacity-70"
+                style={{ color: "#C77F4A" }}
+              >
+                All news &amp; conservation →
+              </Link>
+            </div>
+          </AnimateIn>
+        </div>
+      </section>
+
       {/* ── Plan Your Trip CTA ───────────────────────────────────────────── */}
       <section className="py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto">
