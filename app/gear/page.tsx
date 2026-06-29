@@ -305,6 +305,23 @@ export default function GearPage() {
         </section>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Recommended Birding Gear for South Texas",
+            "description": "Editor-tested binocular and field guide picks for Rio Grande Valley birding.",
+            "itemListElement": [...optics, ...fieldGuides].map((item, i) => ({
+              "@type": "ListItem",
+              "position": i + 1,
+              "name": item.name,
+              "url": item.link,
+            })),
+          })
+        }}
+      />
     </div>
   );
 }
