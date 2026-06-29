@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description:
     "The most recent USFWS survey recorded 557 whooping cranes wintering along the Texas coast — a record high for the species' only self-sustaining wild population.",
   openGraph: {
+    type: "article",
+    publishedTime: "2026-06-01T00:00:00Z",
+    authors: ["South Texas Birds"],
+    section: "Conservation",
     title: "Record Whooping Crane Count in Texas | South Texas Birds",
     description:
       "557 whooping cranes wintering along the Texas coast — a record high for the species' only self-sustaining wild population.",

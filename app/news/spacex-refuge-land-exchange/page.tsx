@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   description:
     "A federal land exchange would transfer 715 acres of the Lower Rio Grande Valley NWR to SpaceX. A coalition has filed suit, arguing the swap violates federal conservation law and harms habitat for the Aplomado Falcon, ocelot, and more.",
   openGraph: {
+    type: "article",
+    publishedTime: "2026-06-20T00:00:00Z",
+    authors: ["South Texas Birds"],
+    section: "Conservation",
     title: "SpaceX Land Exchange Threatens Rio Grande Wildlife Corridor | South Texas Birds",
     description:
       "A federal land exchange could reshape one of South Texas's most important wildlife corridors, harming habitat for the Aplomado Falcon, ocelot, and more.",

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   description:
     "The Rio Grande Valley Birding Festival returns to Harlingen this November — one of the largest birding festivals in the country, with field trips, expert guides, and the full lineup of RGV specialties on the table.",
   openGraph: {
+    type: "article",
+    publishedTime: "2026-06-15T00:00:00Z",
+    authors: ["South Texas Birds"],
+    section: "Events",
     title: "Rio Grande Valley Birding Festival 2026 | South Texas Birds",
     description:
       "The RGVBF returns to Harlingen this November — over 100 field trips, expert guides, and the full lineup of RGV specialties.",
