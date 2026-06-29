@@ -1,8 +1,59 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-06-28
+- **Date:** 2026-06-28 (extended session)
 - **Agent:** Laptop
+
+---
+
+## Laptop Agent — 2026-06-28 (extended tune-up session)
+
+### What was done this session
+Full-site optimization across SEO, accessibility, content, and code quality:
+
+**Metadata / SEO:**
+- Added `card: "summary_large_image"` + images to twitter metadata on about, gear, homepage, hotspots pages
+- Added `og:type: "article"` + `publishedTime` + `section` to all 3 news article openGraph
+- Added `BreadcrumbList` JSON-LD to every page: via BirdNav for all 50 species pages; directly on news articles, hotspots, about, gear, news listing
+- Added `NewsArticle` JSON-LD to all 3 news article pages
+- Added `ItemList` JSON-LD to news listing and gear pages
+- Added `Organization` JSON-LD to about page
+- Added credits page (`/credits`) to sitemap with `changeFrequency: "yearly"`
+
+**Accessibility:**
+- Added `lang="la"` to scientific name `<p>` elements on all 50 species pages (batch PowerShell)
+- Added `lang="es"` to Spanish common name `<span>` on all 50 species pages (same batch)
+- Replaced date `<span>` chips with `<time dateTime="...">` in all 3 news article pages
+
+**Content / Internal linking:**
+- Added "Latest News" preview section to homepage (3 article cards with date, title, excerpt)
+- Featured bird chips on homepage are now Links to species pages (were static divs)
+- "In the News" sections added to Whooping Crane and Aplomado Falcon species pages
+- Species names in about page prose linked to their detail pages (Green Jay, Altamira Oriole, Plain Chachalaca, Buff-bellied Hummingbird, Ferruginous Pygmy-Owl, Whooping Crane, Broad-winged Hawk)
+- Hotspot bird chips now link directly to `/birds/{slug}` for 47/50 species (3 without pages fall back to listing anchor)
+
+**BirdNav enhancements:**
+- Cornell Lab (All About Birds) and eBird chip links added below prev/next nav on every species page
+
+**Footer:**
+- Added nav row: Species | Hotspots | News | Gear | About
+
+**Code quality:**
+- Extracted `toBirdId` to `birdsOrder.ts` as named export; removed duplicate definitions in birds/page.tsx and hotspots/page.tsx
+- Removed unused `motion` (Framer Motion) package (`npm uninstall motion`)
+- Removed dead `.card-glass` CSS class from globals.css
+
+### What's next
+- Consider adding `og:type: "article"` to individual species pages (needs batch edit or birds layout change)
+- Could add author / datePublished fields to the Article JSON-LD on species pages
+- Consider a "Related Species" section on species pages (similar birds section)
+- More news articles! Site currently has 3 — adding more would improve news section depth
+- Could add eBird location links on individual hotspot cards
+
+### Notes
+- All changes committed and pushed to `main`
+- Build is clean: 66 pages, all static prerendered
+- `node_modules` not committed (in .gitignore); run `npm install` on fresh checkout
 
 ---
 
