@@ -4,7 +4,6 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import AnimateIn from "./components/AnimateIn";
-import FadeUp from "./components/FadeUp";
 
 export const metadata: Metadata = {
   title: { absolute: "South Texas Birds | Rio Grande Valley Birding Guide & Hotspots" },
@@ -118,7 +117,7 @@ export default function HomePage() {
           aria-hidden
         />
 
-        {/* Hero text — AnimateIn (not FadeUp) so above-fold content is never invisible */}
+        {/* Hero text — AnimateIn (not AnimateIn) so above-fold content is never invisible */}
         <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pb-16 md:pb-20">
           <AnimateIn direction="up">
             <p
@@ -159,7 +158,7 @@ export default function HomePage() {
       {/* ── Why South Texas ──────────────────────────────────────────────── */}
       <section className="max-w-5xl mx-auto px-6 py-20">
 
-        <FadeUp>
+        <AnimateIn>
           <p
             className="text-xs font-semibold tracking-widest uppercase mb-2"
             style={{ color: "#C77F4A" }}
@@ -172,7 +171,7 @@ export default function HomePage() {
           <p className="text-sm max-w-xl mb-10" style={{ color: "#5C5954" }}>
             Nowhere else in the United States do tropical and temperate bird families meet so dramatically.
           </p>
-        </FadeUp>
+        </AnimateIn>
 
         {/* Flight-path arc — connects the three card positions */}
         <div className="hidden md:block mb-2" aria-hidden="true">
@@ -195,7 +194,7 @@ export default function HomePage() {
         {/* Three highlight cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {highlights.map((h, i) => (
-            <FadeUp key={h.title} delay={i * 130}>
+            <AnimateIn key={h.title} delay={i * 130}>
               <div
                 className="rounded-xl p-6 h-full"
                 style={{
@@ -220,7 +219,7 @@ export default function HomePage() {
                   {h.body}
                 </p>
               </div>
-            </FadeUp>
+            </AnimateIn>
           ))}
         </div>
       </section>
@@ -228,7 +227,7 @@ export default function HomePage() {
       {/* ── South Texas Specialties ──────────────────────────────────────── */}
       <section className="py-20 px-6" style={{ background: "#F7F0E4", borderTop: "1px solid rgba(14,107,107,0.08)" }}>
         <div className="max-w-5xl mx-auto">
-          <FadeUp>
+          <AnimateIn>
             <p
               className="text-xs font-semibold tracking-widest uppercase mb-2"
               style={{ color: "#C77F4A" }}
@@ -241,11 +240,11 @@ export default function HomePage() {
             <p className="text-sm mb-10" style={{ color: "#5C5954" }}>
               Birds that draw visitors from across the world
             </p>
-          </FadeUp>
+          </AnimateIn>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {featuredBirds.map((bird, i) => (
-              <FadeUp key={bird.name} delay={i * 80}>
+              <AnimateIn key={bird.name} delay={i * 80}>
                 <div
                   className="flex items-center gap-3 rounded-lg px-4 py-3"
                   style={{
@@ -262,11 +261,11 @@ export default function HomePage() {
                     </p>
                   </div>
                 </div>
-              </FadeUp>
+              </AnimateIn>
             ))}
           </div>
 
-          <FadeUp>
+          <AnimateIn>
             <div className="mt-8 text-center">
               <Link
                 href="/birds"
@@ -276,14 +275,14 @@ export default function HomePage() {
                 View all 50 species →
               </Link>
             </div>
-          </FadeUp>
+          </AnimateIn>
         </div>
       </section>
 
       {/* ── Plan Your Trip CTA ───────────────────────────────────────────── */}
       <section className="py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto">
-          <FadeUp>
+          <AnimateIn>
             <p
               className="text-xs font-semibold tracking-widest uppercase mb-3"
               style={{ color: "#C77F4A" }}
@@ -306,7 +305,7 @@ export default function HomePage() {
             >
               Explore Hotspots
             </Link>
-          </FadeUp>
+          </AnimateIn>
         </div>
       </section>
 
