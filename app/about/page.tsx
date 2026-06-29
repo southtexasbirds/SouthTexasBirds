@@ -223,6 +223,23 @@ export default function AboutPage() {
         </div>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "South Texas Birds",
+            "url": "https://southtexasbirds.org",
+            "description": "Birding guide for the Rio Grande Valley and South Texas coast. Discover 500+ species, hotspot maps, and seasonal tips.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "email": "riksalinas@gmail.com",
+              "contactType": "editorial"
+            }
+          })
+        }}
+      />
     </div>
   );
 }
