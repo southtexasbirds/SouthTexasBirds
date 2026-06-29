@@ -108,8 +108,13 @@ export default function AboutPage() {
             The lower Rio Grande Valley (RGV) hugs the Texas-Mexico border from Laredo to
             the Gulf. The resacas (oxbow lakes), riparian corridors, and remaining stands
             of native brush provide irreplaceable habitat for species that occur nowhere
-            else in the U.S., including Green Jay, Altamira Oriole, Plain Chachalaca,
-            Buff-bellied Hummingbird, and Ferruginous Pygmy-Owl.
+            else in the U.S., including{" "}
+            <Link href="/birds/green-jay" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Green Jay</Link>,{" "}
+            <Link href="/birds/altamira-oriole" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Altamira Oriole</Link>,{" "}
+            <Link href="/birds/plain-chachalaca" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Plain Chachalaca</Link>,{" "}
+            <Link href="/birds/buff-bellied-hummingbird" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Buff-bellied Hummingbird</Link>,
+            and{" "}
+            <Link href="/birds/ferruginous-pygmy-owl" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Ferruginous Pygmy-Owl</Link>.
           </p>
           <p className="text-base leading-relaxed" style={{ color: "#4E4B46" }}>
             The World Birding Center comprises nine sites across the Valley — from Roma
@@ -130,14 +135,16 @@ export default function AboutPage() {
           <p className="text-base leading-relaxed mb-4" style={{ color: "#4E4B46" }}>
             North of the RGV, the Coastal Bend stretches from Corpus Christi to Rockport
             and beyond. Aransas National Wildlife Refuge is the winter home of the last
-            natural wild flock of Whooping Cranes — one of conservation&apos;s greatest
+            natural wild flock of{" "}
+            <Link href="/birds/whooping-crane" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Whooping Cranes</Link>{" "}
+            — one of conservation&apos;s greatest
             success stories. The bays, salt marshes, and coastal prairies support
             remarkable concentrations of waterbirds, shorebirds, and raptors.
           </p>
           <p className="text-base leading-relaxed" style={{ color: "#4E4B46" }}>
             Hazel Bazemore County Park near Corpus Christi is perhaps the most impressive
             hawk watch in North America — in peak September days, hundreds of thousands of
-            Broad-winged Hawks can be seen streaming overhead.
+            <Link href="/birds/broad-winged-hawk" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Broad-winged Hawks</Link> can be seen streaming overhead.
           </p>
         </section>
 
