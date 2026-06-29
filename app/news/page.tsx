@@ -31,6 +31,15 @@ const articles = [
     tags: ["Conservation", "Wildlife Recovery"],
   },
   {
+    slug: "thornscrub-restoration-rgv",
+    date: "June 2026",
+    isoDate: "2026-06-10",
+    title: "Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley",
+    excerpt:
+      "Less than 5% of the original thornscrub remains in the Valley — but a growing coalition of federal agencies and conservation organizations is rebuilding the native brush that Green Jays, Plain Chachalacas, and dozens of other RGV specialties depend on.",
+    tags: ["Conservation", "Habitat Restoration"],
+  },
+  {
     slug: "rgvbf-festival-2026",
     date: "June 2026",
     isoDate: "2026-06-15",

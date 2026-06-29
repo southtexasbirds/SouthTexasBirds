@@ -300,7 +300,7 @@ export default function HomePage() {
             </p>
           </AnimateIn>
 
-          <div className="grid md:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-4 gap-5">
             {[
               {
                 href: "/news/whooping-crane-record-count",
@@ -308,6 +308,13 @@ export default function HomePage() {
                 isoDate: "2026-06-01",
                 title: "Record Whooping Crane Count",
                 excerpt: "557 birds wintering along the Texas coast — the highest total ever recorded for the species' only self-sustaining wild population.",
+              },
+              {
+                href: "/news/thornscrub-restoration-rgv",
+                date: "June 2026",
+                isoDate: "2026-06-10",
+                title: "Thornscrub Restoration Expands",
+                excerpt: "Less than 5% of native thornscrub remains in the Valley — conservation groups are rebuilding habitat for Green Jays, Chachalacas, and more.",
               },
               {
                 href: "/news/rgvbf-festival-2026",

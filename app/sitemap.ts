@@ -5,6 +5,7 @@ const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://southtexasbirds.org";
 
 const NEWS_SLUGS = [
   "whooping-crane-record-count",
+  "thornscrub-restoration-rgv",
   "rgvbf-festival-2026",
   "spacex-refuge-land-exchange",
 ];
