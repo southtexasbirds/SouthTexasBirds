@@ -192,6 +192,23 @@ export default function ClayColoredThrushPage() {
         </AnimateIn>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Clay-colored Thrush (Turdus grayi) | South Texas Birds",
+            "description": "Clay-colored Thrush identification, habitat, and where to find it in the Rio Grande Valley. The national bird of Costa Rica has established a small breeding population in South Texas.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Clay-coloured_thrush_%28Turdus_grayi_casius%29_2.jpg",
+            "publisher": {
+              "@type": "Organization",
+              "name": "South Texas Birds",
+              "url": "https://southtexasbirds.org"
+            }
+          })
+        }}
+      />
     </div>
   );
 }

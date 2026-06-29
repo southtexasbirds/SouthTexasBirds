@@ -192,6 +192,23 @@ export default function HookBilledKitePage() {
         </AnimateIn>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Hook-billed Kite (Chondrohierax uncinatus) | South Texas Birds",
+            "description": "Hook-billed Kite identification, habitat, and where to find it in the Rio Grande Valley. One of the rarest regularly occurring raptors in the United States.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Chondrohierax_uncinatus_76608753.jpg",
+            "publisher": {
+              "@type": "Organization",
+              "name": "South Texas Birds",
+              "url": "https://southtexasbirds.org"
+            }
+          })
+        }}
+      />
     </div>
   );
 }

@@ -193,6 +193,23 @@ export default function HarrisHawkPage() {
         </AnimateIn>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Harris's Hawk (Parabuteo unicinctus) | South Texas Birds",
+            "description": "Harris's Hawk identification, habitat, and where to find it in South Texas. The only hawk in the world known to hunt cooperatively in family groups.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Harris%27s_Hawk_%28Parabuteo_unicinctus%29_3_of_4_in_set.jpg",
+            "publisher": {
+              "@type": "Organization",
+              "name": "South Texas Birds",
+              "url": "https://southtexasbirds.org"
+            }
+          })
+        }}
+      />
     </div>
   );
 }

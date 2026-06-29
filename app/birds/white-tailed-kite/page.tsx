@@ -165,6 +165,23 @@ export default function WhiteTailedKitePage() {
           </div>
         </AnimateIn>
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "White-tailed Kite (Elanus leucurus) | South Texas Birds",
+            "description": "White-tailed Kite identification, habitat, and where to find it in South Texas. A ghostly white kite that hunts by hovering motionless in place — a behavior unique among North American raptors.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Elanus_leucurus_3.jpg",
+            "publisher": {
+              "@type": "Organization",
+              "name": "South Texas Birds",
+              "url": "https://southtexasbirds.org"
+            }
+          })
+        }}
+      />
     </div>
   );
 }

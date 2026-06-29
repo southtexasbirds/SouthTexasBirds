@@ -284,6 +284,23 @@ export default function BuffBelliedHummingbirdPage() {
         </AnimateIn>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Buff-bellied Hummingbird (Amazilia yucatanensis) | South Texas Birds",
+            "description": "Buff-bellied Hummingbird identification, habitat, and where to find it in the Rio Grande Valley. The only hummingbird that regularly breeds in South Texas.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg",
+            "publisher": {
+              "@type": "Organization",
+              "name": "South Texas Birds",
+              "url": "https://southtexasbirds.org"
+            }
+          })
+        }}
+      />
     </div>
   );
 }

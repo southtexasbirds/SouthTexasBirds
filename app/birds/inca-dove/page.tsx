@@ -165,6 +165,23 @@ export default function IncaDovePage() {
           </div>
         </AnimateIn>
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Inca Dove (Columbina inca) | South Texas Birds",
+            "description": "Inca Dove identification, habitat, and where to find it in South Texas. A small, scaly-looking dove common in towns, parks, and gardens throughout the Rio Grande Valley.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/IncaDove.jpg",
+            "publisher": {
+              "@type": "Organization",
+              "name": "South Texas Birds",
+              "url": "https://southtexasbirds.org"
+            }
+          })
+        }}
+      />
     </div>
   );
 }

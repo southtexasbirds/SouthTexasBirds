@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BirdNav from "../components/BirdNav";
 
 export const metadata: Metadata = {
   title: { absolute: "50+ South Texas Bird Species | Rio Grande Valley Birding Guide" },
@@ -34,5 +35,10 @@ export default function BirdsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <BirdNav />
+    </>
+  );
 }
