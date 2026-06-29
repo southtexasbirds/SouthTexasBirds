@@ -197,6 +197,20 @@ export default function SpaceXLandExchangePage() {
         </AnimateIn>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": "SpaceX Land Exchange Threatens Rio Grande Wildlife Corridor",
+            "description": "A federal land exchange would transfer 715 acres of the Lower Rio Grande Valley NWR to SpaceX. A coalition has filed suit, arguing the swap violates federal conservation law and harms habitat for the Aplomado Falcon, ocelot, and more.",
+            "image": OG_IMAGE,
+            "datePublished": "2026-06-20",
+            "publisher": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" }
+          })
+        }}
+      />
     </div>
   );
 }

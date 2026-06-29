@@ -142,6 +142,20 @@ export default function WhoopingCraneRecordCountPage() {
         </AnimateIn>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Record Number of Whooping Cranes Wintering in Texas",
+            "description": "The most recent USFWS survey recorded 557 whooping cranes wintering along the Texas coast — a record high for the species' only self-sustaining wild population.",
+            "image": OG_IMAGE,
+            "datePublished": "2026-06-01",
+            "publisher": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" }
+          })
+        }}
+      />
     </div>
   );
 }

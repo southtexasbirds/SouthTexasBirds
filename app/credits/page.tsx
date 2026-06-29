@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: "Photo Credits",
   description:
     "Full attribution for all bird photographs on South Texas Birds. Images sourced from Wikimedia Commons under Creative Commons and public domain licenses.",
+  openGraph: {
+    title: "Photo Credits | South Texas Birds",
+    description:
+      "Full attribution for all bird photographs on South Texas Birds. Images sourced from Wikimedia Commons under Creative Commons licenses.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Photo Credits | South Texas Birds",
+    description:
+      "Full attribution for all bird photographs on South Texas Birds.",
+  },
 };
 
 type PhotoCredit = {

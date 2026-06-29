@@ -197,6 +197,20 @@ export default function RGVBFFestival2026Page() {
         </AnimateIn>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Rio Grande Valley Birding Festival Returns This November",
+            "description": "The Rio Grande Valley Birding Festival returns to Harlingen this November — one of the largest birding festivals in the country, with field trips, expert guides, and the full lineup of RGV specialties on the table.",
+            "image": OG_IMAGE,
+            "datePublished": "2026-06-15",
+            "publisher": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" }
+          })
+        }}
+      />
     </div>
   );
 }
