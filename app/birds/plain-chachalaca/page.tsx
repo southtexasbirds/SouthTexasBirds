@@ -62,8 +62,8 @@ export default function PlainChachalacaPage() {
           >
             Plain Chachalaca
           </h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>
-            Ortalis vetula &nbsp;·&nbsp; <span className="not-italic">Chachalaca Norteña</span>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>
+            Ortalis vetula &nbsp;·&nbsp; <span className="not-italic" lang="es">Chachalaca Norteña</span>
           </p>
           <span
             className="inline-block text-xs font-medium px-3 py-1 rounded-full"

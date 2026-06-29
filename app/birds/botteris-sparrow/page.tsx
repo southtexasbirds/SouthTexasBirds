@@ -60,8 +60,8 @@ export default function BotterisSparrowPage() {
           >
             Botteri&apos;s Sparrow
           </h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>
-            Peucaea botterii &nbsp;·&nbsp; <span className="not-italic">Zacatero de Botteri</span>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>
+            Peucaea botterii &nbsp;·&nbsp; <span className="not-italic" lang="es">Zacatero de Botteri</span>
           </p>
           <span
             className="inline-block text-xs font-medium px-3 py-1 rounded-full"

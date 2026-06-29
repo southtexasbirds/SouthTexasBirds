@@ -60,8 +60,8 @@ export default function PipingPloverPage() {
           >
             Piping Plover
           </h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>
-            Charadrius melodus &nbsp;·&nbsp; <span className="not-italic">Chorlitejo melodioso</span>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>
+            Charadrius melodus &nbsp;·&nbsp; <span className="not-italic" lang="es">Chorlitejo melodioso</span>
           </p>
           <span
             className="inline-block text-xs font-medium px-3 py-1 rounded-full"

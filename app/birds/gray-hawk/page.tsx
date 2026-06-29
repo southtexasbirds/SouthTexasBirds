@@ -45,8 +45,8 @@ export default function GrayHawkPage() {
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-1" style={{ color: "#0E6B6B" }}>
             Gray Hawk
           </h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>
-            Buteo plagiatus &nbsp;·&nbsp; <span className="not-italic">Aguililla gris</span>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>
+            Buteo plagiatus &nbsp;·&nbsp; <span className="not-italic" lang="es">Aguililla gris</span>
           </p>
           <span className="inline-block text-xs font-medium px-3 py-1 rounded-full" style={{ background: "#0E6B6B", color: "#EFE3CE" }}>
             Resident

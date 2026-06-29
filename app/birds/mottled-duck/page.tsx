@@ -60,8 +60,8 @@ export default function MottledDuckPage() {
           >
             Mottled Duck
           </h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>
-            Anas fulvigula &nbsp;·&nbsp; <span className="not-italic">Pato moteado</span>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>
+            Anas fulvigula &nbsp;·&nbsp; <span className="not-italic" lang="es">Pato moteado</span>
           </p>
           <span
             className="inline-block text-xs font-medium px-3 py-1 rounded-full"

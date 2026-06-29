@@ -45,8 +45,8 @@ export default function BlackBelliedWhistlingDuckPage() {
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-1" style={{ color: "#0E6B6B" }}>
             Black-bellied Whistling-Duck
           </h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>
-            Dendrocygna autumnalis &nbsp;·&nbsp; <span className="not-italic">Pijiji alas blancas</span>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>
+            Dendrocygna autumnalis &nbsp;·&nbsp; <span className="not-italic" lang="es">Pijiji alas blancas</span>
           </p>
           <span className="inline-block text-xs font-medium px-3 py-1 rounded-full" style={{ background: "#0E6B6B", color: "#EFE3CE" }}>
             Resident

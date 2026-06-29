@@ -60,8 +60,8 @@ export default function AplomadoFalconPage() {
           >
             Aplomado Falcon
           </h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>
-            Falco femoralis &nbsp;·&nbsp; <span className="not-italic">Halcón aplomado</span>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>
+            Falco femoralis &nbsp;·&nbsp; <span className="not-italic" lang="es">Halcón aplomado</span>
           </p>
           <span
             className="inline-block text-xs font-medium px-3 py-1 rounded-full"

@@ -34,7 +34,7 @@ export default function WhiteCollaredSeedeaterPage() {
         <AnimateIn direction="up">
           <p className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: "#C77F4A" }}>Upper Rio Grande · Rare Resident</p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-1" style={{ color: "#0E6B6B" }}>White-collared Seedeater</h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>Sporophila morelleti &nbsp;·&nbsp; <span className="not-italic">Semillero de collar</span></p>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>Sporophila morelleti &nbsp;·&nbsp; <span className="not-italic" lang="es">Semillero de collar</span></p>
           <span className="inline-block text-xs font-medium px-3 py-1 rounded-full" style={{ background: "rgba(199,127,74,0.15)", color: "#C77F4A", border: "1px solid rgba(199,127,74,0.35)" }}>Rare Resident</span>
         </AnimateIn>
       </div>

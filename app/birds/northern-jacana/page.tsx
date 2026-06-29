@@ -43,8 +43,8 @@ export default function NorthernJacanaPage() {
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-1" style={{ color: "#0E6B6B" }}>
             Northern Jacana
           </h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>
-            Jacana spinosa &nbsp;·&nbsp; <span className="not-italic">Jacana norteña</span>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>
+            Jacana spinosa &nbsp;·&nbsp; <span className="not-italic" lang="es">Jacana norteña</span>
           </p>
           <span className="inline-block text-xs font-medium px-3 py-1 rounded-full" style={{ background: "#0E6B6B", color: "#EFE3CE" }}>
             Rare resident

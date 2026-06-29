@@ -35,7 +35,7 @@ export default function RedCrownedParrotPage() {
         <AnimateIn direction="up">
           <p className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: "#C77F4A" }}>Rio Grande Valley · Resident (naturalized)</p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-1" style={{ color: "#0E6B6B" }}>Red-crowned Parrot</h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>Amazona viridigenalis &nbsp;·&nbsp; <span className="not-italic">Loro tamaulipeco</span></p>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>Amazona viridigenalis &nbsp;·&nbsp; <span className="not-italic" lang="es">Loro tamaulipeco</span></p>
           <span className="inline-block text-xs font-medium px-3 py-1 rounded-full" style={{ background: "#0E6B6B", color: "#EFE3CE" }}>Resident</span>
         </AnimateIn>
       </div>

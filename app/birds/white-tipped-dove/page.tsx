@@ -60,8 +60,8 @@ export default function WhiteTippedDovePage() {
           >
             White-tipped Dove
           </h1>
-          <p className="text-base italic mb-3" style={{ color: "#5C5954" }}>
-            Leptotila verreauxi &nbsp;·&nbsp; <span className="not-italic">Paloma arroyera</span>
+          <p className="text-base italic mb-3" lang="la" style={{ color: "#5C5954" }}>
+            Leptotila verreauxi &nbsp;·&nbsp; <span className="not-italic" lang="es">Paloma arroyera</span>
           </p>
           <span
             className="inline-block text-xs font-medium px-3 py-1 rounded-full"
