@@ -55,12 +55,12 @@ const highlights = [
 ];
 
 const featuredBirds = [
-  { name: "Green Jay", location: "Rio Grande Valley" },
-  { name: "Whooping Crane", location: "Aransas NWR" },
-  { name: "Altamira Oriole", location: "Bentsen-Rio Grande SP" },
-  { name: "Buff-bellied Hummingbird", location: "Lower RGV" },
-  { name: "Aplomado Falcon", location: "Laguna Atascosa NWR" },
-  { name: "Plain Chachalaca", location: "Throughout RGV" },
+  { name: "Green Jay", location: "Rio Grande Valley", slug: "green-jay" },
+  { name: "Whooping Crane", location: "Aransas NWR", slug: "whooping-crane" },
+  { name: "Altamira Oriole", location: "Bentsen-Rio Grande SP", slug: "altamira-oriole" },
+  { name: "Buff-bellied Hummingbird", location: "Lower RGV", slug: "buff-bellied-hummingbird" },
+  { name: "Aplomado Falcon", location: "Laguna Atascosa NWR", slug: "aplomado-falcon" },
+  { name: "Plain Chachalaca", location: "Throughout RGV", slug: "plain-chachalaca" },
 ];
 
 export default function HomePage() {
@@ -247,8 +247,9 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {featuredBirds.map((bird, i) => (
               <AnimateIn key={bird.name} delay={i * 80}>
-                <div
-                  className="flex items-center gap-3 rounded-lg px-4 py-3"
+                <Link
+                  href={`/birds/${bird.slug}`}
+                  className="flex items-center gap-3 rounded-lg px-4 py-3 transition-opacity hover:opacity-80"
                   style={{
                     background: "#EFE3CE",
                     borderLeft: "3px solid #C77F4A",
@@ -262,7 +263,7 @@ export default function HomePage() {
                       {bird.location}
                     </p>
                   </div>
-                </div>
+                </Link>
               </AnimateIn>
             ))}
           </div>
