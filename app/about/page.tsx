@@ -297,6 +297,49 @@ export default function AboutPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When is the best time to visit South Texas for birding?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "South Texas offers excellent birding year-round, but each season highlights different species. Spring (April–May) is peak migration at South Padre Island for Trans-Gulf migrants. Summer (June–August) is best for resident RGV specialties like Green Jay, Buff-bellied Hummingbird, and Groove-billed Ani nesting. Fall (September–October) peaks for hawk migration at Hazel Bazemore and shorebirds along the coast. Winter (November–March) brings Whooping Cranes to Aransas NWR, waterfowl throughout, and reliable views of all resident specialties.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "What birds can I see in South Texas in winter?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Winter (November–March) is one of the best seasons for South Texas birding. Highlights include Whooping Cranes at Aransas National Wildlife Refuge, Mottled Ducks in coastal marshes, Aplomado Falcons at Laguna Atascosa NWR, and large concentrations of ducks and geese throughout the region. Resident RGV specialties like Green Jay, Altamira Oriole, and Plain Chachalaca are reliably present year-round.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "What birds can I see in South Texas in spring?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Spring migration (April–May) brings Trans-Gulf migrants to South Padre Island, including Painted Buntings, Swallow-tailed Kites, and Scissor-tailed Flycatchers. Cold fronts in late April can cause spectacular fallouts with thousands of exhausted migrants landing in any available vegetation. Bentsen State Park's hawk tower is also active during spring raptor migration.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Where is the best birding in the Rio Grande Valley?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The best birding sites in the Rio Grande Valley include: Santa Ana National Wildlife Refuge (2,000 acres of native thornscrub, excellent for RGV specialties), Bentsen-Rio Grande Valley State Park (World Birding Center flagship with hawk watch tower), Estero Llano Grande State Park (waterbirds including Masked Duck and Northern Jacana), Quinta Mazatlán (urban World Birding Center site in McAllen), and South Padre Island Birding & Nature Center (top spring migration fallout site). Each hotspot has its own specialties and is worth visiting in a single extended trip.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }
