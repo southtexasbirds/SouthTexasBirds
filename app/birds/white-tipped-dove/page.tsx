@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "White-tipped Dove identification, habitat, and where to find it in South Texas. A plump, ground-hugging dove whose haunting hollow hoot is one of the signature sounds of the Rio Grande Valley.",
   openGraph: {
+    type: "article",
     title: "White-tipped Dove | South Texas Birds",
     description:
       "White-tipped Dove identification, habitat, and where to find it in South Texas.",

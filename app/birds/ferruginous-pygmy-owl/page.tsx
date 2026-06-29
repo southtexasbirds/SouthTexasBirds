@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Ferruginous Pygmy-Owl identification, habitat, and where to find it in the Rio Grande Valley. Tiny but fierce, this diurnal owl is a prized find in the Valley's dense brush.",
   openGraph: {
+    type: "article",
     title: "Ferruginous Pygmy-Owl | South Texas Birds",
     description: "Ferruginous Pygmy-Owl identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Ferruginous Pygmy-Owl perched in South Texas" }],

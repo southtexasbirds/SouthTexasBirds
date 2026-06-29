@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Groove-billed Ani identification, habitat, and where to find it in the Rio Grande Valley. A social, loose-feathered cuckoo that breeds communally in thornscrub.",
   openGraph: {
+    type: "article",
     title: "Groove-billed Ani | South Texas Birds",
     description: "Groove-billed Ani identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Groove-billed Ani perched in Belize" }],

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Red-crowned Parrot identification, habitat, and where to find it in South Texas. An endangered Mexican species that has established a naturalized population in the Rio Grande Valley — and is now more numerous in Texas than in its native range.",
   openGraph: {
+    type: "article",
     title: "Red-crowned Parrot | South Texas Birds",
     description: "Red-crowned Parrot identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Red-crowned Parrot showing vivid red forehead patch" }],

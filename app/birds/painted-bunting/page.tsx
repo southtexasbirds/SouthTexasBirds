@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Painted Bunting identification, habitat, and where to find it in South Texas. The most colorful bird in North America winters in the Rio Grande Valley in good numbers.",
   openGraph: {
+    type: "article",
     title: "Painted Bunting | South Texas Birds",
     description:
       "Painted Bunting identification, habitat, and where to find it in South Texas.",

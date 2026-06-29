@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Ringed Kingfisher identification, habitat, and where to find it in the Rio Grande Valley. The largest kingfisher in the Americas barely reaches the U.S. in South Texas.",
   openGraph: {
+    type: "article",
     title: "Ringed Kingfisher | South Texas Birds",
     description: "Ringed Kingfisher identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Male Ringed Kingfisher perched over water" }],

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Tropical Kingbird identification, habitat, and where to find it in the Rio Grande Valley. Nearly identical to Couch's Kingbird — the call is the key.",
   openGraph: {
+    type: "article",
     title: "Tropical Kingbird | South Texas Birds",
     description: "Tropical Kingbird identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Tropical Kingbird perched on a branch" }],

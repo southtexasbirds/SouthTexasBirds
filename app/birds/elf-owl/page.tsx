@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Elf Owl identification, habitat, and where to find it in the Rio Grande Valley. The world's smallest owl by weight is a summer resident along the Rio Grande.",
   openGraph: {
+    type: "article",
     title: "Elf Owl | South Texas Birds",
     description: "Elf Owl identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Elf Owl perched at a nest cavity" }],

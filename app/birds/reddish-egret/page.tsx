@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Reddish Egret identification, habitat, and where to find it on the Texas coast. North America's rarest heron, known for its spectacular lunging, dancing foraging display.",
   openGraph: {
+    type: "article",
     title: "Reddish Egret | South Texas Birds",
     description:
       "Reddish Egret identification, habitat, and where to find it on the Texas coast.",

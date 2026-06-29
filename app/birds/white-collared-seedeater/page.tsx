@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "White-collared Seedeater identification, habitat, and where to find it in South Texas. A tiny, distinctive finch-like bird at the very northern edge of its range — Salineño is the best site in the U.S. to find it.",
   openGraph: {
+    type: "article",
     title: "White-collared Seedeater | South Texas Birds",
     description: "White-collared Seedeater identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "White-collared Seedeater male showing black-and-white pattern" }],

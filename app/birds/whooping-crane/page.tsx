@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Whooping Crane identification, habitat, and where to find it on the Texas Gulf Coast. North America's tallest bird and one of conservation's greatest comeback stories.",
   openGraph: {
+    type: "article",
     title: "Whooping Crane | South Texas Birds",
     description:
       "Whooping Crane identification, habitat, and where to find it on the Texas Gulf Coast.",

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Green Kingfisher identification, habitat, and where to find it in the Rio Grande Valley. The smallest of the three kingfisher species in the Valley, secretive but resident year-round.",
   openGraph: {
+    type: "article",
     title: "Green Kingfisher | South Texas Birds",
     description: "Green Kingfisher identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Male Green Kingfisher perched over clear water" }],

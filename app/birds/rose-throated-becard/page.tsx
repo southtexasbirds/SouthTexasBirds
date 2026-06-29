@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Rose-throated Becard identification, habitat, and where to find it in South Texas. One of the most sought-after rarities in the Rio Grande Valley — the male's rose-pink throat is stunning, and the pendulous nest easier to spot than the bird.",
   openGraph: {
+    type: "article",
     title: "Rose-throated Becard | South Texas Birds",
     description: "Rose-throated Becard identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Rose-throated Becard male perched in riparian forest" }],

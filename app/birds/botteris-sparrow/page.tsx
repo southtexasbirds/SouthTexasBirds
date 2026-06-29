@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Botteri's Sparrow identification, habitat, and where to find it in South Texas. A secretive grassland sparrow that arrives in summer specifically to breed in the coastal prairies of the Rio Grande Valley.",
   openGraph: {
+    type: "article",
     title: "Botteri's Sparrow | South Texas Birds",
     description:
       "Botteri's Sparrow identification, habitat, and where to find it in South Texas.",

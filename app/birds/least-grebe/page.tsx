@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Least Grebe identification, habitat, and where to find it in the Rio Grande Valley. The smallest grebe in the Western Hemisphere is common on resacas and ponds year-round.",
   openGraph: {
+    type: "article",
     title: "Least Grebe | South Texas Birds",
     description: "Least Grebe identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Least Grebe on a tropical pond" }],

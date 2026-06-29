@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Black-bellied Whistling-Duck identification, habitat, and where to find it in the Rio Grande Valley. This colorful, noisy duck has expanded dramatically across South Texas.",
   openGraph: {
+    type: "article",
     title: "Black-bellied Whistling-Duck | South Texas Birds",
     description: "Black-bellied Whistling-Duck identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Black-bellied Whistling-Ducks in flight" }],

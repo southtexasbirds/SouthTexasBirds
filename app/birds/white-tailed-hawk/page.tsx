@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "White-tailed Hawk identification, habitat, and where to find it in South Texas. A large, striking raptor found in the U.S. only along the Texas Gulf Coast prairie.",
   openGraph: {
+    type: "article",
     title: "White-tailed Hawk | South Texas Birds",
     description: "White-tailed Hawk identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "White-tailed Hawk perched showing white tail and rusty shoulders" }],

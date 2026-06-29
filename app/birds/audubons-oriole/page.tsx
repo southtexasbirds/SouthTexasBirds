@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Audubon's Oriole identification, habitat, and where to find it in the Rio Grande Valley. A shy, deep-forest oriole with a slow, melancholy whistle, nearly endemic to South Texas.",
   openGraph: {
+    type: "article",
     title: "Audubon's Oriole | South Texas Birds",
     description: "Audubon's Oriole identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Audubon's Oriole showing black hood and yellow body" }],

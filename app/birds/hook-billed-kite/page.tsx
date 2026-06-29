@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Hook-billed Kite identification, habitat, and where to find it in the Rio Grande Valley. One of the rarest regularly occurring raptors in the United States.",
   openGraph: {
+    type: "article",
     title: "Hook-billed Kite | South Texas Birds",
     description: "Hook-billed Kite identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Hook-billed Kite perched in riparian forest" }],

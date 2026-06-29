@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Northern Jacana identification, habitat, and where to find it in the Rio Grande Valley. The 'lily-trotter' with extraordinary feet walks on floating vegetation.",
   openGraph: {
+    type: "article",
     title: "Northern Jacana | South Texas Birds",
     description: "Northern Jacana identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Northern Jacana walking on lily pads in Costa Rica" }],

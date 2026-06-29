@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Scissor-tailed Flycatcher identification, habitat, and where to find it in South Texas. Oklahoma's state bird — a pale flycatcher with an extraordinary forked tail that can exceed the length of its own body.",
   openGraph: {
+    type: "article",
     title: "Scissor-tailed Flycatcher | South Texas Birds",
     description: "Scissor-tailed Flycatcher identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Scissor-tailed Flycatcher perched showing long forked tail" }],

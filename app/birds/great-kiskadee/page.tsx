@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Great Kiskadee identification, habitat, and where to find it in the Rio Grande Valley. Loud, bold, and impossible to miss — the defining bird of any RGV park.",
   openGraph: {
+    type: "article",
     title: "Great Kiskadee | South Texas Birds",
     description: "Great Kiskadee identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Great Kiskadee perched in South Texas" }],

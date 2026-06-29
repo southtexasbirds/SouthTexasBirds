@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Inca Dove identification, habitat, and where to find it in South Texas. A small, scaly-looking dove common in towns, parks, and gardens throughout the Rio Grande Valley.",
   openGraph: {
+    type: "article",
     title: "Inca Dove | South Texas Birds",
     description: "Inca Dove identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Inca Dove perched showing scaly feather pattern" }],

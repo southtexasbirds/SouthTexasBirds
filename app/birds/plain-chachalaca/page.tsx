@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Plain Chachalaca identification, habitat, and where to find it in the Rio Grande Valley. The only member of its tropical family found in the United States.",
   openGraph: {
+    type: "article",
     title: "Plain Chachalaca | South Texas Birds",
     description:
       "Plain Chachalaca identification, habitat, and where to find it in the Rio Grande Valley.",

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Red-billed Pigeon identification, habitat, and where to find it in South Texas. A large, dark wine-colored pigeon of the Rio Grande corridor, best seen flying over the river at dawn from Bentsen SP.",
   openGraph: {
+    type: "article",
     title: "Red-billed Pigeon | South Texas Birds",
     description: "Red-billed Pigeon identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Red-billed Pigeon perched in tropical forest" }],

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Long-billed Thrasher identification, habitat, and where to find it in the Rio Grande Valley. A rich-voiced songster that rivals the Northern Mockingbird in the thornscrub.",
   openGraph: {
+    type: "article",
     title: "Long-billed Thrasher | South Texas Birds",
     description: "Long-billed Thrasher identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Long-billed Thrasher at Laguna Atascosa NWR" }],

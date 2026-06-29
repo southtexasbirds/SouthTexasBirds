@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Clay-colored Thrush identification, habitat, and where to find it in the Rio Grande Valley. The national bird of Costa Rica has established a small breeding population in South Texas.",
   openGraph: {
+    type: "article",
     title: "Clay-colored Thrush | South Texas Birds",
     description: "Clay-colored Thrush identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Clay-colored Thrush perched in vegetation" }],

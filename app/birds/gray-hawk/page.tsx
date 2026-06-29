@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Gray Hawk identification, habitat, and where to find it in the Rio Grande Valley. A finely barred raptor of the river corridor at the northern edge of its range.",
   openGraph: {
+    type: "article",
     title: "Gray Hawk | South Texas Birds",
     description: "Gray Hawk identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Gray Hawk perched in riparian woodland" }],

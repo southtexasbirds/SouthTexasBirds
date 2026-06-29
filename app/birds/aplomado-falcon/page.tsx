@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Aplomado Falcon identification, habitat, and where to find it in South Texas. Once extirpated from the U.S., this slender, bold-patterned falcon has been successfully reintroduced at Laguna Atascosa NWR.",
   openGraph: {
+    type: "article",
     title: "Aplomado Falcon | South Texas Birds",
     description:
       "Aplomado Falcon identification, habitat, and where to find it in South Texas.",

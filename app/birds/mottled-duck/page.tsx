@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Mottled Duck identification, habitat, and where to find it along the Texas Gulf Coast. The only dabbling duck that breeds year-round in the coastal marshes of South Texas.",
   openGraph: {
+    type: "article",
     title: "Mottled Duck | South Texas Birds",
     description:
       "Mottled Duck identification, habitat, and where to find it along the Texas Gulf Coast.",

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Greater Roadrunner identification, habitat, and where to find it in South Texas. Texas's most famous bird — a large, streaky, ground-dwelling cuckoo that sprints across roads and brushland.",
   openGraph: {
+    type: "article",
     title: "Greater Roadrunner | South Texas Birds",
     description: "Greater Roadrunner identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Greater Roadrunner standing on ground" }],

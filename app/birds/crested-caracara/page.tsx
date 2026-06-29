@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Crested Caracara identification, habitat, and where to find it in South Texas. A bold, long-legged falcon of open country and one of the most distinctive raptors in the region.",
   openGraph: {
+    type: "article",
     title: "Crested Caracara | South Texas Birds",
     description: "Crested Caracara identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Crested Caracara perched in South Texas" }],

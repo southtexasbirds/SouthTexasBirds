@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Couch's Kingbird identification, habitat, and where to find it in South Texas. The default large yellow kingbird of the Rio Grande Valley — distinguished from the nearly identical Tropical Kingbird by call.",
   openGraph: {
+    type: "article",
     title: "Couch's Kingbird | South Texas Birds",
     description: "Couch's Kingbird identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Couch's Kingbird perched on a branch" }],

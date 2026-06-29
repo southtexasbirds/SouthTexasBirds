@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Vermilion Flycatcher identification, habitat, and where to find it in South Texas. The blazing red male is one of the most eye-catching birds in North America.",
   openGraph: {
+    type: "article",
     title: "Vermilion Flycatcher | South Texas Birds",
     description: "Vermilion Flycatcher identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Male Vermilion Flycatcher perched on a branch" }],

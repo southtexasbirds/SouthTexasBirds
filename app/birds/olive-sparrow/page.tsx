@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Olive Sparrow identification, habitat, and where to find it in South Texas. A characteristic bird of the dense Tamaulipan thornscrub — heard far more often than seen.",
   openGraph: {
+    type: "article",
     title: "Olive Sparrow | South Texas Birds",
     description:
       "Olive Sparrow identification, habitat, and where to find it in South Texas.",

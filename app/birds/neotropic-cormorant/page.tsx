@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Neotropic Cormorant identification, habitat, and where to find it in South Texas. Smaller and longer-tailed than the Double-crested, this abundant cormorant is a fixture on Valley resacas and ponds.",
   openGraph: {
+    type: "article",
     title: "Neotropic Cormorant | South Texas Birds",
     description: "Neotropic Cormorant identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Neotropic Cormorant perched with wings spread" }],

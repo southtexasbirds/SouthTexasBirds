@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Green Parakeet identification, habitat, and where to find it in South Texas. A naturalized population of all-green parakeets that has thrived in the Rio Grande Valley since the 1970s.",
   openGraph: {
+    type: "article",
     title: "Green Parakeet | South Texas Birds",
     description: "Green Parakeet identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Green Parakeet perched in tree in South Texas" }],

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Tropical Parula identification, habitat, and where to find it in the Rio Grande Valley. A tiny warbler tied to Spanish moss, barely reaching the U.S. in South Texas.",
   openGraph: {
+    type: "article",
     title: "Tropical Parula | South Texas Birds",
     description: "Tropical Parula identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Tropical Parula showing blue-gray upperparts and yellow underparts" }],

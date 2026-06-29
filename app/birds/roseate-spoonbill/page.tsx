@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Roseate Spoonbill identification, habitat, and where to find it in South Texas. A flamingo-pink wading bird that nests colonially along the Texas coast.",
   openGraph: {
+    type: "article",
     title: "Roseate Spoonbill | South Texas Birds",
     description: "Roseate Spoonbill identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Roseate Spoonbill wading in shallow water" }],

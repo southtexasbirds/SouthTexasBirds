@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Altamira Oriole identification, habitat, and where to find it in the Rio Grande Valley. The largest oriole in the U.S., famous for its extraordinary hanging nest.",
   openGraph: {
+    type: "article",
     title: "Altamira Oriole | South Texas Birds",
     description:
       "Altamira Oriole identification, habitat, and where to find it in the Rio Grande Valley.",

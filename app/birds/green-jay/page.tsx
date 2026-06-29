@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Green Jay identification, habitat, and where to find it in the Rio Grande Valley. The only place in the U.S. where this tropical jay is a year-round resident.",
   openGraph: {
+    type: "article",
     title: "Green Jay | South Texas Birds",
     description:
       "Green Jay identification, habitat, and where to find it in the Rio Grande Valley.",

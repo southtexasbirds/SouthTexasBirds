@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Tricolored Heron identification, habitat, and where to find it in South Texas. The only U.S. heron with a white belly contrasting against slate-blue upperparts — an agile, fast-running coastal forager.",
   openGraph: {
+    type: "article",
     title: "Tricolored Heron | South Texas Birds",
     description:
       "Tricolored Heron identification, habitat, and where to find it in South Texas.",

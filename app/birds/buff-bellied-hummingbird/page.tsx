@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Buff-bellied Hummingbird identification, habitat, and where to find it in the Rio Grande Valley. The only hummingbird that regularly breeds in South Texas.",
   openGraph: {
+    type: "article",
     title: "Buff-bellied Hummingbird | South Texas Birds",
     description:
       "Buff-bellied Hummingbird identification, habitat, and where to find it in the Rio Grande Valley.",

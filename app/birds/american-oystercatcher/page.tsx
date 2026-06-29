@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "American Oystercatcher identification, habitat, and where to find it in South Texas. A boldly patterned shorebird with a vivid orange-red bill, found on coastal beaches and oyster reefs year-round.",
   openGraph: {
+    type: "article",
     title: "American Oystercatcher | South Texas Birds",
     description: "American Oystercatcher identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "American Oystercatcher on beach showing orange bill" }],

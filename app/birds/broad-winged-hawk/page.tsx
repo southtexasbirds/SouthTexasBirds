@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Broad-winged Hawk identification and migration in South Texas. In September, hundreds of thousands funnel through Corpus Christi in one of birding's great spectacles.",
   openGraph: {
+    type: "article",
     title: "Broad-winged Hawk | South Texas Birds",
     description: "Broad-winged Hawk identification and migration in South Texas.",
     images: [{ url: PHOTO, alt: "Broad-winged Hawk perched on a branch" }],

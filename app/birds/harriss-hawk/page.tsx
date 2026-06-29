@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Harris's Hawk identification, habitat, and where to find it in South Texas. The only hawk in the world known to hunt cooperatively in family groups.",
   openGraph: {
+    type: "article",
     title: "Harris's Hawk | South Texas Birds",
     description: "Harris's Hawk identification, habitat, and where to find it in South Texas.",
     images: [{ url: PHOTO, alt: "Harris's Hawk perched in South Texas" }],

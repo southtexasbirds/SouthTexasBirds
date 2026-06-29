@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Masked Duck identification, habitat, and where to find it in the Rio Grande Valley. One of the most secretive and sought-after rarities in U.S. birding.",
   openGraph: {
+    type: "article",
     title: "Masked Duck | South Texas Birds",
     description: "Masked Duck identification, habitat, and where to find it in the Rio Grande Valley.",
     images: [{ url: PHOTO, alt: "Male Masked Duck showing chestnut body and black mask" }],
