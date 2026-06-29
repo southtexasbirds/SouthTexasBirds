@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { toBirdId } from "../birds/birdsOrder";
 
 const hotspots = [
   {
@@ -250,9 +251,6 @@ const hotspotIds = [
   "laguna-atascosa",
   "salineno",
 ];
-
-const toBirdId = (name: string) =>
-  name.toLowerCase().replace(/[''']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 // Badge style for each hotspot type — shown on the dark palm-green header
 const typeBadgeStyle = {

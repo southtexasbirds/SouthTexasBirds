@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, useEffect, type CSSProperties } from "react";
 import AudioPlayer from "../components/AudioPlayer";
 import { birdAudio } from "./audioData";
+import { toBirdId } from "./birdsOrder";
 
 const birds = [
   {
@@ -458,10 +459,6 @@ const birds = [
     photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Aimophila_botterii.jpg/330px-Aimophila_botterii.jpg",
   },
 ];
-
-const toBirdId = (name: string) =>
-  name.toLowerCase().replace(/[''']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-
 
 const birdHotspotMap: Record<string, { label: string; anchor: string }[]> = {
   "Green Jay": [

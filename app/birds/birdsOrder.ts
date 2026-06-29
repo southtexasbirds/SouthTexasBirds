@@ -50,3 +50,6 @@ export const BIRDS_ORDER: { name: string; slug: string }[] = [
   { name: "Piping Plover",                 slug: "piping-plover" },
   { name: "Botteri's Sparrow",             slug: "botteris-sparrow" },
 ];
+
+export const toBirdId = (name: string): string =>
+  name.toLowerCase().replace(/[''']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
