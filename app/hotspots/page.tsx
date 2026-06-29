@@ -508,6 +508,19 @@ export default function HotspotsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(hotspotSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://southtexasbirds.org" },
+              { "@type": "ListItem", "position": 2, "name": "Birding Hotspots", "item": "https://southtexasbirds.org/hotspots" },
+            ],
+          })
+        }}
+      />
     </div>
   );
 }

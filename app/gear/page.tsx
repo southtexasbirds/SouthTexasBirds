@@ -310,6 +310,19 @@ export default function GearPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://southtexasbirds.org" },
+              { "@type": "ListItem", "position": 2, "name": "Birding Gear & Optics", "item": "https://southtexasbirds.org/gear" },
+            ],
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "ItemList",
             "name": "Recommended Birding Gear for South Texas",
             "description": "Editor-tested binocular and field guide picks for Rio Grande Valley birding.",
