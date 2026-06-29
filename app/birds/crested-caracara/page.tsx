@@ -201,6 +201,9 @@ export default function CrestedCaracaraPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/crested-caracara",
             "headline": "Crested Caracara (Caracara plancus) | South Texas Birds",
             "description": "Crested Caracara identification, habitat, and where to find it in South Texas. A bold, long-legged falcon of open country and one of the most distinctive raptors in the region.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Schopfkarakara.jpg",

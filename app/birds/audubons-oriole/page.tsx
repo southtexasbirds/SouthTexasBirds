@@ -205,6 +205,9 @@ export default function AudubonsOriolePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/audubons-oriole",
             "headline": "Audubon's Oriole (Icterus graduacauda) | South Texas Birds",
             "description": "Audubon's Oriole identification, habitat, and where to find it in the Rio Grande Valley. A shy, deep-forest oriole with a slow, melancholy whistle, nearly endemic to South Texas.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Audubon%27s_Oriole_%2812626811374%29.jpg",

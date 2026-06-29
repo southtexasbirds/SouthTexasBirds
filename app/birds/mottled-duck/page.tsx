@@ -296,6 +296,9 @@ export default function MottledDuckPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/mottled-duck",
             "headline": "Mottled Duck (Anas fulvigula) | South Texas Birds",
             "description": "Mottled Duck identification, habitat, and where to find it along the Texas Gulf Coast. The only dabbling duck that breeds year-round in the coastal marshes of South Texas.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/MottledDuck_Gam.jpg",

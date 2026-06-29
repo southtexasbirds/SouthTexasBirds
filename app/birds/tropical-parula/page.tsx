@@ -205,6 +205,9 @@ export default function TropicalParulaPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/tropical-parula",
             "headline": "Tropical Parula (Setophaga pitiayumi) | South Texas Birds",
             "description": "Tropical Parula identification, habitat, and where to find it in the Rio Grande Valley. A tiny warbler tied to Spanish moss, barely reaching the U.S. in South Texas.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Setophaga_pitiayumi_Monteverde_03.jpg",

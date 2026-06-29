@@ -174,6 +174,9 @@ export default function GreenParakeetPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/green-parakeet",
             "headline": "Green Parakeet (Psittacara holochlorus) | South Texas Birds",
             "description": "Green Parakeet identification, habitat, and where to find it in South Texas. A naturalized population of all-green parakeets that has thrived in the Rio Grande Valley since the 1970s.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Green_Parakeet_-in_tree_-South_Texas-8.jpg",

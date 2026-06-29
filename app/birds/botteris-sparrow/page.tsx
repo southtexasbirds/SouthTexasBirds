@@ -302,6 +302,9 @@ export default function BotterisSparrowPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/botteris-sparrow",
             "headline": "Botteri's Sparrow (Peucaea botterii) | South Texas Birds",
             "description": "Botteri's Sparrow identification, habitat, and where to find it in South Texas. A secretive grassland sparrow that arrives in summer specifically to breed in the coastal prairies of the Rio Grande Valley.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Aimophila_botterii.jpg",

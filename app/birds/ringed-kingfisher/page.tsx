@@ -200,6 +200,9 @@ export default function RingedKingfisherPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/ringed-kingfisher",
             "headline": "Ringed Kingfisher (Megaceryle torquata) | South Texas Birds",
             "description": "Ringed Kingfisher identification, habitat, and where to find it in the Rio Grande Valley. The largest kingfisher in the Americas barely reaches the U.S. in South Texas.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Ringed_Kingfisher_%28Megaceryle_torquata%29_male_%2828808454175%29.jpg",

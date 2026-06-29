@@ -176,6 +176,9 @@ export default function SwallowTailedKitePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/swallow-tailed-kite",
             "headline": "Swallow-tailed Kite (Elanoides forficatus) | South Texas Birds",
             "description": "Swallow-tailed Kite identification, habitat, and where to see it in South Texas. Arguably the most graceful bird in North America, migrating through the Valley in spring and fall.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Swallow-tailed_Kite_%2834163638494%29.jpg",

@@ -252,6 +252,9 @@ export default function TricoloredHeronPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/tricolored-heron",
             "headline": "Tricolored Heron (Egretta tricolor) | South Texas Birds",
             "description": "Tricolored Heron identification, habitat, and where to find it in South Texas. The only U.S. heron with a white belly contrasting against slate-blue upperparts — an agile, fast-running coastal forager.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Tri-colored_heron_sunrise_bunche_beach_%2833516451355%29_%28cropped%29.jpg",

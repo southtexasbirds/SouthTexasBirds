@@ -172,6 +172,9 @@ export default function CouchsKingbirdPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/couchs-kingbird",
             "headline": "Couch's Kingbird (Tyrannus couchii) | South Texas Birds",
             "description": "Couch's Kingbird identification, habitat, and where to find it in South Texas. The default large yellow kingbird of the Rio Grande Valley — distinguished from the nearly identical Tropical Kingbird by call.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Tyrannus_couchii_112139785_%28cropped%29.jpg",

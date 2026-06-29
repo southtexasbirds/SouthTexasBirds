@@ -278,6 +278,9 @@ export default function ReddishEgretPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/reddish-egret",
             "headline": "Reddish Egret (Egretta rufescens) | South Texas Birds",
             "description": "Reddish Egret identification, habitat, and where to find it on the Texas coast. North America's rarest heron, known for its spectacular lunging, dancing foraging display.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/ReddishEgret_Gam.jpg",

@@ -200,6 +200,9 @@ export default function GreatKiskadeePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/great-kiskadee",
             "headline": "Great Kiskadee (Pitangus sulphuratus) | South Texas Birds",
             "description": "Great Kiskadee identification, habitat, and where to find it in the Rio Grande Valley. Loud, bold, and impossible to miss — the defining bird of any RGV park.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Great_kiskadee_%2870240%29.jpg",

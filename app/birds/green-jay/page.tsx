@@ -281,6 +281,9 @@ export default function GreenJayPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/green-jay",
             "headline": "Green Jay (Cyanocorax yncas) | South Texas Birds",
             "description": "Green Jay identification, habitat, and where to find it in the Rio Grande Valley. The only place in the U.S. where this tropical jay is a year-round resident.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png",

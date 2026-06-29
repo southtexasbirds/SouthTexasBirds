@@ -176,6 +176,9 @@ export default function RedCrownedParrotPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/red-crowned-parrot",
             "headline": "Red-crowned Parrot (Amazona viridigenalis) | South Texas Birds",
             "description": "Red-crowned Parrot identification, habitat, and where to find it in South Texas. An endangered Mexican species that has established a naturalized population in the Rio Grande Valley — and is now more numerous in Texas than in its native range.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Red_Crowned_Amazon.jpg",

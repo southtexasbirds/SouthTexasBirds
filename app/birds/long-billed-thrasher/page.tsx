@@ -202,6 +202,9 @@ export default function LongBilledThrasherPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/long-billed-thrasher",
             "headline": "Long-billed Thrasher (Toxostoma longirostre) | South Texas Birds",
             "description": "Long-billed Thrasher identification, habitat, and where to find it in the Rio Grande Valley. A rich-voiced songster that rivals the Northern Mockingbird in the thornscrub.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Toxostoma_longirostre_-Laguna_Atascosa_National_Wildlife_Refuge%2C_Texas%2C_USA-8.jpg",

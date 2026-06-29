@@ -201,6 +201,9 @@ export default function MaskedDuckPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "datePublished": "2026-06-20",
+            "dateModified": "2026-06-28",
+            "url": "https://southtexasbirds.org/birds/masked-duck",
             "headline": "Masked Duck (Nomonyx dominicus) | South Texas Birds",
             "description": "Masked Duck identification, habitat, and where to find it in the Rio Grande Valley. One of the most secretive and sought-after rarities in U.S. birding.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Masked_duck_%28Nomonyx_dominicus%29.jpg",
