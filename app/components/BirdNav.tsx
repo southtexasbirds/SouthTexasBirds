@@ -21,7 +21,19 @@ export default function BirdNav() {
   const cornellUrl = `https://www.allaboutbirds.org/guide/${current.name.replace(/\s+/g, "_")}`;
   const ebirdUrl = `https://ebird.org/search?q=${encodeURIComponent(current.name)}`;
 
+  const breadcrumbSchema = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://southtexasbirds.org" },
+      { "@type": "ListItem", "position": 2, "name": "Birds", "item": "https://southtexasbirds.org/birds" },
+      { "@type": "ListItem", "position": 3, "name": current.name, "item": `https://southtexasbirds.org/birds/${current.slug}` },
+    ],
+  });
+
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema }} />
     <nav
       className="max-w-4xl mx-auto px-6 pb-12"
       aria-label="Species navigation"
@@ -97,5 +109,6 @@ export default function BirdNav() {
         </a>
       </div>
     </nav>
+    </>
   );
 }
