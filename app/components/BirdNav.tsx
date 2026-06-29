@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BIRDS_ORDER } from "../birds/birdsOrder";
+import { BIRDS_ORDER, RELATED_SPECIES } from "../birds/birdsOrder";
 
 export default function BirdNav() {
   const pathname = usePathname();
@@ -20,6 +20,10 @@ export default function BirdNav() {
 
   const cornellUrl = `https://www.allaboutbirds.org/guide/${current.name.replace(/\s+/g, "_")}`;
   const ebirdUrl = `https://ebird.org/search?q=${encodeURIComponent(current.name)}`;
+  const relatedSlugs = RELATED_SPECIES[current.slug] ?? [];
+  const relatedBirds = relatedSlugs
+    .map((s) => BIRDS_ORDER.find((b) => b.slug === s))
+    .filter((b): b is { name: string; slug: string } => b !== undefined);
 
   const breadcrumbSchema = JSON.stringify({
     "@context": "https://schema.org",
@@ -108,6 +112,33 @@ export default function BirdNav() {
           eBird ↗
         </a>
       </div>
+
+      {relatedBirds.length > 0 && (
+        <div className="mt-8 pt-6" style={{ borderTop: "1px solid rgba(14,107,107,0.1)" }}>
+          <p
+            className="text-xs font-semibold tracking-widest uppercase mb-3 text-center"
+            style={{ color: "#C77F4A" }}
+          >
+            Related Species
+          </p>
+          <div className="flex flex-wrap justify-center gap-2">
+            {relatedBirds.map((b) => (
+              <Link
+                key={b.slug}
+                href={`/birds/${b.slug}`}
+                className="text-xs font-semibold px-3 py-1.5 rounded-full transition-opacity hover:opacity-75"
+                style={{
+                  background: "rgba(14,107,107,0.07)",
+                  color: "#0E6B6B",
+                  border: "1px solid rgba(14,107,107,0.18)",
+                }}
+              >
+                {b.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
     </>
   );

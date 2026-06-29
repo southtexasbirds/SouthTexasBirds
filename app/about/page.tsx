@@ -33,24 +33,44 @@ const seasons = [
     dates: "Apr – May",
     body: "Trans-Gulf migrants arrive at South Padre Island. Neotropical species return to the Valley.",
     accent: "#C77F4A",
+    targets: [
+      { name: "Painted Bunting", slug: "painted-bunting" },
+      { name: "Swallow-tailed Kite", slug: "swallow-tailed-kite" },
+      { name: "Scissor-tailed Flycatcher", slug: "scissor-tailed-flycatcher" },
+    ],
   },
   {
     name: "Summer",
     dates: "Jun – Aug",
     body: "Resident species are nesting. Fewer migrants but great for family and behavior watching.",
     accent: "#D4A24C",
+    targets: [
+      { name: "Green Jay", slug: "green-jay" },
+      { name: "Buff-bellied Hummingbird", slug: "buff-bellied-hummingbird" },
+      { name: "Groove-billed Ani", slug: "groove-billed-ani" },
+    ],
   },
   {
     name: "Fall",
     dates: "Sep – Oct",
     body: "Peak hawk migration at Hazel Bazemore. Shorebirds and waterfowl begin to arrive.",
     accent: "#C77F4A",
+    targets: [
+      { name: "Broad-winged Hawk", slug: "broad-winged-hawk" },
+      { name: "Piping Plover", slug: "piping-plover" },
+      { name: "Reddish Egret", slug: "reddish-egret" },
+    ],
   },
   {
     name: "Winter",
     dates: "Nov – Mar",
     body: "Whooping Cranes at Aransas. Ducks, geese, and sandhill cranes throughout. Resident specialties reliably present.",
     accent: "#0E6B6B",
+    targets: [
+      { name: "Whooping Crane", slug: "whooping-crane" },
+      { name: "Mottled Duck", slug: "mottled-duck" },
+      { name: "Aplomado Falcon", slug: "aplomado-falcon" },
+    ],
   },
 ];
 
@@ -182,9 +202,25 @@ export default function AboutPage() {
                     {s.dates}
                   </span>
                 </div>
-                <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+                <p className="text-sm leading-relaxed mb-3" style={{ color: "#4E4B46" }}>
                   {s.body}
                 </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {s.targets.map((t) => (
+                    <Link
+                      key={t.slug}
+                      href={`/birds/${t.slug}`}
+                      className="text-xs font-semibold px-2.5 py-0.5 rounded-full transition-opacity hover:opacity-75"
+                      style={{
+                        background: `rgba(${s.accent === "#0E6B6B" ? "14,107,107" : "199,127,74"},0.09)`,
+                        color: s.accent,
+                        border: `1px solid ${s.accent}30`,
+                      }}
+                    >
+                      {t.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

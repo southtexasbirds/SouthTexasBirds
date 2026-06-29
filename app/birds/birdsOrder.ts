@@ -53,3 +53,69 @@ export const BIRDS_ORDER: { name: string; slug: string }[] = [
 
 export const toBirdId = (name: string): string =>
   name.toLowerCase().replace(/[''']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+export const RELATED_SPECIES: Record<string, string[]> = {
+  // Jay / South Texas thornscrub icons
+  "green-jay":                   ["altamira-oriole", "plain-chachalaca", "groove-billed-ani"],
+  "altamira-oriole":             ["audubons-oriole", "green-jay", "great-kiskadee"],
+  "audubons-oriole":             ["altamira-oriole", "long-billed-thrasher", "olive-sparrow"],
+  "plain-chachalaca":            ["green-jay", "groove-billed-ani", "greater-roadrunner"],
+  // Hummingbird / garden birds
+  "buff-bellied-hummingbird":    ["painted-bunting", "vermilion-flycatcher", "inca-dove"],
+  "painted-bunting":             ["buff-bellied-hummingbird", "vermilion-flycatcher", "scissor-tailed-flycatcher"],
+  // Raptors
+  "crested-caracara":            ["harriss-hawk", "aplomado-falcon", "white-tailed-hawk"],
+  "harriss-hawk":                ["crested-caracara", "aplomado-falcon", "gray-hawk"],
+  "aplomado-falcon":             ["crested-caracara", "harriss-hawk", "white-tailed-hawk"],
+  "broad-winged-hawk":           ["gray-hawk", "hook-billed-kite", "harriss-hawk"],
+  "gray-hawk":                   ["broad-winged-hawk", "hook-billed-kite", "harriss-hawk"],
+  "hook-billed-kite":            ["white-tailed-kite", "swallow-tailed-kite", "gray-hawk"],
+  "white-tailed-hawk":           ["crested-caracara", "aplomado-falcon", "harriss-hawk"],
+  "white-tailed-kite":           ["swallow-tailed-kite", "hook-billed-kite", "white-tailed-hawk"],
+  "swallow-tailed-kite":         ["white-tailed-kite", "hook-billed-kite", "broad-winged-hawk"],
+  // Owls
+  "ferruginous-pygmy-owl":       ["elf-owl", "greater-roadrunner", "green-jay"],
+  "elf-owl":                     ["ferruginous-pygmy-owl", "groove-billed-ani", "greater-roadrunner"],
+  // Kingfishers
+  "ringed-kingfisher":           ["green-kingfisher", "neotropic-cormorant", "least-grebe"],
+  "green-kingfisher":            ["ringed-kingfisher", "least-grebe", "neotropic-cormorant"],
+  // Flycatchers / kingbirds
+  "vermilion-flycatcher":        ["scissor-tailed-flycatcher", "couchs-kingbird", "rose-throated-becard"],
+  "great-kiskadee":              ["tropical-kingbird", "couchs-kingbird", "rose-throated-becard"],
+  "tropical-kingbird":           ["couchs-kingbird", "great-kiskadee", "scissor-tailed-flycatcher"],
+  "couchs-kingbird":             ["tropical-kingbird", "great-kiskadee", "vermilion-flycatcher"],
+  "scissor-tailed-flycatcher":   ["vermilion-flycatcher", "couchs-kingbird", "tropical-kingbird"],
+  "rose-throated-becard":        ["great-kiskadee", "tropical-kingbird", "vermilion-flycatcher"],
+  // Wading birds
+  "roseate-spoonbill":           ["reddish-egret", "tricolored-heron", "whooping-crane"],
+  "reddish-egret":               ["tricolored-heron", "roseate-spoonbill", "neotropic-cormorant"],
+  "tricolored-heron":            ["reddish-egret", "roseate-spoonbill", "neotropic-cormorant"],
+  "whooping-crane":              ["roseate-spoonbill", "mottled-duck", "piping-plover"],
+  // Ducks / waterbirds
+  "black-bellied-whistling-duck":["masked-duck", "mottled-duck", "least-grebe"],
+  "masked-duck":                 ["black-bellied-whistling-duck", "mottled-duck", "northern-jacana"],
+  "mottled-duck":                ["black-bellied-whistling-duck", "masked-duck", "piping-plover"],
+  "least-grebe":                 ["neotropic-cormorant", "northern-jacana", "masked-duck"],
+  "neotropic-cormorant":         ["least-grebe", "reddish-egret", "tricolored-heron"],
+  "northern-jacana":             ["masked-duck", "least-grebe", "black-bellied-whistling-duck"],
+  // Ground birds / cuckoos
+  "groove-billed-ani":           ["greater-roadrunner", "plain-chachalaca", "green-jay"],
+  "greater-roadrunner":          ["groove-billed-ani", "plain-chachalaca", "ferruginous-pygmy-owl"],
+  // Thrushes / thrashers / passerines
+  "clay-colored-thrush":         ["long-billed-thrasher", "olive-sparrow", "white-tipped-dove"],
+  "long-billed-thrasher":        ["clay-colored-thrush", "olive-sparrow", "audubons-oriole"],
+  "olive-sparrow":               ["long-billed-thrasher", "white-collared-seedeater", "botteris-sparrow"],
+  "white-collared-seedeater":    ["olive-sparrow", "botteris-sparrow", "tropical-parula"],
+  "botteris-sparrow":            ["olive-sparrow", "white-collared-seedeater", "clay-colored-thrush"],
+  "tropical-parula":             ["white-collared-seedeater", "rose-throated-becard", "olive-sparrow"],
+  // Pigeons / doves
+  "white-tipped-dove":           ["inca-dove", "red-billed-pigeon", "plain-chachalaca"],
+  "inca-dove":                   ["white-tipped-dove", "red-billed-pigeon", "groove-billed-ani"],
+  "red-billed-pigeon":           ["white-tipped-dove", "inca-dove", "audubons-oriole"],
+  // Parrots
+  "green-parakeet":              ["red-crowned-parrot", "groove-billed-ani", "green-jay"],
+  "red-crowned-parrot":          ["green-parakeet", "groove-billed-ani", "inca-dove"],
+  // Shorebirds
+  "american-oystercatcher":      ["piping-plover", "reddish-egret", "mottled-duck"],
+  "piping-plover":               ["american-oystercatcher", "mottled-duck", "whooping-crane"],
+};
