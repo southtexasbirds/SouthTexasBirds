@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/5/5a/Patagioenas_flavirostris_-Costa_Rica-8.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/red-billed-pigeon" },
   title: "Red-billed Pigeon (Patagioenas flavirostris) | South Texas Birds",
   description:
     "Red-billed Pigeon identification, habitat, and where to find it in South Texas. A large, dark wine-colored pigeon of the Rio Grande corridor, best seen flying over the river at dawn from Bentsen SP.",

@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/8/82/Clay-coloured_thrush_%28Turdus_grayi_casius%29_2.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/clay-colored-thrush" },
   title: "Clay-colored Thrush (Turdus grayi) | South Texas Birds",
   description:
     "Clay-colored Thrush identification, habitat, and where to find it in the Rio Grande Valley. The national bird of Costa Rica has established a small breeding population in South Texas.",

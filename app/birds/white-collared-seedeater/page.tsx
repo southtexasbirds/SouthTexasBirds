@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/8/8c/Sporophila_torqueola_55799290.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/white-collared-seedeater" },
   title: "White-collared Seedeater (Sporophila morelleti) | South Texas Birds",
   description:
     "White-collared Seedeater identification, habitat, and where to find it in South Texas. A tiny, distinctive finch-like bird at the very northern edge of its range — Salineño is the best site in the U.S. to find it.",

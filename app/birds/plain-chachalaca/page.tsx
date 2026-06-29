@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/d/df/Plain_Chachalaca_Roadside.png";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/plain-chachalaca" },
   title: "Plain Chachalaca (Ortalis vetula) | South Texas Birds",
   description:
     "Plain Chachalaca identification, habitat, and where to find it in the Rio Grande Valley. The only member of its tropical family found in the United States.",

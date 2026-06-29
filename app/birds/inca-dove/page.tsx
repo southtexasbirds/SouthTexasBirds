@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/e/e6/IncaDove.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/inca-dove" },
   title: "Inca Dove (Columbina inca) | South Texas Birds",
   description:
     "Inca Dove identification, habitat, and where to find it in South Texas. A small, scaly-looking dove common in towns, parks, and gardens throughout the Rio Grande Valley.",

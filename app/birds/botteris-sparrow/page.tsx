@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/8/87/Aimophila_botterii.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/botteris-sparrow" },
   title: "Botteri's Sparrow (Peucaea botterii) | South Texas Birds",
   description:
     "Botteri's Sparrow identification, habitat, and where to find it in South Texas. A secretive grassland sparrow that arrives in summer specifically to breed in the coastal prairies of the Rio Grande Valley.",

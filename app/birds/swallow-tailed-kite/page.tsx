@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/e/e0/Swallow-tailed_Kite_%2834163638494%29.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/swallow-tailed-kite" },
   title: "Swallow-tailed Kite (Elanoides forficatus) | South Texas Birds",
   description:
     "Swallow-tailed Kite identification, habitat, and where to see it in South Texas. Arguably the most graceful bird in North America, migrating through the Valley in spring and fall.",

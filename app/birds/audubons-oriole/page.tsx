@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/d/d6/Audubon%27s_Oriole_%2812626811374%29.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/audubons-oriole" },
   title: "Audubon's Oriole (Icterus graduacauda) | South Texas Birds",
   description:
     "Audubon's Oriole identification, habitat, and where to find it in the Rio Grande Valley. A shy, deep-forest oriole with a slow, melancholy whistle, nearly endemic to South Texas.",

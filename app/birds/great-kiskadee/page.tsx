@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/9/94/Great_kiskadee_%2870240%29.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/great-kiskadee" },
   title: "Great Kiskadee (Pitangus sulphuratus) | South Texas Birds",
   description:
     "Great Kiskadee identification, habitat, and where to find it in the Rio Grande Valley. Loud, bold, and impossible to miss — the defining bird of any RGV park.",

@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/6/65/Red_Crowned_Amazon.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/red-crowned-parrot" },
   title: "Red-crowned Parrot (Amazona viridigenalis) | South Texas Birds",
   description:
     "Red-crowned Parrot identification, habitat, and where to find it in South Texas. An endangered Mexican species that has established a naturalized population in the Rio Grande Valley — and is now more numerous in Texas than in its native range.",

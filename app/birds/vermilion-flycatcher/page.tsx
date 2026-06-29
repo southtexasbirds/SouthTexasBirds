@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/0/02/Karmintyrann_%28Pyrocephalus_obscurus%29%2C_M%C3%A4nnchen_1.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/vermilion-flycatcher" },
   title: "Vermilion Flycatcher (Pyrocephalus rubinus) | South Texas Birds",
   description:
     "Vermilion Flycatcher identification, habitat, and where to find it in South Texas. The blazing red male is one of the most eye-catching birds in North America.",

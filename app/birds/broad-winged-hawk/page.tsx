@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/9/99/Julie_Waters_broad_winged_hawk.JPG";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/broad-winged-hawk" },
   title: "Broad-winged Hawk (Buteo platypterus) | South Texas Birds",
   description:
     "Broad-winged Hawk identification and migration in South Texas. In September, hundreds of thousands funnel through Corpus Christi in one of birding's great spectacles.",

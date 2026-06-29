@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/d/d0/American_oystercatcher_on_Fort_Tilden_beach_%2893754%29.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/american-oystercatcher" },
   title: "American Oystercatcher (Haematopus palliatus) | South Texas Birds",
   description:
     "American Oystercatcher identification, habitat, and where to find it in South Texas. A boldly patterned shorebird with a vivid orange-red bill, found on coastal beaches and oyster reefs year-round.",

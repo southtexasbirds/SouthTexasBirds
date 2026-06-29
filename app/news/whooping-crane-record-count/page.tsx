@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
 const OG_IMAGE = "https://upload.wikimedia.org/wikipedia/commons/7/7f/Grus_americana_Sasata.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/news/whooping-crane-record-count" },
   title: "Record Number of Whooping Cranes Wintering in Texas | South Texas Birds",
   description:
     "The most recent USFWS survey recorded 557 whooping cranes wintering along the Texas coast — a record high for the species' only self-sustaining wild population.",

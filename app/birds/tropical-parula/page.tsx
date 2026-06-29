@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/1/1b/Setophaga_pitiayumi_Monteverde_03.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/tropical-parula" },
   title: "Tropical Parula (Setophaga pitiayumi) | South Texas Birds",
   description:
     "Tropical Parula identification, habitat, and where to find it in the Rio Grande Valley. A tiny warbler tied to Spanish moss, barely reaching the U.S. in South Texas.",

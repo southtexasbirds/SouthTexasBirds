@@ -5,6 +5,7 @@ const OG_IMAGE =
   "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/news" },
   title: "News | South Texas Birds",
   description:
     "Conservation news and updates affecting birds and habitat in the Rio Grande Valley and South Texas coast.",

@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/4/48/Chondrohierax_uncinatus_76608753.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/hook-billed-kite" },
   title: "Hook-billed Kite (Chondrohierax uncinatus) | South Texas Birds",
   description:
     "Hook-billed Kite identification, habitat, and where to find it in the Rio Grande Valley. One of the rarest regularly occurring raptors in the United States.",

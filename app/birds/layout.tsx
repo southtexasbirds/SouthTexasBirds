@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import BirdNav from "../components/BirdNav";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds" },
   title: { absolute: "50+ South Texas Bird Species | Rio Grande Valley Birding Guide" },
   description:
     "Explore 50+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more. Filter by residency status, season, and habitat.",

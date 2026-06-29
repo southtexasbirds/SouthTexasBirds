@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/2/25/Whistling_duck_flight02_-_natures_pics-edit1.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/black-bellied-whistling-duck" },
   title: "Black-bellied Whistling-Duck (Dendrocygna autumnalis) | South Texas Birds",
   description:
     "Black-bellied Whistling-Duck identification, habitat, and where to find it in the Rio Grande Valley. This colorful, noisy duck has expanded dramatically across South Texas.",

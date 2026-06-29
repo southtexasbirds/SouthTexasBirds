@@ -304,6 +304,7 @@ const hotspotSchema = {
 };
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/hotspots" },
   title: { absolute: "Best Birding Hotspots in the Rio Grande Valley | South Texas Birds" },
   description:
     "Nine essential RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, Quinta Mazatlan, Resaca de la Palma, South Padre Island, Salineño, and more. Maps and bird lists.",

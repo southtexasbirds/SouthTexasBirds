@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/aplomado-falcon" },
   title: "Aplomado Falcon (Falco femoralis) | South Texas Birds",
   description:
     "Aplomado Falcon identification, habitat, and where to find it in South Texas. Once extirpated from the U.S., this slender, bold-patterned falcon has been successfully reintroduced at Laguna Atascosa NWR.",

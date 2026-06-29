@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
@@ -6,6 +6,7 @@ const OG_IMAGE =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png/800px-Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/news/thornscrub-restoration-rgv" },
   title: "Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley | South Texas Birds",
   description:
     "Less than 5% of the original Tamaulipan thornscrub remains in the Rio Grande Valley. Restoration efforts by the Lower Rio Grande Valley NWR and World Birding Center are rebuilding habitat for Green Jay, Plain Chachalaca, and dozens of other specialty birds.",

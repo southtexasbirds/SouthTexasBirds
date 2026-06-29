@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/f/f8/Toxostoma_longirostre_-Laguna_Atascosa_National_Wildlife_Refuge%2C_Texas%2C_USA-8.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/long-billed-thrasher" },
   title: "Long-billed Thrasher (Toxostoma longirostre) | South Texas Birds",
   description:
     "Long-billed Thrasher identification, habitat, and where to find it in the Rio Grande Valley. A rich-voiced songster that rivals the Northern Mockingbird in the thornscrub.",

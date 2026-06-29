@@ -4,6 +4,7 @@ const OG_IMAGE =
   "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/gear" },
   title: { absolute: "Birding Gear & Optics | Rio Grande Valley Birding Guide | South Texas Birds" },
   description:
     "Binocular recommendations for South Texas birding. Editor-tested picks for the Rio Grande Valley — from best all-around to best value and best compact.",

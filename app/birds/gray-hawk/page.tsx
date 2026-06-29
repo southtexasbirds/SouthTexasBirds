@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/7/74/Buteo_plagiatus_Belize.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/gray-hawk" },
   title: "Gray Hawk (Buteo plagiatus) | South Texas Birds",
   description:
     "Gray Hawk identification, habitat, and where to find it in the Rio Grande Valley. A finely barred raptor of the river corridor at the northern edge of its range.",

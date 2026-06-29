@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/8/8e/Green_Parakeet_-in_tree_-South_Texas-8.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/green-parakeet" },
   title: "Green Parakeet (Psittacara holochlorus) | South Texas Birds",
   description:
     "Green Parakeet identification, habitat, and where to find it in South Texas. A naturalized population of all-green parakeets that has thrived in the Rio Grande Valley since the 1970s.",

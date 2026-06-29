@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/d/dd/Micrathene_whitneyi_29APR12_Madera_Canyon_AZ.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/elf-owl" },
   title: "Elf Owl (Micrathene whitneyi) | South Texas Birds",
   description:
     "Elf Owl identification, habitat, and where to find it in the Rio Grande Valley. The world's smallest owl by weight is a summer resident along the Rio Grande.",

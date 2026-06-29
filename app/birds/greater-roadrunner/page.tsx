@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/9/93/Greater_Roadrunner_Tingley_Beach.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/greater-roadrunner" },
   title: "Greater Roadrunner (Geococcyx californianus) | South Texas Birds",
   description:
     "Greater Roadrunner identification, habitat, and where to find it in South Texas. Texas's most famous bird — a large, streaky, ground-dwelling cuckoo that sprints across roads and brushland.",

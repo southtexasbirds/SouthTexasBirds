@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/2/2c/Male_Painted_Bunting_Singing.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/painted-bunting" },
   title: "Painted Bunting (Passerina ciris) | South Texas Birds",
   description:
     "Painted Bunting identification, habitat, and where to find it in South Texas. The most colorful bird in North America winters in the Rio Grande Valley in good numbers.",

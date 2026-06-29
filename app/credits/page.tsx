@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/credits" },
   title: "Photo Credits",
   description:
     "Full attribution for all bird photographs on South Texas Birds. Images sourced from Wikimedia Commons under Creative Commons and public domain licenses.",

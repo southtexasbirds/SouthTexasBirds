@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/2/20/Northern_Jacana_Costa_Rica.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/northern-jacana" },
   title: "Northern Jacana (Jacana spinosa) | South Texas Birds",
   description:
     "Northern Jacana identification, habitat, and where to find it in the Rio Grande Valley. The 'lily-trotter' with extraordinary feet walks on floating vegetation.",

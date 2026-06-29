@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/4/47/ReddishEgret_Gam.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/reddish-egret" },
   title: "Reddish Egret (Egretta rufescens) | South Texas Birds",
   description:
     "Reddish Egret identification, habitat, and where to find it on the Texas coast. North America's rarest heron, known for its spectacular lunging, dancing foraging display.",

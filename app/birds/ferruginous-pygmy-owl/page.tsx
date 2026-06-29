@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/ferruginous-pygmy-owl" },
   title: "Ferruginous Pygmy-Owl (Glaucidium brasilianum) | South Texas Birds",
   description:
     "Ferruginous Pygmy-Owl identification, habitat, and where to find it in the Rio Grande Valley. Tiny but fierce, this diurnal owl is a prized find in the Valley's dense brush.",

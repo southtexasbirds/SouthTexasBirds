@@ -5,6 +5,7 @@ const OG_IMAGE =
   "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: {
     absolute: "About South Texas Birding | Rio Grande Valley & Coastal Bend Guide",
   },

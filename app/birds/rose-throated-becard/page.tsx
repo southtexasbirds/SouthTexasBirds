@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/2/20/Pachyramphus_aglaiae_-_Dan_Vickers_-_459803351.jpeg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/rose-throated-becard" },
   title: "Rose-throated Becard (Pachyramphus aglaiae) | South Texas Birds",
   description:
     "Rose-throated Becard identification, habitat, and where to find it in South Texas. One of the most sought-after rarities in the Rio Grande Valley — the male's rose-pink throat is stunning, and the pendulous nest easier to spot than the bird.",

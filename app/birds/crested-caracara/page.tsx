@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/a/ad/Schopfkarakara.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/crested-caracara" },
   title: "Crested Caracara (Caracara plancus) | South Texas Birds",
   description:
     "Crested Caracara identification, habitat, and where to find it in South Texas. A bold, long-legged falcon of open country and one of the most distinctive raptors in the region.",

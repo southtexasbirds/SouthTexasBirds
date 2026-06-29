@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
@@ -6,6 +6,7 @@ const OG_IMAGE =
   "https://upload.wikimedia.org/wikipedia/commons/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/news/rgvbf-festival-2026" },
   title: "Rio Grande Valley Birding Festival Returns This November | South Texas Birds",
   description:
     "The Rio Grande Valley Birding Festival returns to Harlingen this November — one of the largest birding festivals in the country, with field trips, expert guides, and the full lineup of RGV specialties on the table.",

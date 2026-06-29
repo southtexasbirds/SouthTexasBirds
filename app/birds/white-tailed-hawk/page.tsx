@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/6/6a/Buteo_albicaudatus_-Salvador_Zoo%2C_Ondina%2C_Salvador%2C_Bahia%2C_Brasil-8a.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/white-tailed-hawk" },
   title: "White-tailed Hawk (Geranoaetus albicaudatus) | South Texas Birds",
   description:
     "White-tailed Hawk identification, habitat, and where to find it in South Texas. A large, striking raptor found in the U.S. only along the Texas Gulf Coast prairie.",

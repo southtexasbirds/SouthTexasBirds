@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/e/e5/Masked_duck_%28Nomonyx_dominicus%29.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/masked-duck" },
   title: "Masked Duck (Nomonyx dominicus) | South Texas Birds",
   description:
     "Masked Duck identification, habitat, and where to find it in the Rio Grande Valley. One of the most secretive and sought-after rarities in U.S. birding.",

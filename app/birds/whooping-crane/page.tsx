@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/7/7f/Grus_americana_Sasata.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/whooping-crane" },
   title: "Whooping Crane (Grus americana) | South Texas Birds",
   description:
     "Whooping Crane identification, habitat, and where to find it on the Texas Gulf Coast. North America's tallest bird and one of conservation's greatest comeback stories.",

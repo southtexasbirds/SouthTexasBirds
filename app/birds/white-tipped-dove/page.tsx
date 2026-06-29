@@ -8,6 +8,7 @@ const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/a/a0/White-tipped_Dove_-_Panama_H8O8470.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/birds/white-tipped-dove" },
   title: "White-tipped Dove (Leptotila verreauxi) | South Texas Birds",
   description:
     "White-tipped Dove identification, habitat, and where to find it in South Texas. A plump, ground-hugging dove whose haunting hollow hoot is one of the signature sounds of the Rio Grande Valley.",
