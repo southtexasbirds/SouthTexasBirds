@@ -431,15 +431,9 @@ export default function HotspotsPage() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                   </div>
-                  <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.address)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs mt-1 truncate block hover:underline"
-                    style={{ color: "#D4A24C" }}
-                  >
+                  <p className="text-xs mt-1 truncate" style={{ color: "#D4A24C" }}>
                     {spot.address}
-                  </a>
+                  </p>
                 </div>
               </div>
 
@@ -452,7 +446,7 @@ export default function HotspotsPage() {
                   {spot.description}
                 </p>
 
-                <div className="flex flex-wrap gap-x-8 gap-y-4">
+                <div className="flex flex-wrap gap-x-8 gap-y-4 mb-5">
                   {/* Birds */}
                   <div className="flex-1 min-w-[200px]">
                     <p
@@ -498,6 +492,36 @@ export default function HotspotsPage() {
                       {spot.bestSeason}
                     </p>
                   </div>
+                </div>
+
+                {/* External links */}
+                <div className="flex gap-2 pt-4" style={{ borderTop: "1px solid rgba(14,107,107,0.1)" }}>
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.address)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-semibold px-3 py-1.5 rounded-full transition-opacity hover:opacity-75"
+                    style={{
+                      background: "rgba(14,107,107,0.07)",
+                      color: "#0E6B6B",
+                      border: "1px solid rgba(14,107,107,0.18)",
+                    }}
+                  >
+                    Google Maps ↗
+                  </a>
+                  <a
+                    href={`https://ebird.org/explore?r=US-TX&lat=${geoCoords[i].lat}&lng=${geoCoords[i].lng}&zoom=14`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-semibold px-3 py-1.5 rounded-full transition-opacity hover:opacity-75"
+                    style={{
+                      background: "rgba(14,107,107,0.07)",
+                      color: "#0E6B6B",
+                      border: "1px solid rgba(14,107,107,0.18)",
+                    }}
+                  >
+                    eBird ↗
+                  </a>
                 </div>
               </div>
           </article>
