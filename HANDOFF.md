@@ -1,8 +1,26 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-06-21
+- **Date:** 2026-06-28
 - **Agent:** Laptop
+
+---
+
+## Laptop Agent — 2026-06-28
+
+### What was done this session
+- Applied `HeroFrame vignette` to all remaining 49 species pages (was only on green-jay)
+  - 12 pages had multi-line div format; 37 had single-line format — both handled via script
+  - Each page: added `import HeroFrame`, replaced `<div className="relative w-full rounded-2xl overflow-hidden" ...>` with `<HeroFrame vignette className="w-full rounded-2xl" ...>`
+  - Build passes clean (all 50 species pages prerendered static, no TypeScript errors)
+
+### What's next
+- Consider `HeroFrame tint="teal"` on species pages where photo colors clash with the palette
+- `card-glass` utility is available for cards over colored/photo backgrounds
+- Could look at adding a second/supplementary photo per species page, or linking to eBird/Cornell
+
+### Notes
+- `node_modules` still not committed (in .gitignore); run `npm install` on any fresh checkout
 
 ---
 

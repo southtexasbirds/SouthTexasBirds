@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
+import HeroFrame from "../../components/HeroFrame";
 
 const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/6/6a/Buteo_albicaudatus_-Salvador_Zoo%2C_Ondina%2C_Salvador%2C_Bahia%2C_Brasil-8a.jpg";
@@ -40,9 +41,13 @@ export default function WhiteTailedHawkPage() {
       </div>
       <div className="max-w-4xl mx-auto px-6 pb-10">
         <AnimateIn>
-          <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}>
+          <HeroFrame
+            vignette
+            className="w-full rounded-2xl"
+            style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
+          >
             <Image src={PHOTO} alt="White-tailed Hawk perched showing white tail and rusty shoulders" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 20%" }} sizes="(max-width: 896px) 100vw, 896px" />
-          </div>
+          </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>Photo:{" "}<a href="https://commons.wikimedia.org/wiki/File:Buteo_albicaudatus_-Salvador_Zoo,_Ondina,_Salvador,_Bahia,_Brasil-8a.jpg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-75 transition-opacity">Wikimedia Commons</a></p>
         </AnimateIn>
       </div>

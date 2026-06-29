@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
+import HeroFrame from "../../components/HeroFrame";
 
 const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/f/f8/Toxostoma_longirostre_-Laguna_Atascosa_National_Wildlife_Refuge%2C_Texas%2C_USA-8.jpg";
@@ -55,9 +56,13 @@ export default function LongBilledThrasherPage() {
 
       <div className="max-w-4xl mx-auto px-6 pb-10">
         <AnimateIn>
-          <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}>
+          <HeroFrame
+            vignette
+            className="w-full rounded-2xl"
+            style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
+          >
             <Image src={PHOTO} alt="Long-billed Thrasher at Laguna Atascosa NWR, showing long curved bill and streaked breast" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 35%" }} sizes="(max-width: 896px) 100vw, 896px" />
-          </div>
+          </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
             <a href="https://commons.wikimedia.org/wiki/File:Toxostoma_longirostre_-Laguna_Atascosa_National_Wildlife_Refuge,_Texas,_USA-8.jpg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-75 transition-opacity">

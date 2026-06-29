@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
+import HeroFrame from "../../components/HeroFrame";
 
 const PHOTO =
   "https://upload.wikimedia.org/wikipedia/commons/6/6e/Tri-colored_heron_sunrise_bunche_beach_%2833516451355%29_%28cropped%29.jpg";
@@ -71,8 +72,9 @@ export default function TricoloredHeronPage() {
 
       <div className="max-w-4xl mx-auto px-6 pb-10">
         <AnimateIn>
-          <div
-            className="relative w-full rounded-2xl overflow-hidden"
+          <HeroFrame
+            vignette
+            className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
             <Image
@@ -85,7 +87,7 @@ export default function TricoloredHeronPage() {
               style={{ objectPosition: "50% 30%" }}
               sizes="(max-width: 896px) 100vw, 896px"
             />
-          </div>
+          </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
             <a
