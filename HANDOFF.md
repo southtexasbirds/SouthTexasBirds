@@ -1,8 +1,46 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-06-28 (extended session)
+- **Date:** 2026-06-29
 - **Agent:** Laptop
+
+---
+
+## Laptop Agent — 2026-06-29
+
+### What was done this session
+
+**Internal linking & content:**
+- About page season cards: added 3 target species chip links per season (12 links total, all verified against actual species page slugs)
+- Added 4th news article: "Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley" (thornscrub-restoration-rgv)
+- Added "In the News" sections to Green Jay, Plain Chachalaca, and Ferruginous Pygmy-Owl species pages, all linking to thornscrub article
+- News listing page: updated from 3 to 4 articles; homepage news grid expanded to 4 columns
+
+**Related Species:**
+- Added `RELATED_SPECIES` map to `birdsOrder.ts` — 50 species, 3 curated related slugs each
+- `BirdNav.tsx` now renders a "Related Species" chip row on every species page
+
+**SEO:**
+- Canonical URLs (`alternates.canonical`) added to all 65 pages via batch (homepage, about, birds listing, birds layout, hotspots, news listing, gear, credits, all 4 news articles, all 50 species pages)
+- `og:type: "article"` added to all 50 species pages (batch)
+- `datePublished: "2026-06-20"`, `dateModified: "2026-06-28"`, and `url` added to Article JSON-LD on all 50 species pages (batch)
+- `FAQPage` JSON-LD added to about page (4 Q&As covering best seasons, winter/spring birds, top hotspots)
+- `Organization` JSON-LD added to homepage (logo, sameAs, description)
+- WebSite/Organization JSON-LD was already in root layout — duplicate removed from homepage
+- `/birds` listing page: BreadcrumbList JSON-LD added (client component)
+
+**Hotspots:**
+- Google Maps + eBird explore buttons added to each hotspot card footer (using existing geoCoords data)
+- Address link in card header simplified (no longer duplicated)
+
+### What's next
+- Could add more news articles (site now has 4, more would strengthen the news section)
+- FAQ schema could also go on the hotspots or gear pages
+- Species pages could add `author` to Article JSON-LD
+- Consider adding a "Best time to see" section on individual species pages
+- Could add eBird checklist embed or recent sightings block (needs eBird API access)
+- The `robots.txt` is minimal — could add `Disallow` rules if needed
+- Could add a `geo.position` meta tag to the hotspots page for location search
 
 ---
 
