@@ -1,16 +1,30 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const OG_IMAGE =
+  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+
 export const metadata: Metadata = {
   title: "News | South Texas Birds",
   description:
     "Conservation news and updates affecting birds and habitat in the Rio Grande Valley and South Texas coast.",
+  openGraph: {
+    title: "News & Conservation | South Texas Birds",
+    description:
+      "Conservation news and updates affecting birds and habitat in the Rio Grande Valley and South Texas coast.",
+    images: [{ url: OG_IMAGE, alt: "Altamira Oriole in South Texas" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [OG_IMAGE],
+  },
 };
 
 const articles = [
   {
     slug: "whooping-crane-record-count",
     date: "June 2026",
+    isoDate: "2026-06-01",
     title: "Record Number of Whooping Cranes Wintering in Texas This Year",
     excerpt:
       "The most recent USFWS survey recorded 557 whooping cranes wintering along the Texas coast — a record high for the species' only self-sustaining wild population, and a testament to decades of conservation work.",
@@ -19,6 +33,7 @@ const articles = [
   {
     slug: "rgvbf-festival-2026",
     date: "June 2026",
+    isoDate: "2026-06-15",
     title: "Save the Date: Rio Grande Valley Birding Festival Returns This November",
     excerpt:
       "The RGVBF returns to Harlingen this November — one of the largest birding festivals in the country, with over 100 field trips, expert guides, and the full lineup of RGV specialties on the table.",
@@ -27,6 +42,7 @@ const articles = [
   {
     slug: "spacex-refuge-land-exchange",
     date: "June 2026",
+    isoDate: "2026-06-20",
     title: "SpaceX Land Exchange Threatens Heart of Rio Grande Wildlife Corridor",
     excerpt:
       "A federal land exchange moving through the courts could reshape one of South Texas's most important wildlife corridors — directly touching habitat for the Aplomado Falcon, ocelot, and other species.",
@@ -63,7 +79,8 @@ export default function NewsPage() {
           >
             <div className="p-7">
               <div className="flex flex-wrap items-center gap-2 mb-3">
-                <span
+                <time
+                  dateTime={article.isoDate}
                   className="text-xs font-medium px-2.5 py-0.5 rounded-full"
                   style={{
                     background: "rgba(14,107,107,0.08)",
@@ -72,7 +89,7 @@ export default function NewsPage() {
                   }}
                 >
                   {article.date}
-                </span>
+                </time>
                 {article.tags.map((tag) => (
                   <span
                     key={tag}

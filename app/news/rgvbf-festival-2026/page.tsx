@@ -2,10 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
+const OG_IMAGE =
+  "https://upload.wikimedia.org/wikipedia/commons/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png";
+
 export const metadata: Metadata = {
   title: "Rio Grande Valley Birding Festival Returns This November | South Texas Birds",
   description:
     "The Rio Grande Valley Birding Festival returns to Harlingen this November — one of the largest birding festivals in the country, with field trips, expert guides, and the full lineup of RGV specialties on the table.",
+  openGraph: {
+    title: "Rio Grande Valley Birding Festival 2026 | South Texas Birds",
+    description:
+      "The RGVBF returns to Harlingen this November — over 100 field trips, expert guides, and the full lineup of RGV specialties.",
+    images: [{ url: OG_IMAGE, alt: "Green Jay in Mission, Texas" }],
+  },
+  twitter: { card: "summary_large_image", images: [OG_IMAGE] },
 };
 
 const linkedSpecies = [

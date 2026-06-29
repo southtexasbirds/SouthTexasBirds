@@ -76,11 +76,20 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex gap-6 text-sm font-medium shrink-0">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="hover:opacity-75 transition-opacity">
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition-opacity hover:opacity-75"
+                style={isActive ? { borderBottom: "2px solid rgba(239,227,206,0.65)", paddingBottom: "1px" } : {}}
+                aria-current={isActive ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Hamburger button — mobile only */}
@@ -118,16 +127,24 @@ export default function Header() {
           className="max-w-5xl mx-auto px-4 pb-2"
           style={{ borderTop: "1px solid rgba(255,255,255,0.12)" }}
         >
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="flex items-center py-3.5 text-sm font-medium hover:opacity-75 transition-opacity"
-              style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="flex items-center py-3.5 text-sm font-medium hover:opacity-75 transition-opacity"
+                style={{
+                  borderBottom: "1px solid rgba(255,255,255,0.08)",
+                  paddingLeft: "0.75rem",
+                  borderLeft: isActive ? "3px solid rgba(239,227,206,0.7)" : "3px solid transparent",
+                }}
+                aria-current={isActive ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </header>

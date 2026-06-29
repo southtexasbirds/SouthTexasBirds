@@ -462,58 +462,6 @@ const birds = [
 const toBirdId = (name: string) =>
   name.toLowerCase().replace(/[''']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
-const detailPages: Record<string, string> = {
-  "Green Jay": "/birds/green-jay",
-  "Altamira Oriole": "/birds/altamira-oriole",
-  "Plain Chachalaca": "/birds/plain-chachalaca",
-  "Buff-bellied Hummingbird": "/birds/buff-bellied-hummingbird",
-  "Whooping Crane": "/birds/whooping-crane",
-  "Aplomado Falcon": "/birds/aplomado-falcon",
-  "Olive Sparrow": "/birds/olive-sparrow",
-  "White-tipped Dove": "/birds/white-tipped-dove",
-  "Reddish Egret": "/birds/reddish-egret",
-  "Tricolored Heron": "/birds/tricolored-heron",
-  "Neotropic Cormorant": "/birds/neotropic-cormorant",
-  "White-tailed Hawk": "/birds/white-tailed-hawk",
-  "White-tailed Kite": "/birds/white-tailed-kite",
-  "Swallow-tailed Kite": "/birds/swallow-tailed-kite",
-  "Couch's Kingbird": "/birds/couchs-kingbird",
-  "Scissor-tailed Flycatcher": "/birds/scissor-tailed-flycatcher",
-  "Rose-throated Becard": "/birds/rose-throated-becard",
-  "Red-billed Pigeon": "/birds/red-billed-pigeon",
-  "Inca Dove": "/birds/inca-dove",
-  "Greater Roadrunner": "/birds/greater-roadrunner",
-  "American Oystercatcher": "/birds/american-oystercatcher",
-  "Green Parakeet": "/birds/green-parakeet",
-  "Red-crowned Parrot": "/birds/red-crowned-parrot",
-  "White-collared Seedeater": "/birds/white-collared-seedeater",
-  "Tropical Parula": "/birds/tropical-parula",
-  "Mottled Duck": "/birds/mottled-duck",
-  "Piping Plover": "/birds/piping-plover",
-  "Botteri's Sparrow": "/birds/botteris-sparrow",
-  "Crested Caracara": "/birds/crested-caracara",
-  "Painted Bunting": "/birds/painted-bunting",
-  "Roseate Spoonbill": "/birds/roseate-spoonbill",
-  "Broad-winged Hawk": "/birds/broad-winged-hawk",
-  "Gray Hawk": "/birds/gray-hawk",
-  "Harris's Hawk": "/birds/harriss-hawk",
-  "Hook-billed Kite": "/birds/hook-billed-kite",
-  "Ringed Kingfisher": "/birds/ringed-kingfisher",
-  "Green Kingfisher": "/birds/green-kingfisher",
-  "Vermilion Flycatcher": "/birds/vermilion-flycatcher",
-  "Great Kiskadee": "/birds/great-kiskadee",
-  "Tropical Kingbird": "/birds/tropical-kingbird",
-  "Ferruginous Pygmy-Owl": "/birds/ferruginous-pygmy-owl",
-  "Elf Owl": "/birds/elf-owl",
-  "Least Grebe": "/birds/least-grebe",
-  "Black-bellied Whistling-Duck": "/birds/black-bellied-whistling-duck",
-  "Masked Duck": "/birds/masked-duck",
-  "Northern Jacana": "/birds/northern-jacana",
-  "Groove-billed Ani": "/birds/groove-billed-ani",
-  "Clay-colored Thrush": "/birds/clay-colored-thrush",
-  "Long-billed Thrasher": "/birds/long-billed-thrasher",
-  "Audubon's Oriole": "/birds/audubons-oriole",
-};
 
 const birdHotspotMap: Record<string, { label: string; anchor: string }[]> = {
   "Green Jay": [
@@ -826,36 +774,22 @@ export default function BirdsPage() {
                   }}
                 >
                   {/* Photo */}
-                  {detailPages[bird.name] ? (
-                    <Link
-                      href={detailPages[bird.name]}
-                      className="relative h-48 shrink-0 block"
-                      style={{ background: "#0E6B6B" }}
-                      tabIndex={-1}
-                      aria-hidden
-                    >
-                      <Image
-                        src={bird.photo}
-                        alt={bird.name}
-                        fill
-                        className="object-contain"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                    </Link>
-                  ) : (
-                    <div
-                      className="relative h-48 shrink-0"
-                      style={{ background: "#0E6B6B" }}
-                    >
-                      <Image
-                        src={bird.photo}
-                        alt={bird.name}
-                        fill
-                        className="object-contain"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                    </div>
-                  )}
+                  <Link
+                    href={`/birds/${toBirdId(bird.name)}`}
+                    className="relative h-48 shrink-0 block"
+                    style={{ background: "#0E6B6B" }}
+                    tabIndex={-1}
+                    aria-hidden
+                  >
+                    <Image
+                      src={bird.photo}
+                      alt={`${bird.name} (${bird.scientific})`}
+                      fill
+                      className="object-cover"
+                      style={{ objectPosition: "50% 30%" }}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </Link>
 
                   {/* Info */}
                   <div className="p-4 flex flex-col flex-1">
@@ -863,16 +797,12 @@ export default function BirdsPage() {
                       className="font-serif text-base font-bold leading-snug mb-0.5"
                       style={{ color: "#0E6B6B" }}
                     >
-                      {detailPages[bird.name] ? (
-                        <Link
-                          href={detailPages[bird.name]}
-                          className="hover:underline underline-offset-2"
-                        >
-                          {bird.name}
-                        </Link>
-                      ) : (
-                        bird.name
-                      )}
+                      <Link
+                        href={`/birds/${toBirdId(bird.name)}`}
+                        className="hover:underline underline-offset-2"
+                      >
+                        {bird.name}
+                      </Link>
                     </h2>
                     <p
                       className="text-xs italic mb-2.5"

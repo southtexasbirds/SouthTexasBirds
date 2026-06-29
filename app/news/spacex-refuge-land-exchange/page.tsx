@@ -2,10 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
+const OG_IMAGE =
+  "https://upload.wikimedia.org/wikipedia/commons/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg";
+
 export const metadata: Metadata = {
   title: "SpaceX Land Exchange Threatens Rio Grande Wildlife Corridor | South Texas Birds",
   description:
     "A federal land exchange would transfer 715 acres of the Lower Rio Grande Valley NWR to SpaceX. A coalition has filed suit, arguing the swap violates federal conservation law and harms habitat for the Aplomado Falcon, ocelot, and more.",
+  openGraph: {
+    title: "SpaceX Land Exchange Threatens Rio Grande Wildlife Corridor | South Texas Birds",
+    description:
+      "A federal land exchange could reshape one of South Texas's most important wildlife corridors, harming habitat for the Aplomado Falcon, ocelot, and more.",
+    images: [{ url: OG_IMAGE, alt: "Aplomado Falcon at Laguna Atascosa NWR, Texas" }],
+  },
+  twitter: { card: "summary_large_image", images: [OG_IMAGE] },
 };
 
 const linkedSpecies = [
