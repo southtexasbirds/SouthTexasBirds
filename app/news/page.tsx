@@ -117,6 +117,22 @@ export default function NewsPage() {
           </Link>
         ))}
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "South Texas Birds — News & Conservation",
+            "itemListElement": articles.map((a, i) => ({
+              "@type": "ListItem",
+              "position": i + 1,
+              "url": `https://southtexasbirds.org/news/${a.slug}`,
+              "name": a.title,
+            })),
+          })
+        }}
+      />
     </div>
   );
 }

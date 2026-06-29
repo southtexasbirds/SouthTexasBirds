@@ -14,8 +14,12 @@ export default function BirdNav() {
   const idx = BIRDS_ORDER.findIndex((b) => b.slug === slug);
   if (idx < 0) return null;
 
+  const current = BIRDS_ORDER[idx];
   const prev = idx > 0 ? BIRDS_ORDER[idx - 1] : null;
   const next = idx < BIRDS_ORDER.length - 1 ? BIRDS_ORDER[idx + 1] : null;
+
+  const cornellUrl = `https://www.allaboutbirds.org/guide/${current.name.replace(/\s+/g, "_")}`;
+  const ebirdUrl = `https://ebird.org/search?q=${encodeURIComponent(current.name)}`;
 
   return (
     <nav
@@ -62,6 +66,35 @@ export default function BirdNav() {
         ) : (
           <span />
         )}
+      </div>
+
+      <div className="flex justify-center gap-3 mt-5">
+        <a
+          href={cornellUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs font-semibold px-3 py-1.5 rounded-full transition-opacity hover:opacity-75"
+          style={{
+            background: "rgba(14,107,107,0.07)",
+            color: "#0E6B6B",
+            border: "1px solid rgba(14,107,107,0.18)",
+          }}
+        >
+          Cornell Lab ↗
+        </a>
+        <a
+          href={ebirdUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs font-semibold px-3 py-1.5 rounded-full transition-opacity hover:opacity-75"
+          style={{
+            background: "rgba(14,107,107,0.07)",
+            color: "#0E6B6B",
+            border: "1px solid rgba(14,107,107,0.18)",
+          }}
+        >
+          eBird ↗
+        </a>
       </div>
     </nav>
   );
