@@ -1,5 +1,8 @@
 ﻿import type { Metadata } from "next";
 
+const OG_IMAGE =
+  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+
 export const metadata: Metadata = {
   title: { absolute: "Birding Gear & Optics | Rio Grande Valley Birding Guide | South Texas Birds" },
   description:
@@ -18,6 +21,8 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
+    card: "summary_large_image",
+    images: [OG_IMAGE],
     title: "Birding Gear & Optics | South Texas Birds",
     description:
       "Binocular recommendations for South Texas birding — best all-around, best value, and best compact.",

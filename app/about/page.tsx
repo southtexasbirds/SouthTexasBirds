@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
+    card: "summary_large_image",
+    images: [OG_IMAGE],
     title: "About South Texas Birding | Rio Grande Valley & Coastal Bend Guide",
     description:
       "Learn about South Texas birding: the Rio Grande Valley, Coastal Bend, and when to visit for migrants, Whooping Cranes, hawks, and winter waterfowl.",

@@ -72,15 +72,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
 
         <footer
-          className="text-sm text-center py-5 mt-12"
+          className="text-center py-8 mt-12"
           style={{ backgroundColor: "#0E6B6B", color: "rgba(239,227,206,0.75)" }}
         >
-          <p className="mb-2">South Texas Birds &mdash; Rio Grande Valley &amp; Coastal Bend</p>
+          <nav className="flex flex-wrap justify-center gap-x-7 gap-y-2 mb-5" aria-label="Footer navigation">
+            {[
+              { href: "/birds", label: "Species" },
+              { href: "/hotspots", label: "Hotspots" },
+              { href: "/news", label: "News" },
+              { href: "/gear", label: "Gear" },
+              { href: "/about", label: "About" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-xs font-semibold tracking-widest uppercase hover:opacity-80 transition-opacity"
+                style={{ color: "rgba(239,227,206,0.65)" }}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+          <p className="text-xs mb-2" style={{ color: "rgba(239,227,206,0.55)" }}>
+            South Texas Birds &mdash; Rio Grande Valley &amp; Coastal Bend
+          </p>
           <p>
             <Link
               href="/credits"
               className="hover:opacity-80 transition-opacity underline underline-offset-2"
-              style={{ color: "rgba(239,227,206,0.55)", fontSize: "0.75rem" }}
+              style={{ color: "rgba(239,227,206,0.35)", fontSize: "0.7rem" }}
             >
               Photo Credits
             </Link>

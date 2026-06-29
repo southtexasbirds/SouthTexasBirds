@@ -40,7 +40,8 @@ export default function RGVBFFestival2026Page() {
       <div className="max-w-4xl mx-auto px-6 pt-5 pb-8">
         <AnimateIn direction="up">
           <div className="flex flex-wrap items-center gap-2 mb-4">
-            <span
+            <time
+              dateTime="2026-06-15"
               className="text-xs font-medium px-2.5 py-0.5 rounded-full"
               style={{
                 background: "rgba(14,107,107,0.08)",
@@ -49,7 +50,7 @@ export default function RGVBFFestival2026Page() {
               }}
             >
               June 2026
-            </span>
+            </time>
             {["Festival", "Events", "RGV"].map((tag) => (
               <span
                 key={tag}

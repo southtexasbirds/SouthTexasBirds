@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
+    card: "summary_large_image",
+    images: ["https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg"],
     title: "South Texas Birds | Rio Grande Valley Birding Guide & Hotspots",
     description:
       "Plan your Rio Grande Valley birding trip. Explore 500+ species, top RGV hotspots, and South Texas specialties.",
