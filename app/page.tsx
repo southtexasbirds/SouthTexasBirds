@@ -318,11 +318,11 @@ export default function HomePage() {
                 excerpt: "Less than 5% of native thornscrub remains in the Valley — conservation groups are rebuilding habitat for Green Jays, Chachalacas, and more.",
               },
               {
-                href: "/news/south-texas-birding-calendar",
+                href: "/news/salineno-birding-guide",
                 date: "June 2026",
-                isoDate: "2026-06-28",
-                title: "Month-by-Month Birding Calendar",
-                excerpt: "When you go determines what you see. From Whooping Cranes in winter to hawk kettles in September — a complete planning guide.",
+                isoDate: "2026-06-30",
+                title: "Salineño: The RGV's Best-Kept Birding Secret",
+                excerpt: "The most reliable U.S. site for White-collared Seedeater and Ringed Kingfisher — and one of the most undervisited birding destinations in the country.",
               },
               {
                 href: "/news/painted-bunting-south-padre",
