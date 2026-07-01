@@ -316,6 +316,49 @@ export default function BuffBelliedHummingbirdPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What hummingbirds can I see in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Buff-bellied Hummingbird is the primary breeding and resident hummingbird of the Rio Grande Valley, present year-round. Ruby-throated Hummingbirds pass through in spring and fall migration. In fall and winter, vagrant western species — Black-chinned, Rufous, Broad-tailed, and others — occasionally appear at feeders. The best time for hummingbirds in the Valley is April through October when Buff-bellieds are most active."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Buff-bellied Hummingbird rare?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Buff-bellied Hummingbird is not rare but is limited in range — in the United States it occurs only in South Texas and the southern tip of the Texas coast. Within that range it is the common, expected hummingbird at feeders and flowering plants. It is a target species for birders visiting the Rio Grande Valley for its bright rufous-buff belly, emerald-green gorget, and red bill."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does the Buff-bellied Hummingbird migrate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Uniquely among Texas hummingbirds, the Buff-bellied Hummingbird's post-breeding movements go northward rather than south. After breeding in the Rio Grande Valley from April through July, some birds disperse along the upper Texas coast and occasionally reach Louisiana and the Gulf States in late summer and fall — the reverse of the usual southward migration. Rio Grande Valley birds are present year-round."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What flowers attract Buff-bellied Hummingbirds?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Buff-bellied Hummingbirds are particularly attracted to the native Turk's cap (Malvaviscus arboreus), coral honeysuckle, Turk's cap, and native salvia species. They also readily use hummingbird feeders with a 4:1 water-to-sugar solution (no red dye needed). Planting native South Texas flowering shrubs is the most effective way to attract them to a garden."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

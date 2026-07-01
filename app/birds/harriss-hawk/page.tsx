@@ -225,6 +225,49 @@ export default function HarrisHawkPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do Harris's Hawks really hunt cooperatively?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — Harris's Hawk is one of the very few raptors in the world known to hunt cooperatively in groups. Groups of 2–6 birds, typically a family unit, coordinate to flush and chase prey from different directions. Some individuals flush rabbits from cover while others wait to intercept. This cooperative strategy allows them to take larger prey and increases overall hunting success significantly compared to solo hunting."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see Harris's Hawks in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Harris's Hawks are year-round residents throughout South Texas and relatively common in open brushy country. They are frequently seen along roadsides perched on utility poles, fence posts, and mesquite trees. Laguna Atascosa National Wildlife Refuge, Estero Llano Grande, and any open farmland in Cameron and Willacy counties reliably produce sightings. Groups of 3–5 birds together are a distinctive sight."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How big is a Harris's Hawk?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Harris's Hawks are medium-to-large raptors, 18–24 inches long with a wingspan of 40–47 inches — roughly the size of a Red-tailed Hawk. They are distinctive in appearance: dark chocolate-brown overall with chestnut-red shoulder patches and thighs, white at the base of the tail and white tail tip, and bright yellow cere and feet. The bold color pattern makes them unmistakable in flight."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are Harris's Hawks used in falconry?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — Harris's Hawks are among the most popular falconry birds in the world, prized for their intelligence, social nature, and cooperative hunting instincts. They are easier to train than many other raptors, relatively tolerant of human handling, and capable of working in groups with other trained hawks. Wild populations in South Texas are not impacted by falconry, which uses captive-bred birds."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

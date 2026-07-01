@@ -224,6 +224,49 @@ export default function RingedKingfisherPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Ringed Kingfisher the largest kingfisher in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Ringed Kingfisher is the largest kingfisher in the Americas and the largest kingfisher found in the United States. It is 15–16 inches long with a wingspan of 24–26 inches, considerably larger than the Belted Kingfisher (a closely related species). The Ringed Kingfisher is found only in the lower Rio Grande Valley in the United States; it is common throughout most of Latin America."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Ringed Kingfisher in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In the United States, the Ringed Kingfisher is found only along the lower Rio Grande in South Texas. Salineño Wildlife Preserve, Bentsen-Rio Grande Valley State Park, and Santa Ana National Wildlife Refuge are the most reliable sites. The birds perch prominently on exposed branches over the river and announce themselves with a loud, rattling call easily heard from a distance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I tell a Ringed Kingfisher from a Belted Kingfisher?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Ringed Kingfisher is substantially larger — roughly 50% bigger than the Belted Kingfisher. Males have a completely rufous (chestnut-red) belly with a blue-gray chest and white collar, while female Belted Kingfishers have a rufous belly band but white below. Ringed Kingfishers also have a larger, heavier bill and a bolder, slower wingbeat. Both species make rattling calls, but the Ringed Kingfisher's call is slower and deeper."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Ringed Kingfisher eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ringed Kingfishers hunt fish almost exclusively, diving from an elevated perch or from hovering flight into the water. Their large size allows them to take larger fish than the Belted Kingfisher. Along the Rio Grande they are closely tied to the river corridor, where they hunt in clear, open water sections. They occasionally take frogs and large aquatic insects."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
