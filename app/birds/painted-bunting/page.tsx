@@ -159,6 +159,15 @@ export default function PaintedBuntingPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>October through March</strong> for wintering birds at feeders in the Rio Grande Valley — Quinta Mazatlán, Estero Llano Grande, and Santa Ana NWR all maintain millet feeders that reliably draw Painted Buntings. <strong>Late April through mid-May</strong> for spring migration: South Padre Island is the premier site for Trans-Gulf fallout events, when hundreds of exhausted buntings arrive after crossing the Gulf of Mexico. The peak window at South Padre is approximately April 20 – May 10.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

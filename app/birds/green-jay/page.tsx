@@ -220,6 +220,15 @@ export default function GreenJayPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Green Jays are permanent residents of the Rio Grande Valley and don&apos;t migrate. They are equally visible in any season, but November through March is prime time for Valley birding overall, and feeders at Bentsen-Rio Grande Valley State Park and Santa Ana NWR reliably draw jays every morning. Family groups remain together through the summer, making June and July productive for seeing juveniles alongside adults.
+            </p>
+          </section>
+        </AnimateIn>
+
         {/* Conservation & Fun Fact */}
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>

@@ -268,6 +268,17 @@ export default function OliveSparrowPage() {
           </AnimateIn>
         </div>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
+            <Link href="/news/thornscrub-restoration-rgv" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley</span>
+              <span className="text-sm" style={{ color: "#5C5954" }}>The Olive Sparrow is one of the defining birds of dense Tamaulipan thornscrub — a habitat that conservationists are now actively rebuilding across the Valley.</span>
+              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+            </Link>
+          </section>
+        </AnimateIn>
+
         {/* CTA */}
         <AnimateIn>
           <div className="text-center pt-4">

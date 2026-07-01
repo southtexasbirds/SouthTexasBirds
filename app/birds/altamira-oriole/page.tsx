@@ -227,6 +227,15 @@ export default function AltamiraOriolePage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Altamira Orioles are permanent residents of the Rio Grande Valley. They are easiest to find during the breeding season (<strong>April through July</strong>), when males sing persistently and the distinctive hanging nests are visible before the leaves fully fill in. Bentsen-Rio Grande Valley State Park and Santa Ana NWR both have reliable territory pairs. Visiting early morning in spring maximizes chances of seeing males in active song display.
+            </p>
+          </section>
+        </AnimateIn>
+
         {/* Conservation & Fun Fact */}
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>

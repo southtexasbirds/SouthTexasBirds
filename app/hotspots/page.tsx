@@ -546,6 +546,49 @@ export default function HotspotsPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the best birding hotspot in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Santa Ana National Wildlife Refuge near Alamo is widely considered the crown jewel of Rio Grande Valley birding, with over 400 species recorded. Bentsen-Rio Grande Valley State Park is a close second and offers excellent accessibility, feeders, and the famous hawk tower. Both sites reliably produce RGV specialty birds like Green Jay, Plain Chachalaca, Altamira Oriole, and Hook-billed Kite."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When is the best time to visit birding hotspots in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "November through April is the peak season for South Texas birding hotspots. Winter (December–February) brings rare wintering specialties like Whooping Cranes at Aransas, while spring migration (late March–early May) delivers Trans-Gulf migrants and breeding arrivals. South Padre Island is especially spectacular during spring fallout events in late April."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is South Padre Island good for birding?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "South Padre Island is one of the most important migration stopover sites on the entire Gulf Coast. The South Padre Island Birding and Nature Center offers excellent viewing of shorebirds, wading birds, and during spring migration, exhausted Trans-Gulf migrants including Painted Buntings, warblers, and tanagers that make landfall after crossing the Gulf of Mexico."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I see Whooping Cranes in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — Aransas National Wildlife Refuge on the Texas coast north of Corpus Christi hosts the only self-sustaining wild flock of Whooping Cranes, which winters there from approximately November through March. The best viewing is by boat tour from Rockport. The 2025–2026 winter season recorded a record 557 individuals."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

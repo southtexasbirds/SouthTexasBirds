@@ -67,6 +67,15 @@ const articles = [
       "When northwest winds follow a cold front in late April, hundreds of Painted Buntings and other Trans-Gulf migrants make landfall at South Padre Island — one of North America's most spectacular birding events.",
     tags: ["Conservation", "Migration"],
   },
+  {
+    slug: "fall-hawk-migration-south-texas",
+    date: "June 2026",
+    isoDate: "2026-06-28",
+    title: "South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen",
+    excerpt:
+      "Every September, tens of thousands of raptors stream south through the Rio Grande Valley. At Bentsen's hawk tower on peak days, Broad-winged Hawk kettles containing 10,000 or more birds fill the sky.",
+    tags: ["Migration", "Raptors"],
+  },
 ];
 
 export default function NewsPage() {
