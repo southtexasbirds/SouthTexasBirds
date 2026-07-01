@@ -225,6 +225,49 @@ export default function BlackBelliedWhistlingDuckPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What does a Black-bellied Whistling-Duck look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Black-bellied Whistling-Duck is an unmistakable, colorful duck: bright chestnut body with a black belly, gray face and neck, white wing patch visible in flight, and a vivid coral-red bill and legs. It is a long-necked, upright-standing duck that perches in trees and on structures — unlike most dabbling ducks that rarely leave the water's surface. In flight the bold white wing stripe and black belly are the key marks."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Black-bellied Whistling-Duck expanding in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Black-bellied Whistling-Duck has expanded dramatically northward in Texas over the past several decades and is now found as far north as the Texas Hill Country and Houston area. In South Texas it is now a common year-round resident that nests in tree cavities and nest boxes. The species has adapted readily to suburban ponds, golf courses, and managed water features, driving much of its range expansion."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Black-bellied Whistling-Duck really a duck?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, but it belongs to the whistling-duck subfamily (Dendrocygninae), which sits between true geese and true ducks in evolutionary terms. Whistling-ducks are more goose-like in some behaviors — both sexes share incubation, pairs bond for multiple seasons, and they perch in trees. The Black-bellied is one of two whistling-duck species found in the U.S., the other being the rarer Fulvous Whistling-Duck."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see Black-bellied Whistling-Ducks in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Black-bellied Whistling-Ducks are common year-round residents throughout the Rio Grande Valley. They can be found on nearly any pond, resaca, or water feature — including urban park ponds and golf course water hazards. Estero Llano Grande State Park, Bentsen-Rio Grande Valley SP, Quinta Mazatlán, and virtually any freshwater wetland in the region regularly holds flocks. Noisy flocks flying overhead at dusk are a quintessential Valley experience."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

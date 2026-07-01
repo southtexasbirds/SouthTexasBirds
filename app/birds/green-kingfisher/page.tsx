@@ -224,6 +224,49 @@ export default function GreenKingfisherPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How many kingfisher species are found in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Three kingfisher species are found in South Texas: the Belted Kingfisher (common, year-round, widespread), the Ringed Kingfisher (large, year-round, Rio Grande corridor), and the Green Kingfisher (small, year-round, clear streams). The Green Kingfisher is the smallest of the three and the most secretive. The Rio Grande corridor near Bentsen SP, Salineño, and Santa Ana NWR is the best place to see all three in one day."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a Green Kingfisher?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Green Kingfisher is a small (19–20 cm) kingfisher with a dark iridescent green back and head, white underparts, and a large bill relative to its body. Males have a broad rufous-chestnut breast band; females have two green breast bands. The dark iridescent green coloring and tiny size immediately distinguish it from the larger Belted and Ringed Kingfishers. In flight it gives a sharp, clicking 'tik-tik-tik' call."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Green Kingfisher in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Green Kingfishers require clear, quiet streams and resacas with overhanging vegetation for perching — they are sensitive to water clarity and bank structure. In South Texas, the resacas and quiet water features at Santa Ana NWR, the Rio Grande at Salineño, and the quiet canals at Bentsen-Rio Grande Valley SP are the most reliable sites. They sit very low over the water on small branches, and the sharp chip call in flight is often the first indication."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Green Kingfisher common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Green Kingfisher is an uncommon but year-round resident in suitable habitat in South Texas. It is easily overlooked due to its small size, low-contrast coloring, and habit of sitting motionless for long periods on low perches over water. It is less common and more secretive than the Belted Kingfisher, which shares much of the same habitat. Clear, undisturbed water bodies are the key search habitat."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

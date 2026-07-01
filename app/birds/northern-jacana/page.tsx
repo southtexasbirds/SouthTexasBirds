@@ -225,6 +225,49 @@ export default function NorthernJacanaPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does a Northern Jacana walk on water?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Northern Jacana doesn't literally walk on water — it walks on floating aquatic vegetation such as lily pads and water hyacinth. Its extremely long toes and claws (the toes can span up to 7 cm) distribute the bird's weight across a large surface area, allowing it to stand and walk on leaves that would sink under even a small amount of concentrated weight. This adaptation earns it the nickname 'lily-trotter.'"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Northern Jacana rare in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Northern Jacana is a very rare and irregular visitor to the United States, found primarily in South Texas. Small populations have established at wetlands in Hidalgo and Cameron counties during favorable years, but it is never reliably present. Always check current eBird reports before specifically chasing this species, as availability fluctuates with water levels and vegetation at specific sites."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why do female Northern Jacanas have multiple mates?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Northern Jacana practices polyandry — females maintain territories encompassing the smaller territories of two to four males. Each male builds a floating nest, incubates the eggs, and raises the chicks independently. The female defends the overall territory and mates with each male, but plays no role in incubation or chick-rearing. This system is reversed from typical bird mating: females are larger and more aggressive, males do all the parenting."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Northern Jacana in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "When present, Northern Jacanas are found on shallow freshwater ponds and resacas with floating aquatic vegetation — water hyacinth, lily pads, and similar floating-leaf plants are the key habitat feature. Estero Llano Grande State Park, the Santa Ana NWR water features, and managed wetlands in Hidalgo and Cameron counties have produced most Texas records. Check current eBird reports before visiting, as the species is highly irregular."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
