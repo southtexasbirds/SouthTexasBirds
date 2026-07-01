@@ -159,6 +159,15 @@ export default function TropicalParulaPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>March through July</strong> — Tropical Parulas are breeding residents of the lower Rio Grande Valley, present from March through August. The breeding season is the most reliable window, when males sing persistently from within Spanish moss-draped riparian forest. Salineño Wildlife Preserve and the mature gallery forest at Santa Ana NWR are the best U.S. sites. Check eBird before visiting — numbers fluctuate and this is one of the Valley&apos;s harder-to-find specialties.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

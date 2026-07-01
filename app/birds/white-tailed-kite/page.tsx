@@ -136,6 +136,15 @@ export default function WhiteTailedKitePage() {
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>Scan open fields and roadsides for the hovering silhouette. Hovering birds are often obvious from a moving vehicle.</p>
           </section>
         </AnimateIn>
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — White-tailed Kites are permanent residents of South Texas open country and one of the easiest raptors to find. They hover in a distinctive manner — stationary in midair with wings angled and tail fanned — making them identifiable from a moving car. <strong>Winter</strong> is best, when numbers increase and birds sometimes gather in communal roosts of dozens. Scan open fields, coastal prairies, and roadsides in Cameron, Willacy, and Hidalgo Counties.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

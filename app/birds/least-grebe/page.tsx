@@ -158,6 +158,15 @@ export default function LeastGrebePage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Least Grebes are permanent residents of the Valley&apos;s ponds, resacas, and slow-moving waterways. They are most easily seen at <strong>calm, clear ponds with emergent vegetation</strong> — any park pond, resaca, or wetland at Estero Llano Grande, Resaca de la Palma, or Bentsen can hold them. Early morning visits with flat, reflective water offer the best viewing. Listen for a rapid, nasal buzzing call that betrays their presence in dense vegetation.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
