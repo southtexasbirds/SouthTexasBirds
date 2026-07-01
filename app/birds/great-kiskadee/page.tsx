@@ -157,6 +157,15 @@ export default function GreatKiskadeePage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Great Kiskadees are permanent residents throughout South Texas. They are among the most conspicuous birds at any Valley nature center, perching openly on wires and branches and announcing themselves constantly with the loud <em>kis-ka-dee!</em> call. No special timing is needed — any visit to Bentsen, Estero Llano Grande, Santa Ana, or Quinta Mazatlán will produce Great Kiskadees. <strong>April through July</strong> is the breeding season, when pairs are particularly vocal and active.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

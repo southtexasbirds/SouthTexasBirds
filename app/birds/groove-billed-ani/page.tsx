@@ -157,6 +157,15 @@ export default function GrooveBilledAniPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>May through October</strong> — Groove-billed Anis are summer visitors to South Texas, arriving from Mexico in late April and departing by November. The peak period is <strong>June through September</strong>, when family groups are active in dense brushy vegetation near water. Estero Llano Grande State Park, Santa Ana NWR, and the resaca edges near Brownsville are reliable spots. Anis are noisy and conspicuous when present — listen for a liquid, gurgling call and look for the distinctive bill shape.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

@@ -157,6 +157,15 @@ export default function RingedKingfisherPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Ringed Kingfishers are permanent residents of the lower Rio Grande Valley and don&apos;t migrate. They are most easily seen along the Rio Grande itself, where they perch prominently on snags above the water and make loud, rattling calls audible from a distance. The Santa Ana NWR water features, the Rio Grande floodplain at Bentsen, and the water access at Salineño Wildlife Preserve are the best sites. Visit any time of year — <strong>October through April</strong> is ideal when the deciduous vegetation is thinner and birds are easier to spot.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

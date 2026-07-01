@@ -157,6 +157,15 @@ export default function HarrisHawkPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Harris&apos;s Hawks are permanent residents of South Texas and don&apos;t migrate. They are easiest to find during the <strong>breeding season (February–July)</strong>, when groups of 3–5 birds are conspicuous around nest sites and frequently perch on utility poles and mesquite trees along roadsides. Laguna Atascosa NWR auto tour road, the brushy areas around Estero Llano Grande, and any open country with scattered trees in Cameron and Willacy counties reliably produce sightings year-round.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
