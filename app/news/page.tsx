@@ -85,6 +85,15 @@ const articles = [
       "South Padre Island's tidal flats host nationally significant concentrations of the endangered Piping Plover each fall. July through October is peak season for coastal shorebird diversity on the Texas Gulf Coast.",
     tags: ["Migration", "Shorebirds", "Conservation"],
   },
+  {
+    slug: "south-texas-birding-calendar",
+    date: "June 2026",
+    isoDate: "2026-06-28",
+    title: "South Texas Birding Calendar: When to Go for Each Species",
+    excerpt:
+      "A month-by-month guide to birding the Rio Grande Valley. Whooping Cranes in winter, Painted Bunting fallouts in spring, hawk kettles in September — when you go determines what you see.",
+    tags: ["Planning", "Guide"],
+  },
 ];
 
 export default function NewsPage() {

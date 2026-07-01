@@ -11,6 +11,7 @@ const NEWS_SLUGS = [
   "painted-bunting-south-padre",
   "fall-hawk-migration-south-texas",
   "fall-shorebird-season-south-padre",
+  "south-texas-birding-calendar",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
