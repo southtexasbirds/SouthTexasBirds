@@ -8,6 +8,7 @@ const NEWS_SLUGS = [
   "thornscrub-restoration-rgv",
   "rgvbf-festival-2026",
   "spacex-refuge-land-exchange",
+  "painted-bunting-south-padre",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -58,6 +58,15 @@ const articles = [
       "A federal land exchange moving through the courts could reshape one of South Texas's most important wildlife corridors — directly touching habitat for the Aplomado Falcon, ocelot, and other species.",
     tags: ["Conservation", "Habitat", "Legal"],
   },
+  {
+    slug: "painted-bunting-south-padre",
+    date: "June 2026",
+    isoDate: "2026-06-25",
+    title: "South Padre Island Remains a Critical Painted Bunting Stopover",
+    excerpt:
+      "When northwest winds follow a cold front in late April, hundreds of Painted Buntings and other Trans-Gulf migrants make landfall at South Padre Island — one of North America's most spectacular birding events.",
+    tags: ["Conservation", "Migration"],
+  },
 ];
 
 export default function NewsPage() {

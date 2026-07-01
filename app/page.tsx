@@ -318,18 +318,18 @@ export default function HomePage() {
                 excerpt: "Less than 5% of native thornscrub remains in the Valley — conservation groups are rebuilding habitat for Green Jays, Chachalacas, and more.",
               },
               {
-                href: "/news/rgvbf-festival-2026",
-                date: "June 2026",
-                isoDate: "2026-06-15",
-                title: "RGVBF Returns This November",
-                excerpt: "The Rio Grande Valley Birding Festival comes back to Harlingen — over 100 field trips, expert guides, and the full RGV lineup.",
-              },
-              {
                 href: "/news/spacex-refuge-land-exchange",
                 date: "June 2026",
                 isoDate: "2026-06-20",
                 title: "SpaceX Land Exchange Threatens Wildlife Corridor",
                 excerpt: "A federal land swap could fragment key Aplomado Falcon and ocelot habitat along the Rio Grande.",
+              },
+              {
+                href: "/news/painted-bunting-south-padre",
+                date: "June 2026",
+                isoDate: "2026-06-25",
+                title: "Painted Buntings at South Padre Island",
+                excerpt: "When conditions align in late April, hundreds of Trans-Gulf migrants make landfall at South Padre Island — one of the most spectacular birding events in North America.",
               },
             ].map((article, i) => (
               <AnimateIn key={article.href} delay={i * 100}>
