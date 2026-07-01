@@ -197,6 +197,49 @@ export default function RoseThroatedBecardPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Rose-throated Becard rare in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Rose-throated Becard is one of the most coveted rarities in U.S. birding. It breeds irregularly in the lower Rio Grande Valley of South Texas, with nesting pairs appearing in some years but not others. Texas is the only state where it has bred in the U.S. Always check current eBird reports before planning a trip specifically for this species, as its presence is never guaranteed."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a Rose-throated Becard?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Males are unmistakable: gray above with a black cap, blackish wings, and a vivid rose-pink throat patch. The large, round head and thick bill give the bird an almost owl-like facial profile. Females are entirely different — buffy-brown overall with a dark cap and pale underparts, and lack the rose throat. Both sexes build or inhabit the large, pendulous nest, which hangs from a high branch and may be easier to find than the bird itself."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Rose-throated Becard in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "When present, Rose-throated Becards are found in mature riparian woodland along the Rio Grande — Bentsen-Rio Grande Valley State Park and the Anzalduas County Park area have produced most Texas records. The nest is the best clue: a large, ragged-looking ball of plant material hanging from a sycamore or cottonwood branch over the river. Check current eBird reports for active sites before visiting."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What kind of nest does the Rose-throated Becard build?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Rose-throated Becard builds a large, pendulous (hanging) nest — a loose globe of plant fibers, bark strips, and Spanish moss suspended from a high branch, often over water. The nest has a side entrance hole and can be 30–60 cm long. It is often the most visible sign of the species' presence, making nest-searching in appropriate habitat a productive strategy when birds are not actively calling."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

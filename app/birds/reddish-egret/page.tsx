@@ -313,6 +313,49 @@ export default function ReddishEgretPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Reddish Egret rare?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Reddish Egret is North America's rarest heron. The global breeding population is estimated at only around 2,000 pairs, with the Texas coast hosting a significant share. It was nearly extirpated in the late 19th century by plume hunters and has never fully recovered. Despite being listed as Least Concern globally, its small total population size makes it a conservation priority."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the white morph Reddish Egret?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Reddish Egret has two color morphs: the dark morph (slate-gray body, shaggy rufous-brown neck and head, bicolored pink-and-black bill) and the white morph (entirely white plumage, same bicolored bill). Both morphs are the same species and can interbreed. The white morph makes up roughly 7% of the population in Texas. The shaggy neck and bicolored bill distinguish either morph from other white herons."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does the Reddish Egret dance while foraging?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Reddish Egret's lunging, wing-spreading 'dance' while foraging is an active hunting technique — not random behavior. Spreading the wings creates a canopy of shade that reduces surface glare, making fish more visible, and may also startle fish into shallower water. The rapid running and spinning movements herd fish and flush them from cover. This canopy feeding technique is unique among North American herons."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Reddish Egret in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Reddish Egret is a resident of the Texas Gulf Coast year-round. The best sites in South Texas are the Laguna Madre tidal flats — accessible from the South Padre Island Birding and Nature Center deck, Laguna Atascosa NWR's shoreline, and the tidal flats at Boca Chica. They forage at low tide in shallow, open water. Scan for the characteristic dancing, wing-spreading foraging behavior — it is visible from considerable distance."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

@@ -333,6 +333,49 @@ export default function PipingPloverPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Piping Plover endangered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Piping Plover is listed as Threatened under the U.S. Endangered Species Act, with the Great Lakes breeding population listed as Endangered. The species has three distinct breeding populations: the endangered Great Lakes population, and the threatened Northern Great Plains and Atlantic Coast populations. All three winter on Gulf and Atlantic coast beaches, with South Texas hosting birds from all three. Habitat disturbance, predation, and storm events threaten nesting success."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a Piping Plover?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Piping Plover is a small, pale sandy-colored plover with orange legs, an orange-and-black bill (orange base, black tip), and a single partial or complete dark neck ring. In winter plumage (when seen in South Texas), the neck band is incomplete and the bill is mostly dark. Its pale overall coloration makes it extremely difficult to spot against a sandy beach — the melodious 'peep-lo' call often reveals it first."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Piping Plover in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Laguna Madre tidal flats of South Texas are among the most important Piping Plover wintering sites in North America. The best sites include the South Padre Island beach and flats near the Convention Center, the tidal flats accessible from Laguna Atascosa NWR's Lakeside Drive, and the beaches at Boca Chica State Park. Present from October through April."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does South Texas matter for Piping Plover conservation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Laguna Madre of South Texas is recognized as one of the most critical wintering sites for the Piping Plover in the U.S. The hypersaline tidal flats support dense invertebrate prey, and birds return to the same stretches of beach year after year. Individual banded birds have been resighted at the same Texas wintering sites for six or more consecutive winters — demonstrating the conservation significance of this specific habitat."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

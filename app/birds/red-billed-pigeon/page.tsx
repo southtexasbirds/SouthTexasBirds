@@ -206,6 +206,49 @@ export default function RedBilledPigeonPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What does a Red-billed Pigeon look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Red-billed Pigeon is a large, uniformly dark pigeon — the overall color is deep wine-purple or maroon-brown with slightly paler underparts, creating a rich monochrome appearance unlike any other pigeon in the area. The bill has a red base with a pale tip, and the eye-ring is red. In flight it appears very large and uniformly dark, distinguishable from doves by size and coloration."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Red-billed Pigeon in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Red-billed Pigeon is only reliably found in the U.S. in the lower Rio Grande Valley of South Texas. The best site is the Bentsen-Rio Grande Valley State Park hawk watch platform, where birds can be watched flying over the river at dawn from April through September. Salineño Wildlife Preserve and canopy towers along the Rio Grande corridor are also productive."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Red-billed Pigeon common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Red-billed Pigeon is uncommon and local in South Texas — it is a specialty of the lower Rio Grande Valley and is not found farther north or inland. It is present as a breeding visitor from April through September, wintering in Mexico. On good mornings at the Bentsen hawk watch, multiple birds can be seen flying along the river, but it is not guaranteed and the timing matters — dawn activity is much higher than midday."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When is the best time to see a Red-billed Pigeon in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "April through August is the window, with May and June being peak breeding season. Dawn is the most productive time — birds are most active in the first two hours after sunrise, when they fly along the Rio Grande corridor between roost and feeding sites. The Bentsen SP hawk watch platform offers a clear view over the river for watching these flight movements."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
