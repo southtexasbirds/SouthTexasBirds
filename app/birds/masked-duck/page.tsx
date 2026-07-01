@@ -156,6 +156,15 @@ export default function MaskedDuckPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Irregular year-round</strong> — Masked Ducks are one of the most unpredictable birds in South Texas, appearing and disappearing without warning. When present, they favor managed wetlands with dense emergent vegetation at the edges. Estero Llano Grande State Park and Santa Ana NWR are the most reliable sites. Sit quietly at a pond edge at dawn and scan vegetation margins — the bird will occasionally emerge briefly before retreating. Always check eBird for recent confirmed sightings before making a special trip.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

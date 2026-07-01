@@ -134,6 +134,15 @@ export default function RedBilledPigeonPage() {
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>The hawk watch platform at Bentsen SP at dawn is the classic spot. Listen for the deep cooing from the canopy; scan the riverside trees at first light.</p>
           </section>
         </AnimateIn>
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>April through September</strong> — Red-billed Pigeons are breeding-season residents of the riparian corridor along the Rio Grande. The classic strategy is to arrive at the <strong>Bentsen SP hawk watch platform before dawn</strong> and watch birds silhouetted against the brightening sky as they fly over the river. By mid-morning birds disappear into the canopy. The deep, repetitive coo is heard throughout the day from river-edge trees at Salineño and Santa Margarita Ranch.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

@@ -135,6 +135,15 @@ export default function CouchsKingbirdPage() {
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>Effectively impossible to miss anywhere in the Valley. If you see a large yellow flycatcher on a wire or treetop in the RGV, it is almost certainly this species.</p>
           </section>
         </AnimateIn>
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Couch&apos;s Kingbird is permanently resident in the Rio Grande Valley and one of the easiest birds to find on any visit. Any exposed perch — power lines, treetops, fence posts near open areas — is a potential Couch&apos;s Kingbird lookout. The loud, nasal <em>breeeer</em> call carries well and the birds are conspicuous and bold. Numbers increase somewhat in spring and summer when breeding activity is highest, but this species is reliably present 365 days a year.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

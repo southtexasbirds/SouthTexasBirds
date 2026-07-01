@@ -236,6 +236,15 @@ export default function BotterisSparrowPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>May through September</strong> — Botteri&apos;s Sparrows are strictly breeding-season visitors to South Texas, arriving from Mexico in late April and departing by October. They are only reliably found when singing, which makes early June the optimal window — males sing persistently from low perches in tall coastal grassland at dawn. <strong>Learn the song before you go</strong>: the distinctive bouncing-ball rattle is the only reliable way to locate this cryptic species. The Sabal Palm Sanctuary grasslands and coastal prairies of Cameron County are the most accessible sites.
+            </p>
+          </section>
+        </AnimateIn>
+
         {/* Conservation & Fun Fact */}
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>

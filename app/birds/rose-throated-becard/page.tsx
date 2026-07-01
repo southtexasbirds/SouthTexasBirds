@@ -136,6 +136,15 @@ export default function RoseThroatedBecardPage() {
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>Presence is irregular year to year — check local birding reports before visiting specifically for this species. The distinctive nest is often the easiest thing to find.</p>
           </section>
         </AnimateIn>
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Irregular — check eBird first</strong> — Rose-throated Becards are one of the most unpredictable South Texas specialties. When present, they are usually found at sites along the Rio Grande — Bentsen SP, Santa Ana NWR, and occasionally Salineño. The easiest way to locate a becard is to find its remarkable hanging nest: a bulky, globular structure suspended from the tip of a high branch and visible from a considerable distance. Local birding reports are the essential resource; when a pair is confirmed, word spreads quickly and the site is usually productive for weeks.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
