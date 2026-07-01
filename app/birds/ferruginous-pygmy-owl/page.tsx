@@ -242,6 +242,49 @@ export default function FerrugynousPygmyOwlPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Ferruginous Pygmy-Owl endangered in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Ferruginous Pygmy-Owl is listed as Endangered in Texas. The Texas population at the northern edge of the species' range has declined severely due to habitat destruction. A federal Endangered Species listing for the cactus ferruginous pygmy-owl (the Arizona subspecies) was vacated in 2006, but the Texas population remains a species of serious conservation concern, with very few pairs remaining in accessible locations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I find a Ferruginous Pygmy-Owl in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Ferruginous Pygmy-Owl is one of the most sought-after and challenging birds in the Rio Grande Valley. Salineño Wildlife Preserve along the Rio Grande has historically been the most reliable site. Santa Ana National Wildlife Refuge and intact thornscrub tracts near Bentsen are also possibilities. Early morning visits during the breeding season (March–June), listening for the rapid hooting call, are most productive."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Ferruginous Pygmy-Owl nocturnal?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Unlike most owls, the Ferruginous Pygmy-Owl is largely diurnal (active during the day), particularly in the early morning and late afternoon. This makes it much easier to find visually than typical nocturnal owls. However, it is most vocal at dawn and dusk. Its small size — just 6.5 inches long — means it can be easily overlooked even when perched in the open."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How small is the Ferruginous Pygmy-Owl?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Ferruginous Pygmy-Owl is tiny — approximately 6.5 inches (17 cm) long, making it one of the smallest owls in North America. Despite its diminutive size, it is an aggressive predator that attacks prey considerably larger than itself, including lizards, small birds, and large insects. Its false 'eyespots' on the back of the head help deter predators that approach from behind."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

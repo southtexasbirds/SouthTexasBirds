@@ -318,11 +318,11 @@ export default function HomePage() {
                 excerpt: "Less than 5% of native thornscrub remains in the Valley — conservation groups are rebuilding habitat for Green Jays, Chachalacas, and more.",
               },
               {
-                href: "/news/spacex-refuge-land-exchange",
+                href: "/news/south-texas-birding-calendar",
                 date: "June 2026",
-                isoDate: "2026-06-20",
-                title: "SpaceX Land Exchange Threatens Wildlife Corridor",
-                excerpt: "A federal land swap could fragment key Aplomado Falcon and ocelot habitat along the Rio Grande.",
+                isoDate: "2026-06-28",
+                title: "Month-by-Month Birding Calendar",
+                excerpt: "When you go determines what you see. From Whooping Cranes in winter to hawk kettles in September — a complete planning guide.",
               },
               {
                 href: "/news/painted-bunting-south-padre",

@@ -235,6 +235,49 @@ export default function HookBilledKitePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Where can I see a Hook-billed Kite in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Hook-billed Kite is one of the rarest regularly occurring raptors in the United States, found only along a short stretch of the Rio Grande in South Texas. Salineño Wildlife Preserve is the most reliable U.S. site, with one to three territorial pairs present most years. Bentsen-Rio Grande Valley State Park hawk tower is also productive during the fall raptor migration when birds soar on thermals."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Hook-billed Kite eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hook-billed Kites are specialized snail eaters. Their strongly hooked bill is specifically adapted for extracting the soft bodies of large land snails (genus Orthalicus) from their shells. This dietary specialization makes the kite closely tied to humid subtropical woodland where these snails are abundant — specifically the riparian forest along the lower Rio Grande."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Hook-billed Kite endangered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Hook-billed Kite is not globally threatened — it is common across much of Central and South America — but in the United States it exists at the extreme northern edge of its range with a very small population. Habitat loss along the Rio Grande is the primary concern for U.S. birds. Its dependence on riparian forest makes it vulnerable to continued clearing of the corridor."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I identify a Hook-billed Kite?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In flight, the Hook-billed Kite has a distinctive silhouette: paddle-shaped wings that bulge broadly in the middle, a rounded tail with pale banding, and a relatively large-headed appearance. The bill is massive and strongly hooked but difficult to see at distance. Males are gray above with white barring below; females are brown above with rufous-barred underparts. The pale underwing with dark markings is the most reliable field mark in flight."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
