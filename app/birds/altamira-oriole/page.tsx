@@ -314,6 +314,49 @@ export default function AltamiraOriolePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Altamira Oriole found only in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In the United States, the Altamira Oriole is found only in the Rio Grande Valley of South Texas — making it one of the most sought-after birds for American birders. Its range extends south through Mexico and Central America to Nicaragua. Within the U.S., it is essentially restricted to a narrow strip along the lower Rio Grande between Laredo and Brownsville."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does the Altamira Oriole's nest look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Altamira Oriole builds the longest woven nest of any North American bird — a pendulous bag up to 26 inches long, suspended from the tip of a branch. The nest is made of plant fibers woven into a tight pouch that protects eggs and chicks from predators and weather. The hanging nests are often visible even after the leaves fall, and old nests may be used year after year."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is the best place to see Altamira Orioles in the U.S.?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bentsen-Rio Grande Valley State Park in Mission, Texas is considered the most reliable site for Altamira Orioles in the U.S., with multiple territorial pairs present year-round. Santa Ana National Wildlife Refuge and Salineño Wildlife Preserve are also excellent. The species is most visible and vocal during the breeding season (April–July) when males sing persistently from tall trees."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does the Altamira Oriole eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Altamira Orioles eat insects, nectar, and fruit. They probe flowers for nectar and are important pollinators in their range. They will visit feeders stocked with halved oranges and grape jelly. During the breeding season, insects make up a significant portion of the diet, as the high protein content is essential for chick development."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

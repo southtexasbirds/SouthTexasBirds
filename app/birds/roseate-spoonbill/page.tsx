@@ -224,6 +224,49 @@ export default function RoseateSpoonbillPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why is the Roseate Spoonbill pink?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Roseate Spoonbill's pink and red coloration comes from carotenoid pigments in its food — particularly crustaceans like shrimp and crayfish that contain astaxanthin and other carotenoids. The bird cannot synthesize these pigments itself; it absorbs them through diet. This is the same mechanism that makes flamingos pink. A Roseate Spoonbill raised on a diet lacking carotenoids would be white."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Roseate Spoonbill rare?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Roseate Spoonbill is not globally rare — it's common in South America and the Caribbean — but it was nearly extirpated from the United States by plume hunters in the late 1800s. U.S. populations recovered significantly after legal protection in the early 1900s. Today it's a regular breeder along the Texas and Florida Gulf Coast, though habitat loss from coastal development remains a concern."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see Roseate Spoonbills in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "South Padre Island Birding and Nature Center offers year-round views of Roseate Spoonbills in the Laguna Madre shallows. Aransas National Wildlife Refuge hosts nesting colonies. Estero Llano Grande State Park and other Valley ponds draw foraging birds throughout the year, with post-breeding dispersal (July–September) bringing them to inland wetlands they don't use during nesting."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do Roseate Spoonbills feed?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Roseate Spoonbills sweep their distinctive spatula-shaped bill back and forth through shallow water in a motion called tactolocation — the bill's sensitive tip detects prey by touch rather than sight. This allows them to feed in turbid or murky water where vision would be ineffective. They feed on small fish, shrimp, aquatic insects, and crustaceans."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

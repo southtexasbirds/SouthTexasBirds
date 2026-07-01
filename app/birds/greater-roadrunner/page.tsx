@@ -197,6 +197,49 @@ export default function GreaterRoadrunnerPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can roadrunners fly?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Greater Roadrunners can fly — but they do so reluctantly and only for short distances. Their wings are relatively short and their flight is low and labored. They spend almost all their time on the ground, where they can sprint at speeds up to 20 miles per hour. They use short flights mainly to escape predators or reach elevated perches."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a roadrunner eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Greater Roadrunners are opportunistic predators with an impressive and varied diet: lizards (their staple in Texas), snakes (including venomous rattlesnakes), small rodents, scorpions, centipedes, insects, and even small birds and hummingbirds caught at feeders. They grab snakes behind the head and thrash them against rocks to kill them. Roadrunners are among the few birds that can safely eat venomous prey."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are Greater Roadrunners common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Greater Roadrunners are year-round residents throughout South Texas and are moderately common in brushy and open areas. They are most easily found by walking trails through scrubby habitat in the early morning. Laguna Atascosa National Wildlife Refuge, Santa Ana NWR, and the brushy areas around any Valley state park regularly produce roadrunner sightings."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do roadrunners stay warm?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Greater Roadrunners have a patch of dark, pigmented skin on their back beneath the feathers. On cold mornings they face away from the sun and raise their back feathers to expose this dark skin, acting like a solar panel to absorb warmth. This behavior — called 'sunning' — is particularly conspicuous in early morning and makes roadrunners much easier to observe as they stand broadside to the sun."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
