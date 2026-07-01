@@ -10,6 +10,7 @@ const NEWS_SLUGS = [
   "spacex-refuge-land-exchange",
   "painted-bunting-south-padre",
   "fall-hawk-migration-south-texas",
+  "fall-shorebird-season-south-padre",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

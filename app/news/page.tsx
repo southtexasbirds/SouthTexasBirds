@@ -76,6 +76,15 @@ const articles = [
       "Every September, tens of thousands of raptors stream south through the Rio Grande Valley. At Bentsen's hawk tower on peak days, Broad-winged Hawk kettles containing 10,000 or more birds fill the sky.",
     tags: ["Migration", "Raptors"],
   },
+  {
+    slug: "fall-shorebird-season-south-padre",
+    date: "June 2026",
+    isoDate: "2026-06-28",
+    title: "Fall Shorebird Season at South Padre Island: Piping Plovers and More",
+    excerpt:
+      "South Padre Island's tidal flats host nationally significant concentrations of the endangered Piping Plover each fall. July through October is peak season for coastal shorebird diversity on the Texas Gulf Coast.",
+    tags: ["Migration", "Shorebirds", "Conservation"],
+  },
 ];
 
 export default function NewsPage() {
