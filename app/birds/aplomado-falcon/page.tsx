@@ -346,6 +346,49 @@ export default function AplomadoFalconPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Aplomado Falcon endangered in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. The Aplomado Falcon is listed as Federally Endangered in the United States. It was extirpated from Texas and New Mexico by the early 20th century due to habitat loss — primarily the conversion of native coastal prairie to agriculture and the associated decline of prey populations. A reintroduction program beginning in the 1990s has established a small but growing population in South Texas, primarily at Laguna Atascosa NWR."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see an Aplomado Falcon in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The best place to see an Aplomado Falcon in Texas is the Laguna Atascosa National Wildlife Refuge auto tour loop in Rio Hondo. Birds are present year-round in established territories and frequently perch on fence posts, yucca stalks, and native shrubs along the tour route. October through April is the most reliable window, when birds are most visible in open coastal prairie."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify an Aplomado Falcon?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Aplomado Falcon is a slender, long-tailed falcon with a distinctive bold facial pattern: dark mustache and cheek patches contrasting with a white or pale supercilium and throat. The upperparts are gray, the breast is pale with a dark barred band, and the belly is rufous-orange. The long barred tail and slim silhouette distinguish it from any other Texas falcon."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why was the Aplomado Falcon extirpated from the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Aplomado Falcon was extirpated from the U.S. primarily due to the large-scale conversion of native Chihuahuan grassland and Tamaulipan coastal prairie to agriculture. This eliminated both its nesting habitat and the prey base (large insects, small birds, lizards) it depends on. Pesticide use and nest disturbance were secondary factors. Recovery has required both habitat protection and captive breeding and release programs."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

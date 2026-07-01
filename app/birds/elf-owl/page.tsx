@@ -228,6 +228,49 @@ export default function ElfOwlPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Elf Owl the world's smallest owl?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Elf Owl is the world's smallest owl by weight, averaging about 1.4 oz (40 g) and measuring 5–5.5 inches in length. It weighs less than a golf ball. The Pygmy Owls are similar in length but the Elf Owl is lighter-bodied. It is also among the smallest owls by body mass of any owl species globally."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see an Elf Owl in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Elf Owls are summer residents in South Texas from late April through August. Salineño Wildlife Preserve along the Rio Grande is the most accessible U.S. site. They roost in woodpecker cavities in large riparian trees during the day and become active at dusk. A nighttime walk along the Bentsen SP nature trail in May or June, listening for the rapid, puppy-like barking call, can be productive."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does an Elf Owl eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Elf Owls eat almost exclusively invertebrates — primarily large insects (moths, beetles, grasshoppers, crickets), scorpions, centipedes, and spiders. Unlike most owls, they rarely take vertebrate prey. They hunt entirely at night, using their large eyes and sensitive hearing to locate prey in the dark."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where does the Elf Owl nest?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Elf Owls are secondary cavity nesters — they cannot excavate their own holes and depend entirely on cavities created by woodpeckers in large riparian trees. In South Texas they use cavities in sycamores, cottonwoods, and large mesquites along the Rio Grande. Loss of mature riparian trees with existing cavities is the primary threat to the Texas population."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

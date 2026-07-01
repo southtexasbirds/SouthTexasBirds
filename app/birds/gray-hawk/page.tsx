@@ -223,6 +223,49 @@ export default function GrayHawkPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Where is the best place to see a Gray Hawk in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In the United States, Gray Hawks are found in two areas: the lower Rio Grande Valley of South Texas and riparian corridors in southern Arizona. In Texas, Bentsen-Rio Grande Valley State Park, Salineño Wildlife Preserve, and the riparian trail at Santa Ana NWR are the most reliable sites. The species breeds in mature riparian woodland along the Rio Grande from April through August."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Gray Hawk look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Adults are pale gray above with finely barred pale gray underparts — the dense, even barring gives the breast a washed-gray look from a distance. The tail is boldly banded black and white. In flight the broad rounded wings and short tail give it a somewhat accipiter-like silhouette. Immatures are dark brown above with a boldly streaked, buffy underparts and a narrowly banded tail."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Gray Hawk common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Gray Hawk is uncommon and local in South Texas, present as a breeding visitor from April through September in mature riparian woodland along the Rio Grande. It is not difficult to find at the right time and place — Bentsen-Rio Grande Valley SP and Salineño are the most reliable U.S. sites — but it requires a targeted visit to riparian habitat. It is not found in open country or upland areas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When does the Gray Hawk migrate through South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Gray Hawks are migratory in the U.S., arriving in South Texas in April and departing by September or October. They winter in Mexico and Central America. Peak breeding activity is May through July. By late September most birds have departed, and the species is absent from Texas in winter."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

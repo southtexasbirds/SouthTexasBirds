@@ -200,6 +200,49 @@ export default function RedCrownedParrotPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Red-crowned Parrot endangered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. The Red-crowned Parrot (Amazona viridigenalis) is listed as Endangered on the IUCN Red List. Wild populations in its native range in northeastern Mexico have declined sharply due to habitat loss and trapping for the pet trade. Remarkably, the naturalized Texas population — descended from escaped or released cage birds — is now estimated to be larger than the entire wild Mexican population."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are the Red-crowned Parrots in Texas native or introduced?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Rio Grande Valley population is naturalized (descended from escaped and released cage birds) rather than native. However, because this population now represents a significant share of the global population of an endangered species, it has conservation significance. The ABA added the species to the official checklist in 2017 as an established exotic."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see Red-crowned Parrots in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Red-crowned Parrots are most reliably seen in urban areas of the lower Rio Grande Valley — particularly Brownsville, McAllen, and surrounding communities. They are most visible at dawn and dusk when communal flocks fly noisily between roost and foraging sites. Local birding groups often share current roost locations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Red-crowned Parrot look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Red-crowned Parrot is an all-green parrot with a bright red crown patch, red wing patches visible in flight, and a pale bill. It is about 13 inches long — a medium-sized amazon parrot. In flight, flocks call loudly with harsh, rolling shrieks. The red crown distinguishes it from the similar Yellow-headed Parrot that also occurs in the Valley."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
