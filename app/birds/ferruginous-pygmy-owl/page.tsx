@@ -156,6 +156,15 @@ export default function FerrugynousPygmyOwlPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong>, but the Ferruginous Pygmy-Owl is easiest to find during the <strong>breeding season (March–June)</strong>, when males call persistently from within dense thornscrub early in the morning — sometimes even before dawn. Listen for a rapid, hollow <em>toop toop toop</em> repeated dozens of times. Salineño Wildlife Preserve, Santa Ana NWR, and the thornscrub tracts around Bentsen are the most reliable sites. Visiting with a local birding guide significantly improves success rates for this challenging-to-spot species.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

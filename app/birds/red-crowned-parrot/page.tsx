@@ -139,6 +139,15 @@ export default function RedCrownedParrotPage() {
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>Evening roost flights are spectacular — ask locals where the current roost is located. Quinta Mazatlán staff can usually direct visitors to active flocks in the area.</p>
           </section>
         </AnimateIn>
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Red-crowned Parrots are permanent residents of the Valley, but there are two daily windows that reliably produce views. <strong>Dawn (30 minutes before sunrise)</strong>: flocks leave their roost sites heading to feeding areas, calling loudly as they go. <strong>Dusk (30–60 minutes before sunset)</strong>: flocks return to communal roosts, often in large numbers that can be heard from a distance. Quinta Mazatlán in McAllen maintains an active parrot flock; staff can direct visitors to current roost locations.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

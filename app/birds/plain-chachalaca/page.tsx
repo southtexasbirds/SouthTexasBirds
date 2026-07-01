@@ -229,6 +229,15 @@ export default function PlainChachalacaPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Plain Chachalacas are permanent residents and among the most reliably encountered birds at any Valley nature center. They are most vocal and active in the <strong>first hour after dawn</strong>, when groups produce their remarkable group chorus (<em>cha-cha-lac</em>) that carries across the thornscrub. Feeders at Bentsen, Santa Ana, and Estero Llano Grande draw multiple individuals throughout the day. Winter visitors often get their most memorable chachalaca experience at dawn, when a forest edge erupts in chorus from multiple groups.
+            </p>
+          </section>
+        </AnimateIn>
+
         {/* Conservation & Fun Fact */}
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
