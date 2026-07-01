@@ -336,6 +336,49 @@ export default function GearPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What magnification binoculars are best for South Texas birding?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "8x42 is the ideal all-around magnification for South Texas birding. The 8x provides a wide enough field of view to track birds through dense thornscrub, while 42mm objectives gather enough light for performance in the low-angle morning light and bright midday glare typical of the Rio Grande Valley. 10x binoculars can be useful for hawk watches at Bentsen or shorebirds on open coastal flats, but the narrower field of view makes them harder to use in brush.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a spotting scope for South Texas birding?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A spotting scope is very useful but not essential for a first South Texas trip. It becomes most valuable at specific sites: hawk watches (Bentsen State Park's tower, Hazel Bazemore), shorebird flats at Laguna Atascosa, and scanning the bays for Whooping Cranes at Aransas. For thornscrub birding at Santa Ana, Quinta Mazatlán, or Resaca de la Palma, binoculars are more practical and a scope is rarely needed.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "What are the best binoculars for birding the Rio Grande Valley?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For the Rio Grande Valley, the Nikon Monarch M7 8x42 is the top all-around recommendation — it handles South Texas's fast light transitions from deep shade to bright sun exceptionally well, with a close focus of 1.5m that's ideal for birds at the feeder stations at Bentsen and Quinta Mazatlán. Budget-focused birders should look at the Vortex Diamondback HD 8x42, which offers HD optics at a significantly lower price point.",
+                },
+              },
+              {
+                "@type": "Question",
+                "name": "What is the best birding field guide for Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For South Texas specifically, Stan Tekiela's 'Birds of Texas Field Guide' is the top recommendation for visiting birders — it's organized by color rather than taxonomy, which is uniquely helpful when you're trying to quickly ID an unfamiliar species in dense brush. The Sibley Guide to Birds is a useful supplement for range maps and detailed species accounts. For trip planning, eBird's mobile app is essential for seeing what other birders have recently observed at each hotspot.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

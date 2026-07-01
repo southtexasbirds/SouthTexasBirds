@@ -27,6 +27,11 @@ const linkedSpecies = [
   { name: "Green Jay", href: "/birds/green-jay" },
   { name: "Plain Chachalaca", href: "/birds/plain-chachalaca" },
   { name: "Altamira Oriole", href: "/birds/altamira-oriole" },
+  { name: "Buff-bellied Hummingbird", href: "/birds/buff-bellied-hummingbird" },
+  { name: "Hook-billed Kite", href: "/birds/hook-billed-kite" },
+  { name: "Crested Caracara", href: "/birds/crested-caracara" },
+  { name: "Roseate Spoonbill", href: "/birds/roseate-spoonbill" },
+  { name: "Painted Bunting", href: "/birds/painted-bunting" },
 ];
 
 export default function RGVBFFestival2026Page() {
@@ -214,6 +219,36 @@ export default function RGVBFFestival2026Page() {
               { "@type": "ListItem", "position": 3, "name": "Rio Grande Valley Birding Festival Returns This November", "item": "https://southtexasbirds.org/news/rgvbf-festival-2026" },
             ],
           })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "Rio Grande Valley Birding Festival 2026",
+            "description": "One of the largest birding festivals in the country. Over 100 field trips, expert guides, seminars, trade show, and family activities in the Rio Grande Valley of South Texas.",
+            "startDate": "2026-11-01",
+            "endDate": "2026-11-08",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+              "@type": "Place",
+              "name": "Harlingen Convention Center",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Harlingen",
+                "addressRegion": "TX",
+                "addressCountry": "US",
+              },
+            },
+            "organizer": {
+              "@type": "Organization",
+              "name": "Rio Grande Valley Birding Festival",
+              "url": "https://rgvbf.org",
+            },
+          }),
         }}
       />
       <script
