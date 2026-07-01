@@ -209,6 +209,49 @@ export default function AmericanOystercatcherPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What does an American Oystercatcher eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Despite the name, American Oystercatchers eat a wide variety of bivalves and other invertebrates — mussels, clams, limpets, crabs, and marine worms — as well as oysters. They use their long, laterally flattened bill to pry open bivalves or sever the adductor muscle before the shell can close. On Texas oyster reefs and jetties, they can be watched working through exposed shells at low tide."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see an American Oystercatcher in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The South Padre Island jetties (at the southern tip of Padre Island) are the most reliable site in South Texas. Oystercatchers forage on the riprap and nearby tidal flats, especially at low tide. The Laguna Madre tidal flats from October through March also hold significant numbers. The bird's loud, piercing call often announces its presence before it is seen."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the American Oystercatcher a year-round resident of South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — American Oystercatchers are year-round residents of the Texas coast. Numbers increase from October through March as birds from farther north join the resident population. The species nests on shell beaches and barrier islands in spring and summer; nests are simple scrapes with eggs laid directly on sand or shell substrate, making them vulnerable to beach traffic and storm overwash."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify an American Oystercatcher?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The American Oystercatcher is unmistakable: a large shorebird (43–47 cm) with a black head and neck, brown back, white underparts, vivid red-orange bill, and pink legs. The yellow eye with an orange orbital ring is visible at close range. In flight it shows a bold white wing stripe. The call — a loud, frenzied piping — is equally distinctive and carries far across tidal flats."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

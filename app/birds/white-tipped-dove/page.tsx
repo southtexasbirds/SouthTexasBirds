@@ -313,6 +313,49 @@ export default function WhiteTippedDovePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What does a White-tipped Dove sound like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The White-tipped Dove gives a deep, hollow, single-note hoot that sounds more like an owl than a dove — a low, resonant 'ooOOO' that carries well through dense woodland. Many first-time visitors to the Rio Grande Valley spend time searching for a mysterious owl, only to discover the sound is coming from a large dove walking quietly on the ground nearby. The call is one of the signature sounds of Valley thornscrub."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a White-tipped Dove in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "White-tipped Doves are common year-round residents of mature thornscrub and riparian woodland in the Rio Grande Valley. They are easiest to see at ground-level feeding stations at Bentsen-Rio Grande Valley State Park, Santa Ana NWR, and Estero Llano Grande SP, where they walk beneath feeders picking up spilled seed. They are shy and retiring — patience and quiet observation from a fixed position work best."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a White-tipped Dove?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The White-tipped Dove is a large, plump dove — larger than a Mourning Dove — with a plain brownish-gray back, pale buff-pink face and underparts, and white-tipped outer tail feathers visible as a white terminal band in flight. The face shows a pink-chestnut wash. It lacks any neck spots or collar. On the ground it walks deliberately and does not startle easily."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the White-tipped Dove common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The White-tipped Dove is fairly common but localized in South Texas — it is a specialty of the lower Rio Grande Valley, where it reaches the northern limit of its range. It is not found in central or north Texas. Within the Valley it is present year-round at every major nature reserve and is one of the target species on any serious birding trip to the region."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

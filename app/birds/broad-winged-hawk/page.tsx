@@ -238,6 +238,49 @@ export default function BroadWingedHawkPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When do Broad-winged Hawks migrate through South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The peak Broad-winged Hawk migration through South Texas is mid-September, typically around September 15–22. On the strongest days, hundreds of thousands of birds can pass over Corpus Christi in a matter of hours. The best site is Hazel Bazemore County Park in Corpus Christi, where counters have recorded over one million birds on a single peak day. Fall migration runs from early September through early October."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is a kettle of hawks?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A 'kettle' is the term for a group of soaring raptors (or other birds) circling together in a thermal updraft. As the column of warm rising air lifts the birds, they circle within it, then stream off in a line to the next thermal. During peak Broad-winged Hawk migration in September, kettles over South Texas can contain tens of thousands of birds — one of the most spectacular wildlife phenomena in North America."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a Broad-winged Hawk?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Broad-winged Hawk is a compact, small buteo. Adults in flight show a strongly banded tail — broad black and white bands with one wide black terminal band — and pale underparts with a rufous-barred breast. The wings appear pointed at the tips when soaring. The bold tail banding is the most reliable field mark at distance during migration. Immatures are streaked below with a more narrowly banded tail."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where do Broad-winged Hawks winter?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Broad-winged Hawks winter in South America, primarily in the Amazon Basin and along the Andean foothills from Colombia to Bolivia. They are long-distance migrants that travel 4,000–5,000 miles each way. All North American birds must pass through the Central American land bridge, which creates the geographic funneling effect that concentrates millions of hawks through a narrow corridor above South Texas each autumn."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

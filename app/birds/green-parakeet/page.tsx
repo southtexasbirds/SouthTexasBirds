@@ -199,6 +199,49 @@ export default function GreenParakeetPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Are Green Parakeets native to Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Green Parakeets are a naturalized (established exotic) species in the Rio Grande Valley, descended from birds that escaped or were released from the pet trade beginning in the 1960s and 1970s. They are native to northeastern Mexico, barely reaching the U.S. border, so the Texas population has some native-range overlap. The ABA accepted them on the official checklist as an established population."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you tell a Green Parakeet from a Red-crowned Parrot?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Green Parakeets are slimmer and much longer-tailed than the stocky Red-crowned Parrot. The Green Parakeet is all-green with no red coloration (other than occasional scattered red feathers in some individuals). It has a pointed tail and a smaller, less deep bill. In flight the longer, tapered tail and faster wingbeats give it a more swallow-like profile compared to the chunky, short-tailed Red-crowned Parrot."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see Green Parakeets in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Green Parakeets are most reliably seen in urban areas of the lower Rio Grande Valley — particularly McAllen, Edinburg, and Brownsville. They form communal roosts at dusk, often in large palms or dense shade trees near shopping centers and parks. Dawn and dusk roost flights are the most spectacular. Local eBird reports and birding groups often share current roost locations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Green Parakeet sound like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Green Parakeets are very noisy — flocks produce a constant, harsh, screechy chatter in flight and at roost sites. The calls are high-pitched, rolling, and repetitive, easily heard from a long distance when a flock is in the area. Their calls are shriller and more rapid than the rolling shouts of Red-crowned Parrots, and the slim silhouette in flight helps confirm the identification once the call is heard."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
