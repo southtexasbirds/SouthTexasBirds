@@ -156,6 +156,15 @@ export default function NorthernJacanaPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round but unpredictable</strong> — The Northern Jacana is a rare and local resident in South Texas, primarily at Resaca de la Palma State Park, which is the most reliable U.S. site. Numbers fluctuate: birds are sometimes absent for weeks then suddenly visible for months. Check recent eBird reports before visiting. When present, they are conspicuous — their extraordinary long toes distribute weight across lily pads and their bright yellow flight feathers flash when they open their wings.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

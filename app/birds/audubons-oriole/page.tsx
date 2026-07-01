@@ -160,6 +160,15 @@ export default function AudubonsOriolePage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Audubon&apos;s Orioles are permanent residents of dense South Texas brush, but they are secretive and far more often heard than seen. The best window is <strong>March through June</strong>, when males sing persistently from within thickets, allowing you to locate and patiently observe them. Salineño Wildlife Preserve and the dense thornscrub around Santa Ana NWR are the most reliable sites. Patience and a willingness to stand quietly near a singing bird are the main requirements.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

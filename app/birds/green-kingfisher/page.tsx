@@ -157,6 +157,15 @@ export default function GreenKingfisherPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Green Kingfishers are permanent residents along clear-water streams and resacas in the Rio Grande Valley. They are tiny (sparrow-sized) and easily overlooked, but sit conspicuously on low branches and rocks directly over the water. The most reliable sites are the slow-moving resacas at Santa Ana NWR and the clear streams at Estero Llano Grande. <strong>October through April</strong> is ideal — lower vegetation makes the birds easier to spot. Walk slowly along any resaca edge and scan low branches near the waterline.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
