@@ -224,6 +224,49 @@ export default function ClayColoredThrushPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Clay-colored Thrush the national bird of Costa Rica?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Clay-colored Thrush (Turdus grayi) is the national bird of Costa Rica, known locally as the 'Yigüirro.' It was chosen not for its appearance (it is a plain brown bird) but for its extraordinary song and its near-ubiquity across every Costa Rican landscape. Its rich, melodic call is woven into Costa Rican culture and marks the beginning of the rainy season."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Clay-colored Thrush rare in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Clay-colored Thrush is rare but increasing in South Texas. It began breeding in the lower Rio Grande Valley in the 1990s and has slowly expanded as a small resident population. It is never numerous or guaranteed, but regular sightings occur at nature reserves in the McAllen and Brownsville areas. Check eBird for recent reports — it is most reliably found at sites where it is regularly recorded."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Clay-colored Thrush look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Clay-colored Thrush is a plain, uniformly clay-brown thrush — the entire bird is warm brown above and buffy-brown below, with no streaking, spotting, or contrasting colors. The bill is yellowish-green, the eye ring is narrow and pale. It looks like a washed-out American Robin (a close relative) with no reddish-orange breast. The song — a rich, rolling series of melodic phrases — is far more distinctive than the plumage."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Clay-colored Thrush in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Clay-colored Thrushes in South Texas are most reliably found in the McAllen and Brownsville areas, where the resident breeding population is concentrated. Quinta Mazatlán in McAllen is one of the most consistent sites. The species favors dense riparian woodland and shaded gardens with tall trees and dense undergrowth. Singing males in spring are the most reliable cue — the robin-like song carrying from dense vegetation."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

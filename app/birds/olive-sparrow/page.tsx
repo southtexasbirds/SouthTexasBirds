@@ -323,6 +323,49 @@ export default function OliveSparrowPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What does an Olive Sparrow look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Olive Sparrow is a plump, medium-sized sparrow with olive-green and brown tones — overall greenish-brown above with a buff-white breast and belly, two rufous crown stripes bordering a pale central crown stripe, and a slightly darker eye stripe. It looks like a blend of a sparrow and a warbler in coloring and lacks the streaked breast of most sparrows. The face pattern is the most distinctive feature."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you find an Olive Sparrow in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Learn the song — it is the only reliable way to find this species. The Olive Sparrow's song is a series of chips that accelerates into a rapid trill, like a chip-chip-chip-trill-trill-trill. Males sing from inside or just above dense brush from March through June. Stand quietly near a singing bird and scan the shrub edge; they occasionally pop briefly into view. Pishing may draw them out briefly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Olive Sparrow only found in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In the United States, the Olive Sparrow is restricted to the Tamaulipan thornscrub of the lower Rio Grande Valley — from Starr County east to Cameron County. It is far more widespread across northeastern Mexico and into Central America. Within the Valley, it is actually quite common in suitable habitat, but its secretive habits make it easy to miss. Every major nature reserve in the Valley has a resident population."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When is the best time to see an Olive Sparrow?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "March through June is the peak window when males sing persistently from territories in dense thornscrub. The species is a year-round resident and does not migrate, so it is present in every month — but outside the breeding season it falls nearly silent and becomes very difficult to locate. Learning its song before visiting the Valley is the single most effective preparation for adding this species."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

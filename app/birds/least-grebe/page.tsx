@@ -225,6 +225,49 @@ export default function LeastGrebePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Least Grebe the smallest grebe?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Least Grebe is the smallest grebe in the Western Hemisphere and one of the smallest grebes worldwide. Adults are only about 25 cm (10 inches) long and weigh around 120–135 grams — about the size of a large sparrow. It is far smaller than the Pied-billed Grebe, which shares many of the same ponds in South Texas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a Least Grebe?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Least Grebe is tiny and dark — charcoal-gray body, black cap and throat (in breeding plumage), and bright golden-yellow eyes that immediately draw attention. The bill is short, slender, and blackish. Non-breeding birds are paler on the throat and face. The yellow eye is the most distinctive feature and is visible at moderate range. It is far smaller and darker than the Pied-billed Grebe."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Least Grebe in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Least Grebes are common year-round residents on the resacas, ponds, and quiet water bodies of the Rio Grande Valley. Estero Llano Grande State Park, the ponds at Quinta Mazatlán, Anzalduas County Park, and virtually any calm freshwater pond in the Valley will have them. They favor smaller, quieter ponds with dense emergent vegetation more than open-water lakes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does the Least Grebe migrate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In South Texas, Least Grebes are year-round residents. Unlike most grebes, they are flexible breeders — pairs can begin nesting within days of a pond filling, and can raise two to three clutches in a single year. This rapid response to available water makes them resilient in South Texas's seasonally variable wetland landscape. They are not migratory in the traditional sense, though some local movement occurs."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

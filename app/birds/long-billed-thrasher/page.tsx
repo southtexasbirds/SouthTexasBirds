@@ -237,6 +237,49 @@ export default function LongBilledThrasherPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do you tell a Long-billed Thrasher from a Brown Thrasher?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Long-billed Thrasher has a longer, more sharply down-curved bill and a grayer face with two distinct facial stripes (dark moustache and eye line). The underparts are streaked with dark brown on a white background, but the streaking is crisper and more defined than the Brown Thrasher's heavier spotting. The Long-billed is almost entirely restricted to Tamaulipan thornscrub in South Texas, while the Brown Thrasher is a migrant and winter visitor in more open habitats."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Long-billed Thrasher sound like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Long-billed Thrasher is one of the finest singers in South Texas — a rich, varied song of paired or tripled phrases delivered from an exposed perch in the brush, often for extended periods. Like other thrashers, it borrows phrases from other species (mimicry) and works them into its song. The voice is deeper and more resonant than a mockingbird's, with a distinctly thrush-like richness."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Long-billed Thrasher common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Long-billed Thrasher is a fairly common year-round resident of dense Tamaulipan thornscrub in the lower Rio Grande Valley. It is nearly endemic to this habitat type — the species barely extends into adjacent Mexico and is not found farther north in Texas. It is readily found at every major Valley nature reserve, often singing from an exposed perch at the brush edge in the morning."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When is the best time to see a Long-billed Thrasher?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "February through June is the peak singing season, when males sing persistently from exposed perches in and above dense thornscrub. Year-round resident — present every month — but most conspicuous and vocal in spring. Morning hours are best, as singing activity declines through the heat of midday. Bentsen-Rio Grande Valley SP, Santa Ana NWR, and Laguna Atascosa NWR all have reliable populations."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
