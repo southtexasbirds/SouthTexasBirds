@@ -160,6 +160,15 @@ export default function BroadWingedHawkPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Mid-September</strong> — Broad-winged Hawks migrate through South Texas in one of the most spectacular wildlife events in North America. The peak window is narrow: typically September 15–25, when kettles of thousands spiral overhead on thermals. <strong>Hazel Bazemore County Park</strong> near Corpus Christi is the premier watch site. In South Texas proper, Bentsen-Rio Grande Valley SP and roadside hawk watches can produce counts of hundreds on good days. Come early, bring a chair, and look for spiraling thermals of birds climbing the sky.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

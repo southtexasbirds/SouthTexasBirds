@@ -133,6 +133,15 @@ export default function WhiteCollaredSeedeaterPage() {
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>Check local eBird reports before making a special trip — the species is irregular and numbers vary by year. Listen for the sweet warbling song along the riverbank cane at Salineño.</p>
           </section>
         </AnimateIn>
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>May through August</strong> — White-collared Seedeaters are most reliably found during the breeding season when singing males perch atop cane stems at Salineño Wildlife Preserve. Check current eBird reports before making a dedicated trip, as the U.S. population fluctuates and the birds can be scarce or absent even at known sites. The sweet, rolling song is distinctive and audible from some distance; listen along the rio Grande riverbank cane first, then search for the singer.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

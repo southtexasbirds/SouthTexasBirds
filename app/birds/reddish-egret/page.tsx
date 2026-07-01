@@ -217,6 +217,15 @@ export default function ReddishEgretPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Reddish Egrets are resident along the Texas Gulf Coast and can be found any month. The best viewing is at <strong>low tide</strong> on open tidal flats where they actively hunt — the dancing, wing-spreading foraging display is visible from considerable distance and is unlike anything else. The South Padre Island Birding &amp; Nature Center bayside deck and the tidal flats along Laguna Atascosa NWR&apos;s shoreline are top sites. Numbers increase slightly October–April when northern birds augment the resident population.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section

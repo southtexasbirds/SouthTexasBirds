@@ -158,6 +158,15 @@ export default function CrestedCaracaraPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Crested Caracaras are permanent residents of South Texas open country and among the easiest raptors to find. Drive the back roads of Hidalgo, Starr, and Brooks counties and scan fence posts and overhead lines. Early mornings are most productive when birds are actively foraging on the ground. The Laguna Atascosa auto tour loop and King Ranch tours reliably produce caracaras year-round.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

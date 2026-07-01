@@ -136,6 +136,15 @@ export default function IncaDovePage() {
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>Virtually guaranteed anywhere in the Valley — look for them on the ground at any park, garden, or hotspot visitor center. They practically greet you at the gate.</p>
           </section>
         </AnimateIn>
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Inca Doves are permanent residents of the Rio Grande Valley and among the most easily encountered birds on any visit. They are virtually guaranteed at any park, garden, or nature center feeders in the Valley. The repetitive <em>no-hope, no-hope</em> call is a constant background sound throughout the day. Early morning and late afternoon are most active, when birds feed on open ground before retreating to shade.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

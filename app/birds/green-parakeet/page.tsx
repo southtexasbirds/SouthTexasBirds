@@ -136,6 +136,16 @@ export default function GreenParakeetPage() {
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>Look for flocks flying overhead at dawn and dusk in any McAllen or Brownsville neighborhood. Local birders can point you to current roost sites, which shift seasonally.</p>
           </section>
         </AnimateIn>
+
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — Green Parakeets are permanent residents of the McAllen and Brownsville urban areas. The easiest way to find them is to be in downtown McAllen or any park with mature trees at <strong>dawn or dusk</strong>, when communal flocks fly noisily between roost and foraging sites. The loud, chattering calls carry well and flocks of dozens to hundreds are visible from the street. Christmas Bird Count data regularly show thousands of birds in the valley — this is one of the most reliable exotic-species experiences in the U.S.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

@@ -225,6 +225,15 @@ export default function OliveSparrowPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>March through June</strong> — Olive Sparrows are year-round residents but are most reliably found during the breeding season when males sing from exposed perches within or just above dense brush. The accelerating chip-trill song is the easiest detection method. Bentsen-Rio Grande Valley SP, Santa Ana NWR, and Resaca de la Palma have good populations. Stand quietly near a thicket edge and wait — they will occasionally emerge. Pishing can coax them into brief view.
+            </p>
+          </section>
+        </AnimateIn>
+
         {/* Conservation & Fun Fact */}
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>

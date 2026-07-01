@@ -156,6 +156,15 @@ export default function LongBilledThrasherPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>February through June</strong> — Long-billed Thrashers are year-round residents of Tamaulipan thornscrub, but spring is by far the best time to see them. Males sing persistently from exposed perches at the tops of shrubs from February onward, making them far easier to locate than at any other season. Bentsen-Rio Grande Valley SP, Santa Ana NWR, and Sabal Palm Sanctuary all hold resident populations. At other times of year, listen for the song from dense brush and wait at edges.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

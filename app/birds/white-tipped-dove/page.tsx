@@ -226,6 +226,15 @@ export default function WhiteTippedDovePage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round</strong> — White-tipped Doves are permanent residents of the Valley&apos;s woodlands and easy to see at Valley nature centers. The best strategy is to sit quietly near the ground-level feeder stations at Bentsen, Santa Ana, or Estero Llano Grande in the early morning: they walk deliberately beneath the feeders, picking up fallen seed. Listen for the deep, resonant single-note hoot from dense shade — once you learn the call it is the easiest way to detect them before you see them.
+            </p>
+          </section>
+        </AnimateIn>
+
         {/* Conservation & Fun Fact */}
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>

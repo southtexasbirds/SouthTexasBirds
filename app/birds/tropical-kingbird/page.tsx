@@ -158,6 +158,15 @@ export default function TropicalKingbirdPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>April through October</strong> — Tropical Kingbirds are breeding-season visitors to South Texas, present from spring through fall. The difficulty is separating them from the very similar Couch&apos;s Kingbird, which is far more common: listen carefully for the distinctive call (a rapid, chittering trill vs. Couch&apos;s nasal <em>breeeer</em>). Check open perches near water and utility lines at Bentsen and Estero Llano Grande, and check eBird for recent sightings before visiting.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
