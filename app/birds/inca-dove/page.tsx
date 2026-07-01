@@ -197,6 +197,49 @@ export default function IncaDovePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do you tell an Inca Dove from a Mourning Dove?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Inca Doves are noticeably smaller than Mourning Doves and have a distinctive scaly appearance on the upperparts caused by dark edges on pale feathers. In flight the Inca Dove shows bright rufous wing patches — absent on the Mourning Dove. The Inca Dove's tail is long and squared with white outer corners; the Mourning Dove has a pointed tail. The Inca Dove's call is a repetitive no-hope, no-hope rather than the Mourning Dove's deeper coo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why do Inca Doves pyramid roost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In cold weather, Inca Doves stack in tight groups of two or three birds on a single branch — with lower birds providing body warmth to those above. This pyramid roosting behavior has been recorded with as many as 12 birds and is an effective thermoregulation strategy for a small bird that does not migrate and must survive Texas winter nights."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Inca Dove native to the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, the Inca Dove is a native species. It naturally expanded its range northward from Mexico into the American Southwest and Texas over the past century, aided by urbanization and agriculture. It is established as a breeding resident throughout South Texas, the Hill Country, and into central Texas. It is not an introduced or exotic species."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does an Inca Dove sound like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Inca Dove's call is a soft, repetitive two-note coo, often described as no-hope or go-back, delivered continuously throughout the day. It is one of the most frequently heard bird sounds in South Texas towns, parks, and gardens. In flight the wings produce a distinctive dry, rattling flutter."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

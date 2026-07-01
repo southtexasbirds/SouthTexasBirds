@@ -225,6 +225,49 @@ export default function GrooveBilledAniPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a Groove-billed Ani?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Groove-billed Ani is a member of the cuckoo family (Cuculidae) found in South Texas and throughout Latin America. It is an all-black, loose-feathered bird about the size of a large jay, with a deep, ridged bill and a long tail. Anis are highly social and breed communally — multiple females lay eggs in the same nest."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why do Groove-billed Anis nest communally?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Groove-billed Anis form small groups of two to four pairs that share a single nest and communally incubate and raise chicks. The cooperative system may reduce predation risk (more sentinels), lower individual energy costs of incubation, and improve overall breeding success. However, there is also internal competition — females sometimes bury the eggs of group-mates under new nest material."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you tell a Groove-billed Ani from a Smooth-billed Ani?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Groove-billed Ani has horizontal grooves along the sides of the bill visible at close range. The Smooth-billed Ani has a smooth, arched bill with a distinctive high ridge or 'keel' along the top. The Smooth-billed Ani is extremely rare in Texas (most records are from Florida) — virtually any ani seen in South Texas will be a Groove-billed Ani."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When is the best time to see a Groove-billed Ani in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Groove-billed Anis are breeding-season residents of South Texas, present from May through October. They are most reliable during peak breeding months (June–September) when groups are active in dense thornscrub and second growth. Bentsen-Rio Grande Valley State Park and Santa Ana NWR have reliable populations. They are most often detected by their liquid, bubbling call — a series of ou-wee notes repeated rapidly."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

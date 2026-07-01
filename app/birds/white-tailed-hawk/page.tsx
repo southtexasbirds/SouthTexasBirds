@@ -200,6 +200,49 @@ export default function WhiteTailedHawkPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Where is the only place in the United States to see a White-tailed Hawk?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In the United States, the White-tailed Hawk is found only along the Texas Gulf Coast, from Corpus Christi south through the lower Rio Grande Valley. It favors open coastal prairie and agricultural land. The King Ranch, Laguna Atascosa NWR, and the prairie roads of Willacy and Kenedy counties are among the most reliable sites."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a White-tailed Hawk?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Adults are gray above and white below, with bright rufous shoulder patches and a short white tail with a dark subterminal band. In flight the combination of white belly, rufous shoulders, and short white tail is distinctive. Immatures are dark brown and can be confusing, but the white tail base is usually visible even on young birds."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the White-tailed Hawk a buteo?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, the White-tailed Hawk is a large buteo — formerly placed in the genus Buteo (as Buteo albicaudatus) and now reclassified to Geranoaetus. It is one of the largest buteos in North America, with a wingspan of 50–55 inches. In soaring flight, the broad wings and relatively short tail are typical of the buteo shape."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When is the best time to see a White-tailed Hawk in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "White-tailed Hawks are year-round residents of the Texas Gulf Coast prairie and can be seen in any season. They are most visible when soaring on thermals in warm weather and during grassland fires, which concentrate prey. Drive rural roads in Cameron, Willacy, and Kenedy counties and scan open fields and fence posts."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

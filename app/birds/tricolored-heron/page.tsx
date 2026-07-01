@@ -276,6 +276,49 @@ export default function TricoloredHeronPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What was the Tricolored Heron formerly called?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Tricolored Heron was formerly known as the Louisiana Heron — a name used in field guides for decades before being officially changed to Tricolored Heron to better reflect the species' much wider range across the Gulf Coast, Caribbean, and Latin America. Many long-time birders still use the older name."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a Tricolored Heron?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Tricolored Heron is the only U.S. heron with slate-blue upperparts combined with a sharply contrasting white belly and white stripe down the front of the neck. In breeding plumage, the neck develops chestnut and buff tones and the bill turns bright blue. Its active, running foraging style and slim build distinguish it from the sluggish Little Blue Heron."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Tricolored Heron in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tricolored Herons are resident along the South Texas Gulf Coast year-round. They are most easily seen on tidal flats and shallow coastal bays at low tide. South Padre Island Birding and Nature Center, Laguna Atascosa NWR shoreline, and Estero Llano Grande all provide reliable sightings. They are also visible in breeding colonies at Aransas NWR."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Tricolored Heron common in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, the Tricolored Heron is a common permanent resident along the Texas Gulf Coast. It is one of the most frequently encountered herons in coastal South Texas and is present year-round in suitable shallow coastal habitat. It is less common inland than the Great Blue Heron or Little Blue Heron."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
