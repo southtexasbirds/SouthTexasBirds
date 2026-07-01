@@ -161,6 +161,15 @@ export default function ElfOwlPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Late April through August</strong> — Elf Owls are summer visitors to South Texas, arriving in late March and departing by October. The best viewing window is <strong>April through June</strong>, during the breeding season when males call persistently at dusk. They&apos;re strictly nocturnal; plan a after-dark visit to Bentsen-Rio Grande Valley State Park or Santa Ana NWR starting 30–45 minutes after sunset. Listen for a rapid, puppy-like yipping call from saguaro or tree cavities.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

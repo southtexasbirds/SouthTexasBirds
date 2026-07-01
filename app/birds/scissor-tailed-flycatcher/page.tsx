@@ -138,6 +138,15 @@ export default function ScissorTailedFlycatcherPage() {
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>Present spring through fall; scan utility wires and fence posts along any open road in the Valley. Large communal roosts may form in September before migration.</p>
           </section>
         </AnimateIn>
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>April through September</strong> — Scissor-tailed Flycatchers arrive in South Texas in early spring and depart by October. Peak visibility is <strong>May through August</strong>, when birds are established on territories and highly active. Any open road in Cameron or Willacy County with utility wires will typically have multiple birds perched in view. In <strong>September</strong>, watch for pre-migratory communal roosts of hundreds of birds gathering in riparian trees before heading south.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

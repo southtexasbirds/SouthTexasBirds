@@ -155,6 +155,15 @@ export default function GrayHawkPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>April through August</strong> — Gray Hawks are summer breeders in South Texas, arriving in spring and departing by October. The best window is <strong>May and June</strong>, when pairs are established on nesting territories and calling frequently. Salineño Wildlife Preserve along the Rio Grande is the most reliable U.S. site, with one to two territorial pairs present most years. Arrive before 9 a.m. and listen for the distinctive wailing call along the wooded river corridor.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>

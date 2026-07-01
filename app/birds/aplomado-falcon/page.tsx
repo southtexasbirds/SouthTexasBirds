@@ -234,6 +234,15 @@ export default function AplomadoFalconPage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>October through April</strong> is best for reintroduced birds on Laguna Atascosa NWR and the Coastal Bend. The Laguna Atascosa auto tour route is the most accessible viewing area, where falcons often perch on native yucca stalks and fence posts in the open coastal prairie. Early morning drives are most productive. Pairs are present year-round in established territories — ask refuge staff for current sightings before visiting.
+            </p>
+          </section>
+        </AnimateIn>
+
         {/* Conservation & Fun Fact */}
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
