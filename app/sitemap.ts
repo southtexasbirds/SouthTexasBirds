@@ -13,6 +13,7 @@ const NEWS_SLUGS = [
   "fall-shorebird-season-south-padre",
   "south-texas-birding-calendar",
   "birds-only-in-south-texas",
+  "salineno-birding-guide",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

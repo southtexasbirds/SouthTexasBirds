@@ -103,6 +103,15 @@ const articles = [
       "The Rio Grande Valley is the only place in the U.S. where Green Jays, Altamira Orioles, Plain Chachalacas, and a dozen other tropical species live as residents. The complete guide to South Texas exclusives.",
     tags: ["Species Guide", "RGV Exclusives"],
   },
+  {
+    slug: "salineno-birding-guide",
+    date: "June 2026",
+    isoDate: "2026-06-30",
+    title: "Salineño: The Upper Rio Grande Valley's Best-Kept Birding Secret",
+    excerpt:
+      "Salineño Wildlife Preserve is the most reliable site in the United States for White-collared Seedeater and Ringed Kingfisher — and one of the most undervisited birding destinations in the country. A complete guide to this upper RGV gem.",
+    tags: ["Guide", "Destination", "RGV"],
+  },
 ];
 
 export default function NewsPage() {
