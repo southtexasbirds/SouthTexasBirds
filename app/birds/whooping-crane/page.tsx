@@ -330,6 +330,49 @@ export default function WhoopingCranePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How many Whooping Cranes are left in the wild?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The 2025–2026 winter survey recorded a record 557 Whooping Cranes in the wild Aransas-Wood Buffalo population — the only self-sustaining wild flock in existence. This represents an extraordinary recovery from a low of just 15 individuals in 1941. Additional captive and reintroduced populations exist but are not yet self-sustaining."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see Whooping Cranes in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Aransas National Wildlife Refuge on the Texas Gulf Coast (north of Rockport) is the primary wintering site for wild Whooping Cranes, present from approximately November through March. The most reliable viewing is by guided boat tour from Rockport Harbor, which takes visitors close to feeding birds in San Antonio Bay. Whooping Cranes can also occasionally be seen along migration corridors through central Texas in October and March."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are Whooping Cranes still endangered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — Whooping Cranes remain federally Endangered despite remarkable population recovery. The wild population of 557 birds is still extremely vulnerable to hurricane strikes on wintering habitat, disease, powerline collisions, and hunting accidents. Conservation organizations consider the species to require continued intensive management and habitat protection for the foreseeable future."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What do Whooping Cranes eat at Aransas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "At Aransas National Wildlife Refuge, Whooping Cranes feed primarily on blue crabs, which are abundant in the shallow bays and tidal flats. They also eat clams, crayfish, berries from wolfberry plants, and occasionally small vertebrates. The shallow Laguna Madre and San Antonio Bay ecosystem provides the rich invertebrate base that sustains the wintering flock."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

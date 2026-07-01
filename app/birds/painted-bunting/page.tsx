@@ -246,6 +246,49 @@ export default function PaintedBuntingPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Painted Bunting endangered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Painted Bunting is listed as Near Threatened by BirdLife International. The western Great Plains population has declined significantly over recent decades, primarily due to illegal capture for the cage-bird trade in Mexico and Central America, habitat loss on breeding and wintering grounds, and window collisions during migration. Despite its IUCN Least Concern status, conservation concern is high."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When can I see Painted Buntings in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Wintering Painted Buntings are present in South Texas from October through March, when they visit feeders stocked with white millet at nature centers across the Rio Grande Valley. The best spring migration window is late April through mid-May at South Padre Island, when exhausted Trans-Gulf migrants arrive after crossing the Gulf of Mexico — sometimes in spectacular fallout concentrations of hundreds of birds."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I attract Painted Buntings to my feeder?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "White millet is the most effective feeder food for attracting Painted Buntings — not safflower or black oil sunflower seed. Place feeders at or near ground level in a sheltered spot with nearby dense vegetation for cover, as Painted Buntings are shy feeders. Nature centers across the Rio Grande Valley (Estero Llano Grande, Santa Ana NWR, Quinta Mazatlán) maintain millet feeders that draw buntings reliably from October through March."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does the female Painted Bunting look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The female Painted Bunting is a uniform bright green — much greener than most female songbirds — with a pale yellowish-green underside. She lacks the male's brilliant blue, red, and lime-green plumage. First-year males also resemble females and may show only small patches of adult color until their second winter. The compact, thick-billed shape distinguishes all plumages from warblers and vireos of similar size."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

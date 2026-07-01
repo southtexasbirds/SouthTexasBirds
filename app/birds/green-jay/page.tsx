@@ -325,6 +325,49 @@ export default function GreenJayPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Green Jay found in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — South Texas is the only place in the United States where the Green Jay can be seen as a resident species. Its range extends through Mexico and Central and South America, but the Rio Grande Valley marks its northern limit. The World Birding Center sites along the Rio Grande are the best places in the U.S. to see this species."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is the best place to see Green Jays in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bentsen-Rio Grande Valley State Park in Mission and Santa Ana National Wildlife Refuge in Alamo are the most reliable sites for Green Jays in Texas. Both parks have feeding stations and shaded trails where family groups of jays are visible year-round. Quinta Mazatlán in McAllen and Estero Llano Grande in Weslaco are also excellent options."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Green Jay eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Green Jays are omnivores with a varied diet including insects, small lizards, spiders, seeds, and berries. They are known tool users, using sticks to probe bark for insects — a behavior observed in only a handful of bird species worldwide. At feeders they readily take corn, peanuts, and suet."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do Green Jays stay year-round in the Rio Grande Valley?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — Green Jays are permanent residents of the Rio Grande Valley and do not migrate. They are present in equal numbers year-round, making them one of the few South Texas specialty birds that can be reliably seen on any visit regardless of season. Family groups maintain territories and the previous year's offspring help raise new chicks."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
