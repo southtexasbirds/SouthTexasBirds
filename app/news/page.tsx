@@ -94,6 +94,15 @@ const articles = [
       "A month-by-month guide to birding the Rio Grande Valley. Whooping Cranes in winter, Painted Bunting fallouts in spring, hawk kettles in September — when you go determines what you see.",
     tags: ["Planning", "Guide"],
   },
+  {
+    slug: "birds-only-in-south-texas",
+    date: "June 2026",
+    isoDate: "2026-06-28",
+    title: "Birds You Can Only See in South Texas (Within the United States)",
+    excerpt:
+      "The Rio Grande Valley is the only place in the U.S. where Green Jays, Altamira Orioles, Plain Chachalacas, and a dozen other tropical species live as residents. The complete guide to South Texas exclusives.",
+    tags: ["Species Guide", "RGV Exclusives"],
+  },
 ];
 
 export default function NewsPage() {

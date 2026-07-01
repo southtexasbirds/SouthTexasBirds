@@ -12,6 +12,7 @@ const NEWS_SLUGS = [
   "fall-hawk-migration-south-texas",
   "fall-shorebird-season-south-padre",
   "south-texas-birding-calendar",
+  "birds-only-in-south-texas",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
