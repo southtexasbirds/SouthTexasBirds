@@ -240,6 +240,49 @@ export default function AudubonsOriolePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is Audubon's Oriole rare in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Audubon's Oriole is uncommon and local in the United States, found only in the dense Tamaulipan thornscrub of the lower Rio Grande Valley in South Texas. It is a year-round resident but secretive and easily overlooked. Texas holds the entire U.S. population of this species, making conservation of intact thornscrub habitat critical for its future."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does an Audubon's Oriole look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Audubon's Oriole is a large, striking oriole with a yellow body and black head, wings, and tail — unlike most North American orioles where orange replaces the yellow. The yellow coloring is rich and saturated. Both sexes look similar, which is unusual among orioles. It is larger and more robust than the Altamira Oriole and lacks the Altamira's orange-and-black wing pattern."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does Audubon's Oriole sound like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Audubon's Oriole has a slow, melancholy whistle — a series of pure, flute-like notes delivered at a leisurely pace from deep within dense thornscrub. The song has a wistful, unhurried quality unlike the rapid, chattering songs of most other orioles. Once learned it is immediately recognizable, and is often the first indication of the bird's presence in thick cover."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see Audubon's Oriole in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Audubon's Orioles are found in mature Tamaulipan thornscrub throughout the lower Rio Grande Valley. The most reliable sites are Bentsen-Rio Grande Valley State Park, Santa Ana NWR, Laguna Atascosa NWR, and Salineño Wildlife Preserve, where they visit feeders and sing from the surrounding thornscrub. Morning hours from February through June are most productive — listen for the slow, pure whistle from dense cover."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

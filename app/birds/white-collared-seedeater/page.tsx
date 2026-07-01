@@ -206,6 +206,49 @@ export default function WhiteCollaredSeedeaterPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the White-collared Seedeater rare in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the White-collared Seedeater is one of the sought-after specialties of South Texas. It was more widespread in the lower Rio Grande Valley historically but has declined significantly. Today it is primarily found at Salineño Wildlife Preserve along the Rio Grande in Zapata County, where small numbers persist in the cane (Arundo donax) and native grasses along the riverbank. It is a target species for many visiting birders."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a White-collared Seedeater look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Males are small and distinctive: black cap and back, white collar across the nape, white underparts, and a short, very thick, rounded bill typical of seed-crushing finches. The wings show two white wing bars. Females are buffy-brown overall with the same thick bill and wing bars but lack the black-and-white pattern. The tiny size — barely 4 inches — and thick seed-eating bill are the most immediate field marks."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is the best place to see a White-collared Seedeater in the U.S.?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Salineño Wildlife Preserve in Zapata County, Texas, is the most reliable U.S. site. The preserve's cane thickets and native grass along the Rio Grande hold a small resident population. Males sing from cane stems and exposed grass tops from May through August — the sweet, buzzy song is the best detection tool. Check eBird for recent reports before visiting, as sightings can be sporadic even at this site."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a White-collared Seedeater eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "White-collared Seedeaters feed almost entirely on small grass seeds, which they crack with their thick, rounded bill. They favor dense stands of cane and native grasses where seeds are abundant. In South Texas, the invasive giant cane (Arundo donax) along the Rio Grande paradoxically provides some of the best habitat — though native grass management at Salineño also supports the local population."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

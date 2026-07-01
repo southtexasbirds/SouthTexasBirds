@@ -225,6 +225,49 @@ export default function VermilionFlycatcherPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What does a female Vermilion Flycatcher look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Female Vermilion Flycatchers look nothing like the brilliant red males. Females are gray-brown above, with a white supercilium, finely streaked white underparts, and a peachy-salmon wash on the lower belly and undertail coverts. The streaking and peach wash distinguish them from most other small flycatchers. Immature males resemble females until they acquire full red plumage after their first winter."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Vermilion Flycatcher in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vermilion Flycatchers are year-round residents in South Texas, found in open and semi-open areas near water — ranch ponds, park edges, agricultural fields with scattered trees, and roadside fences along stock tanks. Males perch conspicuously on exposed wires and branches and are easy to spot by their color. Laguna Atascosa NWR, Bentsen-Rio Grande Valley SP, and roadsides throughout the Valley regularly hold resident pairs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Vermilion Flycatcher eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vermilion Flycatchers are aerial insectivores — they catch flying insects with short sallies from a perch. Beetles, flies, grasshoppers, and other large insects make up the diet. Males perform an elaborate butterfly-like display flight with slow wingbeats and a puffed crest, and are documented presenting females with brightly colored insects as courtship gifts during breeding season."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Vermilion Flycatcher common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Vermilion Flycatcher is a fairly common year-round resident in South Texas, particularly in open areas near water across the region. The blazing red male is one of the most immediately identifiable birds in the Valley and rarely goes unnoticed. Numbers increase slightly in winter when birds from farther north join the resident population."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

@@ -224,6 +224,49 @@ export default function GreatKiskadeePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why is the Great Kiskadee called a 'kiskadee'?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The name 'kiskadee' is onomatopoeic — it mimics the bird's loud, emphatic call, which sounds like 'KISS-ka-dee' or 'BEE-dee-dee.' The call is delivered repeatedly from an exposed perch, often for extended periods. It is one of the loudest and most unmistakable bird calls in South Texas, and visitors typically hear the bird before they see it."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Great Kiskadee common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Great Kiskadee is one of the most common and conspicuous birds in the Rio Grande Valley. It is a year-round resident that has adapted readily to urban, suburban, and agricultural environments. It is reliably present at every nature center, park, and open space with trees near water in the Valley, and its loud call makes it nearly impossible to overlook."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Great Kiskadee eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Great Kiskadee is an opportunistic omnivore — it catches insects by aerial sallying like a typical flycatcher, dives into water to catch small fish and tadpoles like a kingfisher, eats berries and fruit, and occasionally takes small lizards or even small frogs. This feeding versatility makes it one of the most ecologically flexible birds in South Texas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a Great Kiskadee?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Great Kiskadee is a large, boldly patterned flycatcher: bright yellow underparts, rufous-brown wings and tail, white supercilium, and a black mask with a white crown bordered by black. It is similar to the Boat-billed Flycatcher (very rare in the U.S.) but distinguished by the more slender bill and rufous wing color. The loud 'KISS-ka-dee' call is the most reliable identification tool at distance."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
