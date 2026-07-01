@@ -236,6 +236,49 @@ export default function CrestedCaracaraPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Crested Caracara a hawk or a falcon?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Crested Caracara is classified in the falcon family (Falconidae), but it is not a typical falcon. Genetically, falcons are more closely related to parrots than to hawks — and within falcons, the caracaras represent a distinct, ancient lineage. Crested Caracaras are more terrestrial and omnivorous than other falcons, walking on the ground to forage rather than hunting in aerial dives."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Crested Caracara in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Crested Caracaras are common year-round throughout open country in South Texas. Drive the back roads of Hidalgo, Starr, and Brooks counties and scan fence posts and utility lines. The Laguna Atascosa NWR auto tour loop and King Ranch tours reliably produce caracaras. They are also frequently seen alongside vultures at road kills on rural highways."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Crested Caracara eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Crested Caracaras are dietary opportunists and eat almost anything: carrion (often feeding alongside vultures), large insects, reptiles, frogs, small mammals, eggs, and nestlings. They also steal food from other birds and will wade into shallow water for fish or frogs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Crested Caracara look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Crested Caracara is a large, long-legged raptor with a distinctive flat-topped black crest, bright orange-red facial skin, a heavy pale bill, and a bold black-and-white pattern visible in flight. In flight, the white patches on the wingtips and base of the tail are very distinctive. It often walks on the ground, unlike most raptors."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

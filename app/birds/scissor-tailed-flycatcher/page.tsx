@@ -208,6 +208,49 @@ export default function ScissorTailedFlycatcherPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What state bird is the Scissor-tailed Flycatcher?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Scissor-tailed Flycatcher is the state bird of Oklahoma. It was designated Oklahoma's state bird in 1951. Despite being Oklahoma's official bird, the species is also a common summer breeder across Texas, including South Texas, where it nests in open country from April through September."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long is a Scissor-tailed Flycatcher's tail?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In adult males, the elongated outer tail feathers can reach 9–13 inches (23–33 cm) — longer than the bird's body. The total length of an adult male Scissor-tailed Flycatcher, including the tail, is about 14–15 inches. Females have significantly shorter tails, around 6–8 inches total."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Scissor-tailed Flycatcher in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Scissor-tailed Flycatchers are common summer residents of open country throughout South Texas from April through September. They favor open fields with scattered trees and are frequently seen on utility wires along rural roads. In late summer (August–September), large flocks gather to roost before migration. Any open area in the Rio Grande Valley, coastal plain, or King Ranch region can produce them."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Scissor-tailed Flycatcher look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Scissor-tailed Flycatcher is pale gray above and whitish below, with salmon-pink sides and flanks visible at close range. Its most distinctive feature is the long, forked black-and-white tail. In flight, the bright salmon-orange underwings flash with every wingbeat. Females and immatures are similar but have shorter tails and paler coloration."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

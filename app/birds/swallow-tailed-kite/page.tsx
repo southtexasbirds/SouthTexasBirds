@@ -202,6 +202,49 @@ export default function SwallowTailedKitePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When do Swallow-tailed Kites come to South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Swallow-tailed Kites arrive in South Texas in March and are present through August. Peak numbers occur during spring migration (March–April) and again in late summer (July–August) when pre-migration flocks gather. Bentsen-Rio Grande Valley State Park and riparian corridors along the Rio Grande are the most reliable sites."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Swallow-tailed Kite look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Swallow-tailed Kite is unmistakable: a large, striking bird with pure white head and underparts contrasting sharply with glossy blue-black wings and a deeply forked black tail. In flight it appears extremely graceful and buoyant, tilting and banking with effortless precision. No other North American raptor shares this color pattern."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where do Swallow-tailed Kites nest in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In the United States, Swallow-tailed Kites breed primarily in Florida, along the Gulf Coast, and in scattered locations in the Southeast. In South Texas they are present as migrants and occasional summer visitors but are not confirmed regular breeders. The core U.S. breeding population is in Florida; South Texas birds are mainly migrants passing through to and from South American wintering grounds."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What do Swallow-tailed Kites eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Swallow-tailed Kites eat primarily flying insects, tree frogs, lizards, small snakes, and nestling birds — all captured in flight or snatched from vegetation while the bird continues flying. They drink by skimming the surface of ponds and rivers. They are entirely aerial foragers and rarely land except at the nest."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

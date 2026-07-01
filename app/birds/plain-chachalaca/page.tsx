@@ -337,6 +337,49 @@ export default function PlainChachalacaPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Where is the only place in the United States to see a Plain Chachalaca?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Plain Chachalaca is found in the United States only in the lower Rio Grande Valley of South Texas. It is a resident species tied to dense native thornscrub and riparian woodland. Bentsen-Rio Grande Valley State Park, Santa Ana NWR, and most Valley nature centers have reliable populations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is the Plain Chachalaca so loud?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Plain Chachalacas produce their famous dawn chorus as a coordinated group performance: multiple birds call simultaneously with different individuals covering different syllables of the cha-cha-LAC-a call, creating a volume that can carry over a mile through the brush. This synchronized calling is thought to reinforce flock cohesion and territorial boundaries."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does a Plain Chachalaca look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Plain Chachalaca is a large, slender, long-tailed bird about the size of a small chicken. It is plain olive-brown above and paler below, with a bare red throat patch visible at close range. The long tail has a white or buff tip. In flight the rounded wings and long tail give it a pheasant-like profile."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What family does the Plain Chachalaca belong to?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Plain Chachalaca belongs to the family Cracidae — a large family of tropical birds including curassows, guans, and chachalacas. The Cracidae are found only in the Americas and are most diverse in South America. The Plain Chachalaca is the only member of its family to regularly occur in the United States."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
