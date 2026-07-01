@@ -163,6 +163,17 @@ export default function WhiteTailedHawkPage() {
           </AnimateIn>
         </div>
         <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
+            <Link href="/news/fall-hawk-migration-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen</span>
+              <span className="text-sm" style={{ color: "#5C5954" }}>White-tailed Hawks are year-round residents of South Texas coastal prairie — a striking permanent backdrop to the tens of thousands of migrating raptors that pass through each fall.</span>
+              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+            </Link>
+          </section>
+        </AnimateIn>
+
+        <AnimateIn>
           <div className="text-center pt-4">
             <Link href="/birds" className="text-sm font-medium transition-opacity hover:opacity-70" style={{ color: "#C77F4A" }}>← Browse all South Texas species</Link>
           </div>

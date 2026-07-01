@@ -155,6 +155,15 @@ export default function HookBilledKitePage() {
           </section>
         </AnimateIn>
 
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
+            <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              <strong>Year-round at Salineño</strong> — the Hook-billed Kite&apos;s most reliable territory in the U.S. is along the Rio Grande at Salineño Wildlife Preserve, where birds are present in every month. Early morning is best: arrive before 8 a.m. and scan the woodland edge above the river. <strong>September</strong> is a bonus window when birds are more likely to soar high on thermals alongside migrating raptors at Bentsen. Calm, sunny mornings after a cold front passage maximize soaring activity.
+            </p>
+          </section>
+        </AnimateIn>
+
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateIn>
             <section className="rounded-2xl p-7 h-full" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
@@ -184,6 +193,17 @@ export default function HookBilledKitePage() {
             </section>
           </AnimateIn>
         </div>
+
+        <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
+            <Link href="/news/fall-hawk-migration-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen</span>
+              <span className="text-sm" style={{ color: "#5C5954" }}>Hook-billed Kites often soar during the same thermal conditions that lift migrating Broad-winged Hawks — making Bentsen's hawk watch tower one of the best places to spot this rare resident in flight.</span>
+              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+            </Link>
+          </section>
+        </AnimateIn>
 
         <AnimateIn>
           <div className="text-center pt-4">
