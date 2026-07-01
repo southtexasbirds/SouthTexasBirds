@@ -229,6 +229,49 @@ export default function TropicalParulaPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the difference between a Tropical Parula and a Northern Parula?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Tropical Parula lacks the dark breast band of the Northern Parula. The underparts are warmer orange-yellow rather than the Northern's white-and-yellow, and the black mask is less defined. Both species have a gray-blue back and yellow throat. The Tropical Parula's song is slightly different — a rising buzzy trill — and in South Texas the two species overlap only as a breeding vs. wintering pair, with Tropical arriving in spring as Northern Parulas depart."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Tropical Parula in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Tropical Parula barely reaches the U.S., breeding only in South Texas along the lower Rio Grande. Salineño Wildlife Preserve and the mature riparian forest at Santa Ana NWR are the most reliable U.S. sites. The species is tied to Spanish moss (Tillandsia usneoides) for nesting, so it is found exclusively in mature gallery forest along the Rio Grande where the moss grows abundantly. Check eBird for current sightings before visiting."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why does the Tropical Parula depend on Spanish moss?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Tropical Parula builds its nest inside hanging clumps of Spanish moss (Tillandsia usneoides), hollowing out the dense gray strands to create a hidden chamber. The moss provides both concealment and insulation. This nest-site dependency means the parula can only breed where Spanish moss grows abundantly — which in the U.S. is limited to humid riparian corridors along the Rio Grande."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When is the best time to see a Tropical Parula in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "March through July is the best window, when Tropical Parulas are on their breeding territories and males sing persistently. The species is a summer resident that arrives in late March and departs by September. Early morning visits to Salineño or the canopy trails at Santa Ana NWR, listening for the rising buzzy trill, offer the best chance of a sighting."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

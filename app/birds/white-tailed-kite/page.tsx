@@ -197,6 +197,49 @@ export default function WhiteTailedKitePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a White-tailed Kite?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The White-tailed Kite (Elanus leucurus) is a medium-sized raptor found in open grasslands and agricultural areas of South Texas and California. It is remarkable for its hovering behavior — it can hang motionless in the air while scanning for prey, a skill rare among North American raptors. Adults are mostly white below with pale gray upperparts, black wrist patches, and bright red eyes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a White-tailed Kite in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "White-tailed Kites prefer open grasslands, agricultural fields, and roadsides with short grass and scattered perches. In South Texas, the coast road (FM 100 / Hwy 48) between Los Fresnos and Port Isabel, the fields around Laguna Atascosa NWR, and open agricultural land in Willacy and Cameron counties are reliable locations. They are most conspicuous at dawn and dusk when hunting activity peaks."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does the White-tailed Kite hunt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The White-tailed Kite hunts almost exclusively by hovering — facing into the wind with wings fanned and tail fanned, hanging in place up to 30 meters above the ground while scanning for small rodents (primarily). When prey is spotted, it drops in a controlled stoop. This kite-hovering technique is highly developed in Elanus kites worldwide and is the primary hunting strategy rather than an occasional tactic as in other raptors."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do White-tailed Kites form winter roosts?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. White-tailed Kites are one of the few raptors that form large communal roosts outside the breeding season — sometimes numbering in the hundreds at a single site. Roost locations shift seasonally with prey availability and are most reliably found by following kites at dusk to their gathering points in open country. Local birding groups and eBird often have current roost locations."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

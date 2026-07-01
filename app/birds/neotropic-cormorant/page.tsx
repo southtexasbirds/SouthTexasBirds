@@ -215,6 +215,49 @@ export default function NeotropicCormorantPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do you tell a Neotropic Cormorant from a Double-crested Cormorant?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Neotropic Cormorant is noticeably smaller and slimmer than the Double-crested, with a longer, more slender tail. The most reliable field mark is the gular (throat) pouch: in the Neotropic it is dull yellow-tan with a pointed rear edge bordered by a white line — in the Double-crested the pouch is larger, brighter orange, and rounded. Size, tail length, and the pale border on the pouch are the key marks at a glance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why do cormorants spread their wings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Unlike most waterbirds, cormorants lack waterproofing oils in their feathers. This actually helps them dive more efficiently — wettable feathers reduce buoyancy, making underwater fish pursuit easier. The trade-off is that they must dry out between dives. The wing-spreading posture is thermoregulation and drying behavior: the bird spreads and holds its wings open to expose the wet feathers to sun and wind."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Neotropic Cormorant common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Neotropic Cormorant is abundant and increasing in South Texas. It has expanded its range northward significantly over the past several decades and is now a common year-round resident on Valley resacas, ponds, and the Rio Grande. It is often the more numerous cormorant species at inland water bodies in the region."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Neotropic Cormorant in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Neotropic Cormorants are easy to find year-round at virtually any open water in the Rio Grande Valley. Estero Llano Grande State Park, Bentsen-Rio Grande Valley State Park, Anzalduas County Park, and the resacas near Brownsville regularly hold both Neotropic and Double-crested Cormorants for direct comparison. Winter brings the largest concentrations."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

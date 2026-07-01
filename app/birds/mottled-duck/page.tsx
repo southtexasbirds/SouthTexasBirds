@@ -320,6 +320,49 @@ export default function MottledDuckPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do you tell a Mottled Duck from a female Mallard?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Mottled Duck has a clean yellow (not orange-splotched) bill, noticeably darker brown body plumage, and a blue-green speculum with no white border — female Mallards show a white border on both edges of the speculum. Mottled Ducks also lack the heavy orange bill markings typical of female Mallards. In mixed flocks in winter, the Mottled Duck stands out as noticeably darker-bodied."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Mottled Duck endangered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Mottled Duck is listed as Least Concern globally, but the Gulf Coast population faces ongoing pressure from coastal habitat loss and — critically — genetic dilution through hybridization with feral Mallards released by hunting operations. Texas Parks and Wildlife discourages releasing pen-raised Mallards in the Mottled Duck's coastal range for this reason."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Mottled Duck in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Mottled Ducks are permanent residents of coastal wetlands in South Texas. Estero Llano Grande State Park, the freshwater ponds at Laguna Atascosa NWR, the Arroyo Colorado, and resacas throughout the Valley hold year-round pairs. They favor shallow freshwater and brackish marsh with dense emergent vegetation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does the Mottled Duck migrate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No — the Mottled Duck is non-migratory. It is a year-round resident confined to the Gulf Coast from central Texas south through Tamaulipas and Veracruz in Mexico, and a separate population in Florida. Texas birds nest as early as February, months before most migratory waterfowl have departed their wintering grounds."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
