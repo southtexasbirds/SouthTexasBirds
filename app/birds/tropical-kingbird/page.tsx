@@ -226,6 +226,49 @@ export default function TropicalKingbirdPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do you tell a Tropical Kingbird from a Couch's Kingbird?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tropical and Couch's Kingbirds are essentially identical in plumage — both large yellow-breasted kingbirds with olive-gray backs and dark tails. The call is the definitive identification: the Tropical Kingbird gives a rapid, twittering 'pit-pit-pit-pitter' while Couch's gives a louder, raspier 'breeeer' or 'breeeer-breeeer.' A silent bird in South Texas is best logged as 'Tropical/Couch's Kingbird.' In the Valley, Couch's is far more common as a resident; Tropical is primarily a spring-fall visitor."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Tropical Kingbird common in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Tropical Kingbird is uncommon to rare in South Texas — much less common than the resident Couch's Kingbird. It is more often encountered as a migrant during spring and fall. A small number breed in the Valley, particularly near the coast. The near-identical appearance to Couch's Kingbird means that many go undetected without careful attention to vocalizations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When were Tropical and Couch's Kingbirds split as separate species?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tropical and Couch's Kingbirds were considered a single species until 1983, when researchers demonstrated they were genetically distinct with consistently different vocalizations — the contact call being the most reliable difference. They were split by the AOU in 1983. Even today some observers log silent birds as 'Tropical/Couch's Kingbird' to acknowledge the genuine identification difficulty."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Tropical Kingbird in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Tropical Kingbird is most likely encountered along the coast in fall — South Padre Island, Port Isabel, and the Brownsville area are the most productive sites. During breeding season, check riparian areas near the Rio Grande with open perches over water. The best approach is to listen for the distinctive twittering call among kingbirds in areas where both Tropical and Couch's might occur."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

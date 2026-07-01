@@ -196,6 +196,49 @@ export default function CouchsKingbirdPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is Couch's Kingbird only found in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Couch's Kingbird breeds almost exclusively in the lower Rio Grande Valley of Texas and northeastern Mexico (Tamaulipas and Nuevo León), making South Texas the only reliable place to see it in the United States. It is a year-round resident in the Valley, unlike the migratory Tropical Kingbird. Outside of Texas, it is a widespread breeding bird through Central America."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you tell a Couch's Kingbird from a Tropical Kingbird?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "By call — it's the only reliable way. Couch's Kingbird gives a loud, raspy 'breeeer' or a rapid 'ki-ki-ki-keer' call that is unmistakable once learned. The Tropical Kingbird gives a faster, more twittering 'pit-pit-pit-pitter.' The two species are essentially identical in plumage. In South Texas, any large yellow kingbird is very likely a Couch's — it is the resident species and far outnumbers the Tropical."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Couch's Kingbird in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Couch's Kingbirds are common and conspicuous throughout the Rio Grande Valley year-round. They perch on exposed wires, tree tops, and fence posts along roadsides, in parks, and at any of the nature centers. Bentsen-Rio Grande Valley State Park, Santa Ana NWR, and urban parks in McAllen and Brownsville all have resident pairs. The loud, raspy call is often the first indication of the bird's presence."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Couch's Kingbird a permanent resident of South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — Couch's Kingbird is a year-round resident of the lower Rio Grande Valley. Unlike the Tropical Kingbird, which is primarily a visitor or partial migrant, Couch's remains in the Valley through winter and breeds in spring. Pairs establish territories and nest in tall trees, often in urban or suburban settings as well as natural woodlands and parks."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

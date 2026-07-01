@@ -326,6 +326,49 @@ export default function BotterisSparrowPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a Botteri's Sparrow?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Botteri's Sparrow (Peucaea botterii) is a secretive grassland sparrow of coastal Texas and the desert grasslands of Arizona, named for Croatian naturalist Matteo Botteri who collected specimens in Mexico in the 1850s. In South Texas it is a summer breeding resident of native coastal tallgrass prairie, arriving in late April and departing by October. Outside the breeding season it is virtually impossible to detect, as it is silent and rarely seen."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you find a Botteri's Sparrow?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Learn the song before going into the field — the Botteri's Sparrow is almost impossible to locate without recognizing its call. The song is a distinctive bouncing-ball series of accelerating chip notes followed by a fast rattle, delivered persistently from a low perch in tall coastal grass during May through August. Walk the edges of native tallgrass prairie at dawn, listen for the rattle, and follow the sound to a singing male perched at the top of a grass stem."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I see a Botteri's Sparrow in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The best sites in South Texas are the coastal tallgrass prairies of Cameron and Willacy counties — particularly the grasslands near the Sabal Palm Sanctuary south of Brownsville, and native prairie remnants along the coast. The species requires tall, dense native grass (gulf cordgrass, bluestem) and is absent from closely grazed or mowed areas. Check eBird for current reports before visiting."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When is Botteri's Sparrow in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Botteri's Sparrows are in South Texas from late April through October. They are only reliably detectable while singing, which runs from May through August. By September males have stopped singing and the birds become essentially undetectable — quietly present but rarely seen or heard before departing for Mexico in October. May through early July is the peak window for finding singing males."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

@@ -225,6 +225,49 @@ export default function MaskedDuckPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the Masked Duck rare in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Masked Duck is one of the most sought-after rarities in U.S. birding. It is an irregular visitor to the lower Rio Grande Valley of South Texas, with appearances unpredictable year to year. Some years produce multiple sightings; other years none at all. Texas is the only state where it occurs regularly, and even here it is never reliably expected. Always check eBird for recent reports before chasing this species."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you identify a Masked Duck?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Breeding males are unmistakable: rich chestnut body with a black mask, blue bill, and stiff upright tail. Females and non-breeding males are streaky brown with two pale stripes across the face — one through the eye and one below — similar to a Ruddy Duck female but with the distinctive facial pattern. In all plumages, the white wing patches visible in flight are diagnostic and separate it from Ruddy Duck."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I find a Masked Duck in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Masked Duck favors densely vegetated freshwater ponds, resacas, and flooded fields — it spends most of its time hidden in emergent vegetation near the pond margins. In South Texas, Estero Llano Grande State Park, the ponds at Laguna Atascosa NWR, and managed wetlands in Hidalgo and Cameron counties have produced most Texas records. It is best found by checking eBird for recent sightings and scanning pond edges at dawn."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Masked Duck related to the Ruddy Duck?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Masked Duck is the only other stiff-tailed duck found in the Americas besides the Ruddy Duck, and molecular studies confirm the two are closely related. The Masked Duck is placed in its own genus Nomonyx, separate from the Ruddy Duck's genus Oxyura. Both share the stiff-tail display behavior and diving habits, but the Masked Duck is smaller, more secretive, and far rarer in the U.S."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
