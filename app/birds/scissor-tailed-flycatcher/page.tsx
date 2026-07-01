@@ -180,6 +180,7 @@ export default function ScissorTailedFlycatcherPage() {
             "headline": "Scissor-tailed Flycatcher (Tyrannus forficatus) | South Texas Birds",
             "description": "Scissor-tailed Flycatcher identification, habitat, and where to find it in South Texas. Oklahoma's state bird — a pale flycatcher with an extraordinary forked tail that can exceed the length of its own body.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Tyrannus_forficatus_on_branch.jpg",
+                        "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
               "name": "South Texas Birds",

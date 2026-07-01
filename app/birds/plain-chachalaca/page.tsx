@@ -319,6 +319,7 @@ export default function PlainChachalacaPage() {
             "headline": "Plain Chachalaca (Ortalis vetula) | South Texas Birds",
             "description": "Plain Chachalaca identification, habitat, and where to find it in the Rio Grande Valley. The only member of its tropical family found in the United States.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Plain_Chachalaca_Roadside.png",
+                        "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
               "name": "South Texas Birds",

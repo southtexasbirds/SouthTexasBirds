@@ -304,6 +304,7 @@ export default function PipingPloverPage() {
             "headline": "Piping Plover (Charadrius melodus) | South Texas Birds",
             "description": "Piping Plover identification, habitat, and where to find it on the Texas coast. An endangered shorebird that winters in significant numbers on the barrier islands and tidal flats of South Texas.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Charadrius-melodus-004_edit.jpg",
+                        "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
               "name": "South Texas Birds",

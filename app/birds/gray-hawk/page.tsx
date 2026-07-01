@@ -205,6 +205,7 @@ export default function GrayHawkPage() {
             "headline": "Gray Hawk (Buteo plagiatus) | South Texas Birds",
             "description": "Gray Hawk identification, habitat, and where to find it in the Rio Grande Valley. A finely barred raptor of the river corridor at the northern edge of its range.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Buteo_plagiatus_Belize.jpg",
+                        "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
               "name": "South Texas Birds",

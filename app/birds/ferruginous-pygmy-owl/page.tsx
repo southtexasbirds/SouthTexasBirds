@@ -224,6 +224,7 @@ export default function FerrugynousPygmyOwlPage() {
             "headline": "Ferruginous Pygmy-Owl (Glaucidium brasilianum) | South Texas Birds",
             "description": "Ferruginous Pygmy-Owl identification, habitat, and where to find it in the Rio Grande Valley. Tiny but fierce, this diurnal owl is a prized find in the Valley's dense brush.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg",
+                        "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
               "name": "South Texas Birds",

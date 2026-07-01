@@ -294,6 +294,7 @@ export default function OliveSparrowPage() {
             "headline": "Olive Sparrow (Arremonops rufivirgatus) | South Texas Birds",
             "description": "Olive Sparrow identification, habitat, and where to find it in South Texas. A characteristic bird of the dense Tamaulipan thornscrub — heard far more often than seen.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Olive_Sparrow_%28Arremonops_rufivirgatus%29_Edinbug%2C_Texas%2C_USA.png",
+                        "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
               "name": "South Texas Birds",

@@ -197,6 +197,7 @@ export default function NeotropicCormorantPage() {
             "headline": "Neotropic Cormorant (Nannopterum brasilianum) | South Texas Birds",
             "description": "Neotropic Cormorant identification, habitat, and where to find it in South Texas. Smaller and longer-tailed than the Double-crested, this abundant cormorant is a fixture on Valley resacas and ponds.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Neotropic_cormorant_%28Nannopterum_brasilianum_mexicanum%29_Peten.jpg",
+                        "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
               "name": "South Texas Birds",

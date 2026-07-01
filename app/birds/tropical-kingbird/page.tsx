@@ -208,6 +208,7 @@ export default function TropicalKingbirdPage() {
             "headline": "Tropical Kingbird (Tyrannus melancholicus) | South Texas Birds",
             "description": "Tropical Kingbird identification, habitat, and where to find it in the Rio Grande Valley. Nearly identical to Couch's Kingbird — the call is the key.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Tropical_kingbird_%28Tyrannus_melancholicus%29.JPG",
+                        "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
               "name": "South Texas Birds",
