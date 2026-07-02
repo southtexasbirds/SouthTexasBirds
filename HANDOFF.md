@@ -1,8 +1,40 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-06-30
+- **Date:** 2026-07-01
 - **Agent:** Laptop
+
+---
+
+## Laptop Agent — 2026-07-01
+
+### What was done this session
+
+**New news article (12th):**
+- Created `app/news/laguna-atascosa-birding-guide/page.tsx` — complete destination guide for Laguna Atascosa NWR
+- Targets "laguna atascosa birding", "aplomado falcon viewing texas", "south texas coast birds" keyword clusters
+- Three JSON-LD blocks: BreadcrumbList, NewsArticle, FAQPage (4 Q&As); Related Articles cross-links to south-texas-raptor-specialties, fall-shorebird-season-south-padre, spacex-refuge-land-exchange
+- Added to `app/news/page.tsx` articles array and `app/sitemap.ts` NEWS_SLUGS (now 12 news articles)
+- `isoDate: "2026-07-01"`, tags: ["Destination Guide", "Raptors", "RGV"]
+
+**"In the News" links updated for 7 species pages:**
+- aplomado-falcon: replaced spacex link with laguna-atascosa-birding-guide (more directly relevant)
+- white-tailed-kite: upgraded to two-link (laguna-atascosa + raptor-specialties)
+- roseate-spoonbill: upgraded to two-link (laguna-atascosa + fall-shorebird)
+- tricolored-heron: upgraded to two-link (laguna-atascosa + fall-shorebird)
+- piping-plover: upgraded to two-link (laguna-atascosa + fall-shorebird)
+- mottled-duck: upgraded to two-link (laguna-atascosa + fall-shorebird)
+- neotropic-cormorant: upgraded to two-link (laguna-atascosa + fall-shorebird)
+
+### What's next
+- Could write a 13th article targeting "south padre island birding" keyword cluster
+- Could add FAQ JSON-LD to the /hotspots or /gear pages
+- Could add an interactive species checklist or seasonal calendar feature
+- eBird checklist embed or recent sightings block (needs eBird API access)
+
+### Notes
+- All changes on `main` branch
+- Build should be clean: 68 pages (67 prior + 1 new news article), all static
 
 ---
 

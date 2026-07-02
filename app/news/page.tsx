@@ -121,6 +121,15 @@ const articles = [
       "From the Hook-billed Kite to the reintroduced Aplomado Falcon, the Rio Grande Valley is the only place in the U.S. to find seven resident raptor specialties — including two endangered species. A complete guide.",
     tags: ["Raptors", "Species Guide", "RGV"],
   },
+  {
+    slug: "laguna-atascosa-birding-guide",
+    date: "July 2026",
+    isoDate: "2026-07-01",
+    title: "Laguna Atascosa NWR: A Complete Birding Guide",
+    excerpt:
+      "The largest protected area in the Rio Grande Valley hosts Aplomado Falcons, White-tailed Hawks, Roseate Spoonbills, and over 400 species. A complete guide to birding South Texas's most species-rich refuge.",
+    tags: ["Destination Guide", "Raptors", "RGV"],
+  },
 ];
 
 export default function NewsPage() {
