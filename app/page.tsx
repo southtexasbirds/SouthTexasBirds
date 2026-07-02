@@ -7,13 +7,13 @@ import AnimateIn from "./components/AnimateIn";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
-  title: { absolute: "South Texas Birds | Rio Grande Valley Birding Guide & Hotspots" },
+  title: { absolute: "South Texas Birds | Rio Grande Valley Birding Guide" },
   description:
-    "Plan your Rio Grande Valley birding trip. Explore 500+ species, top RGV hotspots, and South Texas specialties like Green Jay, Altamira Oriole, and Whooping Crane.",
+    "The complete South Texas birding guide. 50 species profiles, 9 RGV hotspot guides, and 14 field articles — everything you need to see Green Jays, Hook-billed Kites, and Whooping Cranes.",
   openGraph: {
-    title: "South Texas Birds | Rio Grande Valley Birding Guide & Hotspots",
+    title: "South Texas Birds | Rio Grande Valley Birding Guide",
     description:
-      "Plan your Rio Grande Valley birding trip. Explore 500+ species, top RGV hotspots, and South Texas specialties like Green Jay, Altamira Oriole, and Whooping Crane.",
+      "The complete guide to South Texas birding — the only U.S. region where Green Jays, Hook-billed Kites, and Aplomado Falcons are resident. 50 species · 9 hotspots · 14 articles.",
     images: [
       {
         url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: ["https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg"],
-    title: "South Texas Birds | Rio Grande Valley Birding Guide & Hotspots",
+    title: "South Texas Birds | Rio Grande Valley Birding Guide",
     description:
-      "Plan your Rio Grande Valley birding trip. Explore 500+ species, top RGV hotspots, and South Texas specialties.",
+      "The complete guide to South Texas birding. 50 species profiles, 9 hotspot guides, Hook-billed Kites, Green Jays, Whooping Cranes.",
   },
 };
 
@@ -40,18 +40,18 @@ const hasVideo = fs.existsSync(path.join(process.cwd(), "public", "hero-video.mp
 const highlights = [
   {
     num: "01",
-    title: "500+ Species",
-    body: "South Texas hosts more bird species than almost anywhere else in North America, thanks to its unique position at the meeting of temperate and tropical zones.",
+    title: "Found Nowhere Else in the U.S.",
+    body: "The Rio Grande Valley is the only place in the country where tropical and temperate bird families overlap. Green Jays, Altamira Orioles, Hook-billed Kites — species you cannot find in any other American state.",
   },
   {
     num: "02",
-    title: "World Birding Center",
-    body: "The nine sites of the World Birding Center stretch across the Rio Grande Valley, offering premier habitat for resident and migratory birds alike.",
+    title: "Life Birds Before Breakfast",
+    body: "The feeder stations at Bentsen-RGVSP and Santa Ana NWR produce Green Jays, Plain Chachalacas, and Buff-bellied Hummingbirds before 9 a.m. This is concentrated, efficient birding — the kind that moves life lists fast.",
   },
   {
     num: "03",
-    title: "Year-Round Birding",
-    body: "Every season brings something new — spring and fall migration, wintering waterfowl, and resident specialties like Green Jay and Altamira Oriole.",
+    title: "Peak Season Is Winter",
+    body: "While most of North America empties of birds, South Texas fills up. Whooping Cranes at Aransas, ducks on the resacas, wintering warblers in the thornscrub — the Valley is at its richest November through March.",
   },
 ];
 
@@ -136,7 +136,7 @@ export default function HomePage() {
               Birds of<br />South Texas
             </h1>
             <p className="text-base md:text-lg text-white/80 max-w-xl mb-8 leading-relaxed">
-              Subtropical thornscrub, resaca wetlands, and windswept Gulf Coast prairies — converging to create one of North America&apos;s premier birding destinations.
+              The only place in the United States where Green Jays, Hook-billed Kites, and Aplomado Falcons are resident — and the continent&apos;s most reliable site for Whooping Cranes.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -169,10 +169,10 @@ export default function HomePage() {
             Why South Texas
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#0E6B6B" }}>
-            A World Apart
+            Why South Texas?
           </h2>
           <p className="text-sm max-w-xl mb-10" style={{ color: "#5C5954" }}>
-            Nowhere else in the United States do tropical and temperate bird families meet so dramatically.
+            No other region in the United States offers this combination of exclusives, accessibility, and sheer species density.
           </p>
         </AnimateIn>
 
@@ -227,6 +227,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Social proof strip ──────────────────────────────────────────── */}
+      <div style={{ background: "#0E6B6B" }}>
+        <div className="max-w-5xl mx-auto px-6 py-5 flex flex-wrap justify-center gap-x-10 gap-y-3">
+          {[
+            ["50", "species profiles"],
+            ["14", "field guides & articles"],
+            ["9", "birding hotspots"],
+            ["400+", "species documented"],
+          ].map(([num, label]) => (
+            <div key={label} className="flex items-baseline gap-1.5 text-center">
+              <span className="font-serif text-2xl font-bold" style={{ color: "#D4A24C" }}>{num}</span>
+              <span className="text-xs font-medium tracking-wide uppercase" style={{ color: "rgba(255,255,255,0.7)" }}>{label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* ── South Texas Specialties ──────────────────────────────────────── */}
       <section className="py-20 px-6" style={{ background: "#F7F0E4", borderTop: "1px solid rgba(14,107,107,0.08)" }}>
         <div className="max-w-5xl mx-auto">
@@ -238,10 +255,10 @@ export default function HomePage() {
               Target Species
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#0E6B6B" }}>
-              South Texas Specialties
+              Your Life Birds Are Here
             </h2>
             <p className="text-sm mb-10" style={{ color: "#5C5954" }}>
-              Birds that draw visitors from across the world
+              These species are found in the United States almost exclusively in South Texas — and all are regularly seen by visiting birders.
             </p>
           </AnimateIn>
 
@@ -294,42 +311,42 @@ export default function HomePage() {
               Conservation &amp; News
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2" style={{ color: "#0E6B6B" }}>
-              Latest from South Texas
+              Destination Guides &amp; Field Reports
             </h2>
             <p className="text-sm mb-10" style={{ color: "#5C5954" }}>
-              Habitat, conservation, and events shaping the region
+              Deep-dive guides to the RGV&apos;s top sites, plus conservation news and seasonal field reports
             </p>
           </AnimateIn>
 
           <div className="grid md:grid-cols-4 gap-5">
             {[
               {
-                href: "/news/whooping-crane-record-count",
-                date: "June 2026",
-                isoDate: "2026-06-01",
-                title: "Record Whooping Crane Count",
-                excerpt: "557 birds wintering along the Texas coast — the highest total ever recorded for the species' only self-sustaining wild population.",
+                href: "/news/bentsen-rgv-state-park-birding-guide",
+                date: "July 2026",
+                isoDate: "2026-07-01",
+                title: "Bentsen-RGVSP: Complete Birding Guide",
+                excerpt: "The Rio Grande Valley's flagship site — Hook-billed Kites, Ferruginous Pygmy-Owls, a world-famous hawk watch, and the best feeder station in the country.",
               },
               {
-                href: "/news/thornscrub-restoration-rgv",
-                date: "June 2026",
-                isoDate: "2026-06-10",
-                title: "Thornscrub Restoration Expands",
-                excerpt: "Less than 5% of native thornscrub remains in the Valley — conservation groups are rebuilding habitat for Green Jays, Chachalacas, and more.",
+                href: "/news/santa-ana-nwr-birding-guide",
+                date: "July 2026",
+                isoDate: "2026-07-02",
+                title: "Santa Ana NWR: The Jewel of the System",
+                excerpt: "2,088 acres of Tamaulipan thornscrub with 400+ species recorded. Green Jays, Rose-throated Becards, Hook-billed Kites — all reliably present.",
               },
               {
-                href: "/news/salineno-birding-guide",
+                href: "/news/laguna-atascosa-birding-guide",
+                date: "July 2026",
+                isoDate: "2026-07-01",
+                title: "Laguna Atascosa NWR: Birding Guide",
+                excerpt: "The largest protected area in the RGV — and the most reliable U.S. site for the reintroduced Aplomado Falcon. A complete guide.",
+              },
+              {
+                href: "/news/south-texas-raptor-specialties",
                 date: "June 2026",
                 isoDate: "2026-06-30",
-                title: "Salineño: The RGV's Best-Kept Birding Secret",
-                excerpt: "The most reliable U.S. site for White-collared Seedeater and Ringed Kingfisher — and one of the most undervisited birding destinations in the country.",
-              },
-              {
-                href: "/news/painted-bunting-south-padre",
-                date: "June 2026",
-                isoDate: "2026-06-25",
-                title: "Painted Buntings at South Padre Island",
-                excerpt: "When conditions align in late April, hundreds of Trans-Gulf migrants make landfall at South Padre Island — one of the most spectacular birding events in North America.",
+                title: "7 Raptors Found Only in South Texas",
+                excerpt: "Hook-billed Kite to Aplomado Falcon — the Rio Grande Valley hosts seven resident birds of prey you can't find anywhere else in the United States.",
               },
             ].map((article, i) => (
               <AnimateIn key={article.href} delay={i * 100}>
@@ -403,18 +420,27 @@ export default function HomePage() {
               className="font-serif text-3xl md:text-4xl font-bold mb-4"
               style={{ color: "#0E6B6B" }}
             >
-              Ready to Find Your Lifer?
+              Your Next Life Bird Is Waiting.
             </h2>
             <p className="text-sm leading-relaxed mb-8" style={{ color: "#5C5954" }}>
-              Whether you&apos;re chasing a life bird or simply walking through resaca habitat at dawn, South Texas always delivers. Our hotspot guide covers the five essential stops in the Rio Grande Valley.
+              South Texas is the only region in the United States that realistically offers 20–30 life birds in a single week. Our guide covers all nine World Birding Center hotspots, with complete species profiles and field tips for every target.
             </p>
-            <Link
-              href="/hotspots"
-              className="inline-block font-semibold px-8 py-3 rounded-lg transition-opacity hover:opacity-85 text-sm"
-              style={{ backgroundColor: "#0E6B6B", color: "#EFE3CE" }}
-            >
-              Explore Hotspots
-            </Link>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link
+                href="/hotspots"
+                className="inline-block font-semibold px-8 py-3 rounded-lg transition-opacity hover:opacity-85 text-sm"
+                style={{ backgroundColor: "#0E6B6B", color: "#EFE3CE" }}
+              >
+                Plan Your Trip
+              </Link>
+              <Link
+                href="/birds"
+                className="inline-block font-semibold px-8 py-3 rounded-lg border transition-colors text-sm"
+                style={{ borderColor: "#0E6B6B", color: "#0E6B6B" }}
+              >
+                Browse 50 Species
+              </Link>
+            </div>
           </AnimateIn>
         </div>
       </section>
@@ -428,7 +454,7 @@ export default function HomePage() {
             "name": "South Texas Birds",
             "url": "https://southtexasbirds.org",
             "logo": "https://southtexasbirds.org/icon.svg",
-            "description": "Birding guide for the Rio Grande Valley and South Texas coast. Discover 500+ species, hotspot maps, and seasonal tips.",
+            "description": "The complete birding guide for the Rio Grande Valley and South Texas coast — 50 species profiles, 9 hotspot guides, and 14 destination articles covering the only U.S. region where Green Jays, Hook-billed Kites, and Aplomado Falcons are resident.",
             "sameAs": ["https://github.com/southtexasbirds"],
           }),
         }}

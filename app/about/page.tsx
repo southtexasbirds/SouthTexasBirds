@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     absolute: "About South Texas Birding | Rio Grande Valley & Coastal Bend Guide",
   },
   description:
-    "Learn about South Texas birding: the Rio Grande Valley, Coastal Bend, and when to visit for migrants, Whooping Cranes, hawks, and winter waterfowl.",
+    "South Texas is the only U.S. region where tropical and temperate bird families overlap. Learn when to visit, which hotspots to target, and what life birds are within reach.",
   openGraph: {
     title: "About South Texas Birding | Rio Grande Valley & Coastal Bend Guide",
     description:
-      "Learn about South Texas birding: the Rio Grande Valley, Coastal Bend, and when to visit for migrants, Whooping Cranes, hawks, and winter waterfowl.",
+      "The only U.S. region where Green Jays, Hook-billed Kites, and Whooping Cranes are all findable. Learn when to visit, what hotspots to hit, and what to expect each season.",
     images: [
       { url: OG_IMAGE, width: 2585, height: 1723, alt: "Altamira Oriole in South Texas" },
     ],
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
     title: "About South Texas Birding | Rio Grande Valley & Coastal Bend Guide",
     description:
-      "Learn about South Texas birding: the Rio Grande Valley, Coastal Bend, and when to visit for migrants, Whooping Cranes, hawks, and winter waterfowl.",
+      "The only U.S. region where Green Jays, Hook-billed Kites, and Whooping Cranes are all findable. Learn when to visit and what to expect each season.",
   },
 };
 
