@@ -139,6 +139,15 @@ const articles = [
       "The RGV's flagship World Birding Center site hosts Hook-billed Kites, Ferruginous Pygmy-Owls, a world-famous hawk watch, and some of the best feeder birding in North America. A complete guide to the Valley's most celebrated destination.",
     tags: ["Destination Guide", "RGV", "Raptors"],
   },
+  {
+    slug: "santa-ana-nwr-birding-guide",
+    date: "July 2026",
+    isoDate: "2026-07-02",
+    title: "Santa Ana National Wildlife Refuge: A Complete Birding Guide",
+    excerpt:
+      "Called the 'Jewel of the National Wildlife Refuge System,' Santa Ana NWR packs 400+ species into 2,000 acres of Tamaulipan thornscrub — Green Jays, Hook-billed Kites, Rose-throated Becards, and the best feeder station in the RGV.",
+    tags: ["Destination Guide", "RGV", "Species Guide"],
+  },
 ];
 
 export default function NewsPage() {

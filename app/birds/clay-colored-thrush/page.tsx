@@ -197,11 +197,18 @@ export default function ClayColoredThrushPage() {
         <AnimateIn>
           <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
-            <Link href="/news/salineno-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Salineño: The Upper Rio Grande Valley&apos;s Best-Kept Birding Secret</span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>Salineño is one of the best U.S. sites for the Clay-colored Thrush — this quiet species reaches the U.S. only along the Rio Grande, where its rich, flute-like song drifts from riverside woodland.</span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/santa-ana-nwr-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Santa Ana National Wildlife Refuge: A Complete Birding Guide</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Clay-colored Thrush has established a breeding population around Santa Ana NWR and Mission — a complete guide to the Rio Grande Valley's most species-rich reserve.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link href="/news/salineno-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Salineño: The Upper Rio Grande Valley&apos;s Best-Kept Birding Secret</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Salineño is one of the best U.S. sites for the Clay-colored Thrush — this quiet species reaches the U.S. only along the Rio Grande, where its rich, flute-like song drifts from riverside woodland.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 
