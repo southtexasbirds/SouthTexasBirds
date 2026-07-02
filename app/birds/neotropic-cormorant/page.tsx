@@ -187,6 +187,17 @@ export default function NeotropicCormorantPage() {
           </AnimateIn>
         </div>
         <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
+            <Link href="/news/fall-shorebird-season-south-padre" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Fall Shorebird Season at South Padre Island: Piping Plovers and More</span>
+              <span className="text-sm" style={{ color: "#5C5954" }}>Neotropic Cormorants are common on coastal lagoons and resacas throughout South Texas — one of the reliable waterbirds sharing the coastal flats with migrating shorebirds at South Padre Island each fall.</span>
+              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+            </Link>
+          </section>
+        </AnimateIn>
+
+        <AnimateIn>
           <div className="text-center pt-4">
             <Link href="/birds" className="text-sm font-medium transition-opacity hover:opacity-70" style={{ color: "#C77F4A" }}>
               ← Browse all South Texas species

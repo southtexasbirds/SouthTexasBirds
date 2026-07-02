@@ -195,6 +195,17 @@ export default function GreatKiskadeePage() {
         </div>
 
         <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
+            <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
+              <span className="text-sm" style={{ color: "#5C5954" }}>The Great Kiskadee is one of the defining sounds of the Rio Grande Valley — a South Texas exclusive that announces itself constantly from every park, garden, and resaca shore, loud enough to be heard from inside a car.</span>
+              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+            </Link>
+          </section>
+        </AnimateIn>
+
+        <AnimateIn>
           <div className="text-center pt-4">
             <Link href="/birds" className="text-sm font-medium transition-opacity hover:opacity-70" style={{ color: "#C77F4A" }}>
               ← Browse all South Texas species
