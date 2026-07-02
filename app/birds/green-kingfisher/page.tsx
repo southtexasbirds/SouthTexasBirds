@@ -197,11 +197,18 @@ export default function GreenKingfisherPage() {
         <AnimateIn>
           <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
-            <Link href="/news/salineno-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Salineño: The Upper Rio Grande Valley&apos;s Best-Kept Birding Secret</span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>The Green Kingfisher is one of Salineño&apos;s signature riverside species — watch for it hunting from low branches over the Rio Grande, dwarfed by the Ringed Kingfisher fishing alongside it.</span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/salineno-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Salineño: The Upper Rio Grande Valley&apos;s Best-Kept Birding Secret</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Green Kingfisher is one of Salineño&apos;s signature riverside species — watch for it hunting from low branches over the Rio Grande, dwarfed by the Ringed Kingfisher fishing alongside it.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link href="/news/estero-llano-grande-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Estero Llano Grande State Park: A Complete Birding Guide</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Green Kingfisher is year-round and reliable at Estero Llano Grande — the park&apos;s resaca shoreline offers excellent views of this tiny, secretive kingfisher perched over the water at eye level.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 

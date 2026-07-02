@@ -148,6 +148,15 @@ const articles = [
       "Called the 'Jewel of the National Wildlife Refuge System,' Santa Ana NWR packs 400+ species into 2,000 acres of Tamaulipan thornscrub — Green Jays, Hook-billed Kites, Rose-throated Becards, and the best feeder station in the RGV.",
     tags: ["Destination Guide", "RGV", "Species Guide"],
   },
+  {
+    slug: "estero-llano-grande-birding-guide",
+    date: "July 2026",
+    isoDate: "2026-07-02",
+    title: "Estero Llano Grande State Park: A Complete Birding Guide",
+    excerpt:
+      "The most reliable site in the United States for Masked Duck and Northern Jacana sits in the middle of a city of 40,000. A complete guide to the RGV's most productive urban wildlife destination — and how to find its extraordinary waterbirds.",
+    tags: ["Destination Guide", "RGV", "Waterbirds"],
+  },
 ];
 
 export default function NewsPage() {

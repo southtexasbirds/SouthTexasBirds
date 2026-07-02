@@ -278,20 +278,27 @@ export default function WhoopingCranePage() {
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>
               In the News
             </p>
-            <Link
-              href="/news/whooping-crane-record-count"
-              className="group flex flex-col gap-1 transition-opacity hover:opacity-80"
-            >
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>
-                Record Number of Whooping Cranes Wintering in Texas
-              </span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>
-                The most recent USFWS survey recorded 557 birds — a record high for the species&apos; only self-sustaining wild population.
-              </span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>
-                Read article →
-              </span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link
+                href="/news/whooping-crane-record-count"
+                className="group flex flex-col gap-1 transition-opacity hover:opacity-80"
+              >
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>
+                  Record Number of Whooping Cranes Wintering in Texas
+                </span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>
+                  The most recent USFWS survey recorded 557 birds — a record high for the species&apos; only self-sustaining wild population.
+                </span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>
+                  Read article →
+                </span>
+              </Link>
+              <Link href="/news/south-texas-birding-calendar" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Birding Calendar: When to Go for Each Species</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Whooping Cranes arrive at Aransas NWR in late October and depart by early April — the month-by-month birding guide covers exactly when to plan a crane boat tour and what other winter specialties to expect alongside them.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 

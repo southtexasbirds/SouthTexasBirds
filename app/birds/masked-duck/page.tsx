@@ -198,11 +198,18 @@ export default function MaskedDuckPage() {
         <AnimateIn>
           <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
-            <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>The Masked Duck is one of the most secretive birds on the South Texas exclusive list — a stiff-tailed duck of overgrown resacas and dense marsh vegetation that almost never ventures into the open, found nowhere else in the U.S.</span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Masked Duck is one of the most secretive birds on the South Texas exclusive list — a stiff-tailed duck of overgrown resacas and dense marsh vegetation that almost never ventures into the open, found nowhere else in the U.S.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link href="/news/estero-llano-grande-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Estero Llano Grande State Park: A Complete Birding Guide</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Estero Llano Grande is the most reliable site in the United States for Masked Duck — a shallow urban resaca where this secretive stiff-tailed duck regularly shows itself to patient observers with a scope.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 

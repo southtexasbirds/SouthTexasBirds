@@ -202,17 +202,24 @@ export default function PaintedBuntingPage() {
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>
               In the News
             </p>
-            <Link href="/news/painted-bunting-south-padre" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>
-                South Padre Island Remains a Critical Painted Bunting Stopover
-              </span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>
-                Late April fallout events bring hundreds of exhausted Trans-Gulf migrants to South Padre Island — why this stopover matters for the species.
-              </span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>
-                Read article →
-              </span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/painted-bunting-south-padre" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>
+                  South Padre Island Remains a Critical Painted Bunting Stopover
+                </span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>
+                  Late April fallout events bring hundreds of exhausted Trans-Gulf migrants to South Padre Island — why this stopover matters for the species.
+                </span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>
+                  Read article →
+                </span>
+              </Link>
+              <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Painted Bunting nests in South Texas thorn forest and its coastal populations are one of the species at the heart of the South Texas exclusive checklist — the most brilliantly colored bird likely to appear at an RGV feeder.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 

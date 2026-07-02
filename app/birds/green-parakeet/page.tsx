@@ -175,11 +175,18 @@ export default function GreenParakeetPage() {
         <AnimateIn>
           <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
-            <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>The Green Parakeet is one of the Valley&apos;s most entertaining residents — a wild flock species found nowhere else in the U.S., whose loud communal roosts light up the evening sky above Brownsville and McAllen.</span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Green Parakeet is one of the Valley&apos;s most entertaining residents — a wild flock species found nowhere else in the U.S., whose loud communal roosts light up the evening sky above Brownsville and McAllen.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link href="/news/rgvbf-festival-2026" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Save the Date: Rio Grande Valley Birding Festival Returns This November</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Rio Grande Valley Birding Festival is held each November in the cities where Green Parakeet is a daily sight — enormous roosts of hundreds of birds return to the same trees every evening throughout the festival weekend.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 

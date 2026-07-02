@@ -18,6 +18,7 @@ const NEWS_SLUGS = [
   "laguna-atascosa-birding-guide",
   "bentsen-rgv-state-park-birding-guide",
   "santa-ana-nwr-birding-guide",
+  "estero-llano-grande-birding-guide",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

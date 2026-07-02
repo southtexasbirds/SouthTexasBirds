@@ -176,11 +176,18 @@ export default function RedCrownedParrotPage() {
         <AnimateIn>
           <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
-            <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>The Red-crowned Parrot is one of the Valley&apos;s most charismatic residents — a feral population descended from escaped cage birds now fills the urban canopy of McAllen and Brownsville with loud flocks each morning.</span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Red-crowned Parrot is one of the Valley&apos;s most charismatic residents — a feral population descended from escaped cage birds now fills the urban canopy of McAllen and Brownsville with loud flocks each morning.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link href="/news/rgvbf-festival-2026" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Save the Date: Rio Grande Valley Birding Festival Returns This November</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Rio Grande Valley Birding Festival takes place each November in the Valley&apos;s cities — where Red-crowned Parrot flocks wheel noisily over downtown parks and feeders every morning of the festival weekend.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 

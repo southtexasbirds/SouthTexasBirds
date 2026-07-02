@@ -294,11 +294,18 @@ export default function BotterisSparrowPage() {
         <AnimateIn>
           <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
-            <Link href="/news/thornscrub-restoration-rgv" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley</span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>Botteri&apos;s Sparrow is a secretive resident of dense coastal prairie and thornscrub — one of the birds whose specialized habitat is being painstakingly rebuilt by conservation groups working to restore the Valley&apos;s native brush.</span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/thornscrub-restoration-rgv" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Botteri&apos;s Sparrow is a secretive resident of dense coastal prairie and thornscrub — one of the birds whose specialized habitat is being painstakingly rebuilt by conservation groups working to restore the Valley&apos;s native brush.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Botteri&apos;s Sparrow is one of the lesser-known South Texas exclusives — a secretive grassland sparrow found in the U.S. only in southern Arizona and the Texas coastal plain, rarely encountered outside its specialized habitat.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 

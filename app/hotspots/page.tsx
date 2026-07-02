@@ -11,6 +11,8 @@ const hotspots = [
     address: "3301 S. International Blvd, Weslaco, TX 78596",
     region: "Weslaco",
     type: "State Park",
+    guideSlug: "estero-llano-grande-birding-guide",
+    guideLabel: "Complete Birding Guide",
     description:
       "An urban wildlife oasis in the heart of the Valley. The park's shallow lake, resaca wetlands, and brushy edges attract an extraordinary variety of waterbirds and hard-to-find specialties. The visitor center feeders draw Green Jays, Altamira Orioles, and Plain Chachalacas within arm's reach. The lake is one of the most reliable spots in the U.S. for Masked Duck and Northern Jacana.",
     birds: [

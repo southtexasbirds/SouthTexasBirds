@@ -198,11 +198,18 @@ export default function HarrisHawkPage() {
         <AnimateIn>
           <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
-            <Link href="/news/fall-hawk-migration-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen</span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>Harris&apos;s Hawks are year-round residents of South Texas mesquite country — often perching in family groups on tall cactus while Broad-winged Hawk kettles rise overhead each September.</span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/fall-hawk-migration-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Harris&apos;s Hawks are year-round residents of South Texas mesquite country — often perching in family groups on tall cactus while Broad-winged Hawk kettles rise overhead each September.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link href="/news/south-texas-raptor-specialties" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Raptor Specialties: Seven Birds Found Nowhere Else in the U.S.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Harris&apos;s Hawk is one of the seven resident raptor specialties profiled in the guide — the cooperative hunter of South Texas mesquite savanna, unique among raptors for its remarkable pack-hunting family groups.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 
