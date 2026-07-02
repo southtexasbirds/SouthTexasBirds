@@ -342,6 +342,26 @@ export default function SouthTexasRaptorSpecialtiesPage() {
         </AnimateIn>
 
         <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: "#C77F4A" }}>More from South Texas Birds</p>
+            <div className="flex flex-col gap-4">
+              <Link href="/news/fall-hawk-migration-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+              <Link href="/news/spacex-refuge-land-exchange" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>SpaceX Land Exchange Threatens Rio Grande Wildlife Corridor</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+              <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+            </div>
+          </section>
+        </AnimateIn>
+
+        <AnimateIn>
           <div className="text-center pt-4">
             <Link
               href="/news"

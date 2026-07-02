@@ -190,6 +190,26 @@ export default function SpaceXLandExchangePage() {
         </AnimateIn>
 
         <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: "#C77F4A" }}>More from South Texas Birds</p>
+            <div className="flex flex-col gap-4">
+              <Link href="/news/thornscrub-restoration-rgv" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+              <Link href="/news/whooping-crane-record-count" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>Record Number of Whooping Cranes Wintering in Texas</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+              <Link href="/news/south-texas-raptor-specialties" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>South Texas Raptor Specialties: 7 Birds of Prey You Can Only Find Here</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+            </div>
+          </section>
+        </AnimateIn>
+
+        <AnimateIn>
           <div className="text-center pt-2">
             <Link
               href="/news"
@@ -222,10 +242,13 @@ export default function SpaceXLandExchangePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "NewsArticle",
+            "url": "https://southtexasbirds.org/news/spacex-refuge-land-exchange",
             "headline": "SpaceX Land Exchange Threatens Rio Grande Wildlife Corridor",
             "description": "A federal land exchange would transfer 715 acres of the Lower Rio Grande Valley NWR to SpaceX. A coalition has filed suit, arguing the swap violates federal conservation law and harms habitat for the Aplomado Falcon, ocelot, and more.",
             "image": OG_IMAGE,
             "datePublished": "2026-06-20",
+            "dateModified": "2026-06-30",
+            "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" }
           })
         }}

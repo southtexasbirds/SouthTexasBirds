@@ -238,6 +238,26 @@ export default function SouthTexasBirdingCalendarPage() {
         </AnimateIn>
 
         <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: "#C77F4A" }}>More from South Texas Birds</p>
+            <div className="flex flex-col gap-4">
+              <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+              <Link href="/news/salineno-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>Salineño: The Upper Rio Grande Valley&apos;s Best-Kept Birding Secret</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+              <Link href="/news/south-texas-raptor-specialties" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>South Texas Raptor Specialties: 7 Birds of Prey You Can Only Find Here</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+            </div>
+          </section>
+        </AnimateIn>
+
+        <AnimateIn>
           <div className="text-center pt-4">
             <Link
               href="/news"

@@ -203,6 +203,26 @@ export default function ThornscrubRestorationPage() {
         </AnimateIn>
 
         <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: "#C77F4A" }}>More from South Texas Birds</p>
+            <div className="flex flex-col gap-4">
+              <Link href="/news/birds-only-in-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>Birds You Can Only See in South Texas (Within the United States)</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+              <Link href="/news/spacex-refuge-land-exchange" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>SpaceX Land Exchange Threatens Rio Grande Wildlife Corridor</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+              <Link href="/news/south-texas-birding-calendar" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-sm font-bold" style={{ color: "#0E6B6B" }}>South Texas Birding Calendar: When to Go for Each Species</span>
+                <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C77F4A" }}>Read →</span>
+              </Link>
+            </div>
+          </section>
+        </AnimateIn>
+
+        <AnimateIn>
           <div className="text-center pt-2">
             <Link
               href="/news"
@@ -235,10 +255,13 @@ export default function ThornscrubRestorationPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "NewsArticle",
+            "url": "https://southtexasbirds.org/news/thornscrub-restoration-rgv",
             "headline": "Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley",
             "description": "Less than 5% of the original Tamaulipan thornscrub remains in the Rio Grande Valley. Restoration efforts are rebuilding habitat for Green Jay, Plain Chachalaca, Ferruginous Pygmy-Owl, and dozens more.",
             "image": OG_IMAGE,
             "datePublished": "2026-06-10",
+            "dateModified": "2026-06-30",
+            "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" }
           })
         }}
