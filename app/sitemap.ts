@@ -16,6 +16,7 @@ const NEWS_SLUGS = [
   "salineno-birding-guide",
   "south-texas-raptor-specialties",
   "laguna-atascosa-birding-guide",
+  "bentsen-rgv-state-park-birding-guide",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

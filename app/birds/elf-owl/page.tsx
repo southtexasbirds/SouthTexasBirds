@@ -201,11 +201,18 @@ export default function ElfOwlPage() {
         <AnimateIn>
           <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
-            <Link href="/news/thornscrub-restoration-rgv" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley</span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>The Elf Owl — the world&apos;s smallest owl — nests in cavities in South Texas riparian and thornscrub woodland. Habitat restoration programs rebuilding the Valley&apos;s native brush are directly supporting this tiny raptor&apos;s local population.</span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/bentsen-rgv-state-park-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Bentsen-Rio Grande Valley State Park: A Complete Birding Guide</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Bentsen-RGVSP is one of the most reliable U.S. sites for Elf Owl — the world's smallest owl calls here at dusk from March through August, in the mature riparian forest along the Rio Grande.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link href="/news/thornscrub-restoration-rgv" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Elf Owl — the world&apos;s smallest owl — nests in cavities in South Texas riparian and thornscrub woodland. Habitat restoration programs rebuilding the Valley&apos;s native brush are directly supporting this tiny raptor&apos;s local population.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 

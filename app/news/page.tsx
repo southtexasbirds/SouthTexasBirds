@@ -130,6 +130,15 @@ const articles = [
       "The largest protected area in the Rio Grande Valley hosts Aplomado Falcons, White-tailed Hawks, Roseate Spoonbills, and over 400 species. A complete guide to birding South Texas's most species-rich refuge.",
     tags: ["Destination Guide", "Raptors", "RGV"],
   },
+  {
+    slug: "bentsen-rgv-state-park-birding-guide",
+    date: "July 2026",
+    isoDate: "2026-07-01",
+    title: "Bentsen-Rio Grande Valley State Park: A Complete Birding Guide",
+    excerpt:
+      "The RGV's flagship World Birding Center site hosts Hook-billed Kites, Ferruginous Pygmy-Owls, a world-famous hawk watch, and some of the best feeder birding in North America. A complete guide to the Valley's most celebrated destination.",
+    tags: ["Destination Guide", "RGV", "Raptors"],
+  },
 ];
 
 export default function NewsPage() {

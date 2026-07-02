@@ -63,6 +63,8 @@ const hotspots = [
     address: "2800 S. Bentsen Palm Dr, Mission, TX 78572",
     region: "Mission",
     type: "State Park / World Birding Center",
+    guideSlug: "bentsen-rgv-state-park-birding-guide",
+    guideLabel: "Complete Birding Guide",
     description:
       "The flagship site of the World Birding Center and one of the most celebrated birding destinations in North America. The park's hawk watch tower is world-famous during spring and fall raptor migration. A network of trails winds through riparian forest and thornscrub. Feeders and a drip water feature attract resident specialties constantly. General park entry is $5 per person (free for kids 12 and under); special hawk watch events may have separate fees.",
     birds: [
@@ -167,6 +169,8 @@ const hotspots = [
     address: "6801 Padre Blvd, South Padre Island, TX 78597",
     region: "South Padre Island",
     type: "World Birding Center",
+    guideSlug: "fall-shorebird-season-south-padre",
+    guideLabel: "Fall Shorebird Guide",
     description:
       "Positioned at the southern tip of Padre Island at one of the most dramatic landfall points on the Trans-Gulf migration route. When northwest winds follow a cold front in late April and early May, exhausted neotropical migrants arrive in staggering numbers — warblers, buntings, tanagers, and orioles crowd every shrub and boardwalk in what birders call a 'fallout.' The elevated hawk tower commands panoramic coastal views, and the adjacent wetlands host shorebirds, egrets, and the resident Reddish Egret year-round.",
     birds: [
@@ -193,6 +197,8 @@ const hotspots = [
     address: "22817 Ocelot Rd, Rio Hondo, TX 78583",
     region: "Rio Hondo",
     type: "National Wildlife Refuge",
+    guideSlug: "laguna-atascosa-birding-guide",
+    guideLabel: "Complete Birding Guide",
     description:
       "The southernmost National Wildlife Refuge in the U.S., encompassing over 97,000 acres of coastal brushland, freshwater impoundments, and Laguna Madre shoreline. Home to the reintroduced Aplomado Falcon and one of the last strongholds for the endangered ocelot. The Bayside Drive auto loop offers superb looks at waterbirds and open-country raptors.",
     birds: [
@@ -219,6 +225,8 @@ const hotspots = [
     address: "River Rd, Salineno, TX 78585",
     region: "Salineño",
     type: "Wildlife Preserve",
+    guideSlug: "salineno-birding-guide",
+    guideLabel: "Complete Birding Guide",
     description:
       "A small but extraordinary preserve on the banks of the Rio Grande, west of Falcon Lake near the town of Salineño. Feeders at the river's edge draw Audubon's Orioles, Olive Sparrows, and White-tipped Doves, while the river itself hosts Ringed and Green Kingfishers and is the most reliable site in the U.S. for wild Muscovy Duck — often visible from the bank at dawn. Brown Jay, now rarely seen in Texas, was historically reliable here and remains a hoped-for prize for visiting birders.",
     birds: [
@@ -496,7 +504,7 @@ export default function HotspotsPage() {
                 </div>
 
                 {/* External links */}
-                <div className="flex gap-2 pt-4" style={{ borderTop: "1px solid rgba(14,107,107,0.1)" }}>
+                <div className="flex flex-wrap gap-2 pt-4" style={{ borderTop: "1px solid rgba(14,107,107,0.1)" }}>
                   <a
                     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.address)}`}
                     target="_blank"
@@ -523,6 +531,18 @@ export default function HotspotsPage() {
                   >
                     eBird ↗
                   </a>
+                  {"guideSlug" in spot && spot.guideSlug && (
+                    <Link
+                      href={`/news/${spot.guideSlug}`}
+                      className="text-xs font-semibold px-3 py-1.5 rounded-full transition-opacity hover:opacity-75"
+                      style={{
+                        background: "#C77F4A",
+                        color: "#fff",
+                      }}
+                    >
+                      {"guideLabel" in spot && spot.guideLabel ? `${spot.guideLabel} →` : "Read Guide →"}
+                    </Link>
+                  )}
                 </div>
               </div>
           </article>
