@@ -112,6 +112,15 @@ const articles = [
       "Salineño Wildlife Preserve is the most reliable site in the United States for White-collared Seedeater and Ringed Kingfisher — and one of the most undervisited birding destinations in the country. A complete guide to this upper RGV gem.",
     tags: ["Guide", "Destination", "RGV"],
   },
+  {
+    slug: "south-texas-raptor-specialties",
+    date: "June 2026",
+    isoDate: "2026-06-30",
+    title: "South Texas Raptor Specialties: 7 Birds of Prey You Can Only Find Here",
+    excerpt:
+      "From the Hook-billed Kite to the reintroduced Aplomado Falcon, the Rio Grande Valley is the only place in the U.S. to find seven resident raptor specialties — including two endangered species. A complete guide.",
+    tags: ["Raptors", "Species Guide", "RGV"],
+  },
 ];
 
 export default function NewsPage() {

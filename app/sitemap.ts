@@ -14,6 +14,7 @@ const NEWS_SLUGS = [
   "south-texas-birding-calendar",
   "birds-only-in-south-texas",
   "salineno-birding-guide",
+  "south-texas-raptor-specialties",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

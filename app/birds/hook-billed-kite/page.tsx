@@ -197,11 +197,18 @@ export default function HookBilledKitePage() {
         <AnimateIn>
           <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>In the News</p>
-            <Link href="/news/fall-hawk-migration-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen</span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>Hook-billed Kites often soar during the same thermal conditions that lift migrating Broad-winged Hawks — making Bentsen's hawk watch tower one of the best places to spot this rare resident in flight.</span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/south-texas-raptor-specialties" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Raptor Specialties: 7 Birds of Prey You Can Only Find Here</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Hook-billed Kite is one of seven raptors found in the United States only in South Texas — and the most unusual of them all, a snail-eating kite with a bill unlike any other raptor.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link href="/news/fall-hawk-migration-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Hook-billed Kites often soar during the same thermal conditions that lift migrating Broad-winged Hawks — making Bentsen's hawk watch tower one of the best places to spot this rare resident in flight.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 

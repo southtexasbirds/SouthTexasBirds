@@ -1,8 +1,42 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-06-29
+- **Date:** 2026-06-30
 - **Agent:** Laptop
+
+---
+
+## Laptop Agent — 2026-06-30
+
+### What was done this session
+
+**FAQPage JSON-LD (final batch):**
+- Completed FAQPage schemas on all 50 species pages — every species page now has both Article JSON-LD and FAQPage JSON-LD with 4 Q&As
+
+**New news article:**
+- Created `app/news/south-texas-raptor-specialties/page.tsx` — full article covering South Texas's 7 resident raptor specialties: Hook-billed Kite, Gray Hawk, White-tailed Hawk, White-tailed Kite, Aplomado Falcon, Ferruginous Pygmy-Owl, Crested Caracara
+- Article includes BreadcrumbList + NewsArticle + FAQPage JSON-LD; targets "south texas raptors", "hook-billed kite texas", "white-tailed hawk texas" keywords
+- Added to `app/news/page.tsx` articles array and `app/sitemap.ts` NEWS_SLUGS (now 11 news articles)
+- `isoDate: "2026-06-30"`, tags: ["Raptors", "Species Guide", "RGV"]
+
+**"In the News" links added/updated:**
+- hook-billed-kite: added raptor-specialties article (alongside existing fall-hawk-migration link)
+- white-tailed-hawk: added raptor-specialties article (alongside existing fall-hawk-migration link)
+- crested-caracara: added raptor-specialties article (alongside existing fall-hawk-migration link)
+- aplomado-falcon: added raptor-specialties article (alongside existing spacex-land-exchange link)
+- ferruginous-pygmy-owl: added raptor-specialties article (alongside existing thornscrub-restoration link)
+- gray-hawk: new "In the News" section added (links to raptor-specialties)
+- white-tailed-kite: new "In the News" section added (links to raptor-specialties)
+
+### What's next
+- Could build more species-cluster news articles (e.g. "South Texas Waterbirds", "Valley Sparrows")
+- Could add a dedicated /raptors or /guides section for curated lists
+- FAQ schema could go on the /hotspots or /gear pages
+- Could add eBird checklist embed or recent sightings block (needs eBird API access)
+
+### Notes
+- All changes on `main` branch, not yet pushed — run `git push origin main`
+- Build should be clean: 67 pages (66 prior + 1 new news article), all static
 
 ---
 

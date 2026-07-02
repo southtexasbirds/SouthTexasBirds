@@ -294,20 +294,27 @@ export default function AplomadoFalconPage() {
             <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "#C77F4A" }}>
               In the News
             </p>
-            <Link
-              href="/news/spacex-refuge-land-exchange"
-              className="group flex flex-col gap-1 transition-opacity hover:opacity-80"
-            >
-              <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>
-                SpaceX Land Exchange Threatens Rio Grande Wildlife Corridor
-              </span>
-              <span className="text-sm" style={{ color: "#5C5954" }}>
-                A federal land swap could fragment key Aplomado Falcon habitat along the Rio Grande. A conservation coalition has filed suit.
-              </span>
-              <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>
-                Read article →
-              </span>
-            </Link>
+            <div className="flex flex-col gap-5">
+              <Link href="/news/south-texas-raptor-specialties" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Raptor Specialties: 7 Birds of Prey You Can Only Find Here</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Aplomado Falcon&apos;s reintroduction to South Texas is one of conservation biology&apos;s most celebrated comebacks — an endangered species that can now be reliably seen in the field at Laguna Atascosa NWR.</span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
+              </Link>
+              <Link
+                href="/news/spacex-refuge-land-exchange"
+                className="group flex flex-col gap-1 transition-opacity hover:opacity-80"
+              >
+                <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>
+                  SpaceX Land Exchange Threatens Rio Grande Wildlife Corridor
+                </span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>
+                  A federal land swap could fragment key Aplomado Falcon habitat along the Rio Grande. A conservation coalition has filed suit.
+                </span>
+                <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>
+                  Read article →
+                </span>
+              </Link>
+            </div>
           </section>
         </AnimateIn>
 
