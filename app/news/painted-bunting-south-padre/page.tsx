@@ -228,6 +228,49 @@ export default function PaintedBuntingSouthPadrePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When do Painted Buntings migrate through South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Painted Buntings migrate through South Texas primarily in late April and early May (spring) and again in September and October (fall). The most spectacular events occur in spring when Trans-Gulf migrants make landfall at South Padre Island following northwest winds after cold fronts. Fall migration is more protracted, with birds moving through from August into October."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is a Trans-Gulf migration fallout?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A Trans-Gulf fallout occurs when migrating birds crossing the Gulf of Mexico encounter headwinds or bad weather that exhausts them, forcing them to land on the first available land on the Gulf Coast. At South Padre Island, a true fallout can produce hundreds of Painted Buntings, Indigo Buntings, tanagers, and warblers landing in any available vegetation — trees, shrubs, even fences. The best conditions are northwest winds following a cold front in late April or early May."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is the best place to see Painted Buntings in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "South Padre Island is the best place to see Painted Buntings during spring migration — Shearer Street and Andy Bowie Park are classic fallout sites. During fall, Painted Buntings can be found at any Valley park with dense vegetation, including Bentsen SP, Santa Ana NWR, and Estero Llano Grande SP. Seed feeders at resorts and nature centers also reliably attract Painted Buntings in late summer and fall."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do Painted Buntings breed in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — there are two geographically distinct breeding populations of Painted Bunting. The eastern population breeds along the Atlantic coast from North Carolina to Florida; the western population breeds from the southern Great Plains south into Texas and northeastern Mexico. The western population does breed in parts of South Texas, including the brushy edges and open woodlands of the Hill Country and South Texas plains, and some birds winter along the Gulf Coast."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

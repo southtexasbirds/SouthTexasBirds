@@ -230,6 +230,49 @@ export default function SpaceXLandExchangePage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the SpaceX land exchange in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The proposed SpaceX land exchange involves transferring approximately 715 acres of land within the Lower Rio Grande Valley National Wildlife Refuge to SpaceX in exchange for other land parcels. The exchange would allow SpaceX to expand its Starbase launch complex near Boca Chica, Texas. Conservation organizations have opposed the exchange, arguing it would fragment a critical wildlife corridor connecting coastal refuge units and harm habitat for endangered species including the Aplomado Falcon and ocelot."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How would the land exchange affect wildlife in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The proposed land exchange would fragment a wildlife corridor that connects separate units of the Lower Rio Grande Valley NWR along the coast. Conservationists argue this would disrupt movement of endangered ocelots, jaguarundis, and other wildlife between habitat patches. The affected area also includes coastal prairie that is home to reintroduced Aplomado Falcons and provides critical stopover habitat for millions of migrating shorebirds and songbirds each year."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which endangered species are threatened by the SpaceX land exchange?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The species of greatest conservation concern include the ocelot (Federally Endangered, with fewer than 80 individuals remaining in Texas), the jaguarundi (Federally Endangered), the Aplomado Falcon (Federally Endangered, reintroduced to the area in the 1990s), and the Kemp's ridley sea turtle (Federally Endangered, which nests on nearby beaches). The area also provides habitat for the Piping Plover and other threatened shorebirds."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Lower Rio Grande Valley National Wildlife Refuge?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Lower Rio Grande Valley National Wildlife Refuge is a U.S. Fish and Wildlife Service refuge that protects native wildlife corridor habitat along the Rio Grande from Falcon Dam to the Gulf of Mexico. It consists of over 90,000 acres of land in more than 130 non-contiguous tracts, including riparian forest, thornscrub, coastal prairie, and salt marsh. The refuge is the primary conservation anchor for the Rio Grande Valley's biodiversity and is considered one of the most biologically diverse areas in the United States."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

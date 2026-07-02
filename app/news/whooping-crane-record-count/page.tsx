@@ -175,6 +175,49 @@ export default function WhoopingCraneRecordCountPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How many Whooping Cranes are alive today?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "As of the most recent USFWS survey, approximately 557 Whooping Cranes are estimated to be alive in the wild Aransas-Wood Buffalo population — the species' only self-sustaining wild flock. This is a record high for the population, which numbered just 15 birds in 1941. Additional birds exist in captive breeding programs and in reintroduced non-migratory flocks in Louisiana and Wisconsin."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where do Whooping Cranes winter in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The wild Whooping Crane population winters along the Texas Gulf Coast, primarily at Aransas National Wildlife Refuge near Rockport and on the surrounding tidal flats, salt marshes, and coastal prairies of the mid-Texas coast. The cranes spend winters feeding on blue crabs, wolfberries, and other coastal foods before migrating north to Wood Buffalo National Park in Canada each spring."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When is the best time to see Whooping Cranes in Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "November through March is the best window to see Whooping Cranes in Texas. Birds typically arrive at Aransas NWR in late October and depart for Canada in April. The most reliable viewing is from the observation tower at Aransas NWR or by taking a boat tour from Rockport, which allows close approach to foraging birds on the tidal flats."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are Whooping Cranes still endangered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — the Whooping Crane remains Federally Endangered in the United States. Although the population has grown significantly from the all-time low of 15 birds in 1941, the wild flock is still considered at risk due to its small size, dependence on a single wintering area, and vulnerability to disease, habitat loss, and collision with power lines during migration. The species is listed as Endangered under the U.S. Endangered Species Act."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

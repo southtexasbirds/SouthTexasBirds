@@ -293,6 +293,49 @@ export default function BirdsOnlyInSouthTexasPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What birds are found only in South Texas in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Rio Grande Valley is home to over 30 bird species found nowhere else in the United States as residents. The most-sought include Green Jay, Altamira Oriole, Audubon's Oriole, Plain Chachalaca, Clay-colored Thrush, Buff-bellied Hummingbird, White-collared Seedeater, Ringed Kingfisher, Northern Jacana, Masked Duck, Tropical Parula, Couch's Kingbird, Tropical Kingbird, Hook-billed Kite, White-tailed Hawk, Gray Hawk, Aplomado Falcon, Ferruginous Pygmy-Owl, and various parakeets and parrots established as feral populations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I find the most South Texas exclusive species in one place?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Santa Ana National Wildlife Refuge near Alamo, Texas is widely considered the single most species-rich site for South Texas exclusives, with resident populations of Green Jay, Plain Chachalaca, Ferruginous Pygmy-Owl, Altamira Oriole, Hook-billed Kite, Tropical Parula, and many others. Bentsen-Rio Grande Valley SP is equally productive. For White-collared Seedeater and Ringed Kingfisher, Salineño Wildlife Preserve on the upper river is the best site."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the Green Jay found anywhere else in the United States?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No — the Green Jay is found in the continental United States only in South Texas. Its U.S. range is essentially restricted to the Rio Grande Valley from Laredo south to the Gulf. The species is common and widespread from Mexico south through Central America into northern South America, but the Valley represents its only permanent U.S. foothold. It is one of the most popular target species for birders visiting the region."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many bird species are exclusive to South Texas in the U.S.?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Approximately 30–35 species reach the United States only (or almost only) in South Texas as established residents or regular breeders, depending on how you count established feral populations of parakeets and parrots. This number far exceeds any other comparably sized area in the lower 48 states. The Rio Grande Valley's position at the junction of the Nearctic and Neotropical biogeographic zones makes it uniquely positioned to host species from both the temperate U.S. and tropical Mexico."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

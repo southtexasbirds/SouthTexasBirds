@@ -273,6 +273,49 @@ export default function FallShorebirdSeasonPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When is shorebird season at South Padre Island?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Fall shorebird season at South Padre Island runs July through October. The first southbound shorebirds — adult Least Sandpipers, Semipalmated Sandpipers, and Western Sandpipers — arrive in late June and early July. Species diversity peaks in August and September, when over 20 species can be found in a single morning. Piping Plovers arrive in late July and remain through April."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What shorebirds can I see at South Padre Island?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "South Padre Island's tidal flats and intertidal zones host a diverse shorebird community. Regularly encountered species include Piping Plover, Wilson's Plover, Snowy Plover, Semipalmated Plover, Killdeer, American Avocet, Willet, Marbled Godwit, Whimbrel, Dunlin, Least Sandpiper, Western Sandpiper, Semipalmated Sandpiper, and Black-bellied Plover. Rarer species including Red Knot, Buff-breasted Sandpiper, and Ruff are annual in small numbers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is South Padre Island important for Piping Plovers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "South Padre Island and the adjacent Laguna Madre tidal flats are among the most important wintering and staging areas for the Piping Plover in the United States. The Great Plains breeding population of Piping Plovers — a Federally Threatened subspecies — concentrates along the Texas coast each winter, and South Padre's calm, shallow tidal flats provide exactly the food-rich habitat (invertebrates in intertidal sediments) that these birds require to survive the winter and fuel northward migration."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where are the best spots for shorebirds at South Padre Island?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The most productive shorebird areas at South Padre Island are the South Padre Island Birding and Nature Center's tidal pond and boardwalk, the flats near the Queen Isabella Causeway, Andy Bowie Park's beach, and the Laguna Madre tidal flats accessible by boat or kayak. The Convention Centre parking area can flood after rains and attracts concentrations of shorebirds. Low tide mornings 2–3 hours before sunrise produce the best conditions."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

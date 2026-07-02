@@ -288,6 +288,49 @@ export default function SouthTexasBirdingCalendarPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When is the best time to visit South Texas for birding?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "South Texas offers excellent birding year-round, but the two peak windows are spring (late April to mid-May) and fall/winter (October through March). Spring brings migrant warblers, shorebirds, and the Trans-Gulf fallouts at South Padre Island. Fall offers hawk migration and the arrival of winter residents. February and March are peak months for resident specialties — before summer heat reduces activity — while September produces the best raptor migration at Bentsen's hawk tower."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What birds can I see in South Texas in winter?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "South Texas winters are excellent for resident specialties year-round (Green Jay, Altamira Oriole, Plain Chachalaca, Ferruginous Pygmy-Owl, Crested Caracara) plus winter visitors including Vermilion Flycatcher, Sprague's Pipit, LeConte's Sparrow, Whooping Cranes at Aransas NWR, and large mixed sparrow flocks in coastal prairie. The Aplomado Falcon is most visible in open coastal prairie during winter when vegetation is low."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What birds can I see in South Texas in spring?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Spring is one of the most exciting seasons for South Texas birding. Late April and May bring Trans-Gulf migrant fallouts of warblers, tanagers, and Painted Buntings at South Padre Island, plus the arrival of breeding residents: Gray Hawk, Rose-throated Becard, and Tropical Parula returning to the riparian woodland. April–May is also the best time to find nesting Great Kiskadees, Couch's Kingbirds, and Altamira Orioles building their long hanging nests."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is South Texas good for birding year-round?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — South Texas is one of the few destinations in North America where exceptional birding is available in every month of the year. Resident species including the 30+ RGV exclusives are present year-round. Summer (June–August) is the quietest season and the hottest, but remains productive for resident breeders and early shorebird migration. The site's proximity to the tropics means that rarities from Mexico can appear in any month, making South Texas a rewarding destination at any time of year."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

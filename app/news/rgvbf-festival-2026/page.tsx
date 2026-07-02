@@ -265,6 +265,49 @@ export default function RGVBFFestival2026Page() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the Rio Grande Valley Birding Festival?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Rio Grande Valley Birding Festival (RGVBF) is one of the largest birding festivals in the United States, held annually in Harlingen, Texas each November. The festival features over 100 guided field trips to top Valley birding sites, expert-led workshops, vendor exhibits, and photography tours — all focused on the extraordinary birdlife of the Rio Grande Valley. It attracts thousands of birders from across North America and internationally."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When and where is the Rio Grande Valley Birding Festival held?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Rio Grande Valley Birding Festival is held each November in Harlingen, Texas. Field trips depart from Harlingen to sites across the Valley including Bentsen-Rio Grande Valley SP, Santa Ana NWR, South Padre Island, Laguna Atascosa NWR, Salineño, and dozens of other locations. The festival typically runs Thursday through Sunday, with a pre-festival field trip day on Wednesday."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What birds can I see at the Rio Grande Valley Birding Festival?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The RGVBF takes place during one of the Valley's richest birding periods. Typical festival targets include Green Jay, Altamira Oriole, Plain Chachalaca, Buff-bellied Hummingbird, Hook-billed Kite, Aplomado Falcon, Ferruginous Pygmy-Owl, Clay-colored Thrush, White-collared Seedeater, Northern Jacana, Ringed Kingfisher, and dozens of winter songbirds and raptors. Over 300 species have been recorded during festival week across all field trip sites."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I register for the Rio Grande Valley Birding Festival?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Registration for the Rio Grande Valley Birding Festival opens in summer, typically July or August, at the official RGVBF website. Popular field trips sell out quickly, so early registration is strongly recommended. Field trips are led by expert local guides and are capped at small group sizes. The festival website also lists hotel partners in Harlingen for attendees seeking accommodation."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

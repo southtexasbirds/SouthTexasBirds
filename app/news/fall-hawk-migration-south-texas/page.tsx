@@ -299,6 +299,49 @@ export default function FallHawkMigrationPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When does hawk migration peak in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hawk migration peaks in South Texas in mid-September, when Broad-winged Hawks stream south in their largest numbers. The peak typically falls between September 10–25, with the highest single-day counts occurring when cold fronts push birds south overnight. Bentsen-Rio Grande Valley State Park's hawk tower is the most reliable hawk-watching location in the region and can produce counts of 10,000 or more Broad-winged Hawks on peak days."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is the best place to watch hawk migration in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bentsen-Rio Grande Valley State Park near Mission, Texas has a dedicated hawk watch tower that is staffed by trained counters during peak migration. The tower overlooks a broad river valley that concentrates birds moving along the Rio Grande corridor. Santa Ana NWR and Falcon State Park also offer good hawk watching during September and October."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many raptors migrate through South Texas each fall?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Estimates vary, but tens of thousands of raptors pass through the Rio Grande Valley corridor each fall, with Broad-winged Hawks making up the vast majority. Peak single-day counts at Bentsen have exceeded 50,000 Broad-winged Hawks. Other species counted regularly include Sharp-shinned Hawk, Cooper's Hawk, Mississippi Kite, Osprey, American Kestrel, Merlin, Peregrine Falcon, and smaller numbers of buteos and eagles."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What raptor species can I see during fall hawk migration in South Texas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The most abundant species during fall hawk migration in South Texas is the Broad-winged Hawk, which forms enormous kettle flocks in mid-September. Other commonly counted species include Mississippi Kite (August–September), Sharp-shinned and Cooper's Hawks (September–November), Osprey, American Kestrel, Merlin, Peregrine Falcon, Swainson's Hawk, and Zone-tailed Hawk. Rare but regular migrants include Hook-billed Kite and Crane Hawk."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }

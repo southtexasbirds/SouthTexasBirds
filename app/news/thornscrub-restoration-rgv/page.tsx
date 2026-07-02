@@ -243,6 +243,49 @@ export default function ThornscrubRestorationPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Tamaulipan thornscrub?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tamaulipan thornscrub (also called Tamaulipan mezquital) is a native subtropical shrubland ecosystem found in the Rio Grande Valley and northeastern Mexico. It is characterized by a dense mix of thorny shrubs and small trees including Texas ebony, huisache, cenizo, and various cacti. This ecosystem is the exclusive habitat for many of South Texas's most sought-after bird species, including the Ferruginous Pygmy-Owl, Tropical Parula, Botteri's Sparrow, and White-tipped Dove."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much thornscrub remains in the Rio Grande Valley?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Less than 5% of the original Tamaulipan thornscrub ecosystem remains in the Rio Grande Valley. The vast majority was cleared for agriculture, urban development, and ranching during the 20th century. The remaining intact patches are concentrated within national wildlife refuges and state parks — primarily Santa Ana NWR, Bentsen-Rio Grande Valley SP, Resaca de la Palma SP, and Laguna Atascosa NWR."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which birds depend on South Texas thornscrub?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Many of South Texas's most distinctive birds depend on intact Tamaulipan thornscrub: Ferruginous Pygmy-Owl (nests in tree cavities), Tropical Parula (breeds in dense brush), Botteri's Sparrow (requires grassy thornscrub edge), White-tipped Dove (feeds on the forest floor), Elf Owl (nests in cacti and tree cavities), Rose-throated Becard (rare riparian edge), Groove-billed Ani, and many others. Without thornscrub, these species cannot survive in the Valley."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What organizations are restoring thornscrub in the Rio Grande Valley?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Several federal and non-profit organizations are leading thornscrub restoration in the Rio Grande Valley, including the U.S. Fish and Wildlife Service (at the Lower Rio Grande Valley NWR), The Nature Conservancy, Texas Parks and Wildlife Department, and the Native Plant Society of Texas. Programs involve replanting native shrubs, controlling invasive species, and protecting existing fragments. The World Birding Center sites, including Santa Ana NWR and Bentsen SP, serve as focal points for restoration."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 }
