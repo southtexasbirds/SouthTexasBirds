@@ -1,8 +1,50 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-07-01
+- **Date:** 2026-07-02
 - **Agent:** Laptop
+
+---
+
+## Laptop Agent — 2026-07-02
+
+### What was done this session
+
+**New news article (article #15): Estero Llano Grande birding guide**
+- Created `app/news/estero-llano-grande-birding-guide/page.tsx`
+- Targets "estero llano grande birding", "masked duck texas", "northern jacana texas" keyword clusters
+- Covers: Masked Duck (most reliable U.S. site), Northern Jacana, Least Grebe, waterbirds, visitor center feeders, Alligator Lake Trail, Dowitcher Pond, when to visit
+- Three JSON-LD blocks: BreadcrumbList, NewsArticle, FAQPage (4 Q&As)
+- Related Articles: santa-ana-nwr-birding-guide, bentsen-rgv-state-park-birding-guide, birds-only-in-south-texas
+- Added guide link button to Estero hotspot card in hotspots page
+- News index and sitemap updated (now 15 articles total)
+
+**Complete two-link "In the News" coverage — all 50 species pages now have 2 news links**
+- Estero links added to: masked-duck, northern-jacana, least-grebe, black-bellied-whistling-duck, green-kingfisher, groove-billed-ani
+- Remaining single-link species upgraded with best-fit second articles:
+  - inca-dove (+ birding-calendar), greater-roadrunner (+ thornscrub), vermilion-flycatcher (+ santa-ana)
+  - olive-sparrow (+ santa-ana), long-billed-thrasher (+ santa-ana), white-tipped-dove (+ santa-ana)
+  - reddish-egret (+ fall-shorebird), scissor-tailed-flycatcher (+ birding-calendar)
+  - broad-winged-hawk (+ bentsen), harriss-hawk (+ raptor-specialties), swallow-tailed-kite (+ raptor-specialties)
+  - tropical-parula (+ birds-only), botteris-sparrow (+ birds-only)
+  - red-crowned-parrot (+ rgvbf), green-parakeet (+ rgvbf), couchs-kingbird (+ bentsen)
+  - whooping-crane (+ birding-calendar), painted-bunting (+ birds-only), american-oystercatcher (+ painted-bunting-south-padre)
+
+**State of site as of this session:**
+- 15 news articles (destination guides for Santa Ana, Bentsen, Laguna Atascosa, Estero + 11 others)
+- 50 species pages, all with 2+ "In the News" links
+- 6 of 9 hotspot cards have "Complete Birding Guide" link buttons (Estero, Laguna Atascosa, South Padre, Salineño, Bentsen, Santa Ana)
+- All pages: BreadcrumbList + FAQPage JSON-LD
+
+### What's next
+- Write destination guides for the 3 remaining hotspots without guide links: Resaca de la Palma, National Butterfly Center (Mission), Quinta Mazatlan (McAllen) — each targets a keyword cluster and links back to relevant species
+- Could write a 16th article targeting general "rio grande valley birding guide" or "south texas birding hotspots" overview article (high-traffic keyword)
+- Could add a trip-planning feature or interactive hotspot map
+- Could add a /checklist page for life-list tracking
+
+### Notes
+- All changes on `main` branch, pushed
+- Build should be clean: 70 pages (69 prior + 1 new news article), all static
 
 ---
 
