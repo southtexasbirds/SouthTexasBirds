@@ -63,12 +63,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${geist.variable} ${playfair.variable} h-full`}>
       <body className="min-h-full flex flex-col">
-        <Header />
+        <div className="no-print">
+          <Header />
+        </div>
 
         <main className="flex-1">{children}</main>
 
         <footer
-          className="text-sm text-center py-5 mt-12"
+          className="no-print text-sm text-center py-5 mt-12"
           style={{ backgroundColor: "#0E6B6B", color: "rgba(239,227,206,0.75)" }}
         >
           <p className="mb-2">South Texas Birds &mdash; Rio Grande Valley &amp; Coastal Bend</p>

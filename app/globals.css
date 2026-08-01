@@ -17,3 +17,9 @@ body {
   color: var(--foreground);
 }
 
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
