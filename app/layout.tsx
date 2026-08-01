@@ -84,6 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               { href: "/news", label: "News" },
               { href: "/gear", label: "Gear" },
               { href: "/gallery", label: "Gallery" },
+              { href: "/itineraries", label: "Itineraries" },
               { href: "/about", label: "About" },
               { href: "/conservation", label: "Conservation" },
             ].map((link) => (
