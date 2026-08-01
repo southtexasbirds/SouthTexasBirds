@@ -18,12 +18,10 @@
 - User then asked for the "support this site" button after all. Walked them through creating a PayPal Business Profile / PayPal.Me link in their own already-logged-in browser session (via Claude in Chrome) — user chose the username and confirmed the location-privacy and publish steps at each prompt; nothing was submitted without explicit confirmation. Live at **paypal.me/southtexasbirds**. Added a "Support This Site" link to the site footer (`layout.tsx`) and a full section on `/about`, both linking out to that PayPal.Me page — no payment form or PayPal SDK embedded on-site.
 - Added an interactive map to `/hotspots` (`app/hotspots/HotspotMap.tsx`, a `"use client"` component using plain `leaflet` + OpenStreetMap tiles — not `react-leaflet`, to sidestep any React 19 peer-dep friction). Plots the 9 sites using the `geoCoords` that already existed but were previously only used for invisible JSON-LD. Added `leaflet` + `@types/leaflet` as dependencies. Markers use `L.circleMarker` (no external icon image assets to manage) with a popup linking to each site's card via its existing anchor id.
 - Added `/gallery`: a grid of all 50 species photos (reuses `bird.photo` from `app/birds/data.ts`, no new asset sourcing), each linking to its species page. Noticed a few Wikimedia thumbnail URLs (Aplomado Falcon, Ringed Kingfisher) fail to load intermittently — confirmed this is pre-existing on `/birds` too, not something the gallery introduced. Not fixed; worth a look if it persists.
+- Added `/itineraries`: three static trip plans (3-day RGV classic loop; South Padre Island spring fallout weekend, late Apr–mid May; winter waterfowl/Whooping Crane weekend, Nov–Mar) that only link to hotspot anchors, species pages, and news articles that already exist — no new hotspot data invented. This closes out every item from the original competitor-research punch list (see prior "what's next" section, now empty).
 
-### What's next (from competitor research, not yet done)
-- eBird "recent sightings" link per hotspot on `/hotspots` — already done (2026-06-30 session), skip.
-- ~~Interactive map on `/hotspots`~~ — done this session.
-- ~~Standalone photo gallery page~~ — done this session.
-- "Suggested itineraries" page (e.g. "3-day RGV loop") stitching hotspots + species together. Last remaining item from the original competitor-research list.
+### What's next
+- Original competitor-research punch list (eBird links, interactive map, photo gallery, itineraries) is now fully done. No open items carried over from that research — next session should pick a fresh direction with the user rather than assume there's more from this list.
 
 ### Notes
 - `npm install` was needed twice this session — `node_modules` wasn't present at session start, and again after picking up origin's `lenis` dependency.
