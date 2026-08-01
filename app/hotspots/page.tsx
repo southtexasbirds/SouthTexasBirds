@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { toBirdId, BIRDS_ORDER } from "../birds/birdsOrder";
+import HotspotMap from "./HotspotMap";
 
 const birdSlugs = new Set(BIRDS_ORDER.map((b) => b.slug));
 
@@ -381,6 +382,19 @@ export default function HotspotsPage() {
           </Link>
           .
         </p>
+      </div>
+
+      {/* ── Map ─────────────────────────────────────────────────────────── */}
+      <div className="max-w-4xl mx-auto px-6 pb-10">
+        <HotspotMap
+          sites={hotspots.map((spot, i) => ({
+            id: hotspotIds[i],
+            name: spot.name,
+            type: spot.type,
+            lat: geoCoords[i].lat,
+            lng: geoCoords[i].lng,
+          }))}
+        />
       </div>
 
       {/* ── Hotspot cards ─────────────────────────────────────────────────── */}
