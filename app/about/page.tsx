@@ -244,6 +244,32 @@ export default function AboutPage() {
           </p>
         </section>
 
+        {/* ── Support This Site ───────────────────────────────────────── */}
+        <section className="mb-14">
+          {sectionRule}
+          <h2
+            className="font-serif text-2xl md:text-3xl font-bold mb-4"
+            style={{ color: "#0E6B6B" }}
+          >
+            Support This Site
+          </h2>
+          <p className="text-base leading-relaxed mb-5" style={{ color: "#4E4B46" }}>
+            This is an independent, ad-light project — no team, no investors. If the species
+            guides or hotspot pages have helped plan a trip or find a life bird, a small
+            donation helps cover hosting and the time that goes into keeping it accurate and
+            up to date.
+          </p>
+          <a
+            href="https://paypal.me/southtexasbirds"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block font-semibold px-6 py-3 rounded-lg text-sm transition-opacity hover:opacity-85"
+            style={{ backgroundColor: "#D4A24C", color: "#fff" }}
+          >
+            Support via PayPal →
+          </a>
+        </section>
+
         {/* ── CTAs ────────────────────────────────────────────────────── */}
         <div
           style={{ height: 1, background: "rgba(14,107,107,0.1)" }}

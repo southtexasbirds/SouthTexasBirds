@@ -95,6 +95,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {link.label}
               </Link>
             ))}
+            <a
+              href="https://paypal.me/southtexasbirds"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold tracking-widest uppercase hover:opacity-80 transition-opacity"
+              style={{ color: "#D4A24C" }}
+            >
+              Support This Site
+            </a>
           </nav>
           <p className="text-xs mb-2" style={{ color: "rgba(239,227,206,0.55)" }}>
             South Texas Birds &mdash; Rio Grande Valley &amp; Coastal Bend
