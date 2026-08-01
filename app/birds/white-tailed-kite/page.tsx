@@ -176,7 +176,7 @@ export default function WhiteTailedKitePage() {
             <div className="flex flex-col gap-5">
               <Link href="/news/laguna-atascosa-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Laguna Atascosa NWR: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>White-tailed Kites hover over Laguna Atascosa's open coastal prairie at dawn and dusk — the refuge is one of the best places in South Texas to watch this ghostly raptor hunt.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>White-tailed Kites hover over Laguna Atascosa&apos;s open coastal prairie at dawn and dusk — the refuge is one of the best places in South Texas to watch this ghostly raptor hunt.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
               <Link href="/news/south-texas-raptor-specialties" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">

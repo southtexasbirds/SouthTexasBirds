@@ -206,7 +206,7 @@ export default function VermilionFlycatcherPage() {
               </Link>
               <Link href="/news/santa-ana-nwr-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Santa Ana National Wildlife Refuge: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Vermilion Flycatchers are reliably present at Santa Ana NWR during the winter months — watch for the brilliant scarlet male perching conspicuously above the park's open grassy margins before darting for insects.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Vermilion Flycatchers are reliably present at Santa Ana NWR during the winter months — watch for the brilliant scarlet male perching conspicuously above the park&apos;s open grassy margins before darting for insects.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
             </div>

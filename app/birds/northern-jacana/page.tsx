@@ -206,7 +206,7 @@ export default function NorthernJacanaPage() {
               </Link>
               <Link href="/news/estero-llano-grande-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Estero Llano Grande State Park: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Estero Llano Grande is the most reliable U.S. site for Northern Jacana — the park's resaca, thick with lily pads and water hyacinth, is where this tropical wader is most regularly found in the country.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Estero Llano Grande is the most reliable U.S. site for Northern Jacana — the park&apos;s resaca, thick with lily pads and water hyacinth, is where this tropical wader is most regularly found in the country.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
             </div>

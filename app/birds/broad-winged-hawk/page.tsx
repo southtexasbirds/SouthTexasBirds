@@ -203,12 +203,12 @@ export default function BroadWingedHawkPage() {
             <div className="flex flex-col gap-5">
               <Link href="/news/fall-hawk-migration-south-texas" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>On peak September days at Bentsen, kettles of 10,000 or more Broad-winged Hawks spiral skyward in one of North America's most spectacular wildlife events.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>On peak September days at Bentsen, kettles of 10,000 or more Broad-winged Hawks spiral skyward in one of North America&apos;s most spectacular wildlife events.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
               <Link href="/news/bentsen-rgv-state-park-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Bentsen-Rio Grande Valley State Park: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Bentsen-RGVSP's hawk watch tower is the premier spot in the RGV to watch Broad-winged Hawk kettles — the complete guide covers how to time a visit to coincide with peak September thermals and where to stand on the tower for the best sky views.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Bentsen-RGVSP&apos;s hawk watch tower is the premier spot in the RGV to watch Broad-winged Hawk kettles — the complete guide covers how to time a visit to coincide with peak September thermals and where to stand on the tower for the best sky views.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
             </div>

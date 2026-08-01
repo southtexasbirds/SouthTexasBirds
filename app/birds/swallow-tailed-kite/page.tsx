@@ -175,7 +175,7 @@ export default function SwallowTailedKitePage() {
               </Link>
               <Link href="/news/south-texas-raptor-specialties" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Texas Raptor Specialties: Seven Birds Found Nowhere Else in the U.S.</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>The Swallow-tailed Kite is featured in the RGV raptor specialties guide as one of South Texas's most visually striking migrants — a black-and-white kite with an extraordinary forked tail, staging in August before its Gulf crossing.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>The Swallow-tailed Kite is featured in the RGV raptor specialties guide as one of South Texas&apos;s most visually striking migrants — a black-and-white kite with an extraordinary forked tail, staging in August before its Gulf crossing.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
             </div>

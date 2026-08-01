@@ -77,7 +77,7 @@ export default function PaintedBuntingSouthPadrePage() {
             <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
               Every spring, something remarkable happens at the southern tip of Padre Island. Exhausted
               songbirds — many of which have just flown 500+ miles nonstop across the Gulf of Mexico —
-              make landfall on the barrier island's narrow strip of coastal scrub, desperate for food,
+              make landfall on the barrier island&apos;s narrow strip of coastal scrub, desperate for food,
               water, and shelter. Among the most anticipated arrivals:{" "}
               <Link
                 href="/birds/painted-bunting"

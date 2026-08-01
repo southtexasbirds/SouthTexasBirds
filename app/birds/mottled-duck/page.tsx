@@ -291,7 +291,7 @@ export default function MottledDuckPage() {
             <div className="flex flex-col gap-5">
               <Link href="/news/laguna-atascosa-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Laguna Atascosa NWR: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Mottled Ducks breed at Laguna Atascosa NWR, with pairs visible in resacas and coastal lagoons throughout the year — a complete guide to birding South Texas's richest coastal refuge.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Mottled Ducks breed at Laguna Atascosa NWR, with pairs visible in resacas and coastal lagoons throughout the year — a complete guide to birding South Texas&apos;s richest coastal refuge.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
               <Link href="/news/fall-shorebird-season-south-padre" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">

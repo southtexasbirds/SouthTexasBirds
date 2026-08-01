@@ -288,7 +288,7 @@ export default function OliveSparrowPage() {
               </Link>
               <Link href="/news/santa-ana-nwr-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Santa Ana National Wildlife Refuge: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Olive Sparrow is one of Santa Ana NWR's resident thornscrub birds — year-round and reliable at the feeder station, where it scratches in the leaf litter beneath the brush alongside Long-billed Thrashers and White-tipped Doves.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Olive Sparrow is one of Santa Ana NWR&apos;s resident thornscrub birds — year-round and reliable at the feeder station, where it scratches in the leaf litter beneath the brush alongside Long-billed Thrashers and White-tipped Doves.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
             </div>

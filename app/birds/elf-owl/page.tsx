@@ -204,7 +204,7 @@ export default function ElfOwlPage() {
             <div className="flex flex-col gap-5">
               <Link href="/news/bentsen-rgv-state-park-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Bentsen-Rio Grande Valley State Park: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Bentsen-RGVSP is one of the most reliable U.S. sites for Elf Owl — the world's smallest owl calls here at dusk from March through August, in the mature riparian forest along the Rio Grande.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Bentsen-RGVSP is one of the most reliable U.S. sites for Elf Owl — the world&apos;s smallest owl calls here at dusk from March through August, in the mature riparian forest along the Rio Grande.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
               <Link href="/news/thornscrub-restoration-rgv" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">

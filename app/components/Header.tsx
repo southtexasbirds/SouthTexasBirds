@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const BirdMark = () => (
@@ -54,9 +54,11 @@ export default function Header() {
   const pathname = usePathname();
 
   // Close the mobile menu whenever the route changes
-  useEffect(() => {
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
     setOpen(false);
-  }, [pathname]);
+  }
 
   return (
     <header className="text-white shadow-md" style={{ backgroundColor: "#0E6B6B" }}>

@@ -291,7 +291,7 @@ export default function PlainChachalacaPage() {
             <div className="flex flex-col gap-5">
               <Link href="/news/santa-ana-nwr-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Santa Ana National Wildlife Refuge: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Plain Chachalacas crash through the feeder station at Santa Ana NWR in groups of 10–20 — a complete guide to the Valley's most celebrated birding destination.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Plain Chachalacas crash through the feeder station at Santa Ana NWR in groups of 10–20 — a complete guide to the Valley&apos;s most celebrated birding destination.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
               <Link href="/news/thornscrub-restoration-rgv" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">

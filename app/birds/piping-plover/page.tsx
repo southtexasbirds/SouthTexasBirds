@@ -293,7 +293,7 @@ export default function PipingPloverPage() {
             <div className="flex flex-col gap-5">
               <Link href="/news/laguna-atascosa-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Laguna Atascosa NWR: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Laguna Atascosa's tidal flats protect nationally significant numbers of wintering Piping Plovers — a complete guide to birding South Texas's largest coastal refuge.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Laguna Atascosa&apos;s tidal flats protect nationally significant numbers of wintering Piping Plovers — a complete guide to birding South Texas&apos;s largest coastal refuge.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
               <Link href="/news/fall-shorebird-season-south-padre" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">

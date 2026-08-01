@@ -274,12 +274,12 @@ export default function ReddishEgretPage() {
             <div className="flex flex-col gap-5">
               <Link href="/news/painted-bunting-south-padre" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Padre Island Remains a Critical Trans-Gulf Migration Stopover</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Reddish Egrets are year-round residents at South Padre Island's Laguna Madre shallows — one of the best spots to watch them alongside spring fallout migrants.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Reddish Egrets are year-round residents at South Padre Island&apos;s Laguna Madre shallows — one of the best spots to watch them alongside spring fallout migrants.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
               <Link href="/news/fall-shorebird-season-south-padre" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Fall Shorebird Season at South Padre Island: The Complete Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Reddish Egrets are one of the spectacle species of South Padre Island's tidal flats — year-round resident egrets that dance and pirouette through the shallows alongside peak fall shorebird concentrations.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Reddish Egrets are one of the spectacle species of South Padre Island&apos;s tidal flats — year-round resident egrets that dance and pirouette through the shallows alongside peak fall shorebird concentrations.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
             </div>

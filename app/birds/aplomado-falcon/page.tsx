@@ -302,7 +302,7 @@ export default function AplomadoFalconPage() {
               </Link>
               <Link href="/news/laguna-atascosa-birding-guide" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>Laguna Atascosa NWR: A Complete Birding Guide</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Laguna Atascosa is the most reliable site in the United States to see the reintroduced Aplomado Falcon — a complete guide to birding South Texas's largest protected refuge.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Laguna Atascosa is the most reliable site in the United States to see the reintroduced Aplomado Falcon — a complete guide to birding South Texas&apos;s largest protected refuge.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
             </div>

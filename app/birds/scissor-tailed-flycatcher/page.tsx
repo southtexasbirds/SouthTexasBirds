@@ -177,7 +177,7 @@ export default function ScissorTailedFlycatcherPage() {
             <div className="flex flex-col gap-5">
               <Link href="/news/painted-bunting-south-padre" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
                 <span className="font-serif text-base font-bold" style={{ color: "#0E6B6B" }}>South Padre Island: Critical Trans-Gulf Migration Stopover</span>
-                <span className="text-sm" style={{ color: "#5C5954" }}>Scissor-tailed Flycatchers are reliably seen alongside Painted Buntings during South Padre Island's spring migration fallout events.</span>
+                <span className="text-sm" style={{ color: "#5C5954" }}>Scissor-tailed Flycatchers are reliably seen alongside Painted Buntings during South Padre Island&apos;s spring migration fallout events.</span>
                 <span className="text-xs font-semibold tracking-widest uppercase mt-1" style={{ color: "#C77F4A" }}>Read article →</span>
               </Link>
               <Link href="/news/south-texas-birding-calendar" className="group flex flex-col gap-1 transition-opacity hover:opacity-80">
