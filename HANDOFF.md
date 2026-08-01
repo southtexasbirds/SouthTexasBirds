@@ -1,8 +1,30 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-07-02
-- **Agent:** Laptop
+- **Date:** 2026-07-31
+- **Agent:** Desktop
+
+---
+
+## Desktop Agent — 2026-07-31
+
+### What was done this session
+- Researched comparable birding destination sites (World Birding Center, Great Texas Coastal Birding Trail, regional tour operators) for improvement ideas.
+- Built the `/checklist` page from the laptop agent's own "what's next" list (2026-07-01/07-02 entries below): a printable checklist of all 50 species grouped by family, with a print stylesheet (hides header/footer via a `.no-print` class + `@media print` rule in `globals.css`) and a print/save-as-PDF button. Added to the nav (`Header.tsx`) and `sitemap.ts`.
+- Extracted the inline `birds` array out of `app/birds/page.tsx` into `app/birds/data.ts` so the checklist page (a server component) can reuse it — `app/birds/page.tsx` is `"use client"` and couldn't be imported from directly. `toBirdId`/`BIRDS_ORDER` in `birdsOrder.ts` were left as-is.
+- Note: `desktop-work`/`laptop-work` branches are far behind `main` now — all real work happens directly on `main`; treat those branches as stale.
+- Also drafted a 12-month "when to visit" grid to replace the 4-season blurbs on `/about`, but backed it out before committing — the current `/about` already has per-season target-species chips (added 2026-06-29) and FAQ JSON-LD that explicitly references the 4-season structure (e.g. "Winter (November–March)..."), so replacing it would have undone that SEO work. Left `/about` untouched.
+
+### What's next (from competitor research, not yet done)
+- eBird "recent sightings" link per hotspot on `/hotspots` (note: 2026-06-30 session already added eBird + Google Maps action links to hotspot cards — check current state before duplicating).
+- Interactive map on `/hotspots` plotting the 9 sites (lat/lng already exists in `geoCoords` in `app/hotspots/page.tsx`, currently only used for JSON-LD schema, not shown to users).
+- Standalone photo gallery page reusing existing Wikimedia species photos.
+- "Suggested itineraries" page (e.g. "3-day RGV loop") stitching hotspots + species together.
+
+### Notes
+- `npm install` was needed twice this session — `node_modules` wasn't present at session start, and again after picking up origin's `lenis` dependency.
+- Build (`npm run build`) and this session's own files pass lint clean. Pre-existing lint issues (unescaped apostrophes in several species/news pages, a set-state-in-effect warning in `Header.tsx`, an unused import in `credits/page.tsx`) were left alone — unrelated to this session.
+- Mid-session, `git push` was rejected because origin/main had ~90 commits of laptop-agent work (SEO schema, 15 news articles, homepage overhaul) that weren't in this machine's local `main` at session start. Local work was rebased on top of the fetched origin/main rather than force-pushed; nothing was lost. A `backup/desktop-session-2026-07-31` branch holds the original 3 commits from before the rebase, in case anything from that first pass (a data.ts extraction with a `detailPages` map, and the 12-month `/about` grid) is wanted later — safe to delete once confirmed unneeded.
 
 ---
 
