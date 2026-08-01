@@ -67,12 +67,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-full flex flex-col">
         <SmoothScroll />
         <FilmGrain />
-        <Header />
+        <div className="no-print">
+          <Header />
+        </div>
 
         <main className="flex-1">{children}</main>
 
         <footer
-          className="text-center py-8 mt-12"
+          className="no-print text-center py-8 mt-12"
           style={{ backgroundColor: "#0E6B6B", color: "rgba(239,227,206,0.75)" }}
         >
           <nav className="flex flex-wrap justify-center gap-x-7 gap-y-2 mb-5" aria-label="Footer navigation">
