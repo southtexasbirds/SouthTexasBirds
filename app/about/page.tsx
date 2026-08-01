@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
+import { toBirdId } from "../birds/data";
 
 const OG_IMAGE =
   "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
@@ -25,31 +26,19 @@ export const metadata: Metadata = {
   },
 };
 
-const seasons = [
-  {
-    name: "Spring",
-    dates: "Apr – May",
-    body: "Trans-Gulf migrants arrive at South Padre Island. Neotropical species return to the Valley.",
-    accent: "#C77F4A",
-  },
-  {
-    name: "Summer",
-    dates: "Jun – Aug",
-    body: "Resident species are nesting. Fewer migrants but great for family and behavior watching.",
-    accent: "#D4A24C",
-  },
-  {
-    name: "Fall",
-    dates: "Sep – Oct",
-    body: "Peak hawk migration at Hazel Bazemore. Shorebirds and waterfowl begin to arrive.",
-    accent: "#C77F4A",
-  },
-  {
-    name: "Winter",
-    dates: "Nov – Mar",
-    body: "Whooping Cranes at Aransas. Ducks, geese, and sandhill cranes throughout. Resident specialties reliably present.",
-    accent: "#0E6B6B",
-  },
+const months = [
+  { name: "January", body: "Peak season for Whooping Crane at Aransas NWR and wintering Piping Plover along the coast.", targets: ["Whooping Crane", "Piping Plover"] },
+  { name: "February", body: "Winter waterbirds still reliable before spring arrivals begin; a good month for the Coastal Bend.", targets: ["Whooping Crane", "Piping Plover"] },
+  { name: "March", body: "Spring hawk migration picks up at the Bentsen SP hawk watch tower.", targets: ["Broad-winged Hawk"] },
+  { name: "April", body: "Summer residents arrive to nest, and the first Trans-Gulf migrants reach South Padre Island.", targets: ["Scissor-tailed Flycatcher", "Elf Owl", "Painted Bunting"] },
+  { name: "May", body: "Prime time for a South Padre Island 'fallout' and Swallow-tailed Kites passing overhead.", targets: ["Swallow-tailed Kite"] },
+  { name: "June", body: "Summer breeders settle in, including the coastal-prairie specialist Botteri's Sparrow.", targets: ["Botteri's Sparrow"] },
+  { name: "July", body: "Deep summer — resident and breeding species are easiest to find by behavior, not migration.", targets: ["Botteri's Sparrow"] },
+  { name: "August", body: "A second, quieter Swallow-tailed Kite passage and early shorebird movement.", targets: ["Swallow-tailed Kite", "Groove-billed Ani"] },
+  { name: "September", body: "The Valley's single biggest spectacle: hundreds of thousands of hawks stream over Hazel Bazemore.", targets: ["Broad-winged Hawk"] },
+  { name: "October", body: "Summer residents thin out and waterfowl and shorebirds begin returning to the coast.", targets: ["Groove-billed Ani"] },
+  { name: "November", body: "Whooping Cranes and Piping Plovers return to their winter grounds for the season.", targets: ["Whooping Crane", "Piping Plover"] },
+  { name: "December", body: "Peak winter birding: cranes, waterfowl, and resident specialties are all reliably present.", targets: ["Whooping Crane", "Piping Plover"] },
 ];
 
 const sectionRule = (
@@ -148,34 +137,42 @@ export default function AboutPage() {
           >
             When to Visit
           </h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {seasons.map((s) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {months.map((m) => (
               <div
-                key={s.name}
+                key={m.name}
                 className="rounded-xl p-5"
                 style={{
                   background: "#fff",
-                  borderTop: `3px solid ${s.accent}`,
+                  borderTop: "3px solid #D4A24C",
                   boxShadow: "0 1px 6px rgba(14,107,107,0.06)",
                 }}
               >
-                <div className="flex items-baseline justify-between mb-2">
-                  <h3
-                    className="font-serif text-lg font-bold"
-                    style={{ color: "#0E6B6B" }}
-                  >
-                    {s.name}
-                  </h3>
-                  <span
-                    className="text-xs font-semibold tabular-nums"
-                    style={{ color: s.accent }}
-                  >
-                    {s.dates}
-                  </span>
-                </div>
-                <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
-                  {s.body}
+                <h3
+                  className="font-serif text-lg font-bold mb-2"
+                  style={{ color: "#0E6B6B" }}
+                >
+                  {m.name}
+                </h3>
+                <p className="text-sm leading-relaxed mb-3" style={{ color: "#4E4B46" }}>
+                  {m.body}
                 </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {m.targets.map((bird) => (
+                    <Link
+                      key={bird}
+                      href={`/birds#${toBirdId(bird)}`}
+                      className="text-xs font-medium px-2.5 py-0.5 rounded-full hover:opacity-75 transition-opacity"
+                      style={{
+                        background: "rgba(212,162,76,0.11)",
+                        color: "#7A5C10",
+                        border: "1px solid rgba(212,162,76,0.28)",
+                      }}
+                    >
+                      {bird}
+                    </Link>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
