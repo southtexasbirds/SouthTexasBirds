@@ -2,7 +2,26 @@
 
 ## Last updated
 - **Date:** 2026-08-05
-- **Agent:** Desktop — branch integration in progress (`fix/audit-aug5` + `feat/local-images` → `main`)
+- **Agent:** Desktop — branch integration complete
+
+---
+
+## Desktop Agent — 2026-08-05 (branch integration complete)
+
+### What was done this session
+Merged both unmerged branches from earlier today into `main`, in order:
+
+1. `fix/audit-aug5` → `main` (clean merge, no conflicts — `main` hadn't diverged since that branch was cut).
+2. `main` → `feat/local-images`, to pull the just-merged audit work in before finishing that branch. This produced conflicts in `HANDOFF.md` and all 50 species page files (`app/birds/*/page.tsx`) — in every case the same one-line conflict: each species page's JSON-LD `Article.image` field, where `feat/local-images` had the per-page local photo (`/images/birds/{slug}.webp`) and `fix/audit-aug5`'s work on `main` had the sitewide `og-default.jpg` fallback. Resolved every one in favor of the per-page local image (per-page beats the sitewide default — a more accurate social-share image for each species). `app/layout.tsx`, `app/page.tsx`, `app/birds/data.ts`, and `app/hotspots/page.tsx` all auto-merged cleanly with no conflicts, because the two branches had touched different lines in each (hero/OG image lines vs. species-photo/hotspot-photo lines, or in `data.ts`'s case, the `photo` field vs. the unrelated `family` field) — confirmed each merged correctly by inspection, not just by "no conflict markers." `HANDOFF.md`'s conflict (both branches had written a session entry with the same date) was resolved by keeping both write-ups as separate dated entries rather than picking one.
+3. `feat/local-images` (now containing both branches' work) → `main`, clean merge.
+
+- **Final state**: every image on the site is self-hosted from `/public/images/` — the homepage hero (`hero-altamira.webp`), the sitewide default OG/social-share image (`og-default.jpg`), all 50 species-page heroes and card thumbnails, and all 9 hotspot card photos. Every species page's `openGraph`/`twitter`/JSON-LD image now points at that species' own local photo rather than the sitewide default, giving each page an accurate per-page social preview. Grep for `upload.wikimedia.org` returns zero results in any `src=` or metadata context anywhere in `app/`. `npm run build` and `npm run lint` both pass clean (exit 0) on `main` post-merge.
+
+### What's next
+- **`sitemap.xml` + Search Console submission** — still pending, carried over across multiple sessions now; worth prioritizing next since the site's content and image work are both in a stable state.
+- **`prefers-reduced-motion` check** — `AnimateIn`, `FilmGrain`, and `SmoothScroll` (scroll/fade/grain effects) haven't been audited for whether they respect the user's reduced-motion preference. Should check and add a media-query guard if missing.
+- **`LazyMotion` / code-splitting review** — not currently needed (`AnimateIn` is lightweight CSS-transition based, no heavy animation library in use), but worth a check if a heavier animation dependency is ever added later.
+- **Species gap fills**: Muscovy Duck and Brown Jay are both referenced as hotspot specialties (Salineño) but have no `/birds` page of their own — both currently render as unlinked plain text in the hotspot bird-chip list (see `fix/audit-aug5`'s dead-anchor fix) rather than linking anywhere. Adding pages for these would close that gap. (Note: Red-billed Pigeon, also mentioned as a possible gap, already has a full species page at `app/birds/red-billed-pigeon/page.tsx` — if there's a different concern about its content depth, worth clarifying with Rick rather than assuming a rewrite is needed.)
 
 ---
 
