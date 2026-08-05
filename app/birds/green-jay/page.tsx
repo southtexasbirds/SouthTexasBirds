@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "Green Jay | South Texas Birds",
     description:
       "Green Jay identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Green Jay perched in South Texas thornscrub" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Green Jay perched in South Texas thornscrub" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 
@@ -316,7 +316,7 @@ export default function GreenJayPage() {
             "url": "https://southtexasbirds.org/birds/green-jay",
             "headline": "Green Jay (Cyanocorax yncas) | South Texas Birds",
             "description": "Green Jay identification, habitat, and where to find it in the Rio Grande Valley. The only place in the U.S. where this tropical jay is a year-round resident.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

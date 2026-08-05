@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Black-bellied Whistling-Duck | South Texas Birds",
     description: "Black-bellied Whistling-Duck identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Black-bellied Whistling-Ducks in flight" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Black-bellied Whistling-Ducks in flight" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -233,7 +233,7 @@ export default function BlackBelliedWhistlingDuckPage() {
             "url": "https://southtexasbirds.org/birds/black-bellied-whistling-duck",
             "headline": "Black-bellied Whistling-Duck (Dendrocygna autumnalis) | South Texas Birds",
             "description": "Black-bellied Whistling-Duck identification, habitat, and where to find it in the Rio Grande Valley. This colorful, noisy duck has expanded dramatically across South Texas.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Whistling_duck_flight02_-_natures_pics-edit1.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

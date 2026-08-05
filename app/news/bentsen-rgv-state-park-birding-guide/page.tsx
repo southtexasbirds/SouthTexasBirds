@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Plain_Chachalaca_Roadside.png/1280px-Plain_Chachalaca_Roadside.png";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news/bentsen-rgv-state-park-birding-guide" },

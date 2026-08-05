@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Painted_Bunting_by_Dan_Pancamo.jpg/800px-Painted_Bunting_by_Dan_Pancamo.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news/painted-bunting-south-padre" },

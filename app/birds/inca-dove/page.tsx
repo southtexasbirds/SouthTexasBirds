@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Inca Dove | South Texas Birds",
     description: "Inca Dove identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Inca Dove perched showing scaly feather pattern" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Inca Dove perched showing scaly feather pattern" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -205,7 +205,7 @@ export default function IncaDovePage() {
             "url": "https://southtexasbirds.org/birds/inca-dove",
             "headline": "Inca Dove (Columbina inca) | South Texas Birds",
             "description": "Inca Dove identification, habitat, and where to find it in South Texas. A small, scaly-looking dove common in towns, parks, and gardens throughout the Rio Grande Valley.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/IncaDove.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

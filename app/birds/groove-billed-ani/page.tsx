@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Groove-billed Ani | South Texas Birds",
     description: "Groove-billed Ani identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Groove-billed Ani perched in Belize" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Groove-billed Ani perched in Belize" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -233,7 +233,7 @@ export default function GrooveBilledAniPage() {
             "url": "https://southtexasbirds.org/birds/groove-billed-ani",
             "headline": "Groove-billed Ani (Crotophaga sulcirostris) | South Texas Birds",
             "description": "Groove-billed Ani identification, habitat, and where to find it in the Rio Grande Valley. A social, loose-feathered cuckoo that breeds communally in thornscrub.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Groove-billed_ani_%28Crotophaga_sulcirostris%29_Cayo.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

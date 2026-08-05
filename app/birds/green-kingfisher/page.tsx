@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Green Kingfisher | South Texas Birds",
     description: "Green Kingfisher identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Male Green Kingfisher perched over clear water" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Male Green Kingfisher perched over clear water" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -232,7 +232,7 @@ export default function GreenKingfisherPage() {
             "url": "https://southtexasbirds.org/birds/green-kingfisher",
             "headline": "Green Kingfisher (Chloroceryle americana) | South Texas Birds",
             "description": "Green Kingfisher identification, habitat, and where to find it in the Rio Grande Valley. The smallest of the three kingfisher species in the Valley, secretive but resident year-round.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Green_kingfisher_%28Chloroceryle_americana%29_male_3.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

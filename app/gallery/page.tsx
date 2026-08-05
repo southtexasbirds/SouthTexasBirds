@@ -4,8 +4,7 @@ import Link from "next/link";
 import { birds } from "../birds/data";
 import { toBirdId } from "../birds/birdsOrder";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/gallery" },
@@ -16,7 +15,8 @@ export const metadata: Metadata = {
     title: "Bird Photo Gallery | South Texas Birds",
     description:
       "Photos of 50 specialty and notable bird species of the Rio Grande Valley and South Texas coast.",
-    images: [{ url: OG_IMAGE, width: 2585, height: 1723, alt: "Altamira Oriole in South Texas" }],
+    images: [{ url: OG_IMAGE, width: 1200,
+        height: 630, alt: "Altamira Oriole in South Texas" }],
   },
   twitter: {
     card: "summary_large_image",

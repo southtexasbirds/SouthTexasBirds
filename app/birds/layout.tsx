@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
-        width: 2585,
-        height: 1723,
+        url: "https://southtexasbirds.org/images/og-default.jpg",
+        width: 1200,
+        height: 630,
         alt: "Altamira Oriole in South Texas",
       },
     ],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description:
       "Explore 50+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more.",
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
+      "https://southtexasbirds.org/images/og-default.jpg",
     ],
   },
 };

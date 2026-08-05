@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Ringed Kingfisher | South Texas Birds",
     description: "Ringed Kingfisher identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Male Ringed Kingfisher perched over water" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Male Ringed Kingfisher perched over water" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -232,7 +232,7 @@ export default function RingedKingfisherPage() {
             "url": "https://southtexasbirds.org/birds/ringed-kingfisher",
             "headline": "Ringed Kingfisher (Megaceryle torquata) | South Texas Birds",
             "description": "Ringed Kingfisher identification, habitat, and where to find it in the Rio Grande Valley. The largest kingfisher in the Americas barely reaches the U.S. in South Texas.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Ringed_Kingfisher_%28Megaceryle_torquata%29_male_%2828808454175%29.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

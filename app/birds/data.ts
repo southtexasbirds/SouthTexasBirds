@@ -74,7 +74,7 @@ export const birds = [
   {
     name: "Harris's Hawk",
     scientific: "Parabuteo unicinctus",
-    family: "Hawks",
+    family: "Hawks, Kites & Allies",
     status: "Resident",
     habitat: "Brushy desert, thornscrub, open woodland",
     notes: "The only hawk in the world known to hunt cooperatively in family groups. Rich chestnut shoulders and thighs contrast with a dark body; a common and charismatic sight across South Texas.",
@@ -92,7 +92,7 @@ export const birds = [
   {
     name: "Broad-winged Hawk",
     scientific: "Buteo platypterus",
-    family: "Hawks",
+    family: "Hawks, Kites & Allies",
     status: "Migrant",
     habitat: "Woodland, open skies during migration",
     notes: "Unremarkable for most of the year, but in September the skies above Hazel Bazemore County Park fill with hundreds of thousands streaming south — one of birding's great spectacles.",
@@ -101,7 +101,7 @@ export const birds = [
   {
     name: "Gray Hawk",
     scientific: "Buteo plagiatus",
-    family: "Hawks",
+    family: "Hawks, Kites & Allies",
     status: "Resident",
     habitat: "Riparian woodland along the Rio Grande",
     notes: "A finely gray-barred hawk of the river corridor, reaching the northern edge of its range in the Rio Grande Valley. Its loud, drawn-out call is a characteristic sound of the riparian zone.",
@@ -110,7 +110,7 @@ export const birds = [
   {
     name: "Hook-billed Kite",
     scientific: "Chondrohierax uncinatus",
-    family: "Hawks & Kites",
+    family: "Hawks, Kites & Allies",
     status: "Rare resident",
     habitat: "Riparian forest",
     notes: "One of the rarest regularly occurring raptors in the U.S., best looked for soaring over the riparian forest from the hawk watch platform at Bentsen-Rio Grande SP.",
@@ -299,7 +299,7 @@ export const birds = [
   {
     name: "White-tailed Hawk",
     scientific: "Geranoaetus albicaudatus",
-    family: "Hawks",
+    family: "Hawks, Kites & Allies",
     status: "Resident",
     habitat: "Coastal prairie, open brushland",
     notes: "A large, striking raptor found in the U.S. only in South Texas. Adults show clean white underparts, rusty shoulder patches, and a white tail with a single narrow black band. Perches prominently on utility poles and fenceposts across the open prairies between Corpus Christi and the coast.",
@@ -308,7 +308,7 @@ export const birds = [
   {
     name: "White-tailed Kite",
     scientific: "Elanus leucurus",
-    family: "Hawks & Kites",
+    family: "Hawks, Kites & Allies",
     status: "Resident",
     habitat: "Open grasslands, agricultural fields, roadsides",
     notes: "A ghostly white kite that hunts by hovering in place over open fields — a behavior unique among North American raptors. Black shoulder patches and red eyes give the perched bird a striking look. Often seen on roadsides and near farm fields wherever rodents are plentiful.",
@@ -317,7 +317,7 @@ export const birds = [
   {
     name: "Swallow-tailed Kite",
     scientific: "Elanoides forficatus",
-    family: "Hawks & Kites",
+    family: "Hawks, Kites & Allies",
     status: "Migrant",
     habitat: "Open sky, woodland edges, river corridors",
     notes: "Arguably the most graceful bird in North America. Migrates through South Texas in spring and fall, often in loose groups, effortlessly banking on its impossibly long forked tail. Watch overhead at Valley hotspots from late April through May and again in August.",
@@ -407,7 +407,7 @@ export const birds = [
   {
     name: "White-collared Seedeater",
     scientific: "Sporophila morelleti",
-    family: "Tanagers",
+    family: "Seedeaters & Allies",
     status: "Rare resident",
     habitat: "Weedy fields, Carrizo cane, tall grass near the Rio Grande",
     notes: "One of the most sought-after birds on the U.S. list, found only in a narrow stretch along the Rio Grande near Zapata. A tiny, round finch — the male striking in black and white — that lurks in tall weeds and cane. Patient visitors stake out known sites at dawn for the best chance.",

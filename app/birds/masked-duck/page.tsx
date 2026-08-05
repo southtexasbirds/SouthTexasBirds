@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Masked Duck | South Texas Birds",
     description: "Masked Duck identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Male Masked Duck showing chestnut body and black mask" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Male Masked Duck showing chestnut body and black mask" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -233,7 +233,7 @@ export default function MaskedDuckPage() {
             "url": "https://southtexasbirds.org/birds/masked-duck",
             "headline": "Masked Duck (Nomonyx dominicus) | South Texas Birds",
             "description": "Masked Duck identification, habitat, and where to find it in the Rio Grande Valley. One of the most secretive and sought-after rarities in U.S. birding.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Masked_duck_%28Nomonyx_dominicus%29.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

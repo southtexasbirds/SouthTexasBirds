@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "Reddish Egret | South Texas Birds",
     description:
       "Reddish Egret identification, habitat, and where to find it on the Texas coast.",
-    images: [{ url: PHOTO, alt: "Reddish Egret foraging in shallow coastal water" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Reddish Egret foraging in shallow coastal water" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 
@@ -310,7 +310,7 @@ export default function ReddishEgretPage() {
             "url": "https://southtexasbirds.org/birds/reddish-egret",
             "headline": "Reddish Egret (Egretta rufescens) | South Texas Birds",
             "description": "Reddish Egret identification, habitat, and where to find it on the Texas coast. North America's rarest heron, known for its spectacular lunging, dancing foraging display.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/ReddishEgret_Gam.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

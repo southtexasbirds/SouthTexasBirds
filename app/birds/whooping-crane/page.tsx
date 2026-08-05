@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "Whooping Crane | South Texas Birds",
     description:
       "Whooping Crane identification, habitat, and where to find it on the Texas Gulf Coast.",
-    images: [{ url: PHOTO, alt: "Whooping Crane wading in shallow water" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Whooping Crane wading in shallow water" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 
@@ -327,7 +327,7 @@ export default function WhoopingCranePage() {
             "url": "https://southtexasbirds.org/birds/whooping-crane",
             "headline": "Whooping Crane (Grus americana) | South Texas Birds",
             "description": "Whooping Crane identification, habitat, and where to find it on the Texas Gulf Coast. North America's tallest bird and one of conservation's greatest comeback stories.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Grus_americana_Sasata.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

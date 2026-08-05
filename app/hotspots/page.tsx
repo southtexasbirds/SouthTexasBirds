@@ -43,7 +43,7 @@ const hotspots = [
     guideSlug: "santa-ana-nwr-birding-guide",
     guideLabel: "Complete Birding Guide",
     description:
-      "What the U.S. Fish & Wildlife Service calls the 'jewel of the National Wildlife Refuge System,' Santa Ana protects 2,000 acres of native Tamaulipan thornscrub and riparian forest along the Rio Grande. Seasonal tram tours (typically December through early February) wind through the dense habitat where most of the Valley's RGV specialties can be found in a single morning. The feeder station near the visitor center is exceptional.",
+      "What the U.S. Fish & Wildlife Service calls the 'jewel of the National Wildlife Refuge System,' Santa Ana protects 2,088 acres of native Tamaulipan thornscrub and riparian forest along the Rio Grande. Seasonal tram tours (typically December through early February) wind through the dense habitat where most of the Valley's RGV specialties can be found in a single morning. The feeder station near the visitor center is exceptional.",
     birds: [
       "Green Jay",
       "Plain Chachalaca",
@@ -327,16 +327,16 @@ export const metadata: Metadata = {
       "Nine essential RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, Quinta Mazatlan, Resaca de la Palma, South Padre Island, and Salineño Wildlife Preserve.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
-        width: 2585,
-        height: 1723,
+        url: "https://southtexasbirds.org/images/og-default.jpg",
+        width: 1200,
+        height: 630,
         alt: "Altamira Oriole in South Texas",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg"],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
     title: "Best Birding Hotspots in the Rio Grande Valley | South Texas Birds",
     description:
       "Nine essential RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, Quinta Mazatlan, Resaca de la Palma, South Padre Island, and Salineño Wildlife Preserve.",
@@ -485,17 +485,28 @@ export default function HotspotsPage() {
                     <div className="flex flex-wrap gap-1.5">
                       {spot.birds.map((bird) => {
                         const slug = toBirdId(bird);
-                        const href = birdSlugs.has(slug) ? `/birds/${slug}` : `/birds#${slug}`;
+                        const chipStyle = {
+                          background: "rgba(212,162,76,0.11)",
+                          color: "#7A5C10",
+                          border: "1px solid rgba(212,162,76,0.28)",
+                        };
+                        if (!birdSlugs.has(slug)) {
+                          return (
+                            <span
+                              key={bird}
+                              className="text-xs font-medium px-2.5 py-0.5 rounded-full"
+                              style={chipStyle}
+                            >
+                              {bird}
+                            </span>
+                          );
+                        }
                         return (
                           <Link
                             key={bird}
-                            href={href}
+                            href={`/birds/${slug}`}
                             className="text-xs font-medium px-2.5 py-0.5 rounded-full hover:opacity-75 transition-opacity"
-                            style={{
-                              background: "rgba(212,162,76,0.11)",
-                              color: "#7A5C10",
-                              border: "1px solid rgba(212,162,76,0.28)",
-                            }}
+                            style={chipStyle}
                           >
                             {bird}
                           </Link>

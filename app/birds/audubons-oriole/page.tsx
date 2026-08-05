@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Audubon's Oriole | South Texas Birds",
     description: "Audubon's Oriole identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Audubon's Oriole showing black hood and yellow body" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Audubon's Oriole showing black hood and yellow body" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -237,7 +237,7 @@ export default function AudubonsOriolePage() {
             "url": "https://southtexasbirds.org/birds/audubons-oriole",
             "headline": "Audubon's Oriole (Icterus graduacauda) | South Texas Birds",
             "description": "Audubon's Oriole identification, habitat, and where to find it in the Rio Grande Valley. A shy, deep-forest oriole with a slow, melancholy whistle, nearly endemic to South Texas.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Audubon%27s_Oriole_%2812626811374%29.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
