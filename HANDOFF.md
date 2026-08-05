@@ -1,8 +1,30 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-07-31
-- **Agent:** Desktop
+- **Date:** 2026-08-05
+- **Agent:** Desktop (branch `feat/local-images`, off `main`, not yet merged)
+
+---
+
+## Desktop Agent — 2026-08-05
+
+### What was done this session
+Full migration of every remaining Wikimedia-hotlinked *display* image to self-hosted, optimized local files, on branch `feat/local-images` (pushed, not merged to `main`). Note: this branch was cut from `main` directly and does **not** include the separate `fix/audit-aug5` branch's OG/hero-image work (also unmerged) — the two branches touch overlapping files (`app/layout.tsx`, `app/page.tsx`, `app/birds/data.ts`, etc.) and **will need a careful merge**, not a fast-forward, when both are ready. Read both HANDOFF entries before merging.
+
+- **Inventory** (`scripts/build-image-inventory.mjs` → `scripts/image-inventory.json`): found 59 image references across 50 species + 9 hotspot cards, resolving to **51 unique source files** — 8 of the 9 hotspot card photos turned out to be exact duplicates of an already-inventoried species photo (e.g. the Santa Ana card reuses the Green Jay photo), so only the Salineño/Muscovy Duck photo was genuinely hotspot-only. Confirmed zero inline `<Image>`/`<img>` elements exist anywhere in the 15 news article pages — their Wikimedia URLs are metadata-only (`openGraph`/`twitter` social-share image), not display images, so they were correctly left out of this migration's scope.
+- **Download + optimize** (`scripts/migrate-images.mjs`): downloads each original full-resolution Commons file (not the 330px thumbnails the site was hotlinking) and generates `/public/images/birds/{slug}.webp` (800w q80, species hero), `/public/images/birds/{slug}-thumb.webp` (400w q75, card thumb), and `/public/images/hotspots/{slug}.webp` (800w q80). Deduped downloads by source URL so the 8 shared hotspot/species photos are fetched once. First run hit Wikimedia's anonymous-request rate limit after ~29 downloads (HTTP 429); fixed by raising the inter-request delay to 3s and making the script resumable (skips any source whose output files already exist), then re-ran — **51/51 succeeded**, nothing needed manual handling. Total `/public/images` size: **4.0MB** (well under the 50MB budget).
+- **Swapped every display image to local files**: `app/birds/data.ts` (`photo` field → `-thumb.webp`), all 50 species pages (`PHOTO` const → `.webp`, dropped the now-unnecessary `unoptimized` prop), and `app/hotspots/page.tsx` (9 card `photo` fields → `/images/hotspots/{slug}.webp`, also dropped `unoptimized`). `/birds` cards, `/gallery`, and the hotspot card thumbnails already had correct `sizes` props matching their actual grid layouts from earlier work — verified rather than re-added. One incidental fix: species pages' `openGraph`/`twitter` metadata read from the same `PHOTO` const, so repointing it to the local file automatically gave every species page its own accurate social-share image instead of hotlinking; the JSON-LD `Article.image` field on each species page was a separate hardcoded literal that didn't get this benefit automatically, so it was updated to match in the same commit for consistency. Grep-verified zero `upload.wikimedia.org` in any `src=` context sitewide.
+- **Attribution — checked, already complete, no changes needed**: cross-checked all 51 unique migrated files against `/credits` by filename; every one already had a full credit entry (photographer, license, dynamically-generated Wikimedia file-page link) from earlier work, including the Salineño/Muscovy Duck hotspot-only photo. Nothing was missing, so no commit was made for this step — didn't want to fabricate a diff.
+- Build and lint both pass clean (exit 0).
+
+### What's next
+- **Merge conflict warning**: `feat/local-images` and `fix/audit-aug5` both branched from `main` independently and both touch `app/layout.tsx`, `app/page.tsx`, `app/birds/data.ts`, and several other shared files. They need to be reviewed and merged together deliberately (`fix/audit-aug5` handles the homepage hero + sitewide OG/meta images; this branch handles species/hotspot display images) — do not merge one and force-push over the other.
+- Remaining Wikimedia references (all metadata-only, no display images) live in: `app/layout.tsx`, `app/page.tsx`, `app/about/page.tsx`, `app/gear/page.tsx`, `app/conservation/page.tsx`, `app/gallery/page.tsx`, `app/itineraries/page.tsx`, `app/checklist/page.tsx`, `app/news/page.tsx`, `app/birds/layout.tsx`, and all 15 `app/news/*/page.tsx` article pages (their `OG_IMAGE` const). This is exactly the work already done on `fix/audit-aug5` — resolving the merge will close this out.
+- `sitemap.xml` + Search Console submission is still pending (carried over from earlier sessions).
+- Worth a follow-up pass for `prefers-reduced-motion` handling on `AnimateIn`/`FilmGrain`/`SmoothScroll` — not checked this session.
+- Consider `LazyMotion`/code-splitting if a heavier animation library ever gets added — not currently needed, `AnimateIn` is lightweight CSS-transition based.
+- Species gap fills: the site covers 50 species; if traffic data ever shows demand for specific misses (e.g. some of the hotspot chip species that don't have pages — see `fix/audit-aug5`'s dead-anchor fix), that's a future content task, not a code task.
+- Branch `feat/local-images` has been pushed to origin but **not merged to `main`**.
 
 ---
 
