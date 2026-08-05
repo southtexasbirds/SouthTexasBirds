@@ -485,17 +485,28 @@ export default function HotspotsPage() {
                     <div className="flex flex-wrap gap-1.5">
                       {spot.birds.map((bird) => {
                         const slug = toBirdId(bird);
-                        const href = birdSlugs.has(slug) ? `/birds/${slug}` : `/birds#${slug}`;
+                        const chipStyle = {
+                          background: "rgba(212,162,76,0.11)",
+                          color: "#7A5C10",
+                          border: "1px solid rgba(212,162,76,0.28)",
+                        };
+                        if (!birdSlugs.has(slug)) {
+                          return (
+                            <span
+                              key={bird}
+                              className="text-xs font-medium px-2.5 py-0.5 rounded-full"
+                              style={chipStyle}
+                            >
+                              {bird}
+                            </span>
+                          );
+                        }
                         return (
                           <Link
                             key={bird}
-                            href={href}
+                            href={`/birds/${slug}`}
                             className="text-xs font-medium px-2.5 py-0.5 rounded-full hover:opacity-75 transition-opacity"
-                            style={{
-                              background: "rgba(212,162,76,0.11)",
-                              color: "#7A5C10",
-                              border: "1px solid rgba(212,162,76,0.28)",
-                            }}
+                            style={chipStyle}
                           >
                             {bird}
                           </Link>

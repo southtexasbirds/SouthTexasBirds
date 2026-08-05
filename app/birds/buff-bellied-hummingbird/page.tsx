@@ -29,7 +29,7 @@ const spots = [
   { name: "Quinta Mazatlán", region: "McAllen", href: "/hotspots#quinta-mazatlan" },
   { name: "National Butterfly Center", region: "Mission", href: "/hotspots#national-butterfly-center" },
   { name: "Santa Ana National Wildlife Refuge", region: "Alamo", href: "/hotspots#santa-ana" },
-  { name: "Sabal Palm Sanctuary", region: "Brownsville", href: "/hotspots#sabal-palm" },
+  { name: "Sabal Palm Sanctuary", region: "Brownsville", href: null },
   { name: "Estero Llano Grande State Park", region: "Weslaco", href: "/hotspots#estero-llano-grande" },
   { name: "Bentsen-Rio Grande Valley State Park", region: "Mission", href: "/hotspots#bentsen" },
 ];
@@ -211,19 +211,32 @@ export default function BuffBelliedHummingbirdPage() {
               Where to See in South Texas
             </h2>
             <div className="grid sm:grid-cols-2 gap-3">
-              {spots.map((spot) => (
-                <Link
-                  key={spot.name}
-                  href={spot.href}
-                  className="flex items-center gap-3 rounded-lg px-4 py-3 transition-opacity hover:opacity-80"
-                  style={{ background: "#F7F0E4", borderLeft: "3px solid #C77F4A" }}
-                >
-                  <div>
-                    <p className="font-semibold text-sm" style={{ color: "#0E6B6B" }}>{spot.name}</p>
-                    <p className="text-xs" style={{ color: "#6E6B66" }}>{spot.region}</p>
+              {spots.map((spot) =>
+                spot.href ? (
+                  <Link
+                    key={spot.name}
+                    href={spot.href}
+                    className="flex items-center gap-3 rounded-lg px-4 py-3 transition-opacity hover:opacity-80"
+                    style={{ background: "#F7F0E4", borderLeft: "3px solid #C77F4A" }}
+                  >
+                    <div>
+                      <p className="font-semibold text-sm" style={{ color: "#0E6B6B" }}>{spot.name}</p>
+                      <p className="text-xs" style={{ color: "#6E6B66" }}>{spot.region}</p>
+                    </div>
+                  </Link>
+                ) : (
+                  <div
+                    key={spot.name}
+                    className="flex items-center gap-3 rounded-lg px-4 py-3"
+                    style={{ background: "#F7F0E4", borderLeft: "3px solid #C77F4A" }}
+                  >
+                    <div>
+                      <p className="font-semibold text-sm" style={{ color: "#0E6B6B" }}>{spot.name}</p>
+                      <p className="text-xs" style={{ color: "#6E6B66" }}>{spot.region}</p>
+                    </div>
                   </div>
-                </Link>
-              ))}
+                )
+              )}
             </div>
           </section>
         </AnimateIn>
