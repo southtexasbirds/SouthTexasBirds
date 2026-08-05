@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Green Kingfisher | South Texas Birds",
     description: "Green Kingfisher identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Male Green Kingfisher perched over clear water" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Male Green Kingfisher perched over clear water" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

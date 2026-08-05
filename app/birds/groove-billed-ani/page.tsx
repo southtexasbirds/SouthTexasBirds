@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Groove-billed Ani | South Texas Birds",
     description: "Groove-billed Ani identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Groove-billed Ani perched in Belize" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Groove-billed Ani perched in Belize" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Swallow-tailed Kite | South Texas Birds",
     description: "Swallow-tailed Kite identification, habitat, and when to see it in South Texas.",
-    images: [{ url: PHOTO, alt: "Swallow-tailed Kite in flight showing forked tail" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Swallow-tailed Kite in flight showing forked tail" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

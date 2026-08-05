@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Greater Roadrunner | South Texas Birds",
     description: "Greater Roadrunner identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Greater Roadrunner standing on ground" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Greater Roadrunner standing on ground" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Whooping Crane | South Texas Birds",
     description:
       "Whooping Crane identification, habitat, and where to find it on the Texas Gulf Coast.",
-    images: [{ url: PHOTO, alt: "Whooping Crane wading in shallow water" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Whooping Crane wading in shallow water" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 

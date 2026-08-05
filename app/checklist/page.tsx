@@ -3,8 +3,7 @@ import Link from "next/link";
 import { birds } from "../birds/data";
 import PrintButton from "./PrintButton";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/checklist" },
@@ -15,7 +14,8 @@ export const metadata: Metadata = {
     title: "Printable Bird Checklist | South Texas Birds",
     description:
       "A printable checklist of 50 specialty and notable bird species of the Rio Grande Valley and South Texas coast, grouped by family.",
-    images: [{ url: OG_IMAGE, width: 2585, height: 1723, alt: "Altamira Oriole in South Texas" }],
+    images: [{ url: OG_IMAGE, width: 1200,
+        height: 630, alt: "Altamira Oriole in South Texas" }],
   },
   twitter: {
     card: "summary_large_image",

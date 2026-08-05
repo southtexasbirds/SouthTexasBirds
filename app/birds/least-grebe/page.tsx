@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Least Grebe | South Texas Birds",
     description: "Least Grebe identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Least Grebe on a tropical pond" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Least Grebe on a tropical pond" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

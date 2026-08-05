@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Vermilion Flycatcher | South Texas Birds",
     description: "Vermilion Flycatcher identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Male Vermilion Flycatcher perched on a branch" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Male Vermilion Flycatcher perched on a branch" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Clay-colored Thrush | South Texas Birds",
     description: "Clay-colored Thrush identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Clay-colored Thrush perched in vegetation" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Clay-colored Thrush perched in vegetation" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

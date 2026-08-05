@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "White-collared Seedeater | South Texas Birds",
     description: "White-collared Seedeater identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "White-collared Seedeater male showing black-and-white pattern" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "White-collared Seedeater male showing black-and-white pattern" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

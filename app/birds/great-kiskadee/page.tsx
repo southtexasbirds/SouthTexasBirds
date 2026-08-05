@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Great Kiskadee | South Texas Birds",
     description: "Great Kiskadee identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Great Kiskadee perched in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Great Kiskadee perched in South Texas" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

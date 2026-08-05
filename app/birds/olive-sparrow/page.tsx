@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Olive Sparrow | South Texas Birds",
     description:
       "Olive Sparrow identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Olive Sparrow perched in South Texas thornscrub" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Olive Sparrow perched in South Texas thornscrub" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 

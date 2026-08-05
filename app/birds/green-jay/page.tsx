@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Green Jay | South Texas Birds",
     description:
       "Green Jay identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Green Jay perched in South Texas thornscrub" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Green Jay perched in South Texas thornscrub" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 

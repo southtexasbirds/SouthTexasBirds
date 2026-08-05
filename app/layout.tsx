@@ -19,8 +19,7 @@ const playfair = Playfair_Display({
 });
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://southtexasbirds.org";
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -35,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     images: [
-      { url: OG_IMAGE, width: 2585, height: 1723, alt: "Altamira Oriole in South Texas" },
+      { url: OG_IMAGE, width: 1200, height: 630, alt: "Altamira Oriole in South Texas" },
     ],
   },
   twitter: {

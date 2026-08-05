@@ -2,8 +2,7 @@
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news/spacex-refuge-land-exchange" },

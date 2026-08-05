@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Piping Plover | South Texas Birds",
     description:
       "Piping Plover identification, habitat, and where to find it on the Texas coast.",
-    images: [{ url: PHOTO, alt: "Piping Plover on a sandy beach" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Piping Plover on a sandy beach" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 

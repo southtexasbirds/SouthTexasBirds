@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/9/99/Julie_Waters_broad_winged_hawk.JPG";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news/fall-hawk-migration-south-texas" },

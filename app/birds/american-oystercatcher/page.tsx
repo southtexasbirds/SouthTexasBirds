@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "American Oystercatcher | South Texas Birds",
     description: "American Oystercatcher identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "American Oystercatcher on beach showing orange bill" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "American Oystercatcher on beach showing orange bill" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

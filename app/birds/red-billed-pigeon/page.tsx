@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Red-billed Pigeon | South Texas Birds",
     description: "Red-billed Pigeon identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Red-billed Pigeon perched in tropical forest" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Red-billed Pigeon perched in tropical forest" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

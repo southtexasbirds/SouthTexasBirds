@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/7/73/Chondrohierax_uncinatus_-Belize-8.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news/south-texas-raptor-specialties" },
@@ -385,7 +384,7 @@ export default function SouthTexasRaptorSpecialtiesPage() {
             "url": "https://southtexasbirds.org/news/south-texas-raptor-specialties",
             "headline": "South Texas Raptor Specialties: 7 Birds of Prey You Can Only Find Here",
             "description": "South Texas is home to seven raptors found nowhere else in the United States — from the tiny Ferruginous Pygmy-Owl to the reintroduced Aplomado Falcon and the mysterious Hook-billed Kite.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Chondrohierax_uncinatus_-Belize-8.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
             "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

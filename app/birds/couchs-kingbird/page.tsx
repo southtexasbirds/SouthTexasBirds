@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Couch's Kingbird | South Texas Birds",
     description: "Couch's Kingbird identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Couch's Kingbird perched on a branch" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Couch's Kingbird perched on a branch" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

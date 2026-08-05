@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Inca Dove | South Texas Birds",
     description: "Inca Dove identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Inca Dove perched showing scaly feather pattern" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Inca Dove perched showing scaly feather pattern" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Reddish Egret | South Texas Birds",
     description:
       "Reddish Egret identification, habitat, and where to find it on the Texas coast.",
-    images: [{ url: PHOTO, alt: "Reddish Egret foraging in shallow coastal water" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Reddish Egret foraging in shallow coastal water" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 

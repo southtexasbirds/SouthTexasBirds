@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news" },
@@ -145,7 +144,7 @@ const articles = [
     isoDate: "2026-07-02",
     title: "Santa Ana National Wildlife Refuge: A Complete Birding Guide",
     excerpt:
-      "Called the 'Jewel of the National Wildlife Refuge System,' Santa Ana NWR packs 400+ species into 2,000 acres of Tamaulipan thornscrub — Green Jays, Hook-billed Kites, Rose-throated Becards, and the best feeder station in the RGV.",
+      "Called the 'Jewel of the National Wildlife Refuge System,' Santa Ana NWR packs 400+ species into 2,088 acres of Tamaulipan thornscrub — Green Jays, Hook-billed Kites, Rose-throated Becards, and the best feeder station in the RGV.",
     tags: ["Destination Guide", "RGV", "Species Guide"],
   },
   {

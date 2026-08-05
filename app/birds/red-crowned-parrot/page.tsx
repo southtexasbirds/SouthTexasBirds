@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Red-crowned Parrot | South Texas Birds",
     description: "Red-crowned Parrot identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Red-crowned Parrot showing vivid red forehead patch" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Red-crowned Parrot showing vivid red forehead patch" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

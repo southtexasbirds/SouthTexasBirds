@@ -2,8 +2,7 @@
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png/800px-Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news/thornscrub-restoration-rgv" },

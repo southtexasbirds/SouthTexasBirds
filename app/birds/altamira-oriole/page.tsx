@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Altamira Oriole | South Texas Birds",
     description:
       "Altamira Oriole identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Altamira Oriole perched in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Altamira Oriole perched in South Texas" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 

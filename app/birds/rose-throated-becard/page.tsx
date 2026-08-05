@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Rose-throated Becard | South Texas Birds",
     description: "Rose-throated Becard identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Rose-throated Becard male perched in riparian forest" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Rose-throated Becard male perched in riparian forest" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

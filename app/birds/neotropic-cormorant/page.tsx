@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Neotropic Cormorant | South Texas Birds",
     description: "Neotropic Cormorant identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Neotropic Cormorant perched with wings spread" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Neotropic Cormorant perched with wings spread" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

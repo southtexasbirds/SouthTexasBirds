@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Tropical Kingbird | South Texas Birds",
     description: "Tropical Kingbird identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Tropical Kingbird perched on a branch" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Tropical Kingbird perched on a branch" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
