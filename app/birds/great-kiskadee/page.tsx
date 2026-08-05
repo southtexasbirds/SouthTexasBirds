@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Great Kiskadee | South Texas Birds",
     description: "Great Kiskadee identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Great Kiskadee perched in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Great Kiskadee perched in South Texas" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -232,7 +232,7 @@ export default function GreatKiskadeePage() {
             "url": "https://southtexasbirds.org/birds/great-kiskadee",
             "headline": "Great Kiskadee (Pitangus sulphuratus) | South Texas Birds",
             "description": "Great Kiskadee identification, habitat, and where to find it in the Rio Grande Valley. Loud, bold, and impossible to miss — the defining bird of any RGV park.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Great_kiskadee_%2870240%29.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

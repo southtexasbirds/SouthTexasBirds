@@ -1,8 +1,7 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/about" },
@@ -16,7 +15,8 @@ export const metadata: Metadata = {
     description:
       "The only U.S. region where Green Jays, Hook-billed Kites, and Whooping Cranes are all findable. Learn when to visit, what hotspots to hit, and what to expect each season.",
     images: [
-      { url: OG_IMAGE, width: 2585, height: 1723, alt: "Altamira Oriole in South Texas" },
+      { url: OG_IMAGE, width: 1200,
+        height: 630, alt: "Altamira Oriole in South Texas" },
     ],
   },
   twitter: {

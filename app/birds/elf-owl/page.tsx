@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Elf Owl | South Texas Birds",
     description: "Elf Owl identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Elf Owl perched at a nest cavity" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Elf Owl perched at a nest cavity" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -236,7 +236,7 @@ export default function ElfOwlPage() {
             "url": "https://southtexasbirds.org/birds/elf-owl",
             "headline": "Elf Owl (Micrathene whitneyi) | South Texas Birds",
             "description": "Elf Owl identification, habitat, and where to find it in the Rio Grande Valley. The world's smallest owl by weight is a summer resident along the Rio Grande.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Micrathene_whitneyi_29APR12_Madera_Canyon_AZ.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

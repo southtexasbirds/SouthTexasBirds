@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "Piping Plover | South Texas Birds",
     description:
       "Piping Plover identification, habitat, and where to find it on the Texas coast.",
-    images: [{ url: PHOTO, alt: "Piping Plover on a sandy beach" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Piping Plover on a sandy beach" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 
@@ -330,7 +330,7 @@ export default function PipingPloverPage() {
             "url": "https://southtexasbirds.org/birds/piping-plover",
             "headline": "Piping Plover (Charadrius melodus) | South Texas Birds",
             "description": "Piping Plover identification, habitat, and where to find it on the Texas coast. An endangered shorebird that winters in significant numbers on the barrier islands and tidal flats of South Texas.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Charadrius-melodus-004_edit.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

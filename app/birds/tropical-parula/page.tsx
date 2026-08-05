@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Tropical Parula | South Texas Birds",
     description: "Tropical Parula identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Tropical Parula showing blue-gray upperparts and yellow underparts" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Tropical Parula showing blue-gray upperparts and yellow underparts" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -237,7 +237,7 @@ export default function TropicalParulaPage() {
             "url": "https://southtexasbirds.org/birds/tropical-parula",
             "headline": "Tropical Parula (Setophaga pitiayumi) | South Texas Birds",
             "description": "Tropical Parula identification, habitat, and where to find it in the Rio Grande Valley. A tiny warbler tied to Spanish moss, barely reaching the U.S. in South Texas.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Setophaga_pitiayumi_Monteverde_03.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

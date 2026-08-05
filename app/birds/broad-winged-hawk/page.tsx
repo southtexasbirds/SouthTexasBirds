@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Broad-winged Hawk | South Texas Birds",
     description: "Broad-winged Hawk identification and migration in South Texas.",
-    images: [{ url: PHOTO, alt: "Broad-winged Hawk perched on a branch" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Broad-winged Hawk perched on a branch" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -235,7 +235,7 @@ export default function BroadWingedHawkPage() {
             "url": "https://southtexasbirds.org/birds/broad-winged-hawk",
             "headline": "Broad-winged Hawk (Buteo platypterus) | South Texas Birds",
             "description": "Broad-winged Hawk identification and migration in South Texas. In September, hundreds of thousands funnel through Corpus Christi in one of birding's great spectacles.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Julie_Waters_broad_winged_hawk.JPG",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

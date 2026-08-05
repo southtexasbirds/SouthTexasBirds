@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "White-tipped Dove | South Texas Birds",
     description:
       "White-tipped Dove identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "White-tipped Dove on the ground in shaded woodland" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "White-tipped Dove on the ground in shaded woodland" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 
@@ -321,7 +321,7 @@ export default function WhiteTippedDovePage() {
             "url": "https://southtexasbirds.org/birds/white-tipped-dove",
             "headline": "White-tipped Dove (Leptotila verreauxi) | South Texas Birds",
             "description": "White-tipped Dove identification, habitat, and where to find it in South Texas. A plump, ground-hugging dove whose haunting hollow hoot is one of the signature sounds of the Rio Grande Valley.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/White-tipped_Dove_-_Panama_H8O8470.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

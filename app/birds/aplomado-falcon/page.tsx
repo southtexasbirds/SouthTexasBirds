@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "Aplomado Falcon | South Texas Birds",
     description:
       "Aplomado Falcon identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Aplomado Falcon perched on a post in South Texas coastal prairie" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Aplomado Falcon perched on a post in South Texas coastal prairie" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 
@@ -334,7 +334,7 @@ export default function AplomadoFalconPage() {
             "url": "https://southtexasbirds.org/birds/aplomado-falcon",
             "headline": "Aplomado Falcon (Falco femoralis) | South Texas Birds",
             "description": "Aplomado Falcon identification, habitat, and where to find it in South Texas. Once extirpated from the U.S., this slender, bold-patterned falcon has been successfully reintroduced at Laguna Atascosa NWR.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

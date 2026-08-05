@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/itineraries" },
@@ -13,7 +12,8 @@ export const metadata: Metadata = {
     title: "Birding Itineraries for the Rio Grande Valley | South Texas Birds",
     description:
       "Three ready-made Rio Grande Valley birding itineraries: a 3-day RGV classic loop, a South Padre Island spring fallout weekend, and a winter waterfowl weekend.",
-    images: [{ url: OG_IMAGE, width: 2585, height: 1723, alt: "Altamira Oriole in South Texas" }],
+    images: [{ url: OG_IMAGE, width: 1200,
+        height: 630, alt: "Altamira Oriole in South Texas" }],
   },
   twitter: {
     card: "summary_large_image",

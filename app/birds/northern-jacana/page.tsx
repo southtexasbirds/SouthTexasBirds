@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Northern Jacana | South Texas Birds",
     description: "Northern Jacana identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Northern Jacana walking on lily pads in Costa Rica" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Northern Jacana walking on lily pads in Costa Rica" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -233,7 +233,7 @@ export default function NorthernJacanaPage() {
             "url": "https://southtexasbirds.org/birds/northern-jacana",
             "headline": "Northern Jacana (Jacana spinosa) | South Texas Birds",
             "description": "Northern Jacana identification, habitat, and where to find it in the Rio Grande Valley. The 'lily-trotter' with extraordinary feet walks on floating vegetation.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Northern_Jacana_Costa_Rica.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

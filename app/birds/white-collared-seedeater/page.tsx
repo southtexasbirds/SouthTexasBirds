@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "White-collared Seedeater | South Texas Birds",
     description: "White-collared Seedeater identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "White-collared Seedeater male showing black-and-white pattern" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "White-collared Seedeater male showing black-and-white pattern" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -196,7 +196,7 @@ export default function WhiteCollaredSeedeaterPage() {
             "url": "https://southtexasbirds.org/birds/white-collared-seedeater",
             "headline": "White-collared Seedeater (Sporophila morelleti) | South Texas Birds",
             "description": "White-collared Seedeater identification, habitat, and where to find it in South Texas. A tiny, distinctive finch-like bird at the very northern edge of its range — Salineño is the best site in the U.S. to find it.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Sporophila_torqueola_55799290.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

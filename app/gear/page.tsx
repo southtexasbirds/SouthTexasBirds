@@ -1,7 +1,6 @@
 ﻿import type { Metadata } from "next";
 
-const OG_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/gear" },
@@ -14,9 +13,9 @@ export const metadata: Metadata = {
       "Binocular recommendations for South Texas birding. Editor-tested picks from best all-around to best value and best compact.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
-        width: 2585,
-        height: 1723,
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
         alt: "Altamira Oriole in South Texas",
       },
     ],

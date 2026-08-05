@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Crested Caracara | South Texas Birds",
     description: "Crested Caracara identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Crested Caracara perched in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Crested Caracara perched in South Texas" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -233,7 +233,7 @@ export default function CrestedCaracaraPage() {
             "url": "https://southtexasbirds.org/birds/crested-caracara",
             "headline": "Crested Caracara (Caracara plancus) | South Texas Birds",
             "description": "Crested Caracara identification, habitat, and where to find it in South Texas. A bold, long-legged falcon of open country and one of the most distinctive raptors in the region.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Schopfkarakara.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

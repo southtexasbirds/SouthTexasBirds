@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Harris's Hawk | South Texas Birds",
     description: "Harris's Hawk identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Harris's Hawk perched in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Harris's Hawk perched in South Texas" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -233,7 +233,7 @@ export default function HarrisHawkPage() {
             "url": "https://southtexasbirds.org/birds/harriss-hawk",
             "headline": "Harris's Hawk (Parabuteo unicinctus) | South Texas Birds",
             "description": "Harris's Hawk identification, habitat, and where to find it in South Texas. The only hawk in the world known to hunt cooperatively in family groups.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Harris%27s_Hawk_%28Parabuteo_unicinctus%29_3_of_4_in_set.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Least Grebe | South Texas Birds",
     description: "Least Grebe identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: PHOTO, alt: "Least Grebe on a tropical pond" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Least Grebe on a tropical pond" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -233,7 +233,7 @@ export default function LeastGrebePage() {
             "url": "https://southtexasbirds.org/birds/least-grebe",
             "headline": "Least Grebe (Tachybaptus dominicus) | South Texas Birds",
             "description": "Least Grebe identification, habitat, and where to find it in the Rio Grande Valley. The smallest grebe in the Western Hemisphere is common on resacas and ponds year-round.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Tachybaptus_dominicus_brachyrhynchus_-_Least_grebe%3B_Pantanal_route-park%2C_Corumb%C3%A1%2C_Mato_Grosso_do_Sul%2C_Brazil.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

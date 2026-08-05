@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Vermilion Flycatcher | South Texas Birds",
     description: "Vermilion Flycatcher identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Male Vermilion Flycatcher perched on a branch" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Male Vermilion Flycatcher perched on a branch" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -233,7 +233,7 @@ export default function VermilionFlycatcherPage() {
             "url": "https://southtexasbirds.org/birds/vermilion-flycatcher",
             "headline": "Vermilion Flycatcher (Pyrocephalus rubinus) | South Texas Birds",
             "description": "Vermilion Flycatcher identification, habitat, and where to find it in South Texas. The blazing red male is one of the most eye-catching birds in North America.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Karmintyrann_%28Pyrocephalus_obscurus%29%2C_M%C3%A4nnchen_1.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

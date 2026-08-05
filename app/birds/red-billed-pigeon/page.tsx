@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Red-billed Pigeon | South Texas Birds",
     description: "Red-billed Pigeon identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Red-billed Pigeon perched in tropical forest" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Red-billed Pigeon perched in tropical forest" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -203,7 +203,7 @@ export default function RedBilledPigeonPage() {
             "url": "https://southtexasbirds.org/birds/red-billed-pigeon",
             "headline": "Red-billed Pigeon (Patagioenas flavirostris) | South Texas Birds",
             "description": "Red-billed Pigeon identification, habitat, and where to find it in South Texas. A large, dark wine-colored pigeon of the Rio Grande corridor, best seen flying over the river at dawn from Bentsen SP.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Patagioenas_flavirostris_-Costa_Rica-8.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

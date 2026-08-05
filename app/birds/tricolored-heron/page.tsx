@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: "Tricolored Heron | South Texas Birds",
     description:
       "Tricolored Heron identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "Tricolored Heron at sunrise in coastal marsh" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Tricolored Heron at sunrise in coastal marsh" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [PHOTO],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
   },
 };
 
@@ -284,7 +284,7 @@ export default function TricoloredHeronPage() {
             "url": "https://southtexasbirds.org/birds/tricolored-heron",
             "headline": "Tricolored Heron (Egretta tricolor) | South Texas Birds",
             "description": "Tricolored Heron identification, habitat, and where to find it in South Texas. The only U.S. heron with a white belly contrasting against slate-blue upperparts — an agile, fast-running coastal forager.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Tri-colored_heron_sunrise_bunche_beach_%2833516451355%29_%28cropped%29.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

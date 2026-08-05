@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "White-tailed Kite | South Texas Birds",
     description: "White-tailed Kite identification, habitat, and where to find it in South Texas.",
-    images: [{ url: PHOTO, alt: "White-tailed Kite perched showing white plumage and red eyes" }],
+    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "White-tailed Kite perched showing white plumage and red eyes" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
@@ -205,7 +205,7 @@ export default function WhiteTailedKitePage() {
             "url": "https://southtexasbirds.org/birds/white-tailed-kite",
             "headline": "White-tailed Kite (Elanus leucurus) | South Texas Birds",
             "description": "White-tailed Kite identification, habitat, and where to find it in South Texas. A ghostly white kite that hunts by hovering motionless in place — a behavior unique among North American raptors.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Elanus_leucurus_3.jpg",
+            "image": "https://southtexasbirds.org/images/og-default.jpg",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

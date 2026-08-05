@@ -327,16 +327,16 @@ export const metadata: Metadata = {
       "Nine essential RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, Quinta Mazatlan, Resaca de la Palma, South Padre Island, and Salineño Wildlife Preserve.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
-        width: 2585,
-        height: 1723,
+        url: "https://southtexasbirds.org/images/og-default.jpg",
+        width: 1200,
+        height: 630,
         alt: "Altamira Oriole in South Texas",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg"],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
     title: "Best Birding Hotspots in the Rio Grande Valley | South Texas Birds",
     description:
       "Nine essential RGV birding hotspots: Santa Ana NWR, Bentsen State Park, Estero Llano Grande, Quinta Mazatlan, Resaca de la Palma, South Padre Island, and Salineño Wildlife Preserve.",

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 
-const OG_IMAGE = "https://upload.wikimedia.org/wikipedia/commons/7/7f/Grus_americana_Sasata.jpg";
+const OG_IMAGE = "https://southtexasbirds.org/images/og-default.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news/whooping-crane-record-count" },

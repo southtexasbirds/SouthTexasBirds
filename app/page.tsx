@@ -16,24 +16,23 @@ export const metadata: Metadata = {
       "The complete guide to South Texas birding — the only U.S. region where Green Jays, Hook-billed Kites, and Aplomado Falcons are resident. 50 species · 9 hotspots · 14 articles.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
-        width: 2585,
-        height: 1723,
+        url: "https://southtexasbirds.org/images/og-default.jpg",
+        width: 1200,
+        height: 630,
         alt: "Altamira Oriole perched in South Texas",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg"],
+    images: ["https://southtexasbirds.org/images/og-default.jpg"],
     title: "South Texas Birds | Rio Grande Valley Birding Guide",
     description:
       "The complete guide to South Texas birding. 50 species profiles, 9 hotspot guides, Hook-billed Kites, Green Jays, Whooping Cranes.",
   },
 };
 
-const HERO_PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+const HERO_PHOTO = "/images/hero-altamira.webp";
 
 const hasVideo = fs.existsSync(path.join(process.cwd(), "public", "hero-video.mp4"));
 
@@ -84,7 +83,7 @@ export default function HomePage() {
             style={{ objectPosition: "62% 30%" }}
           />
         ) : (
-          /*  On mobile portrait the image (2585×1723 landscape) is scaled by
+          /*  On mobile portrait the image (1600×1066 landscape) is scaled by
               height to cover the tall-narrow container, so the visible band is
               only ~36 % of the image width. object-[62%_30%] shifts the crop
               rightward to keep the bird subject in view. */
@@ -93,7 +92,6 @@ export default function HomePage() {
             alt="Altamira Oriole perched in tropical foliage, South Texas"
             fill
             priority
-            unoptimized
             className="object-cover"
             style={{ objectPosition: "62% 30%" }}
             sizes="100vw"
