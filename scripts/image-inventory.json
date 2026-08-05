@@ -1,0 +1,723 @@
+{
+  "generatedAt": "2026-08-05",
+  "totalInventoryEntries": 59,
+  "uniqueSourceFilesToDownload": 51,
+  "species": [
+    {
+      "slug": "green-jay",
+      "name": "Green Jay",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/green-jay/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Green_jay_(Cyanocorax_luxuosus)_in_Mission%2C_Texas%2C_USA.png"
+    },
+    {
+      "slug": "altamira-oriole",
+      "name": "Altamira Oriole",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/altamira-oriole/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Altamira_oriole_(Icterus_gularis_gigas)_Copan.jpg"
+    },
+    {
+      "slug": "plain-chachalaca",
+      "name": "Plain Chachalaca",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Plain_Chachalaca_Roadside.png",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/plain-chachalaca/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Plain_Chachalaca_Roadside.png"
+    },
+    {
+      "slug": "buff-bellied-hummingbird",
+      "name": "Buff-bellied Hummingbird",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/buff-bellied-hummingbird/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_(21421266100).jpg"
+    },
+    {
+      "slug": "painted-bunting",
+      "name": "Painted Bunting",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Male_Painted_Bunting_Singing.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/painted-bunting/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Male_Painted_Bunting_Singing.jpg"
+    },
+    {
+      "slug": "roseate-spoonbill",
+      "name": "Roseate Spoonbill",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Roseate_Spoonbill_-_Myakka_River_State_Park.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/roseate-spoonbill/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Roseate_Spoonbill_-_Myakka_River_State_Park.jpg"
+    },
+    {
+      "slug": "whooping-crane",
+      "name": "Whooping Crane",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Grus_americana_Sasata.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/whooping-crane/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Grus_americana_Sasata.jpg"
+    },
+    {
+      "slug": "crested-caracara",
+      "name": "Crested Caracara",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Schopfkarakara.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/crested-caracara/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Schopfkarakara.jpg"
+    },
+    {
+      "slug": "harriss-hawk",
+      "name": "Harris's Hawk",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Harris%27s_Hawk_%28Parabuteo_unicinctus%29_3_of_4_in_set.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/harriss-hawk/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Harris's_Hawk_(Parabuteo_unicinctus)_3_of_4_in_set.jpg"
+    },
+    {
+      "slug": "aplomado-falcon",
+      "name": "Aplomado Falcon",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/aplomado-falcon/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Aplomado_Falcon_(Falco_femoralis)_(31631199902).jpg"
+    },
+    {
+      "slug": "broad-winged-hawk",
+      "name": "Broad-winged Hawk",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Julie_Waters_broad_winged_hawk.JPG",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/broad-winged-hawk/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Julie_Waters_broad_winged_hawk.JPG"
+    },
+    {
+      "slug": "gray-hawk",
+      "name": "Gray Hawk",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Buteo_plagiatus_Belize.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/gray-hawk/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Buteo_plagiatus_Belize.jpg"
+    },
+    {
+      "slug": "hook-billed-kite",
+      "name": "Hook-billed Kite",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Chondrohierax_uncinatus_76608753.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/hook-billed-kite/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Chondrohierax_uncinatus_76608753.jpg"
+    },
+    {
+      "slug": "ringed-kingfisher",
+      "name": "Ringed Kingfisher",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Ringed_Kingfisher_%28Megaceryle_torquata%29_male_%2828808454175%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/ringed-kingfisher/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Ringed_Kingfisher_(Megaceryle_torquata)_male_(28808454175).jpg"
+    },
+    {
+      "slug": "green-kingfisher",
+      "name": "Green Kingfisher",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Green_kingfisher_%28Chloroceryle_americana%29_male_3.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/green-kingfisher/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Green_kingfisher_(Chloroceryle_americana)_male_3.jpg"
+    },
+    {
+      "slug": "vermilion-flycatcher",
+      "name": "Vermilion Flycatcher",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Karmintyrann_%28Pyrocephalus_obscurus%29%2C_M%C3%A4nnchen_1.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/vermilion-flycatcher/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Karmintyrann_(Pyrocephalus_obscurus)%2C_M%C3%A4nnchen_1.jpg"
+    },
+    {
+      "slug": "great-kiskadee",
+      "name": "Great Kiskadee",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Great_kiskadee_%2870240%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/great-kiskadee/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Great_kiskadee_(70240).jpg"
+    },
+    {
+      "slug": "tropical-kingbird",
+      "name": "Tropical Kingbird",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Tropical_kingbird_%28Tyrannus_melancholicus%29.JPG",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/tropical-kingbird/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Tropical_kingbird_(Tyrannus_melancholicus).JPG"
+    },
+    {
+      "slug": "ferruginous-pygmy-owl",
+      "name": "Ferruginous Pygmy-Owl",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/ferruginous-pygmy-owl/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Ferruginous_pygmy_owl_(Glaucidium_brasilianum_ridgwayi)_Copan.jpg"
+    },
+    {
+      "slug": "elf-owl",
+      "name": "Elf Owl",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Micrathene_whitneyi_29APR12_Madera_Canyon_AZ.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/elf-owl/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Micrathene_whitneyi_29APR12_Madera_Canyon_AZ.jpg"
+    },
+    {
+      "slug": "least-grebe",
+      "name": "Least Grebe",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Tachybaptus_dominicus_brachyrhynchus_-_Least_grebe%3B_Pantanal_route-park%2C_Corumb%C3%A1%2C_Mato_Grosso_do_Sul%2C_Brazil.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/least-grebe/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Tachybaptus_dominicus_brachyrhynchus_-_Least_grebe%3B_Pantanal_route-park%2C_Corumb%C3%A1%2C_Mato_Grosso_do_Sul%2C_Brazil.jpg"
+    },
+    {
+      "slug": "black-bellied-whistling-duck",
+      "name": "Black-bellied Whistling-Duck",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Whistling_duck_flight02_-_natures_pics-edit1.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/black-bellied-whistling-duck/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Whistling_duck_flight02_-_natures_pics-edit1.jpg"
+    },
+    {
+      "slug": "masked-duck",
+      "name": "Masked Duck",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Masked_duck_%28Nomonyx_dominicus%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/masked-duck/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Masked_duck_(Nomonyx_dominicus).jpg"
+    },
+    {
+      "slug": "northern-jacana",
+      "name": "Northern Jacana",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Northern_Jacana_Costa_Rica.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/northern-jacana/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Northern_Jacana_Costa_Rica.jpg"
+    },
+    {
+      "slug": "groove-billed-ani",
+      "name": "Groove-billed Ani",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Groove-billed_ani_%28Crotophaga_sulcirostris%29_Cayo.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/groove-billed-ani/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Groove-billed_ani_(Crotophaga_sulcirostris)_Cayo.jpg"
+    },
+    {
+      "slug": "clay-colored-thrush",
+      "name": "Clay-colored Thrush",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Clay-coloured_thrush_%28Turdus_grayi_casius%29_2.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/clay-colored-thrush/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Clay-coloured_thrush_(Turdus_grayi_casius)_2.jpg"
+    },
+    {
+      "slug": "long-billed-thrasher",
+      "name": "Long-billed Thrasher",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Toxostoma_longirostre_-Laguna_Atascosa_National_Wildlife_Refuge%2C_Texas%2C_USA-8.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/long-billed-thrasher/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Toxostoma_longirostre_-Laguna_Atascosa_National_Wildlife_Refuge%2C_Texas%2C_USA-8.jpg"
+    },
+    {
+      "slug": "audubons-oriole",
+      "name": "Audubon's Oriole",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Audubon%27s_Oriole_%2812626811374%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/audubons-oriole/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Audubon's_Oriole_(12626811374).jpg"
+    },
+    {
+      "slug": "olive-sparrow",
+      "name": "Olive Sparrow",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Olive_Sparrow_%28Arremonops_rufivirgatus%29_Edinbug%2C_Texas%2C_USA.png",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/olive-sparrow/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Olive_Sparrow_(Arremonops_rufivirgatus)_Edinbug%2C_Texas%2C_USA.png"
+    },
+    {
+      "slug": "white-tipped-dove",
+      "name": "White-tipped Dove",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/White-tipped_Dove_-_Panama_H8O8470.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/white-tipped-dove/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:White-tipped_Dove_-_Panama_H8O8470.jpg"
+    },
+    {
+      "slug": "reddish-egret",
+      "name": "Reddish Egret",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/ReddishEgret_Gam.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/reddish-egret/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:ReddishEgret_Gam.jpg"
+    },
+    {
+      "slug": "tricolored-heron",
+      "name": "Tricolored Heron",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Tri-colored_heron_sunrise_bunche_beach_%2833516451355%29_%28cropped%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/tricolored-heron/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Tri-colored_heron_sunrise_bunche_beach_(33516451355)_(cropped).jpg"
+    },
+    {
+      "slug": "neotropic-cormorant",
+      "name": "Neotropic Cormorant",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Neotropic_cormorant_%28Nannopterum_brasilianum_mexicanum%29_Peten.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/neotropic-cormorant/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Neotropic_cormorant_(Nannopterum_brasilianum_mexicanum)_Peten.jpg"
+    },
+    {
+      "slug": "white-tailed-hawk",
+      "name": "White-tailed Hawk",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Buteo_albicaudatus_-Salvador_Zoo%2C_Ondina%2C_Salvador%2C_Bahia%2C_Brasil-8a.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/white-tailed-hawk/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Buteo_albicaudatus_-Salvador_Zoo%2C_Ondina%2C_Salvador%2C_Bahia%2C_Brasil-8a.jpg"
+    },
+    {
+      "slug": "white-tailed-kite",
+      "name": "White-tailed Kite",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Elanus_leucurus_3.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/white-tailed-kite/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Elanus_leucurus_3.jpg"
+    },
+    {
+      "slug": "swallow-tailed-kite",
+      "name": "Swallow-tailed Kite",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Swallow-tailed_Kite_%2834163638494%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/swallow-tailed-kite/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Swallow-tailed_Kite_(34163638494).jpg"
+    },
+    {
+      "slug": "couchs-kingbird",
+      "name": "Couch's Kingbird",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Tyrannus_couchii_112139785_%28cropped%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/couchs-kingbird/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Tyrannus_couchii_112139785_(cropped).jpg"
+    },
+    {
+      "slug": "scissor-tailed-flycatcher",
+      "name": "Scissor-tailed Flycatcher",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Tyrannus_forficatus_on_branch.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/scissor-tailed-flycatcher/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Tyrannus_forficatus_on_branch.jpg"
+    },
+    {
+      "slug": "rose-throated-becard",
+      "name": "Rose-throated Becard",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Pachyramphus_aglaiae_-_Dan_Vickers_-_459803351.jpeg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/rose-throated-becard/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Pachyramphus_aglaiae_-_Dan_Vickers_-_459803351.jpeg"
+    },
+    {
+      "slug": "red-billed-pigeon",
+      "name": "Red-billed Pigeon",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Patagioenas_flavirostris_-Costa_Rica-8.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/red-billed-pigeon/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Patagioenas_flavirostris_-Costa_Rica-8.jpg"
+    },
+    {
+      "slug": "inca-dove",
+      "name": "Inca Dove",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/IncaDove.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/inca-dove/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:IncaDove.jpg"
+    },
+    {
+      "slug": "greater-roadrunner",
+      "name": "Greater Roadrunner",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Greater_Roadrunner_Tingley_Beach.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/greater-roadrunner/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Greater_Roadrunner_Tingley_Beach.jpg"
+    },
+    {
+      "slug": "american-oystercatcher",
+      "name": "American Oystercatcher",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/American_oystercatcher_on_Fort_Tilden_beach_%2893754%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/american-oystercatcher/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:American_oystercatcher_on_Fort_Tilden_beach_(93754).jpg"
+    },
+    {
+      "slug": "green-parakeet",
+      "name": "Green Parakeet",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Green_Parakeet_-in_tree_-South_Texas-8.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/green-parakeet/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Green_Parakeet_-in_tree_-South_Texas-8.jpg"
+    },
+    {
+      "slug": "red-crowned-parrot",
+      "name": "Red-crowned Parrot",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Red_Crowned_Amazon.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/red-crowned-parrot/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Red_Crowned_Amazon.jpg"
+    },
+    {
+      "slug": "white-collared-seedeater",
+      "name": "White-collared Seedeater",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Sporophila_torqueola_55799290.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/white-collared-seedeater/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Sporophila_torqueola_55799290.jpg"
+    },
+    {
+      "slug": "tropical-parula",
+      "name": "Tropical Parula",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Setophaga_pitiayumi_Monteverde_03.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/tropical-parula/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Setophaga_pitiayumi_Monteverde_03.jpg"
+    },
+    {
+      "slug": "mottled-duck",
+      "name": "Mottled Duck",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/MottledDuck_Gam.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/mottled-duck/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:MottledDuck_Gam.jpg"
+    },
+    {
+      "slug": "piping-plover",
+      "name": "Piping Plover",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Charadrius-melodus-004_edit.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/piping-plover/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Charadrius-melodus-004_edit.jpg"
+    },
+    {
+      "slug": "botteris-sparrow",
+      "name": "Botteri's Sparrow",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Aimophila_botterii.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/botteris-sparrow/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Aimophila_botterii.jpg"
+    }
+  ],
+  "hotspots": [
+    {
+      "slug": "estero-llano-grande",
+      "name": "Estero Llano Grande State Park",
+      "category": "hotspot",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Northern_Jacana_Costa_Rica.jpg",
+      "usage": [
+        "app/hotspots/page.tsx (photo field — card header thumbnail for \"Northern Jacana\")"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Northern_Jacana_Costa_Rica.jpg"
+    },
+    {
+      "slug": "santa-ana",
+      "name": "Santa Ana National Wildlife Refuge",
+      "category": "hotspot",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png",
+      "usage": [
+        "app/hotspots/page.tsx (photo field — card header thumbnail for \"Green Jay\")"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Green_jay_(Cyanocorax_luxuosus)_in_Mission%2C_Texas%2C_USA.png"
+    },
+    {
+      "slug": "bentsen",
+      "name": "Bentsen-Rio Grande Valley State Park",
+      "category": "hotspot",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Plain_Chachalaca_Roadside.png",
+      "usage": [
+        "app/hotspots/page.tsx (photo field — card header thumbnail for \"Plain Chachalaca\")"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Plain_Chachalaca_Roadside.png"
+    },
+    {
+      "slug": "national-butterfly-center",
+      "name": "National Butterfly Center",
+      "category": "hotspot",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg",
+      "usage": [
+        "app/hotspots/page.tsx (photo field — card header thumbnail for \"Buff-bellied Hummingbird\")"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_(21421266100).jpg"
+    },
+    {
+      "slug": "quinta-mazatlan",
+      "name": "Quinta Mazatlan",
+      "category": "hotspot",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Karmintyrann_%28Pyrocephalus_obscurus%29%2C_M%C3%A4nnchen_1.jpg",
+      "usage": [
+        "app/hotspots/page.tsx (photo field — card header thumbnail for \"Vermilion Flycatcher\")"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Karmintyrann_(Pyrocephalus_obscurus)%2C_M%C3%A4nnchen_1.jpg"
+    },
+    {
+      "slug": "resaca-de-la-palma",
+      "name": "Resaca de la Palma State Park",
+      "category": "hotspot",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg",
+      "usage": [
+        "app/hotspots/page.tsx (photo field — card header thumbnail for \"Ferruginous Pygmy-Owl\")"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Ferruginous_pygmy_owl_(Glaucidium_brasilianum_ridgwayi)_Copan.jpg"
+    },
+    {
+      "slug": "south-padre-island",
+      "name": "South Padre Island Birding & Nature Center",
+      "category": "hotspot",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/ReddishEgret_Gam.jpg",
+      "usage": [
+        "app/hotspots/page.tsx (photo field — card header thumbnail for \"Reddish Egret\")"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:ReddishEgret_Gam.jpg"
+    },
+    {
+      "slug": "laguna-atascosa",
+      "name": "Laguna Atascosa National Wildlife Refuge",
+      "category": "hotspot",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg",
+      "usage": [
+        "app/hotspots/page.tsx (photo field — card header thumbnail for \"Aplomado Falcon\")"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Aplomado_Falcon_(Falco_femoralis)_(31631199902).jpg"
+    },
+    {
+      "slug": "salineno",
+      "name": "Salineño Wildlife Preserve",
+      "category": "hotspot",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Muscovy_Duck_%28Cairina_moschata%29_male_%2829039391935%29.jpg",
+      "usage": [
+        "app/hotspots/page.tsx (photo field — card header thumbnail for \"Muscovy Duck\")"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Muscovy_Duck_(Cairina_moschata)_male_(29039391935).jpg"
+    }
+  ],
+  "sharedSourceFiles": [
+    {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png",
+      "usedBy": [
+        "green-jay (species)",
+        "santa-ana (hotspot)"
+      ]
+    },
+    {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Plain_Chachalaca_Roadside.png",
+      "usedBy": [
+        "plain-chachalaca (species)",
+        "bentsen (hotspot)"
+      ]
+    },
+    {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg",
+      "usedBy": [
+        "buff-bellied-hummingbird (species)",
+        "national-butterfly-center (hotspot)"
+      ]
+    },
+    {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg",
+      "usedBy": [
+        "aplomado-falcon (species)",
+        "laguna-atascosa (hotspot)"
+      ]
+    },
+    {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Karmintyrann_%28Pyrocephalus_obscurus%29%2C_M%C3%A4nnchen_1.jpg",
+      "usedBy": [
+        "vermilion-flycatcher (species)",
+        "quinta-mazatlan (hotspot)"
+      ]
+    },
+    {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg",
+      "usedBy": [
+        "ferruginous-pygmy-owl (species)",
+        "resaca-de-la-palma (hotspot)"
+      ]
+    },
+    {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Northern_Jacana_Costa_Rica.jpg",
+      "usedBy": [
+        "northern-jacana (species)",
+        "estero-llano-grande (hotspot)"
+      ]
+    },
+    {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/ReddishEgret_Gam.jpg",
+      "usedBy": [
+        "reddish-egret (species)",
+        "south-padre-island (hotspot)"
+      ]
+    }
+  ],
+  "notes": {
+    "metadataOnlyReferences": "The following files reference upload.wikimedia.org only inside openGraph/twitter/JSON-LD metadata (social-share image), not as a rendered <Image>/<img> src. No inline article/news images exist anywhere on the site today — verified via grep for <Image|<img in app/news/*/page.tsx (zero matches). These are out of scope for this migration (tasks 2-3 target display 'image src contexts' only) and are left as-is.",
+    "metadataOnlyFiles": [
+      "app/layout.tsx",
+      "app/page.tsx",
+      "app/about/page.tsx",
+      "app/gear/page.tsx",
+      "app/conservation/page.tsx",
+      "app/gallery/page.tsx",
+      "app/itineraries/page.tsx",
+      "app/checklist/page.tsx",
+      "app/news/page.tsx",
+      "app/birds/layout.tsx",
+      "app/news/*/page.tsx (15 article pages — OG_IMAGE const, no inline <Image>)"
+    ]
+  }
+}

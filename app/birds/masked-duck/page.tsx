@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/e/e5/Masked_duck_%28Nomonyx_dominicus%29.jpg";
+const PHOTO = "/images/birds/masked-duck.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/masked-duck" },
@@ -61,7 +60,7 @@ export default function MaskedDuckPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Male Masked Duck showing chestnut body and black face mask" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 40%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Male Masked Duck showing chestnut body and black face mask" fill priority className="object-cover" style={{ objectPosition: "50% 40%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -233,7 +232,7 @@ export default function MaskedDuckPage() {
             "url": "https://southtexasbirds.org/birds/masked-duck",
             "headline": "Masked Duck (Nomonyx dominicus) | South Texas Birds",
             "description": "Masked Duck identification, habitat, and where to find it in the Rio Grande Valley. One of the most secretive and sought-after rarities in U.S. birding.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/masked-duck.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/4/4f/Tropical_kingbird_%28Tyrannus_melancholicus%29.JPG";
+const PHOTO = "/images/birds/tropical-kingbird.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/tropical-kingbird" },
@@ -63,7 +62,7 @@ export default function TropicalKingbirdPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Tropical Kingbird perched on a branch, South Texas" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Tropical Kingbird perched on a branch, South Texas" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -234,7 +233,7 @@ export default function TropicalKingbirdPage() {
             "url": "https://southtexasbirds.org/birds/tropical-kingbird",
             "headline": "Tropical Kingbird (Tyrannus melancholicus) | South Texas Birds",
             "description": "Tropical Kingbird identification, habitat, and where to find it in the Rio Grande Valley. Nearly identical to Couch's Kingbird — the call is the key.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/tropical-kingbird.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

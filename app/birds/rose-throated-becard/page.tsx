@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/2/20/Pachyramphus_aglaiae_-_Dan_Vickers_-_459803351.jpeg";
+const PHOTO = "/images/birds/rose-throated-becard.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/rose-throated-becard" },
@@ -47,7 +46,7 @@ export default function RoseThroatedBecardPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Rose-throated Becard male perched in riparian forest" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Rose-throated Becard male perched in riparian forest" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>Photo:{" "}<a href="https://commons.wikimedia.org/wiki/File:Pachyramphus_aglaiae_-_Dan_Vickers_-_459803351.jpeg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-75 transition-opacity">Wikimedia Commons</a></p>
         </AnimateIn>
@@ -205,7 +204,7 @@ export default function RoseThroatedBecardPage() {
             "url": "https://southtexasbirds.org/birds/rose-throated-becard",
             "headline": "Rose-throated Becard (Pachyramphus aglaiae) | South Texas Birds",
             "description": "Rose-throated Becard identification, habitat, and where to find it in South Texas. One of the most sought-after rarities in the Rio Grande Valley — the male's rose-pink throat is stunning, and the pendulous nest easier to spot than the bird.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/rose-throated-becard.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

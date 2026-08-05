@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/5/52/Tachybaptus_dominicus_brachyrhynchus_-_Least_grebe%3B_Pantanal_route-park%2C_Corumb%C3%A1%2C_Mato_Grosso_do_Sul%2C_Brazil.jpg";
+const PHOTO = "/images/birds/least-grebe.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/least-grebe" },
@@ -63,7 +62,7 @@ export default function LeastGrebePage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Least Grebe swimming on a tropical pond" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 40%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Least Grebe swimming on a tropical pond" fill priority className="object-cover" style={{ objectPosition: "50% 40%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -233,7 +232,7 @@ export default function LeastGrebePage() {
             "url": "https://southtexasbirds.org/birds/least-grebe",
             "headline": "Least Grebe (Tachybaptus dominicus) | South Texas Birds",
             "description": "Least Grebe identification, habitat, and where to find it in the Rio Grande Valley. The smallest grebe in the Western Hemisphere is common on resacas and ponds year-round.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/least-grebe.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

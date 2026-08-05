@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Altamira_oriole_%28Icterus_gularis_gigas%29_Copan.jpg";
+const PHOTO = "/images/birds/altamira-oriole.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/altamira-oriole" },
@@ -88,7 +87,6 @@ export default function AltamiraOriolePage() {
               src={PHOTO}
               alt="Altamira Oriole perched in tropical foliage, South Texas"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 30%" }}
@@ -322,7 +320,7 @@ export default function AltamiraOriolePage() {
             "url": "https://southtexasbirds.org/birds/altamira-oriole",
             "headline": "Altamira Oriole (Icterus gularis) | South Texas Birds",
             "description": "Altamira Oriole identification, habitat, and where to find it in the Rio Grande Valley. The largest oriole in the U.S., famous for its extraordinary hanging nest.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/altamira-oriole.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/4/45/Tyrannus_forficatus_on_branch.jpg";
+const PHOTO = "/images/birds/scissor-tailed-flycatcher.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/scissor-tailed-flycatcher" },
@@ -48,7 +47,7 @@ export default function ScissorTailedFlycatcherPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Scissor-tailed Flycatcher perched showing long forked tail" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Scissor-tailed Flycatcher perched showing long forked tail" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>Photo:{" "}<a href="https://commons.wikimedia.org/wiki/File:Tyrannus_forficatus_on_branch.jpg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-75 transition-opacity">Wikimedia Commons</a></p>
         </AnimateIn>
@@ -205,7 +204,7 @@ export default function ScissorTailedFlycatcherPage() {
             "url": "https://southtexasbirds.org/birds/scissor-tailed-flycatcher",
             "headline": "Scissor-tailed Flycatcher (Tyrannus forficatus) | South Texas Birds",
             "description": "Scissor-tailed Flycatcher identification, habitat, and where to find it in South Texas. Oklahoma's state bird — a pale flycatcher with an extraordinary forked tail that can exceed the length of its own body.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/scissor-tailed-flycatcher.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/6/6a/Buteo_albicaudatus_-Salvador_Zoo%2C_Ondina%2C_Salvador%2C_Bahia%2C_Brasil-8a.jpg";
+const PHOTO = "/images/birds/white-tailed-hawk.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/white-tailed-hawk" },
@@ -48,7 +47,7 @@ export default function WhiteTailedHawkPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="White-tailed Hawk perched showing white tail and rusty shoulders" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 20%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="White-tailed Hawk perched showing white tail and rusty shoulders" fill priority className="object-cover" style={{ objectPosition: "50% 20%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>Photo:{" "}<a href="https://commons.wikimedia.org/wiki/File:Buteo_albicaudatus_-Salvador_Zoo,_Ondina,_Salvador,_Bahia,_Brasil-8a.jpg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-75 transition-opacity">Wikimedia Commons</a></p>
         </AnimateIn>
@@ -197,7 +196,7 @@ export default function WhiteTailedHawkPage() {
             "url": "https://southtexasbirds.org/birds/white-tailed-hawk",
             "headline": "White-tailed Hawk (Geranoaetus albicaudatus) | South Texas Birds",
             "description": "White-tailed Hawk identification, habitat, and where to find it in South Texas. A large, striking raptor found in the U.S. only along the Texas Gulf Coast prairie.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/white-tailed-hawk.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

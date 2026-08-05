@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/8/87/Aimophila_botterii.jpg";
+const PHOTO = "/images/birds/botteris-sparrow.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/botteris-sparrow" },
@@ -86,7 +85,6 @@ export default function BotterisSparrowPage() {
               src={PHOTO}
               alt="Botteri's Sparrow perched on a grass stem in coastal prairie"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 30%" }}
@@ -334,7 +332,7 @@ export default function BotterisSparrowPage() {
             "url": "https://southtexasbirds.org/birds/botteris-sparrow",
             "headline": "Botteri's Sparrow (Peucaea botterii) | South Texas Birds",
             "description": "Botteri's Sparrow identification, habitat, and where to find it in South Texas. A secretive grassland sparrow that arrives in summer specifically to breed in the coastal prairies of the Rio Grande Valley.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/botteris-sparrow.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

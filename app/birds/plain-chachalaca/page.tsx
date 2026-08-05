@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/d/df/Plain_Chachalaca_Roadside.png";
+const PHOTO = "/images/birds/plain-chachalaca.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/plain-chachalaca" },
@@ -88,7 +87,6 @@ export default function PlainChachalacaPage() {
               src={PHOTO}
               alt="Plain Chachalaca perched alongside a road in South Texas"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 30%" }}
@@ -328,7 +326,7 @@ export default function PlainChachalacaPage() {
             "url": "https://southtexasbirds.org/birds/plain-chachalaca",
             "headline": "Plain Chachalaca (Ortalis vetula) | South Texas Birds",
             "description": "Plain Chachalaca identification, habitat, and where to find it in the Rio Grande Valley. The only member of its tropical family found in the United States.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/plain-chachalaca.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

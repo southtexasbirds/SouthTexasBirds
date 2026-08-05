@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg";
+const PHOTO = "/images/birds/aplomado-falcon.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/aplomado-falcon" },
@@ -86,7 +85,6 @@ export default function AplomadoFalconPage() {
               src={PHOTO}
               alt="Aplomado Falcon perched on a post in South Texas coastal prairie"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 25%" }}
@@ -334,7 +332,7 @@ export default function AplomadoFalconPage() {
             "url": "https://southtexasbirds.org/birds/aplomado-falcon",
             "headline": "Aplomado Falcon (Falco femoralis) | South Texas Birds",
             "description": "Aplomado Falcon identification, habitat, and where to find it in South Texas. Once extirpated from the U.S., this slender, bold-patterned falcon has been successfully reintroduced at Laguna Atascosa NWR.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/aplomado-falcon.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

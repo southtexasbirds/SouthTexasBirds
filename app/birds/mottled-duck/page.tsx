@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/8/86/MottledDuck_Gam.jpg";
+const PHOTO = "/images/birds/mottled-duck.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/mottled-duck" },
@@ -86,7 +85,6 @@ export default function MottledDuckPage() {
               src={PHOTO}
               alt="Mottled Duck resting on a coastal Texas marsh"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 30%" }}
@@ -327,7 +325,7 @@ export default function MottledDuckPage() {
             "url": "https://southtexasbirds.org/birds/mottled-duck",
             "headline": "Mottled Duck (Anas fulvigula) | South Texas Birds",
             "description": "Mottled Duck identification, habitat, and where to find it along the Texas Gulf Coast. The only dabbling duck that breeds year-round in the coastal marshes of South Texas.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/mottled-duck.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

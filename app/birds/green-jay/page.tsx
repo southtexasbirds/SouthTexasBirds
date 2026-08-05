@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png";
+const PHOTO = "/images/birds/green-jay.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/green-jay" },
@@ -88,7 +87,6 @@ export default function GreenJayPage() {
               src={PHOTO}
               alt="Green Jay perched in South Texas thornscrub, Mission TX"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 30%" }}
@@ -316,7 +314,7 @@ export default function GreenJayPage() {
             "url": "https://southtexasbirds.org/birds/green-jay",
             "headline": "Green Jay (Cyanocorax yncas) | South Texas Birds",
             "description": "Green Jay identification, habitat, and where to find it in the Rio Grande Valley. The only place in the U.S. where this tropical jay is a year-round resident.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/green-jay.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/0/0b/Charadrius-melodus-004_edit.jpg";
+const PHOTO = "/images/birds/piping-plover.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/piping-plover" },
@@ -86,7 +85,6 @@ export default function PipingPloverPage() {
               src={PHOTO}
               alt="Piping Plover running along a sandy beach"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 40%" }}
@@ -330,7 +328,7 @@ export default function PipingPloverPage() {
             "url": "https://southtexasbirds.org/birds/piping-plover",
             "headline": "Piping Plover (Charadrius melodus) | South Texas Birds",
             "description": "Piping Plover identification, habitat, and where to find it on the Texas coast. An endangered shorebird that winters in significant numbers on the barrier islands and tidal flats of South Texas.",
-            "image": "https://southtexasbirds.org/images/og-default.jpg",
+            "image": "https://southtexasbirds.org/images/birds/piping-plover.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
