@@ -1,8 +1,26 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-07-31
-- **Agent:** Desktop
+- **Date:** 2026-08-05
+- **Agent:** Desktop (branch `fix/audit-aug5`, off `main`, not yet merged)
+
+---
+
+## Desktop Agent — 2026-08-05
+
+### What was done this session
+Site audit fixes, on branch `fix/audit-aug5` (pushed, not merged to `main`):
+
+- **Self-hosted hero + OG images**: Downloaded the Wikimedia Altamira Oriole photo, generated `/public/images/hero-altamira.webp` (1600px wide, q80) and `/public/images/og-default.jpg` (exactly 1200×630, center-cropped, q80, ~98KB) with `sharp`. Homepage hero now uses `next/image` with the local file (`fill`, `priority`, `sizes="100vw"`, no more `unoptimized`). Site-wide metadata (`app/layout.tsx`) and every page's `openGraph`/`twitter`/JSON-LD `image` fields now point at `https://southtexasbirds.org/images/og-default.jpg` (1200×630) instead of hotlinking Wikimedia — this touched all 50 species pages, all 15 news articles, and the remaining standalone pages (hotspots, about, gear, conservation, gallery, itineraries, checklist, news listing, birds listing layout). Deliberately did **not** touch species-page hero photos or `/birds` listing/gallery thumbnails (`app/birds/data.ts`) — those still hotlink Wikimedia; that's the next task (see below). Confirmed Altamira Oriole is already credited on `/credits`.
+- **Dead species anchors**: On `/hotspots`, bird chips for species without a `/birds` entry now render as plain unlinked text instead of dumping users at `/birds#slug` (which doesn't exist) — checked live against `BIRDS_ORDER` from `birdsOrder.ts`, not a hardcoded list, so it stays correct as species are added. Also found and fixed one more dead anchor outside the task's list: the Buff-bellied Hummingbird species page linked to `/hotspots#sabal-palm`, a location that isn't one of the 9 tracked hotspots — unlinked it the same way. Verified all 9 `/hotspots#slug` anchors used by species pages (`bentsen`, `santa-ana`, `estero-llano-grande`, `quinta-mazatlan`, `national-butterfly-center`, `resaca-de-la-palma`, `south-padre-island`, `laguna-atascosa`, `salineno`) match `id` attributes on `/hotspots` exactly — they already did, no missing ids.
+- **Nav/footer unification — investigated, found already done**: The task described `/birds` and `/gear` using a short nav (no Checklist) and short footer, versus a full nav/footer elsewhere. Checked the code and the built HTML output for `/birds`, `/gear`, and `/hotspots`: all three already render the identical `Header` component (with Checklist) and the identical full footer (Gallery, Itineraries, Support This Site, Photo Credits) from the single root `app/layout.tsx` — there is only one Nav component and one Footer in the codebase, no second variant exists anywhere. This was presumably already fixed in an earlier session. No code change was needed or made for this item; verified rather than assumed.
+- **Copy fixes**: Homepage hero text, meta description, and Organization JSON-LD now say "reintroduced Aplomado Falcons make their home" instead of "Aplomado Falcons are resident." Standardized the Santa Ana NWR acreage to **2,088 acres** everywhere it was quoted as 2,000 (hotspots page, news listing excerpt, the Santa Ana guide article's own meta description/OG description, and the About page FAQ JSON-LD — the guide article's body text and FAQ already said 2,088, so this fixes an inconsistency that existed within that one article too). On `/checklist`, merged the "Hawks" and "Hawks & Kites" family groups into one "Hawks, Kites & Allies" (7 species), and renamed "Tanagers" (White-collared Seedeater, the only member) to "Seedeaters & Allies" — done by editing the `family` field in `app/birds/data.ts`, since `/checklist` derives its groups from that data rather than a hardcoded list.
+- Build (`npm run build`) and lint (`npm run lint`) are both clean. Grep-verified no `upload.wikimedia.org` remains in any metadata/OG/JSON-LD `image` context sitewide.
+
+### What's next
+- **Species-card thumbnail migration**: `/birds` listing cards, `/gallery`, and individual species-page hero photos (all sourced from `app/birds/data.ts` `photo` field and each species page's `PHOTO` const) still hotlink `upload.wikimedia.org`. This was explicitly deferred from this session's OG-image work. Same for the 9 hotspot-card bird thumbnails on `/hotspots` and each news article's own hero photo. Migrating these to self-hosted local images is the next task, along with adding proper `sizes` props to the `next/image` usages on `/birds` and `/hotspots` (several currently use `unoptimized` as a workaround for the Wikimedia remote pattern).
+- **`sitemap.xml` + Search Console submission is still pending** (carried over from earlier sessions — not touched this session).
+- Branch `fix/audit-aug5` has been pushed to origin but **not merged to `main`** — needs review/PR before merging.
 
 ---
 
