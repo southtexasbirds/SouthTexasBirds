@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/news/santa-ana-nwr-birding-guide" },
   title: "Santa Ana National Wildlife Refuge: A Complete Birding Guide | South Texas Birds",
   description:
-    "Santa Ana NWR — called the 'Jewel of the National Wildlife Refuge System' — protects 2,000 acres of Tamaulipan thornscrub on the Rio Grande. A complete guide to birding one of the most species-rich sites in the United States.",
+    "Santa Ana NWR — called the 'Jewel of the National Wildlife Refuge System' — protects 2,088 acres of Tamaulipan thornscrub on the Rio Grande. A complete guide to birding one of the most species-rich sites in the United States.",
   openGraph: {
     type: "article",
     publishedTime: "2026-07-02T00:00:00Z",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     section: "Destination Guide",
     title: "Santa Ana National Wildlife Refuge: A Complete Birding Guide",
     description:
-      "Called the Jewel of the National Wildlife Refuge System, Santa Ana NWR packs 400+ species into 2,000 riverside acres. Here is how to bird it.",
+      "Called the Jewel of the National Wildlife Refuge System, Santa Ana NWR packs 400+ species into 2,088 riverside acres. Here is how to bird it.",
     images: [{ url: OG_IMAGE, alt: "Green Jay at Santa Ana National Wildlife Refuge" }],
   },
   twitter: { card: "summary_large_image", images: [OG_IMAGE] },
@@ -356,7 +356,7 @@ export default function SantaAnaBirdingGuidePage() {
             "@type": "NewsArticle",
             "url": "https://southtexasbirds.org/news/santa-ana-nwr-birding-guide",
             "headline": "Santa Ana National Wildlife Refuge: A Complete Birding Guide",
-            "description": "Santa Ana NWR — called the 'Jewel of the National Wildlife Refuge System' — protects 2,000 acres of Tamaulipan thornscrub on the Rio Grande. A complete guide to birding one of the most species-rich sites in the United States.",
+            "description": "Santa Ana NWR — called the 'Jewel of the National Wildlife Refuge System' — protects 2,088 acres of Tamaulipan thornscrub on the Rio Grande. A complete guide to birding one of the most species-rich sites in the United States.",
             "image": OG_IMAGE,
             "datePublished": "2026-07-02",
             "dateModified": "2026-07-02",

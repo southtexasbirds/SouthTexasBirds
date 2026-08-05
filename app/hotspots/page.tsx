@@ -43,7 +43,7 @@ const hotspots = [
     guideSlug: "santa-ana-nwr-birding-guide",
     guideLabel: "Complete Birding Guide",
     description:
-      "What the U.S. Fish & Wildlife Service calls the 'jewel of the National Wildlife Refuge System,' Santa Ana protects 2,000 acres of native Tamaulipan thornscrub and riparian forest along the Rio Grande. Seasonal tram tours (typically December through early February) wind through the dense habitat where most of the Valley's RGV specialties can be found in a single morning. The feeder station near the visitor center is exceptional.",
+      "What the U.S. Fish & Wildlife Service calls the 'jewel of the National Wildlife Refuge System,' Santa Ana protects 2,088 acres of native Tamaulipan thornscrub and riparian forest along the Rio Grande. Seasonal tram tours (typically December through early February) wind through the dense habitat where most of the Valley's RGV specialties can be found in a single morning. The feeder station near the visitor center is exceptional.",
     birds: [
       "Green Jay",
       "Plain Chachalaca",

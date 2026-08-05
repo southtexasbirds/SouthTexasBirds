@@ -359,7 +359,7 @@ export default function AboutPage() {
                 "name": "Where is the best birding in the Rio Grande Valley?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "The best birding sites in the Rio Grande Valley include: Santa Ana National Wildlife Refuge (2,000 acres of native thornscrub, excellent for RGV specialties), Bentsen-Rio Grande Valley State Park (World Birding Center flagship with hawk watch tower), Estero Llano Grande State Park (waterbirds including Masked Duck and Northern Jacana), Quinta Mazatlán (urban World Birding Center site in McAllen), and South Padre Island Birding & Nature Center (top spring migration fallout site). Each hotspot has its own specialties and is worth visiting in a single extended trip.",
+                  "text": "The best birding sites in the Rio Grande Valley include: Santa Ana National Wildlife Refuge (2,088 acres of native thornscrub, excellent for RGV specialties), Bentsen-Rio Grande Valley State Park (World Birding Center flagship with hawk watch tower), Estero Llano Grande State Park (waterbirds including Masked Duck and Northern Jacana), Quinta Mazatlán (urban World Birding Center site in McAllen), and South Padre Island Birding & Nature Center (top spring migration fallout site). Each hotspot has its own specialties and is worth visiting in a single extended trip.",
                 },
               },
             ],

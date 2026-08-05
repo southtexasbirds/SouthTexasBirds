@@ -144,7 +144,7 @@ const articles = [
     isoDate: "2026-07-02",
     title: "Santa Ana National Wildlife Refuge: A Complete Birding Guide",
     excerpt:
-      "Called the 'Jewel of the National Wildlife Refuge System,' Santa Ana NWR packs 400+ species into 2,000 acres of Tamaulipan thornscrub — Green Jays, Hook-billed Kites, Rose-throated Becards, and the best feeder station in the RGV.",
+      "Called the 'Jewel of the National Wildlife Refuge System,' Santa Ana NWR packs 400+ species into 2,088 acres of Tamaulipan thornscrub — Green Jays, Hook-billed Kites, Rose-throated Becards, and the best feeder station in the RGV.",
     tags: ["Destination Guide", "RGV", "Species Guide"],
   },
   {

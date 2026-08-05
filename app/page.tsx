@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "South Texas Birds | Rio Grande Valley Birding Guide",
     description:
-      "The complete guide to South Texas birding — the only U.S. region where Green Jays, Hook-billed Kites, and Aplomado Falcons are resident. 50 species · 9 hotspots · 14 articles.",
+      "The complete guide to South Texas birding — the only U.S. region where Green Jays, Hook-billed Kites, and reintroduced Aplomado Falcons make their home. 50 species · 9 hotspots · 14 articles.",
     images: [
       {
         url: "https://southtexasbirds.org/images/og-default.jpg",
@@ -134,7 +134,7 @@ export default function HomePage() {
               Birds of<br />South Texas
             </h1>
             <p className="text-base md:text-lg text-white/80 max-w-xl mb-8 leading-relaxed">
-              The only place in the United States where Green Jays, Hook-billed Kites, and Aplomado Falcons are resident — and the continent&apos;s most reliable site for Whooping Cranes.
+              The only place in the United States where Green Jays, Hook-billed Kites, and reintroduced Aplomado Falcons make their home — and the continent&apos;s most reliable site for Whooping Cranes.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
@@ -452,7 +452,7 @@ export default function HomePage() {
             "name": "South Texas Birds",
             "url": "https://southtexasbirds.org",
             "logo": "https://southtexasbirds.org/icon.svg",
-            "description": "The complete birding guide for the Rio Grande Valley and South Texas coast — 50 species profiles, 9 hotspot guides, and 14 destination articles covering the only U.S. region where Green Jays, Hook-billed Kites, and Aplomado Falcons are resident.",
+            "description": "The complete birding guide for the Rio Grande Valley and South Texas coast — 50 species profiles, 9 hotspot guides, and 14 destination articles covering the only U.S. region where Green Jays, Hook-billed Kites, and reintroduced Aplomado Falcons make their home.",
             "sameAs": ["https://github.com/southtexasbirds"],
           }),
         }}
