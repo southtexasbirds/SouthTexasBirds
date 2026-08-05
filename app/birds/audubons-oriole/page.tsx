@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/d/d6/Audubon%27s_Oriole_%2812626811374%29.jpg";
+const PHOTO = "/images/birds/audubons-oriole.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/audubons-oriole" },
@@ -63,7 +62,7 @@ export default function AudubonsOriolePage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Audubon's Oriole perched showing black hood, wings, and tail against lemon-yellow body" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 35%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Audubon's Oriole perched showing black hood, wings, and tail against lemon-yellow body" fill priority className="object-cover" style={{ objectPosition: "50% 35%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -237,7 +236,7 @@ export default function AudubonsOriolePage() {
             "url": "https://southtexasbirds.org/birds/audubons-oriole",
             "headline": "Audubon's Oriole (Icterus graduacauda) | South Texas Birds",
             "description": "Audubon's Oriole identification, habitat, and where to find it in the Rio Grande Valley. A shy, deep-forest oriole with a slow, melancholy whistle, nearly endemic to South Texas.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Audubon%27s_Oriole_%2812626811374%29.jpg",
+            "image": "https://southtexasbirds.org/images/birds/audubons-oriole.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

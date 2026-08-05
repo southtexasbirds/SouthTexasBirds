@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/2/2c/Male_Painted_Bunting_Singing.jpg";
+const PHOTO = "/images/birds/painted-bunting.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/painted-bunting" },
@@ -64,7 +63,7 @@ export default function PaintedBuntingPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Male Painted Bunting singing" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Male Painted Bunting singing" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -243,7 +242,7 @@ export default function PaintedBuntingPage() {
             "url": "https://southtexasbirds.org/birds/painted-bunting",
             "headline": "Painted Bunting (Passerina ciris) | South Texas Birds",
             "description": "Painted Bunting identification, habitat, and where to find it in South Texas. The most colorful bird in North America winters in the Rio Grande Valley in good numbers.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Male_Painted_Bunting_Singing.jpg",
+            "image": "https://southtexasbirds.org/images/birds/painted-bunting.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

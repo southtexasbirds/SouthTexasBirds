@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/1/1b/Setophaga_pitiayumi_Monteverde_03.jpg";
+const PHOTO = "/images/birds/tropical-parula.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/tropical-parula" },
@@ -60,7 +59,7 @@ export default function TropicalParulaPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Tropical Parula perched showing blue-gray upperparts and bright yellow throat and breast" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 35%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Tropical Parula perched showing blue-gray upperparts and bright yellow throat and breast" fill priority className="object-cover" style={{ objectPosition: "50% 35%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -237,7 +236,7 @@ export default function TropicalParulaPage() {
             "url": "https://southtexasbirds.org/birds/tropical-parula",
             "headline": "Tropical Parula (Setophaga pitiayumi) | South Texas Birds",
             "description": "Tropical Parula identification, habitat, and where to find it in the Rio Grande Valley. A tiny warbler tied to Spanish moss, barely reaching the U.S. in South Texas.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Setophaga_pitiayumi_Monteverde_03.jpg",
+            "image": "https://southtexasbirds.org/images/birds/tropical-parula.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/e/e0/Swallow-tailed_Kite_%2834163638494%29.jpg";
+const PHOTO = "/images/birds/swallow-tailed-kite.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/swallow-tailed-kite" },
@@ -48,7 +47,7 @@ export default function SwallowTailedKitePage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Swallow-tailed Kite in flight showing deeply forked tail" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Swallow-tailed Kite in flight showing deeply forked tail" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>Photo:{" "}<a href="https://commons.wikimedia.org/wiki/File:Swallow-tailed_Kite_(34163638494).jpg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-75 transition-opacity">Wikimedia Commons</a></p>
         </AnimateIn>
@@ -199,7 +198,7 @@ export default function SwallowTailedKitePage() {
             "url": "https://southtexasbirds.org/birds/swallow-tailed-kite",
             "headline": "Swallow-tailed Kite (Elanoides forficatus) | South Texas Birds",
             "description": "Swallow-tailed Kite identification, habitat, and where to see it in South Texas. Arguably the most graceful bird in North America, migrating through the Valley in spring and fall.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Swallow-tailed_Kite_%2834163638494%29.jpg",
+            "image": "https://southtexasbirds.org/images/birds/swallow-tailed-kite.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/9/99/Julie_Waters_broad_winged_hawk.JPG";
+const PHOTO = "/images/birds/broad-winged-hawk.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/broad-winged-hawk" },
@@ -63,7 +62,7 @@ export default function BroadWingedHawkPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Broad-winged Hawk perched on a branch" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Broad-winged Hawk perched on a branch" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -235,7 +234,7 @@ export default function BroadWingedHawkPage() {
             "url": "https://southtexasbirds.org/birds/broad-winged-hawk",
             "headline": "Broad-winged Hawk (Buteo platypterus) | South Texas Birds",
             "description": "Broad-winged Hawk identification and migration in South Texas. In September, hundreds of thousands funnel through Corpus Christi in one of birding's great spectacles.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Julie_Waters_broad_winged_hawk.JPG",
+            "image": "https://southtexasbirds.org/images/birds/broad-winged-hawk.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/a/a0/White-tipped_Dove_-_Panama_H8O8470.jpg";
+const PHOTO = "/images/birds/white-tipped-dove.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/white-tipped-dove" },
@@ -86,7 +85,6 @@ export default function WhiteTippedDovePage() {
               src={PHOTO}
               alt="White-tipped Dove on the ground in shaded woodland"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 40%" }}
@@ -321,7 +319,7 @@ export default function WhiteTippedDovePage() {
             "url": "https://southtexasbirds.org/birds/white-tipped-dove",
             "headline": "White-tipped Dove (Leptotila verreauxi) | South Texas Birds",
             "description": "White-tipped Dove identification, habitat, and where to find it in South Texas. A plump, ground-hugging dove whose haunting hollow hoot is one of the signature sounds of the Rio Grande Valley.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/White-tipped_Dove_-_Panama_H8O8470.jpg",
+            "image": "https://southtexasbirds.org/images/birds/white-tipped-dove.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/9/9c/Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg";
+const PHOTO = "/images/birds/buff-bellied-hummingbird.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/buff-bellied-hummingbird" },
@@ -88,7 +87,6 @@ export default function BuffBelliedHummingbirdPage() {
               src={PHOTO}
               alt="Buff-bellied Hummingbird at Sabal Palm Sanctuary, Brownsville TX"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 30%" }}
@@ -324,7 +322,7 @@ export default function BuffBelliedHummingbirdPage() {
             "url": "https://southtexasbirds.org/birds/buff-bellied-hummingbird",
             "headline": "Buff-bellied Hummingbird (Amazilia yucatanensis) | South Texas Birds",
             "description": "Buff-bellied Hummingbird identification, habitat, and where to find it in the Rio Grande Valley. The only hummingbird that regularly breeds in South Texas.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg",
+            "image": "https://southtexasbirds.org/images/birds/buff-bellied-hummingbird.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

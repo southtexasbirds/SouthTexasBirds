@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/3/31/Neotropic_cormorant_%28Nannopterum_brasilianum_mexicanum%29_Peten.jpg";
+const PHOTO = "/images/birds/neotropic-cormorant.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/neotropic-cormorant" },
@@ -58,7 +57,7 @@ export default function NeotropicCormorantPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Neotropic Cormorant perched with wings spread" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Neotropic Cormorant perched with wings spread" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -223,7 +222,7 @@ export default function NeotropicCormorantPage() {
             "url": "https://southtexasbirds.org/birds/neotropic-cormorant",
             "headline": "Neotropic Cormorant (Nannopterum brasilianum) | South Texas Birds",
             "description": "Neotropic Cormorant identification, habitat, and where to find it in South Texas. Smaller and longer-tailed than the Double-crested, this abundant cormorant is a fixture on Valley resacas and ponds.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Neotropic_cormorant_%28Nannopterum_brasilianum_mexicanum%29_Peten.jpg",
+            "image": "https://southtexasbirds.org/images/birds/neotropic-cormorant.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

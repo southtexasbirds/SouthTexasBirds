@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/5/5a/Patagioenas_flavirostris_-Costa_Rica-8.jpg";
+const PHOTO = "/images/birds/red-billed-pigeon.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/red-billed-pigeon" },
@@ -48,7 +47,7 @@ export default function RedBilledPigeonPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Red-billed Pigeon perched in tropical forest" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Red-billed Pigeon perched in tropical forest" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>Photo:{" "}<a href="https://commons.wikimedia.org/wiki/File:Patagioenas_flavirostris_-Costa_Rica-8.jpg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-75 transition-opacity">Wikimedia Commons</a></p>
         </AnimateIn>
@@ -203,7 +202,7 @@ export default function RedBilledPigeonPage() {
             "url": "https://southtexasbirds.org/birds/red-billed-pigeon",
             "headline": "Red-billed Pigeon (Patagioenas flavirostris) | South Texas Birds",
             "description": "Red-billed Pigeon identification, habitat, and where to find it in South Texas. A large, dark wine-colored pigeon of the Rio Grande corridor, best seen flying over the river at dawn from Bentsen SP.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Patagioenas_flavirostris_-Costa_Rica-8.jpg",
+            "image": "https://southtexasbirds.org/images/birds/red-billed-pigeon.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

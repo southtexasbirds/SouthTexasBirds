@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/7/74/Buteo_plagiatus_Belize.jpg";
+const PHOTO = "/images/birds/gray-hawk.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/gray-hawk" },
@@ -63,7 +62,7 @@ export default function GrayHawkPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Gray Hawk perched in riparian woodland" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Gray Hawk perched in riparian woodland" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -231,7 +230,7 @@ export default function GrayHawkPage() {
             "url": "https://southtexasbirds.org/birds/gray-hawk",
             "headline": "Gray Hawk (Buteo plagiatus) | South Texas Birds",
             "description": "Gray Hawk identification, habitat, and where to find it in the Rio Grande Valley. A finely barred raptor of the river corridor at the northern edge of its range.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Buteo_plagiatus_Belize.jpg",
+            "image": "https://southtexasbirds.org/images/birds/gray-hawk.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

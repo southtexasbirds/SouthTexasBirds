@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/9/94/Great_kiskadee_%2870240%29.jpg";
+const PHOTO = "/images/birds/great-kiskadee.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/great-kiskadee" },
@@ -63,7 +62,7 @@ export default function GreatKiskadeePage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Great Kiskadee perched in South Texas riparian woodland" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Great Kiskadee perched in South Texas riparian woodland" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -232,7 +231,7 @@ export default function GreatKiskadeePage() {
             "url": "https://southtexasbirds.org/birds/great-kiskadee",
             "headline": "Great Kiskadee (Pitangus sulphuratus) | South Texas Birds",
             "description": "Great Kiskadee identification, habitat, and where to find it in the Rio Grande Valley. Loud, bold, and impossible to miss — the defining bird of any RGV park.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Great_kiskadee_%2870240%29.jpg",
+            "image": "https://southtexasbirds.org/images/birds/great-kiskadee.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

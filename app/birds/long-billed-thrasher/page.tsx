@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Toxostoma_longirostre_-Laguna_Atascosa_National_Wildlife_Refuge%2C_Texas%2C_USA-8.jpg";
+const PHOTO = "/images/birds/long-billed-thrasher.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/long-billed-thrasher" },
@@ -63,7 +62,7 @@ export default function LongBilledThrasherPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Long-billed Thrasher at Laguna Atascosa NWR, showing long curved bill and streaked breast" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 35%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Long-billed Thrasher at Laguna Atascosa NWR, showing long curved bill and streaked breast" fill priority className="object-cover" style={{ objectPosition: "50% 35%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -234,7 +233,7 @@ export default function LongBilledThrasherPage() {
             "url": "https://southtexasbirds.org/birds/long-billed-thrasher",
             "headline": "Long-billed Thrasher (Toxostoma longirostre) | South Texas Birds",
             "description": "Long-billed Thrasher identification, habitat, and where to find it in the Rio Grande Valley. A rich-voiced songster that rivals the Northern Mockingbird in the thornscrub.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Toxostoma_longirostre_-Laguna_Atascosa_National_Wildlife_Refuge%2C_Texas%2C_USA-8.jpg",
+            "image": "https://southtexasbirds.org/images/birds/long-billed-thrasher.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

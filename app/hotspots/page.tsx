@@ -31,8 +31,7 @@ const hotspots = [
       "Groove-billed Ani",
     ],
     bestSeason: "Year-round",
-    photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Northern_Jacana_Costa_Rica.jpg/330px-Northern_Jacana_Costa_Rica.jpg",
+    photo: "/images/hotspots/estero-llano-grande.webp",
     photoAlt: "Northern Jacana",
   },
   {
@@ -59,8 +58,7 @@ const hotspots = [
       "White-tipped Dove",
     ],
     bestSeason: "Year-round; best Oct–Apr",
-    photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png/330px-Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png",
+    photo: "/images/hotspots/santa-ana.webp",
     photoAlt: "Green Jay",
   },
   {
@@ -87,8 +85,7 @@ const hotspots = [
       "Broad-winged Hawk",
     ],
     bestSeason: "Year-round; hawk migration Mar–May & Sep–Oct",
-    photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Plain_Chachalaca_Roadside.png/330px-Plain_Chachalaca_Roadside.png",
+    photo: "/images/hotspots/bentsen.webp",
     photoAlt: "Plain Chachalaca",
   },
   {
@@ -113,8 +110,7 @@ const hotspots = [
       "Groove-billed Ani",
     ],
     bestSeason: "Year-round; fall migration Aug–Oct",
-    photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg/330px-Buff-bellied_Hummingbird-Sabal_Palm_Bird_Sanctuary-TX_-_2015-05-21at11-43-412_%2821421266100%29.jpg",
+    photo: "/images/hotspots/national-butterfly-center.webp",
     photoAlt: "Buff-bellied Hummingbird",
   },
   {
@@ -139,8 +135,7 @@ const hotspots = [
       "Groove-billed Ani",
     ],
     bestSeason: "Year-round",
-    photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Karmintyrann_%28Pyrocephalus_obscurus%29%2C_M%C3%A4nnchen_1.jpg/330px-Karmintyrann_%28Pyrocephalus_obscurus%29%2C_M%C3%A4nnchen_1.jpg",
+    photo: "/images/hotspots/quinta-mazatlan.webp",
     photoAlt: "Vermilion Flycatcher",
   },
   {
@@ -165,8 +160,7 @@ const hotspots = [
       "White-tipped Dove",
     ],
     bestSeason: "Year-round; best Nov–Apr",
-    photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg/330px-Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg",
+    photo: "/images/hotspots/resaca-de-la-palma.webp",
     photoAlt: "Ferruginous Pygmy-Owl",
   },
   {
@@ -193,8 +187,7 @@ const hotspots = [
       "Brown Pelican",
     ],
     bestSeason: "Spring migration late Apr–mid May; fall Sep–Oct",
-    photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/ReddishEgret_Gam.jpg/330px-ReddishEgret_Gam.jpg",
+    photo: "/images/hotspots/south-padre-island.webp",
     photoAlt: "Reddish Egret",
   },
   {
@@ -221,8 +214,7 @@ const hotspots = [
       "White-tailed Kite",
     ],
     bestSeason: "Year-round; shorebirds Aug–Oct, waterfowl Nov–Mar",
-    photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg/330px-Aplomado_Falcon_%28Falco_femoralis%29_%2831631199902%29.jpg",
+    photo: "/images/hotspots/laguna-atascosa.webp",
     photoAlt: "Aplomado Falcon",
   },
   {
@@ -249,8 +241,7 @@ const hotspots = [
       "Brown Jay",
     ],
     bestSeason: "Year-round; best Nov–Mar",
-    photo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Muscovy_Duck_%28Cairina_moschata%29_male_%2829039391935%29.jpg/330px-Muscovy_Duck_%28Cairina_moschata%29_male_%2829039391935%29.jpg",
+    photo: "/images/hotspots/salineno.webp",
     photoAlt: "Muscovy Duck",
   },
 ];
@@ -428,7 +419,6 @@ export default function HotspotsPage() {
                     src={spot.photo}
                     alt={spot.photoAlt}
                     fill
-                    unoptimized
                     className="object-cover"
                     sizes="56px"
                   />

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/f/f8/Elanus_leucurus_3.jpg";
+const PHOTO = "/images/birds/white-tailed-kite.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/white-tailed-kite" },
@@ -48,7 +47,7 @@ export default function WhiteTailedKitePage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="White-tailed Kite perched showing white plumage and red eyes" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="White-tailed Kite perched showing white plumage and red eyes" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>Photo:{" "}<a href="https://commons.wikimedia.org/wiki/File:Elanus_leucurus_3.jpg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-75 transition-opacity">Wikimedia Commons</a></p>
         </AnimateIn>
@@ -205,7 +204,7 @@ export default function WhiteTailedKitePage() {
             "url": "https://southtexasbirds.org/birds/white-tailed-kite",
             "headline": "White-tailed Kite (Elanus leucurus) | South Texas Birds",
             "description": "White-tailed Kite identification, habitat, and where to find it in South Texas. A ghostly white kite that hunts by hovering motionless in place — a behavior unique among North American raptors.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Elanus_leucurus_3.jpg",
+            "image": "https://southtexasbirds.org/images/birds/white-tailed-kite.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg";
+const PHOTO = "/images/birds/ferruginous-pygmy-owl.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/ferruginous-pygmy-owl" },
@@ -63,7 +62,7 @@ export default function FerrugynousPygmyOwlPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Ferruginous Pygmy-Owl perched in thornscrub, South Texas" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Ferruginous Pygmy-Owl perched in thornscrub, South Texas" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -239,7 +238,7 @@ export default function FerrugynousPygmyOwlPage() {
             "url": "https://southtexasbirds.org/birds/ferruginous-pygmy-owl",
             "headline": "Ferruginous Pygmy-Owl (Glaucidium brasilianum) | South Texas Birds",
             "description": "Ferruginous Pygmy-Owl identification, habitat, and where to find it in the Rio Grande Valley. Tiny but fierce, this diurnal owl is a prized find in the Valley's dense brush.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ferruginous_pygmy_owl_%28Glaucidium_brasilianum_ridgwayi%29_Copan.jpg",
+            "image": "https://southtexasbirds.org/images/birds/ferruginous-pygmy-owl.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

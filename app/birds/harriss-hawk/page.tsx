@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/6/65/Harris%27s_Hawk_%28Parabuteo_unicinctus%29_3_of_4_in_set.jpg";
+const PHOTO = "/images/birds/harriss-hawk.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/harriss-hawk" },
@@ -63,7 +62,7 @@ export default function HarrisHawkPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Harris's Hawk perched in South Texas scrubland" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Harris's Hawk perched in South Texas scrubland" fill priority className="object-cover" style={{ objectPosition: "50% 30%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -233,7 +232,7 @@ export default function HarrisHawkPage() {
             "url": "https://southtexasbirds.org/birds/harriss-hawk",
             "headline": "Harris's Hawk (Parabuteo unicinctus) | South Texas Birds",
             "description": "Harris's Hawk identification, habitat, and where to find it in South Texas. The only hawk in the world known to hunt cooperatively in family groups.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Harris%27s_Hawk_%28Parabuteo_unicinctus%29_3_of_4_in_set.jpg",
+            "image": "https://southtexasbirds.org/images/birds/harriss-hawk.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/b/ba/Roseate_Spoonbill_-_Myakka_River_State_Park.jpg";
+const PHOTO = "/images/birds/roseate-spoonbill.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/roseate-spoonbill" },
@@ -63,7 +62,7 @@ export default function RoseateSpoonbillPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Roseate Spoonbill wading in shallow water, South Texas" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 40%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Roseate Spoonbill wading in shallow water, South Texas" fill priority className="object-cover" style={{ objectPosition: "50% 40%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -232,7 +231,7 @@ export default function RoseateSpoonbillPage() {
             "url": "https://southtexasbirds.org/birds/roseate-spoonbill",
             "headline": "Roseate Spoonbill (Platalea ajaja) | South Texas Birds",
             "description": "Roseate Spoonbill identification, habitat, and where to find it in South Texas. A flamingo-pink wading bird that nests colonially along the Texas coast.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Roseate_Spoonbill_-_Myakka_River_State_Park.jpg",
+            "image": "https://southtexasbirds.org/images/birds/roseate-spoonbill.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

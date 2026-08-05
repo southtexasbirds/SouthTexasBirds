@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/7/7f/Grus_americana_Sasata.jpg";
+const PHOTO = "/images/birds/whooping-crane.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/whooping-crane" },
@@ -86,7 +85,6 @@ export default function WhoopingCranePage() {
               src={PHOTO}
               alt="Whooping Crane wading in shallow coastal marsh water"
               fill
-              unoptimized
               priority
               className="object-cover"
               style={{ objectPosition: "50% 30%" }}
@@ -327,7 +325,7 @@ export default function WhoopingCranePage() {
             "url": "https://southtexasbirds.org/birds/whooping-crane",
             "headline": "Whooping Crane (Grus americana) | South Texas Birds",
             "description": "Whooping Crane identification, habitat, and where to find it on the Texas Gulf Coast. North America's tallest bird and one of conservation's greatest comeback stories.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Grus_americana_Sasata.jpg",
+            "image": "https://southtexasbirds.org/images/birds/whooping-crane.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",

@@ -4,8 +4,7 @@ import Link from "next/link";
 import AnimateIn from "../../components/AnimateIn";
 import HeroFrame from "../../components/HeroFrame";
 
-const PHOTO =
-  "https://upload.wikimedia.org/wikipedia/commons/2/25/Whistling_duck_flight02_-_natures_pics-edit1.jpg";
+const PHOTO = "/images/birds/black-bellied-whistling-duck.webp";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds/black-bellied-whistling-duck" },
@@ -63,7 +62,7 @@ export default function BlackBelliedWhistlingDuckPage() {
             className="w-full rounded-2xl"
             style={{ height: "clamp(220px, 40vw, 420px)", boxShadow: "0 4px 24px rgba(14,107,107,0.13)" }}
           >
-            <Image src={PHOTO} alt="Black-bellied Whistling-Ducks in flight showing bold white wing patches" fill unoptimized priority className="object-cover" style={{ objectPosition: "50% 40%" }} sizes="(max-width: 896px) 100vw, 896px" />
+            <Image src={PHOTO} alt="Black-bellied Whistling-Ducks in flight showing bold white wing patches" fill priority className="object-cover" style={{ objectPosition: "50% 40%" }} sizes="(max-width: 896px) 100vw, 896px" />
           </HeroFrame>
           <p className="text-xs mt-2" style={{ color: "#6E6B66" }}>
             Photo:{" "}
@@ -233,7 +232,7 @@ export default function BlackBelliedWhistlingDuckPage() {
             "url": "https://southtexasbirds.org/birds/black-bellied-whistling-duck",
             "headline": "Black-bellied Whistling-Duck (Dendrocygna autumnalis) | South Texas Birds",
             "description": "Black-bellied Whistling-Duck identification, habitat, and where to find it in the Rio Grande Valley. This colorful, noisy duck has expanded dramatically across South Texas.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Whistling_duck_flight02_-_natures_pics-edit1.jpg",
+            "image": "https://southtexasbirds.org/images/birds/black-bellied-whistling-duck.webp",
                         "author": { "@type": "Organization", "name": "South Texas Birds", "url": "https://southtexasbirds.org" },
             "publisher": {
               "@type": "Organization",
