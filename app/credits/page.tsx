@@ -77,6 +77,13 @@ const credits: PhotoCredit[] = [
     commonsFile: "Julie_Waters_broad_winged_hawk.JPG",
   },
   {
+    subject: "Brown Jay",
+    photographer: "Andy Reago & Chrissy McClarren",
+    license: "CC BY 2.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/2.0",
+    commonsFile: "Brown_Jay_(25018938602).jpg",
+  },
+  {
     subject: "Buff-bellied Hummingbird",
     photographer: "HarmonyonPlanetEarth",
     license: "CC BY 2.0",
@@ -220,7 +227,7 @@ const credits: PhotoCredit[] = [
     commonsFile: "MottledDuck_Gam.jpg",
   },
   {
-    subject: "Muscovy Duck (Salineño hotspot)",
+    subject: "Muscovy Duck",
     photographer: "Bernard DUPONT",
     license: "CC BY-SA 2.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",
@@ -417,7 +424,7 @@ export default function CreditsPage() {
           >
             Wikimedia Commons
           </a>
-          . 50 of 51 images are published under Creative Commons licenses that require
+          . 51 of 52 images are published under Creative Commons licenses that require
           crediting the specific photographer. Click{" "}
           <span style={{ color: "#0E6B6B", fontWeight: 600 }}>Source →</span> on any row to
           view the original file and full license text on Wikimedia Commons.
@@ -431,7 +438,7 @@ export default function CreditsPage() {
               border: "1px solid rgba(14,107,107,0.18)",
             }}
           >
-            50 CC-licensed images
+            51 CC-licensed images
           </span>
           <span
             className="px-3 py-1 rounded-full font-medium"

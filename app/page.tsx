@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   title: { absolute: "South Texas Birds | Rio Grande Valley Birding Guide" },
   description:
-    "The complete South Texas birding guide. 50 species profiles, 9 RGV hotspot guides, and 14 field articles — everything you need to see Green Jays, Hook-billed Kites, and Whooping Cranes.",
+    "The complete South Texas birding guide. 52 species profiles, 9 RGV hotspot guides, and 14 field articles — everything you need to see Green Jays, Hook-billed Kites, and Whooping Cranes.",
   openGraph: {
     title: "South Texas Birds | Rio Grande Valley Birding Guide",
     description:
-      "The complete guide to South Texas birding — the only U.S. region where Green Jays, Hook-billed Kites, and reintroduced Aplomado Falcons make their home. 50 species · 9 hotspots · 14 articles.",
+      "The complete guide to South Texas birding — the only U.S. region where Green Jays, Hook-billed Kites, and reintroduced Aplomado Falcons make their home. 52 species · 9 hotspots · 14 articles.",
     images: [
       {
         url: "https://southtexasbirds.org/images/og-default.jpg",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     images: ["https://southtexasbirds.org/images/og-default.jpg"],
     title: "South Texas Birds | Rio Grande Valley Birding Guide",
     description:
-      "The complete guide to South Texas birding. 50 species profiles, 9 hotspot guides, Hook-billed Kites, Green Jays, Whooping Cranes.",
+      "The complete guide to South Texas birding. 52 species profiles, 9 hotspot guides, Hook-billed Kites, Green Jays, Whooping Cranes.",
   },
 };
 
@@ -291,7 +291,7 @@ export default function HomePage() {
                 className="text-sm font-medium transition-opacity hover:opacity-70"
                 style={{ color: "#C77F4A" }}
               >
-                View all 50 species →
+                View all 52 species →
               </Link>
             </div>
           </AnimateIn>
@@ -436,7 +436,7 @@ export default function HomePage() {
                 className="inline-block font-semibold px-8 py-3 rounded-lg border transition-colors text-sm"
                 style={{ borderColor: "#0E6B6B", color: "#0E6B6B" }}
               >
-                Browse 50 Species
+                Browse 52 Species
               </Link>
             </div>
           </AnimateIn>
@@ -452,7 +452,7 @@ export default function HomePage() {
             "name": "South Texas Birds",
             "url": "https://southtexasbirds.org",
             "logo": "https://southtexasbirds.org/icon.svg",
-            "description": "The complete birding guide for the Rio Grande Valley and South Texas coast — 50 species profiles, 9 hotspot guides, and 14 destination articles covering the only U.S. region where Green Jays, Hook-billed Kites, and reintroduced Aplomado Falcons make their home.",
+            "description": "The complete birding guide for the Rio Grande Valley and South Texas coast — 52 species profiles, 9 hotspot guides, and 14 destination articles covering the only U.S. region where Green Jays, Hook-billed Kites, and reintroduced Aplomado Falcons make their home.",
             "sameAs": ["https://github.com/southtexasbirds"],
           }),
         }}

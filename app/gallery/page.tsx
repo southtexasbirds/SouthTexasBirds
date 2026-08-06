@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gallery" },
   title: { absolute: "Bird Photo Gallery | South Texas Birds" },
   description:
-    "Photos of 50 specialty and notable bird species of the Rio Grande Valley and South Texas coast — Green Jay, Whooping Crane, Roseate Spoonbill, and more.",
+    "Photos of 52 specialty and notable bird species of the Rio Grande Valley and South Texas coast — Green Jay, Whooping Crane, Roseate Spoonbill, and more.",
   openGraph: {
     title: "Bird Photo Gallery | South Texas Birds",
     description:
-      "Photos of 50 specialty and notable bird species of the Rio Grande Valley and South Texas coast.",
+      "Photos of 52 specialty and notable bird species of the Rio Grande Valley and South Texas coast.",
     images: [{ url: OG_IMAGE, width: 1200,
         height: 630, alt: "Altamira Oriole in South Texas" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
     title: "Bird Photo Gallery | South Texas Birds",
     description:
-      "Photos of 50 specialty and notable bird species of the Rio Grande Valley and South Texas coast.",
+      "Photos of 52 specialty and notable bird species of the Rio Grande Valley and South Texas coast.",
   },
 };
 

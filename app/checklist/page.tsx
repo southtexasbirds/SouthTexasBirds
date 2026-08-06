@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/checklist" },
   title: { absolute: "Printable Bird Checklist | South Texas Birds" },
   description:
-    "A printable checklist of 50 specialty and notable bird species of the Rio Grande Valley and South Texas coast, grouped by family.",
+    "A printable checklist of 52 specialty and notable bird species of the Rio Grande Valley and South Texas coast, grouped by family.",
   openGraph: {
     title: "Printable Bird Checklist | South Texas Birds",
     description:
-      "A printable checklist of 50 specialty and notable bird species of the Rio Grande Valley and South Texas coast, grouped by family.",
+      "A printable checklist of 52 specialty and notable bird species of the Rio Grande Valley and South Texas coast, grouped by family.",
     images: [{ url: OG_IMAGE, width: 1200,
         height: 630, alt: "Altamira Oriole in South Texas" }],
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
     title: "Printable Bird Checklist | South Texas Birds",
     description:
-      "A printable checklist of 50 specialty and notable bird species of the Rio Grande Valley and South Texas coast, grouped by family.",
+      "A printable checklist of 52 specialty and notable bird species of the Rio Grande Valley and South Texas coast, grouped by family.",
   },
 };
 

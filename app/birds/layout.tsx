@@ -3,13 +3,13 @@ import BirdNav from "../components/BirdNav";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/birds" },
-  title: { absolute: "50+ South Texas Bird Species | Rio Grande Valley Birding Guide" },
+  title: { absolute: "52 South Texas Bird Species | Rio Grande Valley Birding Guide" },
   description:
-    "Explore 50+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more. Filter by residency status, season, and habitat.",
+    "Explore 52 Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more. Filter by residency status, season, and habitat.",
   openGraph: {
-    title: "50+ South Texas Bird Species | Rio Grande Valley Birding Guide",
+    title: "52 South Texas Bird Species | Rio Grande Valley Birding Guide",
     description:
-      "Explore 50+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more.",
+      "Explore 52 Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more.",
     type: "website",
     images: [
       {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "50+ South Texas Bird Species | Rio Grande Valley Birding Guide",
+    title: "52 South Texas Bird Species | Rio Grande Valley Birding Guide",
     description:
-      "Explore 50+ Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more.",
+      "Explore 52 Rio Grande Valley specialty birds: Green Jay, Altamira Oriole, Aplomado Falcon, Whooping Crane, and more.",
     images: [
       "https://southtexasbirds.org/images/og-default.jpg",
     ],

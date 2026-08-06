@@ -49,6 +49,8 @@ export const BIRDS_ORDER: { name: string; slug: string }[] = [
   { name: "Mottled Duck",                  slug: "mottled-duck" },
   { name: "Piping Plover",                 slug: "piping-plover" },
   { name: "Botteri's Sparrow",             slug: "botteris-sparrow" },
+  { name: "Muscovy Duck",                  slug: "muscovy-duck" },
+  { name: "Brown Jay",                     slug: "brown-jay" },
 ];
 
 export const toBirdId = (name: string): string =>
@@ -118,4 +120,7 @@ export const RELATED_SPECIES: Record<string, string[]> = {
   // Shorebirds
   "american-oystercatcher":      ["piping-plover", "reddish-egret", "mottled-duck"],
   "piping-plover":               ["american-oystercatcher", "mottled-duck", "whooping-crane"],
+  // Salineño specialties (current and historical)
+  "muscovy-duck":                ["black-bellied-whistling-duck", "mottled-duck", "masked-duck"],
+  "brown-jay":                   ["green-jay", "audubons-oriole", "long-billed-thrasher"],
 };
