@@ -458,4 +458,13 @@ export const birds = [
     notes: "Not the warty barnyard bird of city parks — the true wild Muscovy Duck barely reaches the U.S. along the Rio Grande, dark and iridescent with a bold white wing patch. Salineño is by far the most reliable U.S. site, best scanned from the riverbank at dawn.",
     photo: "/images/birds/muscovy-duck-thumb.webp",
   },
+  {
+    name: "Brown Jay",
+    scientific: "Cyanocorax morio",
+    family: "Jays & Crows",
+    status: "Historical / vagrant",
+    habitat: "Riparian forest along the Rio Grande (historical)",
+    notes: "Once a reliable specialty of the Salineño/Falcon Dam stretch of the river, regular sightings faded through the 2010s and the species is now effectively absent from the U.S. Any record today is exceptional — this is a former specialty to know about, not a bird to plan a trip around.",
+    photo: "/images/birds/brown-jay-thumb.webp",
+  },
 ];

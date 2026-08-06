@@ -116,6 +116,7 @@ const birdHotspotMap: Record<string, { label: string; anchor: string }[]> = {
   "Mottled Duck": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
   "Piping Plover": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
   "Muscovy Duck": [{ label: "Salineño", anchor: "salineno" }],
+  "Brown Jay": [{ label: "Salineño", anchor: "salineno" }],
 };
 
 // Status badge inline styles — no Tailwind color utilities
@@ -150,6 +151,12 @@ function statusBadgeStyle(status: string): CSSProperties {
       color: "#8A6518",
       border: "1px solid rgba(212,162,76,0.25)",
     };
+  if (status === "Historical / vagrant")
+    return {
+      background: "rgba(110,107,102,0.1)",
+      color: "#6E6B66",
+      border: "1px solid rgba(110,107,102,0.3)",
+    };
   // Resident (all remaining variants)
   return {
     background: "rgba(14,107,107,0.08)",
@@ -164,9 +171,10 @@ const statusGroups: Record<string, string[]> = {
   Winter: ["Winter visitor", "Winter visitor / migrant"],
   Summer: ["Summer resident"],
   Migrant: ["Migrant"],
+  Historical: ["Historical / vagrant"],
 };
 
-const filterLabels = ["All", "Resident", "Rare", "Winter", "Summer", "Migrant"] as const;
+const filterLabels = ["All", "Resident", "Rare", "Winter", "Summer", "Migrant", "Historical"] as const;
 type Filter = (typeof filterLabels)[number];
 
 export default function BirdsPage() {

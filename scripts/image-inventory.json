@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-08-06",
-  "totalInventoryEntries": 60,
-  "uniqueSourceFilesToDownload": 51,
+  "totalInventoryEntries": 61,
+  "uniqueSourceFilesToDownload": 52,
   "species": [
     {
       "slug": "green-jay",
@@ -564,6 +564,17 @@
       ],
       "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Muscovy_Duck_(Cairina_moschata)_male_(29039391935).jpg",
       "notes": "Same source file as the salineno hotspot card photo (wild-type bird — dark plumage, white wing patch, minimal facial caruncle, not the warty feral park type). Deduped by sourceUrl in migrate-images.mjs."
+    },
+    {
+      "slug": "brown-jay",
+      "name": "Brown Jay",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Brown_Jay_%2825018938602%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/brown-jay/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Brown_Jay_(25018938602).jpg"
     }
   ],
   "hotspots": [

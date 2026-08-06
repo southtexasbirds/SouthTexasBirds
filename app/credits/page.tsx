@@ -77,6 +77,13 @@ const credits: PhotoCredit[] = [
     commonsFile: "Julie_Waters_broad_winged_hawk.JPG",
   },
   {
+    subject: "Brown Jay",
+    photographer: "Andy Reago & Chrissy McClarren",
+    license: "CC BY 2.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/2.0",
+    commonsFile: "Brown_Jay_(25018938602).jpg",
+  },
+  {
     subject: "Buff-bellied Hummingbird",
     photographer: "HarmonyonPlanetEarth",
     license: "CC BY 2.0",
