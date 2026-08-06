@@ -80,6 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {[
               { href: "/birds", label: "Species" },
               { href: "/hotspots", label: "Hotspots" },
+              { href: "/when-to-go", label: "When to Go" },
               { href: "/news", label: "News" },
               { href: "/gear", label: "Gear" },
               { href: "/gallery", label: "Gallery" },

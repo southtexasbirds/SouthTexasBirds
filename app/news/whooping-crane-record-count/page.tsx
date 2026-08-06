@@ -128,6 +128,16 @@ export default function WhoopingCraneRecordCountPage() {
         </AnimateIn>
 
         <AnimateIn>
+          <section className="rounded-2xl p-7" style={{ background: "#F7F0E4", boxShadow: "0 1px 6px rgba(14,107,107,0.07)" }}>
+            <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
+              Planning a visit to see them? The{" "}
+              <Link href="/when-to-go/november" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>November birding guide</Link>
+              {" "}covers exactly when the viewing season opens at Aransas.
+            </p>
+          </section>
+        </AnimateIn>
+
+        <AnimateIn>
           <p className="text-xs" style={{ color: "#6E6B66" }}>
             <span className="font-semibold">Source:</span> U.S. Fish and Wildlife Service 2024–2025 winter survey,
             The Invading Sea

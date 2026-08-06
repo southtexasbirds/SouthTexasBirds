@@ -216,7 +216,7 @@ export const MONTH_GUIDE_DETAILS: Record<string, MonthGuideDetail> = {
       { name: "Vermilion Flycatcher", slug: "vermilion-flycatcher" },
       { name: "Piping Plover", slug: "piping-plover" },
       { name: "Mottled Duck", slug: "mottled-duck" },
-      { name: "Black-bellied Whistling-Duck", slug: "black-bellied-whistling-duck" },
+      { name: "American Oystercatcher", slug: "american-oystercatcher" },
       { name: "Neotropic Cormorant", slug: "neotropic-cormorant" },
     ],
     hotspots: [

@@ -161,7 +161,7 @@ export default function VermilionFlycatcherPage() {
           <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
             <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
-              <strong>October through April</strong> — Vermilion Flycatchers are winter residents in South Texas, arriving from more northern breeding grounds in October and departing by early May. Numbers peak in <strong>December and January</strong>, when brilliant adult males are easiest to spot perched on exposed branches near water. Any park pond or resaca in the Valley is worth checking. Estero Llano Grande and Bentsen both reliably host multiple individuals throughout winter.
+              <strong>October through April</strong> — Vermilion Flycatchers are winter residents in South Texas, arriving from more northern breeding grounds in October and departing by early May. Numbers peak in <strong>December and January</strong>, when brilliant adult males are easiest to spot perched on exposed branches near water. Any park pond or resaca in the Valley is worth checking. Estero Llano Grande and Bentsen both reliably host multiple individuals throughout winter. See the <Link href="/when-to-go/october" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>October birding guide</Link> for the start of that arrival.
             </p>
           </section>
         </AnimateIn>

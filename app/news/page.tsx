@@ -32,7 +32,12 @@ export default function NewsPage() {
           News &amp; Conservation
         </h1>
         <p className="text-sm" style={{ color: "#5C5954" }}>
-          Updates on the birds, habitat, and conservation issues shaping South Texas.
+          Updates on the birds, habitat, and conservation issues shaping South Texas. Planning a
+          trip instead? See the{" "}
+          <Link href="/when-to-go" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>
+            month-by-month birding guide
+          </Link>
+          {" "}for what to expect on the ground.
         </p>
       </div>
 

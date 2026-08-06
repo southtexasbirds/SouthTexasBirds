@@ -214,6 +214,14 @@ export default function SouthTexasBirdingCalendarPage() {
               <li><strong>Whooping Cranes:</strong> Boat tours from Rockport book out — reserve in advance for any visit between November and March</li>
               <li><strong>Summer strategy:</strong> If visiting June–August, focus on dawn and dusk; avoid midday; stay at parks with air conditioning nearby</li>
             </ul>
+            <p className="text-sm leading-relaxed mt-4" style={{ color: "#4E4B46" }}>
+              For a deeper dive on specific months, see the{" "}
+              <Link href="/when-to-go/september" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>September</Link>
+              , <Link href="/when-to-go/october" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>October</Link>
+              , and{" "}
+              <Link href="/when-to-go/november" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>November</Link>
+              {" "}birding guides, with weather specifics, target species, and hotspot recommendations for each.
+            </p>
           </section>
         </AnimateIn>
 

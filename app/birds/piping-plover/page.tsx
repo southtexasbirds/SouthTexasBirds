@@ -235,7 +235,7 @@ export default function PipingPloverPage() {
           <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
             <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
-              <strong>October through April</strong> — Piping Plovers are strictly winter visitors to South Texas, arriving from northern breeding grounds in late summer and departing in April. Peak numbers are on the Laguna Madre tidal flats, especially accessible from the Laguna Atascosa NWR shoreline and the South Padre Island beaches. Their camouflage is extraordinary on a pale sand beach — the melodious <em>peep-lo</em> call is often what reveals them first. Scan sandy beaches and bare tidal flats methodically.
+              <strong>October through April</strong> — Piping Plovers are strictly winter visitors to South Texas, arriving from northern breeding grounds in late summer and departing in April. Peak numbers are on the Laguna Madre tidal flats, especially accessible from the Laguna Atascosa NWR shoreline and the South Padre Island beaches. Their camouflage is extraordinary on a pale sand beach — the melodious <em>peep-lo</em> call is often what reveals them first. Scan sandy beaches and bare tidal flats methodically. See the <Link href="/when-to-go/october" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>October birding guide</Link> for how this fits the fall shorebird season.
             </p>
           </section>
         </AnimateIn>

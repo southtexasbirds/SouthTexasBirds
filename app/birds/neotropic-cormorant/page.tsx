@@ -152,7 +152,7 @@ export default function NeotropicCormorantPage() {
           <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
             <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
-              <strong>Year-round</strong> — Neotropic Cormorants are permanent residents throughout South Texas and increasingly common. They are easiest to observe at ponds and resacas where they perch on exposed snags to dry their wings. Any water feature at the Valley nature centers will typically have both Neotropic and Double-crested Cormorants for direct comparison. <strong>Winter</strong> brings the largest concentrations, when cormorant flocks gather at productive fishing areas on the Rio Grande and coastal bays.
+              <strong>Year-round</strong> — Neotropic Cormorants are permanent residents throughout South Texas and increasingly common. They are easiest to observe at ponds and resacas where they perch on exposed snags to dry their wings. Any water feature at the Valley nature centers will typically have both Neotropic and Double-crested Cormorants for direct comparison. <strong>Winter</strong> brings the largest concentrations, when cormorant flocks gather at productive fishing areas on the Rio Grande and coastal bays. See the <Link href="/when-to-go/november" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>November birding guide</Link> for the start of that build-up.
             </p>
           </section>
         </AnimateIn>

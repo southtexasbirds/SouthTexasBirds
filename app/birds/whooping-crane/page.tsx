@@ -221,7 +221,9 @@ export default function WhoopingCranePage() {
             </div>
             <p className="text-xs mt-3" style={{ color: "#6E6B66" }}>
               Best viewing window: November through March. Guided boat tours from Rockport Harbor
-              offer the closest views of birds feeding in San Antonio Bay.
+              offer the closest views of birds feeding in San Antonio Bay. See the{" "}
+              <Link href="/when-to-go/november" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>November birding guide</Link>{" "}
+              for the start of that season.
             </p>
           </section>
         </AnimateIn>

@@ -160,7 +160,7 @@ export default function RoseateSpoonbillPage() {
           <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
             <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
-              <strong>Year-round along the coast</strong>, but post-breeding dispersal from July through September brings Roseate Spoonbills to inland sites they don&apos;t typically use during the breeding season. The largest concentrations are at Aransas NWR and the Laguna Madre shallows from late summer through early winter. South Padre Island Birding Center is excellent any month, particularly at high tide when birds concentrate in the viewing pond.
+              <strong>Year-round along the coast</strong>, but post-breeding dispersal from July through September brings Roseate Spoonbills to inland sites they don&apos;t typically use during the breeding season. The largest concentrations are at Aransas NWR and the Laguna Madre shallows from late summer through early winter. South Padre Island Birding Center is excellent any month, particularly at high tide when birds concentrate in the viewing pond. See the <Link href="/when-to-go/october" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>October birding guide</Link> for more on this dispersal window.
             </p>
           </section>
         </AnimateIn>

@@ -223,6 +223,11 @@ export default function FallHawkMigrationPage() {
               <li><strong>What to bring:</strong> Binoculars (8×42 is ideal for tracking distant kettles), a wide-angle spotting scope if you have one, and water — September in the Valley is still hot</li>
               <li><strong>Bentsen tips:</strong> Park at the visitor center and take the tram or walk to the hawk tower; the park opens at 7 a.m. and fills up on peak days — arrive early</li>
             </ul>
+            <p className="text-sm leading-relaxed mt-4" style={{ color: "#4E4B46" }}>
+              See the{" "}
+              <Link href="/when-to-go/september" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>September birding guide</Link>
+              {" "}for how the hawk watch fits alongside the rest of what&apos;s happening that month.
+            </p>
           </section>
         </AnimateIn>
 

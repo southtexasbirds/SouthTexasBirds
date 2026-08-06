@@ -197,6 +197,11 @@ export default function FallShorebirdSeasonPage() {
               <li><strong>Tidal timing:</strong> Low tide exposes the most feeding habitat — check tide tables and plan your visit for the 2 hours before and after low tide</li>
               <li><strong>What to bring:</strong> Spotting scope (20–60× zoom) for close views of roosting flocks, polarized sunglasses to cut Laguna glare, sun protection — summer and fall on the island is hot and exposed</li>
             </ul>
+            <p className="text-sm leading-relaxed mt-4" style={{ color: "#4E4B46" }}>
+              See the{" "}
+              <Link href="/when-to-go/september" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>September birding guide</Link>
+              {" "}for how a shorebird morning pairs with the Valley&apos;s hawk migration inland.
+            </p>
           </section>
         </AnimateIn>
 

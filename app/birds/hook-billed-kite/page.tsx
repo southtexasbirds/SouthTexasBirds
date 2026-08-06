@@ -158,7 +158,7 @@ export default function HookBilledKitePage() {
           <section className="rounded-2xl p-7" style={{ background: "rgba(14,107,107,0.06)", border: "1px solid rgba(14,107,107,0.15)" }}>
             <h2 className="font-serif text-xl font-bold mb-3" style={{ color: "#0E6B6B" }}>Best Time to See</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
-              <strong>Year-round at Salineño</strong> — the Hook-billed Kite&apos;s most reliable territory in the U.S. is along the Rio Grande at Salineño Wildlife Preserve, where birds are present in every month. Early morning is best: arrive before 8 a.m. and scan the woodland edge above the river. <strong>September</strong> is a bonus window when birds are more likely to soar high on thermals alongside migrating raptors at Bentsen. Calm, sunny mornings after a cold front passage maximize soaring activity.
+              <strong>Year-round at Salineño</strong> — the Hook-billed Kite&apos;s most reliable territory in the U.S. is along the Rio Grande at Salineño Wildlife Preserve, where birds are present in every month. Early morning is best: arrive before 8 a.m. and scan the woodland edge above the river. <strong>September</strong> is a bonus window when birds are more likely to soar high on thermals alongside migrating raptors at Bentsen — see the <Link href="/when-to-go/september" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>September birding guide</Link> for more on that hawk watch. Calm, sunny mornings after a cold front passage maximize soaring activity.
             </p>
           </section>
         </AnimateIn>

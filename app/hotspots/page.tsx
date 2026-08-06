@@ -353,6 +353,15 @@ export default function HotspotsPage() {
         </h1>
         <p className="text-sm max-w-xl" style={{ color: "#5C5954" }}>
           Nine essential stops for any birding trip to the Lower Rio Grande Valley and South Texas coast.
+          Each site&apos;s best season is noted below — see the{" "}
+          <Link
+            href="/when-to-go"
+            className="underline underline-offset-2 hover:opacity-75 transition-opacity"
+            style={{ color: "#5C5954" }}
+          >
+            month-by-month guide
+          </Link>
+          {" "}for what&apos;s happening across the whole Valley in a given month.
           {" "}Photos via{" "}
           <a
             href="https://commons.wikimedia.org"

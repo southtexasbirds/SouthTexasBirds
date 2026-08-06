@@ -115,12 +115,14 @@ export default function NovemberPage() {
             <p className="text-sm leading-relaxed" style={{ color: "#4E4B46" }}>
               On the water, that means building numbers of{" "}
               <Link href="/birds/mottled-duck" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Mottled Duck</Link>
-              , <Link href="/birds/black-bellied-whistling-duck" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Black-bellied Whistling-Duck</Link>
-              , and{" "}
+              {" "}and{" "}
               <Link href="/birds/neotropic-cormorant" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Neotropic Cormorant</Link>
-              {" "}on the resacas and impoundments — species present year-round on this site but
-              genuinely easiest to find in quantity once regional wintering waterfowl swell the
-              numbers around them.{" "}
+              {" "}on the resacas and impoundments — both present year-round on this site but at
+              their most concentrated once regional wintering waterfowl swell the numbers around
+              them. On the coast,{" "}
+              <Link href="/birds/american-oystercatcher" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>American Oystercatcher</Link>
+              {" "}enters its most productive period — October through March — as shorebird
+              diversity along the Laguna Madre peaks and beach traffic drops.{" "}
               <Link href="/birds/piping-plover" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Piping Plover</Link>
               {" "}and{" "}
               <Link href="/birds/vermilion-flycatcher" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>Vermilion Flycatcher</Link>

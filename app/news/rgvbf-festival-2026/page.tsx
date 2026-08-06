@@ -166,7 +166,9 @@ export default function RGVBFFestival2026Page() {
               >
                 rgvbf.org
               </a>{" "}
-              for announcements.
+              for announcements. See the{" "}
+              <Link href="/when-to-go/november" className="underline underline-offset-2 hover:opacity-75 transition-opacity" style={{ color: "#0E6B6B" }}>November birding guide</Link>
+              {" "}for what else opens up in the Valley that same month.
             </p>
           </section>
         </AnimateIn>
