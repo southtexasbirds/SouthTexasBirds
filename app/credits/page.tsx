@@ -424,7 +424,7 @@ export default function CreditsPage() {
           >
             Wikimedia Commons
           </a>
-          . 50 of 51 images are published under Creative Commons licenses that require
+          . 51 of 52 images are published under Creative Commons licenses that require
           crediting the specific photographer. Click{" "}
           <span style={{ color: "#0E6B6B", fontWeight: 600 }}>Source →</span> on any row to
           view the original file and full license text on Wikimedia Commons.
@@ -438,7 +438,7 @@ export default function CreditsPage() {
               border: "1px solid rgba(14,107,107,0.18)",
             }}
           >
-            50 CC-licensed images
+            51 CC-licensed images
           </span>
           <span
             className="px-3 py-1 rounded-full font-medium"
