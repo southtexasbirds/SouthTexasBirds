@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-05",
-  "totalInventoryEntries": 59,
+  "generatedAt": "2026-08-06",
+  "totalInventoryEntries": 60,
   "uniqueSourceFilesToDownload": 51,
   "species": [
     {
@@ -552,6 +552,18 @@
         "app/birds/botteris-sparrow/page.tsx (PHOTO const — species page hero)"
       ],
       "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Aimophila_botterii.jpg"
+    },
+    {
+      "slug": "muscovy-duck",
+      "name": "Muscovy Duck",
+      "category": "species",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Muscovy_Duck_%28Cairina_moschata%29_male_%2829039391935%29.jpg",
+      "usage": [
+        "app/birds/data.ts (photo field — species card thumb on /birds and /gallery)",
+        "app/birds/muscovy-duck/page.tsx (PHOTO const — species page hero)"
+      ],
+      "wikiFilePageUrl": "https://commons.wikimedia.org/wiki/File:Muscovy_Duck_(Cairina_moschata)_male_(29039391935).jpg",
+      "notes": "Same source file as the salineno hotspot card photo (wild-type bird — dark plumage, white wing patch, minimal facial caruncle, not the warty feral park type). Deduped by sourceUrl in migrate-images.mjs."
     }
   ],
   "hotspots": [
@@ -647,6 +659,13 @@
     }
   ],
   "sharedSourceFiles": [
+    {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Muscovy_Duck_%28Cairina_moschata%29_male_%2829039391935%29.jpg",
+      "usedBy": [
+        "muscovy-duck (species)",
+        "salineno (hotspot)"
+      ]
+    },
     {
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Green_jay_%28Cyanocorax_luxuosus%29_in_Mission%2C_Texas%2C_USA.png",
       "usedBy": [

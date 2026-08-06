@@ -115,6 +115,7 @@ const birdHotspotMap: Record<string, { label: string; anchor: string }[]> = {
   "Tropical Parula": [{ label: "Resaca de la Palma", anchor: "resaca-de-la-palma" }],
   "Mottled Duck": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
   "Piping Plover": [{ label: "Laguna Atascosa", anchor: "laguna-atascosa" }],
+  "Muscovy Duck": [{ label: "Salineño", anchor: "salineno" }],
 };
 
 // Status badge inline styles — no Tailwind color utilities

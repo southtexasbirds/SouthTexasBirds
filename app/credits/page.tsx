@@ -220,7 +220,7 @@ const credits: PhotoCredit[] = [
     commonsFile: "MottledDuck_Gam.jpg",
   },
   {
-    subject: "Muscovy Duck (Salineño hotspot)",
+    subject: "Muscovy Duck",
     photographer: "Bernard DUPONT",
     license: "CC BY-SA 2.0",
     licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",

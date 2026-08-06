@@ -449,4 +449,13 @@ export const birds = [
     notes: "A nondescript sparrow that arrives in summer specifically to breed in Tamaulipan coastal grasslands. Nearly impossible to find without its song — a series of chips and trills that accelerates into a distinctive bouncing-ball rattle. The Sabal Palm Sanctuary near Brownsville is a reliable site.",
     photo: "/images/birds/botteris-sparrow-thumb.webp",
   },
+  {
+    name: "Muscovy Duck",
+    scientific: "Cairina moschata",
+    family: "Ducks",
+    status: "Rare resident",
+    habitat: "Rio Grande riverbanks and backwaters",
+    notes: "Not the warty barnyard bird of city parks — the true wild Muscovy Duck barely reaches the U.S. along the Rio Grande, dark and iridescent with a bold white wing patch. Salineño is by far the most reliable U.S. site, best scanned from the riverbank at dawn.",
+    photo: "/images/birds/muscovy-duck-thumb.webp",
+  },
 ];
