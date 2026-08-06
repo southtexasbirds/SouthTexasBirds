@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Plain Chachalaca | South Texas Birds",
     description:
       "Plain Chachalaca identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Plain Chachalaca perched roadside in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/plain-chachalaca.webp", alt: "Plain Chachalaca perched roadside in South Texas" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://southtexasbirds.org/images/og-default.jpg"],
+    images: ["https://southtexasbirds.org/images/birds/plain-chachalaca.webp"],
   },
 };
 

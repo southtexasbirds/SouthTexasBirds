@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Ferruginous Pygmy-Owl | South Texas Birds",
     description: "Ferruginous Pygmy-Owl identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Ferruginous Pygmy-Owl perched in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/ferruginous-pygmy-owl.webp", alt: "Ferruginous Pygmy-Owl perched in South Texas" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

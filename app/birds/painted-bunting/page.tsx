@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Painted Bunting | South Texas Birds",
     description:
       "Painted Bunting identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Male Painted Bunting singing" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/painted-bunting.webp", alt: "Male Painted Bunting singing" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

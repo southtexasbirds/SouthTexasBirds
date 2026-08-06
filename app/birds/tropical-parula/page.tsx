@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Tropical Parula | South Texas Birds",
     description: "Tropical Parula identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Tropical Parula showing blue-gray upperparts and yellow underparts" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/tropical-parula.webp", alt: "Tropical Parula showing blue-gray upperparts and yellow underparts" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

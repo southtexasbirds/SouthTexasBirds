@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Roseate Spoonbill | South Texas Birds",
     description: "Roseate Spoonbill identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Roseate Spoonbill wading in shallow water" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/roseate-spoonbill.webp", alt: "Roseate Spoonbill wading in shallow water" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

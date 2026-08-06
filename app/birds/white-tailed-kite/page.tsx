@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "White-tailed Kite | South Texas Birds",
     description: "White-tailed Kite identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "White-tailed Kite perched showing white plumage and red eyes" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/white-tailed-kite.webp", alt: "White-tailed Kite perched showing white plumage and red eyes" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

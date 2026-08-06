@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Broad-winged Hawk | South Texas Birds",
     description: "Broad-winged Hawk identification and migration in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Broad-winged Hawk perched on a branch" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/broad-winged-hawk.webp", alt: "Broad-winged Hawk perched on a branch" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

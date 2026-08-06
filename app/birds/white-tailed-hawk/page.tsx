@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "White-tailed Hawk | South Texas Birds",
     description: "White-tailed Hawk identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "White-tailed Hawk perched showing white tail and rusty shoulders" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/white-tailed-hawk.webp", alt: "White-tailed Hawk perched showing white tail and rusty shoulders" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

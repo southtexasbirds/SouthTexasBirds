@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Harris's Hawk | South Texas Birds",
     description: "Harris's Hawk identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Harris's Hawk perched in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/harriss-hawk.webp", alt: "Harris's Hawk perched in South Texas" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Audubon's Oriole | South Texas Birds",
     description: "Audubon's Oriole identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Audubon's Oriole showing black hood and yellow body" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/audubons-oriole.webp", alt: "Audubon's Oriole showing black hood and yellow body" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

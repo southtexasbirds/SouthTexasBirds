@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Northern Jacana | South Texas Birds",
     description: "Northern Jacana identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Northern Jacana walking on lily pads in Costa Rica" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/northern-jacana.webp", alt: "Northern Jacana walking on lily pads in Costa Rica" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

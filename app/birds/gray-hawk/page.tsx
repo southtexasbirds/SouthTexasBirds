@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Gray Hawk | South Texas Birds",
     description: "Gray Hawk identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Gray Hawk perched in riparian woodland" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/gray-hawk.webp", alt: "Gray Hawk perched in riparian woodland" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

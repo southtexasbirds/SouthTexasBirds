@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Buff-bellied Hummingbird | South Texas Birds",
     description:
       "Buff-bellied Hummingbird identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Buff-bellied Hummingbird at Sabal Palm Sanctuary, South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/buff-bellied-hummingbird.webp", alt: "Buff-bellied Hummingbird at Sabal Palm Sanctuary, South Texas" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://southtexasbirds.org/images/og-default.jpg"],
+    images: ["https://southtexasbirds.org/images/birds/buff-bellied-hummingbird.webp"],
   },
 };
 

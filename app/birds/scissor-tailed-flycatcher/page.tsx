@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Scissor-tailed Flycatcher | South Texas Birds",
     description: "Scissor-tailed Flycatcher identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Scissor-tailed Flycatcher perched showing long forked tail" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/scissor-tailed-flycatcher.webp", alt: "Scissor-tailed Flycatcher perched showing long forked tail" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

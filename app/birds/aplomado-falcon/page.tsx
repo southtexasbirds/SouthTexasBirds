@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Aplomado Falcon | South Texas Birds",
     description:
       "Aplomado Falcon identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Aplomado Falcon perched on a post in South Texas coastal prairie" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/aplomado-falcon.webp", alt: "Aplomado Falcon perched on a post in South Texas coastal prairie" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://southtexasbirds.org/images/og-default.jpg"],
+    images: ["https://southtexasbirds.org/images/birds/aplomado-falcon.webp"],
   },
 };
 

@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Mottled Duck | South Texas Birds",
     description:
       "Mottled Duck identification, habitat, and where to find it along the Texas Gulf Coast.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Mottled Duck on a coastal marsh" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/mottled-duck.webp", alt: "Mottled Duck on a coastal marsh" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://southtexasbirds.org/images/og-default.jpg"],
+    images: ["https://southtexasbirds.org/images/birds/mottled-duck.webp"],
   },
 };
 

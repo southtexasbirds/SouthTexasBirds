@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Long-billed Thrasher | South Texas Birds",
     description: "Long-billed Thrasher identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Long-billed Thrasher at Laguna Atascosa NWR" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/long-billed-thrasher.webp", alt: "Long-billed Thrasher at Laguna Atascosa NWR" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

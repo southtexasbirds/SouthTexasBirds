@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Tricolored Heron | South Texas Birds",
     description:
       "Tricolored Heron identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Tricolored Heron at sunrise in coastal marsh" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/tricolored-heron.webp", alt: "Tricolored Heron at sunrise in coastal marsh" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://southtexasbirds.org/images/og-default.jpg"],
+    images: ["https://southtexasbirds.org/images/birds/tricolored-heron.webp"],
   },
 };
 

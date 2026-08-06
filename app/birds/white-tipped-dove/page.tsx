@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "White-tipped Dove | South Texas Birds",
     description:
       "White-tipped Dove identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "White-tipped Dove on the ground in shaded woodland" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/white-tipped-dove.webp", alt: "White-tipped Dove on the ground in shaded woodland" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://southtexasbirds.org/images/og-default.jpg"],
+    images: ["https://southtexasbirds.org/images/birds/white-tipped-dove.webp"],
   },
 };
 

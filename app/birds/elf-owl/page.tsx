@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Elf Owl | South Texas Birds",
     description: "Elf Owl identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Elf Owl perched at a nest cavity" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/elf-owl.webp", alt: "Elf Owl perched at a nest cavity" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

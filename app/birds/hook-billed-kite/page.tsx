@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Hook-billed Kite | South Texas Birds",
     description: "Hook-billed Kite identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Hook-billed Kite perched in riparian forest" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/hook-billed-kite.webp", alt: "Hook-billed Kite perched in riparian forest" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Green Parakeet | South Texas Birds",
     description: "Green Parakeet identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Green Parakeet perched in tree in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/green-parakeet.webp", alt: "Green Parakeet perched in tree in South Texas" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

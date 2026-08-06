@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Masked Duck | South Texas Birds",
     description: "Masked Duck identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Male Masked Duck showing chestnut body and black mask" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/masked-duck.webp", alt: "Male Masked Duck showing chestnut body and black mask" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

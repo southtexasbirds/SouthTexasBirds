@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Crested Caracara | South Texas Birds",
     description: "Crested Caracara identification, habitat, and where to find it in South Texas.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Crested Caracara perched in South Texas" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/crested-caracara.webp", alt: "Crested Caracara perched in South Texas" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };

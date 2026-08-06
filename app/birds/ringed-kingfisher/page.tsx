@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "article",
     title: "Ringed Kingfisher | South Texas Birds",
     description: "Ringed Kingfisher identification, habitat, and where to find it in the Rio Grande Valley.",
-    images: [{ url: "https://southtexasbirds.org/images/og-default.jpg", alt: "Male Ringed Kingfisher perched over water" }],
+    images: [{ url: "https://southtexasbirds.org/images/birds/ringed-kingfisher.webp", alt: "Male Ringed Kingfisher perched over water" }],
   },
   twitter: { card: "summary_large_image", images: [PHOTO] },
 };
