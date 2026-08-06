@@ -1,8 +1,33 @@
 # HANDOFF.md
 
 ## Last updated
-- **Date:** 2026-08-05
-- **Agent:** Desktop — branch integration complete
+- **Date:** 2026-08-06
+- **Agent:** Desktop (branch `feat/seo-sitemap`, off `main`, not yet merged)
+
+---
+
+## Desktop Agent — 2026-08-06 (SEO: sitemap, robots, canonical, structured data)
+
+### What was done this session
+On branch `feat/seo-sitemap` (pushed, not merged to `main`). Note: `git pull` failed with a DNS/network error at the start of this session (`Could not resolve host: github.com`) — local `main` was already at the same commit last pushed at the end of the previous session, so the branch was cut from that with high confidence it was current, but this couldn't be verified against origin at the time. Re-check `git status`/`git log origin/main` before merging.
+
+- **Sitemap**: `app/sitemap.ts` already existed and covered every required page, but hardcoded a 15-entry `NEWS_SLUGS` array duplicating the article list that already lived inline in `app/news/page.tsx` — violated "pull slugs from data files, don't hardcode." Fixed by extracting that inline `articles` array into a new `app/news/data.ts` (mirroring the existing `app/birds/data.ts` pattern), imported by both `app/news/page.tsx` and `app/sitemap.ts`. Species slugs already came from `BIRDS_ORDER` correctly. Rewrote priorities to match spec exactly (home 1.0, `/birds` + `/hotspots` 0.9, species 0.8, articles 0.7 — was 0.6, everything else 0.4 — was a scattered 0.3–0.8) and gave each article's `lastModified` its own `isoDate` instead of a blanket `new Date()`. Verified in a local build: 76 `<url>` entries (3 + 50 species + 15 articles + 8 utility pages), all counts and priorities correct.
+- **Robots**: `app/robots.ts` already existed and already fully matched the spec (allow all, correct sitemap URL, no disallows) — verified against the built `/robots.txt` output, made no changes.
+- **metadataBase + canonical — already correct, no changes needed**: `metadataBase` was already set to `https://southtexasbirds.org` in the root layout. Checked every `page.tsx` in the app for a canonical declaration — only `app/birds/page.tsx` (the species listing) has none, but that's because it's a `"use client"` component that can't export metadata; its canonical correctly comes from `app/birds/layout.tsx` and is overridden per-page by each species page's own canonical, confirmed in the built HTML. Spot-checked rendered `<link rel="canonical">` output for home, `/gear`, `/checklist`, `/hotspots`, a species page, `/birds`, and an article — all emit correct absolute URLs. No relative, missing, or wrong-path canonicals found anywhere.
+- **Structured data check — found and fixed a real bug**: BreadcrumbList was already present and correct everywhere — species pages get it from the shared `BirdNav` component (Home > Birds > {name}, verified in server-rendered HTML), and all 15 article pages already have their own (Home > News > {title}, a few use "News & Conservation" as the label instead of "News," which is fine — it's the actual page title, just a label variance, not a bug). Validating a representative species page (`green-jay`) and article (`whooping-crane-record-count`) against schema.org found both used correct `@type`s (`Article`/`NewsArticle`, `FAQPage`, `BreadcrumbList`) and absolute image URLs — **but** every one of the 50 species pages' `openGraph`/`twitter` metadata still pointed at the sitewide `og-default.jpg` instead of that species' own local photo, even though the JSON-LD `image` field on the same pages correctly used the per-species photo. This was a leftover from the `fix/audit-aug5` + `feat/local-images` merge two sessions ago — the audit branch had rewritten `openGraph`/`twitter` from a `PHOTO`-variable reference to a hardcoded `og-default.jpg` literal, then the local-images branch's per-page-image fix only touched the JSON-LD field (whose literal was still distinguishable) and missed the now-hardcoded OG/Twitter literals since they no longer matched the pattern being searched for. (The previous session's HANDOFF entry claimed OG/Twitter "automatically" got the per-page image — that was wrong; this session found and corrected it.) Fixed all 50 species pages so `openGraph`, `twitter`, and JSON-LD `image` are now consistent, all pointing at that species' own `/images/birds/{slug}.webp`.
+- Build and lint both pass clean (exit 0). Confirmed `/sitemap.xml` and `/robots.txt` both present in the build output.
+
+### Manual steps for Rick (agent cannot do these)
+- **Google Search Console verification and sitemap submission** — requires logging into Search Console with site ownership, which needs either DNS/HTML-file verification or an authenticated Google account action. Once `feat/seo-sitemap` is merged and deployed, submit `https://southtexasbirds.org/sitemap.xml` there.
+- Same likely applies to Bing Webmaster Tools if that's ever wanted — also a manual account-based step.
+
+### What's next
+- **Search Console + sitemap submission** (see manual steps above) — the site-side work (sitemap, robots) is now ready for it.
+- **`prefers-reduced-motion` check** — `AnimateIn`, `FilmGrain`, and `SmoothScroll` still haven't been audited for whether they respect the user's reduced-motion preference (carried over from last session, still not checked).
+- **`LazyMotion`/code-splitting review** — still not currently needed (no heavy animation library in use), revisit only if one gets added.
+- **Species gap fills**: Muscovy Duck and Brown Jay still have no `/birds` page (render as unlinked plain text on the Salineño hotspot card). Red-billed Pigeon already has a full page — not a gap.
+- **Long-tail content** — more destination guides, seasonal articles, or species-cluster pieces, per the pattern of the existing 15 news articles.
+- Branch `feat/seo-sitemap` has been pushed to origin but **not merged to `main`**.
 
 ---
 
