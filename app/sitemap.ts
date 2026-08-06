@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { BIRDS_ORDER } from "./birds/birdsOrder";
 import { articles } from "./news/data";
+import { MONTHS } from "./when-to-go/data";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://southtexasbirds.org";
 
@@ -30,6 +31,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const monthPages: MetadataRoute.Sitemap = MONTHS.filter((month) => month.hasGuide).map((month) => ({
+    url: `${SITE}/when-to-go/${month.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "yearly",
+    priority: 0.8,
+  }));
+
   const utilityPages: MetadataRoute.Sitemap = UTILITY_PAGES.map(({ path, changeFrequency }) => ({
     url: `${SITE}${path}`,
     lastModified: new Date(),
@@ -56,8 +64,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${SITE}/when-to-go`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     ...speciesPages,
     ...newsPages,
+    ...monthPages,
     ...utilityPages,
   ];
 }
