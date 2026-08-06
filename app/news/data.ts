@@ -1,0 +1,137 @@
+export const articles = [
+  {
+    slug: "whooping-crane-record-count",
+    date: "June 2026",
+    isoDate: "2026-06-01",
+    title: "Record Number of Whooping Cranes Wintering in Texas This Year",
+    excerpt:
+      "The most recent USFWS survey recorded 557 whooping cranes wintering along the Texas coast — a record high for the species' only self-sustaining wild population, and a testament to decades of conservation work.",
+    tags: ["Conservation", "Wildlife Recovery"],
+  },
+  {
+    slug: "thornscrub-restoration-rgv",
+    date: "June 2026",
+    isoDate: "2026-06-10",
+    title: "Tamaulipan Thornscrub Restoration Expands Across the Rio Grande Valley",
+    excerpt:
+      "Less than 5% of the original thornscrub remains in the Valley — but a growing coalition of federal agencies and conservation organizations is rebuilding the native brush that Green Jays, Plain Chachalacas, and dozens of other RGV specialties depend on.",
+    tags: ["Conservation", "Habitat Restoration"],
+  },
+  {
+    slug: "rgvbf-festival-2026",
+    date: "June 2026",
+    isoDate: "2026-06-15",
+    title: "Save the Date: Rio Grande Valley Birding Festival Returns This November",
+    excerpt:
+      "The RGVBF returns to Harlingen this November — one of the largest birding festivals in the country, with over 100 field trips, expert guides, and the full lineup of RGV specialties on the table.",
+    tags: ["Festival", "Events", "RGV"],
+  },
+  {
+    slug: "spacex-refuge-land-exchange",
+    date: "June 2026",
+    isoDate: "2026-06-20",
+    title: "SpaceX Land Exchange Threatens Heart of Rio Grande Wildlife Corridor",
+    excerpt:
+      "A federal land exchange moving through the courts could reshape one of South Texas's most important wildlife corridors — directly touching habitat for the Aplomado Falcon, ocelot, and other species.",
+    tags: ["Conservation", "Habitat", "Legal"],
+  },
+  {
+    slug: "painted-bunting-south-padre",
+    date: "June 2026",
+    isoDate: "2026-06-25",
+    title: "South Padre Island Remains a Critical Painted Bunting Stopover",
+    excerpt:
+      "When northwest winds follow a cold front in late April, hundreds of Painted Buntings and other Trans-Gulf migrants make landfall at South Padre Island — one of North America's most spectacular birding events.",
+    tags: ["Conservation", "Migration"],
+  },
+  {
+    slug: "fall-hawk-migration-south-texas",
+    date: "June 2026",
+    isoDate: "2026-06-28",
+    title: "South Texas Fall Hawk Migration: Broad-winged Kettles at Bentsen",
+    excerpt:
+      "Every September, tens of thousands of raptors stream south through the Rio Grande Valley. At Bentsen's hawk tower on peak days, Broad-winged Hawk kettles containing 10,000 or more birds fill the sky.",
+    tags: ["Migration", "Raptors"],
+  },
+  {
+    slug: "fall-shorebird-season-south-padre",
+    date: "June 2026",
+    isoDate: "2026-06-28",
+    title: "Fall Shorebird Season at South Padre Island: Piping Plovers and More",
+    excerpt:
+      "South Padre Island's tidal flats host nationally significant concentrations of the endangered Piping Plover each fall. July through October is peak season for coastal shorebird diversity on the Texas Gulf Coast.",
+    tags: ["Migration", "Shorebirds", "Conservation"],
+  },
+  {
+    slug: "south-texas-birding-calendar",
+    date: "June 2026",
+    isoDate: "2026-06-28",
+    title: "South Texas Birding Calendar: When to Go for Each Species",
+    excerpt:
+      "A month-by-month guide to birding the Rio Grande Valley. Whooping Cranes in winter, Painted Bunting fallouts in spring, hawk kettles in September — when you go determines what you see.",
+    tags: ["Planning", "Guide"],
+  },
+  {
+    slug: "birds-only-in-south-texas",
+    date: "June 2026",
+    isoDate: "2026-06-28",
+    title: "Birds You Can Only See in South Texas (Within the United States)",
+    excerpt:
+      "The Rio Grande Valley is the only place in the U.S. where Green Jays, Altamira Orioles, Plain Chachalacas, and a dozen other tropical species live as residents. The complete guide to South Texas exclusives.",
+    tags: ["Species Guide", "RGV Exclusives"],
+  },
+  {
+    slug: "salineno-birding-guide",
+    date: "June 2026",
+    isoDate: "2026-06-30",
+    title: "Salineño: The Upper Rio Grande Valley's Best-Kept Birding Secret",
+    excerpt:
+      "Salineño Wildlife Preserve is the most reliable site in the United States for White-collared Seedeater and Ringed Kingfisher — and one of the most undervisited birding destinations in the country. A complete guide to this upper RGV gem.",
+    tags: ["Guide", "Destination", "RGV"],
+  },
+  {
+    slug: "south-texas-raptor-specialties",
+    date: "June 2026",
+    isoDate: "2026-06-30",
+    title: "South Texas Raptor Specialties: 7 Birds of Prey You Can Only Find Here",
+    excerpt:
+      "From the Hook-billed Kite to the reintroduced Aplomado Falcon, the Rio Grande Valley is the only place in the U.S. to find seven resident raptor specialties — including two endangered species. A complete guide.",
+    tags: ["Raptors", "Species Guide", "RGV"],
+  },
+  {
+    slug: "laguna-atascosa-birding-guide",
+    date: "July 2026",
+    isoDate: "2026-07-01",
+    title: "Laguna Atascosa NWR: A Complete Birding Guide",
+    excerpt:
+      "The largest protected area in the Rio Grande Valley hosts Aplomado Falcons, White-tailed Hawks, Roseate Spoonbills, and over 400 species. A complete guide to birding South Texas's most species-rich refuge.",
+    tags: ["Destination Guide", "Raptors", "RGV"],
+  },
+  {
+    slug: "bentsen-rgv-state-park-birding-guide",
+    date: "July 2026",
+    isoDate: "2026-07-01",
+    title: "Bentsen-Rio Grande Valley State Park: A Complete Birding Guide",
+    excerpt:
+      "The RGV's flagship World Birding Center site hosts Hook-billed Kites, Ferruginous Pygmy-Owls, a world-famous hawk watch, and some of the best feeder birding in North America. A complete guide to the Valley's most celebrated destination.",
+    tags: ["Destination Guide", "RGV", "Raptors"],
+  },
+  {
+    slug: "santa-ana-nwr-birding-guide",
+    date: "July 2026",
+    isoDate: "2026-07-02",
+    title: "Santa Ana National Wildlife Refuge: A Complete Birding Guide",
+    excerpt:
+      "Called the 'Jewel of the National Wildlife Refuge System,' Santa Ana NWR packs 400+ species into 2,088 acres of Tamaulipan thornscrub — Green Jays, Hook-billed Kites, Rose-throated Becards, and the best feeder station in the RGV.",
+    tags: ["Destination Guide", "RGV", "Species Guide"],
+  },
+  {
+    slug: "estero-llano-grande-birding-guide",
+    date: "July 2026",
+    isoDate: "2026-07-02",
+    title: "Estero Llano Grande State Park: A Complete Birding Guide",
+    excerpt:
+      "The most reliable site in the United States for Masked Duck and Northern Jacana sits in the middle of a city of 40,000. A complete guide to the RGV's most productive urban wildlife destination — and how to find its extraordinary waterbirds.",
+    tags: ["Destination Guide", "RGV", "Waterbirds"],
+  },
+];

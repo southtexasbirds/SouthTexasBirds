@@ -1,24 +1,18 @@
 import type { MetadataRoute } from "next";
 import { BIRDS_ORDER } from "./birds/birdsOrder";
+import { articles } from "./news/data";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://southtexasbirds.org";
 
-const NEWS_SLUGS = [
-  "whooping-crane-record-count",
-  "thornscrub-restoration-rgv",
-  "rgvbf-festival-2026",
-  "spacex-refuge-land-exchange",
-  "painted-bunting-south-padre",
-  "fall-hawk-migration-south-texas",
-  "fall-shorebird-season-south-padre",
-  "south-texas-birding-calendar",
-  "birds-only-in-south-texas",
-  "salineno-birding-guide",
-  "south-texas-raptor-specialties",
-  "laguna-atascosa-birding-guide",
-  "bentsen-rgv-state-park-birding-guide",
-  "santa-ana-nwr-birding-guide",
-  "estero-llano-grande-birding-guide",
+const UTILITY_PAGES: { path: string; changeFrequency: "weekly" | "monthly" | "yearly" }[] = [
+  { path: "/news", changeFrequency: "weekly" },
+  { path: "/checklist", changeFrequency: "monthly" },
+  { path: "/gear", changeFrequency: "monthly" },
+  { path: "/about", changeFrequency: "monthly" },
+  { path: "/gallery", changeFrequency: "monthly" },
+  { path: "/itineraries", changeFrequency: "monthly" },
+  { path: "/conservation", changeFrequency: "monthly" },
+  { path: "/credits", changeFrequency: "yearly" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -29,11 +23,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const newsPages: MetadataRoute.Sitemap = NEWS_SLUGS.map((slug) => ({
-    url: `${SITE}/news/${slug}`,
-    lastModified: new Date(),
+  const newsPages: MetadataRoute.Sitemap = articles.map((article) => ({
+    url: `${SITE}/news/${article.slug}`,
+    lastModified: new Date(article.isoDate),
     changeFrequency: "monthly",
-    priority: 0.6,
+    priority: 0.7,
+  }));
+
+  const utilityPages: MetadataRoute.Sitemap = UTILITY_PAGES.map(({ path, changeFrequency }) => ({
+    url: `${SITE}${path}`,
+    lastModified: new Date(),
+    changeFrequency,
+    priority: 0.4,
   }));
 
   return [
@@ -41,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: SITE,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 1,
+      priority: 1.0,
     },
     {
       url: `${SITE}/birds`,
@@ -55,55 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    {
-      url: `${SITE}/news`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${SITE}/gear`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${SITE}/checklist`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE}/gallery`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE}/itineraries`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${SITE}/conservation`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
-      url: `${SITE}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
-      url: `${SITE}/credits`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
     ...speciesPages,
     ...newsPages,
+    ...utilityPages,
   ];
 }
